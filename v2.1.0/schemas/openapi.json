@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "GGM API Specification",
+    "version": "2.1.0"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {}
+  }
+}
