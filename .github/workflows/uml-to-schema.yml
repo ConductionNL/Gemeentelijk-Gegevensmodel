@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install xmltodict pyyaml json-schema-generator chardet
+          pip install xmltodict pyyaml json-schema-generator chardet tqdm
 
       - name: Run conversion script
         run: python .github/scripts/convert_uml_to_schema.py ${{ inputs.version }}

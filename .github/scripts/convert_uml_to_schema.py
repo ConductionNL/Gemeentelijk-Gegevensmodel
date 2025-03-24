@@ -13,6 +13,7 @@ import xmltodict
 from pathlib import Path
 from typing import Dict, List, Optional
 import chardet
+from tqdm import tqdm
 
 class UMLConverter:
     """Converts UML/XMI files to JSON Schema format"""
@@ -28,36 +29,98 @@ class UMLConverter:
         with open(file_path, 'rb') as f:
             raw_data = f.read()
             result = chardet.detect(raw_data)
-            return result['encoding'] or 'utf-8'
+            print(f"Detected encoding: {result}")
+            # Try common encodings first
+            common_encodings = ['utf-8', 'utf-16', 'iso-8859-1', 'windows-1252']
+            if result['encoding'] and result['confidence'] > 0.7:
+                return result['encoding']
+            return 'utf-8'  # Default to UTF-8
+        
+    def read_file_with_encoding(self, file_path: Path) -> str:
+        """Read file content with fallback encodings"""
+        encodings = ['utf-8', 'utf-16', 'iso-8859-1', 'windows-1252']
+        last_error = None
+        
+        for encoding in encodings:
+            try:
+                with open(file_path, 'r', encoding=encoding) as f:
+                    return f.read()
+            except UnicodeDecodeError as e:
+                last_error = e
+                continue
+                
+        if last_error:
+            raise last_error
+            
+        raise ValueError(f"Could not read file {file_path} with any of the encodings: {encodings}")
+        
+    def count_packages(self, xmi_data: dict) -> int:
+        """Count the total number of packages in the XMI data"""
+        count = 0
+        uml_model = xmi_data.get('uml:Model', {})
+        for package in uml_model.get('packagedElement', []):
+            if package.get('@xmi:type') == 'uml:Package':
+                count += 1
+                # Count nested packages
+                count += self._count_nested_packages(package)
+        return count
+    
+    def _count_nested_packages(self, package: dict) -> int:
+        """Count nested packages recursively"""
+        count = 0
+        for element in package.get('packagedElement', []):
+            if element.get('@xmi:type') == 'uml:Package':
+                count += 1
+                count += self._count_nested_packages(element)
+        return count
         
     def process_xmi_file(self, file_path: Path) -> None:
         """Process an XMI file and convert it to JSON Schemas"""
         try:
-            # Detect file encoding
-            encoding = self.detect_encoding(file_path)
-            print(f"Processing {file_path} with encoding {encoding}")
+            print(f"\nProcessing file: {file_path}")
+            print(f"File size: {file_path.stat().st_size / 1024 / 1024:.2f} MB")
             
-            with open(file_path, 'r', encoding=encoding) as f:
-                content = f.read()
-                xmi_data = xmltodict.parse(content)
+            # Read file content with fallback encodings
+            content = self.read_file_with_encoding(file_path)
+            print("Successfully read file content")
+            
+            # Parse XML
+            xmi_data = xmltodict.parse(content)
+            print("Successfully parsed XML")
+                
+            # Count total packages for progress bar
+            total_packages = self.count_packages(xmi_data)
+            print(f"Found {total_packages} packages to process")
                 
             # Extract UML classes and convert them to JSON Schema
             uml_model = xmi_data.get('uml:Model', {})
-            for package in uml_model.get('packagedElement', []):
-                if package.get('@xmi:type') == 'uml:Package':
-                    self._process_package(package)
+            with tqdm(total=total_packages, desc="Processing packages") as pbar:
+                for package in uml_model.get('packagedElement', []):
+                    if package.get('@xmi:type') == 'uml:Package':
+                        self._process_package(package, pbar)
                     
         except Exception as e:
             print(f"Error processing {file_path}: {str(e)}")
+            print(f"Error type: {type(e).__name__}")
+            import traceback
+            traceback.print_exc()
             raise
                 
-    def _process_package(self, package: dict) -> None:
+    def _process_package(self, package: dict, pbar: tqdm) -> None:
         """Process a UML package and its classes"""
+        # Process classes in this package
         for element in package.get('packagedElement', []):
             if element.get('@xmi:type') == 'uml:Class':
                 schema = self._convert_class_to_schema(element)
                 schema_name = element.get('@name', '').lower()
                 self.schemas[schema_name] = schema
+                
+        # Process nested packages
+        for element in package.get('packagedElement', []):
+            if element.get('@xmi:type') == 'uml:Package':
+                self._process_package(element, pbar)
+                
+        pbar.update(1)
                 
     def _convert_class_to_schema(self, uml_class: dict) -> dict:
         """Convert a UML class to JSON Schema format"""
@@ -118,17 +181,21 @@ class UMLConverter:
         """Save all generated schemas and OpenAPI spec to files"""
         # Create schemas directory if it doesn't exist
         self.schema_path.mkdir(parents=True, exist_ok=True)
+        print(f"\nCreated schemas directory: {self.schema_path}")
         
-        # Save individual schemas
-        for name, schema in self.schemas.items():
+        # Save individual schemas with progress bar
+        print(f"\nSaving {len(self.schemas)} schemas...")
+        for name, schema in tqdm(self.schemas.items(), desc="Saving schemas"):
             schema_file = self.schema_path / f"{name}.json"
             with open(schema_file, 'w', encoding='utf-8') as f:
                 json.dump(schema, f, indent=2)
                 
         # Save OpenAPI spec
+        print("Saving OpenAPI specification...")
         oas_file = self.schema_path / "openapi.json"
         with open(oas_file, 'w', encoding='utf-8') as f:
             json.dump(self.generate_openapi_spec(), f, indent=2)
+        print(f"Saved OpenAPI spec to: {oas_file}")
 
 def main():
     """Main entry point"""
@@ -152,7 +219,6 @@ def main():
         print(f"Found {len(xmi_files)} XML files")
         
         for xmi_file in xmi_files:
-            print(f"\nProcessing file: {xmi_file}")
             converter.process_xmi_file(xmi_file)
             
         converter.save_schemas()
