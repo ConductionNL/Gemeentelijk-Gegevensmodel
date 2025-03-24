@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Kp_classA_classC",
+  "description": "Represents a Kp_classA_classC in the system",
+  "properties": {
+    "M_Bronsysteem": {
+      "description": "Property M_Bronsysteem",
+      "type": "string"
+    },
+    "M_DatumTijdGeladen": {
+      "description": "Property M_DatumTijdGeladen",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ClassCID": {
+      "description": "Property ClassCID",
+      "type": "string"
+    },
+    "ClassAID": {
+      "description": "Property ClassAID",
+      "type": "string"
+    },
+    "PK_ClassA": {
+      "description": "Property PK_ClassA",
+      "type": "string"
+    },
+    "PK_ClassC": {
+      "description": "Property PK_ClassC",
+      "type": "string"
+    }
+  }
+}
