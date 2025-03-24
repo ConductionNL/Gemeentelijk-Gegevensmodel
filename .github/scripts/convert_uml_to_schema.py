@@ -12,6 +12,7 @@ import json
 import xmltodict
 from pathlib import Path
 from typing import Dict, List, Optional
+import chardet
 
 class UMLConverter:
     """Converts UML/XMI files to JSON Schema format"""
@@ -22,16 +23,33 @@ class UMLConverter:
         self.base_path = Path(version_folder)
         self.schema_path = self.base_path / 'schemas'  # Store schemas in schemas subfolder
         
+    def detect_encoding(self, file_path: Path) -> str:
+        """Detect the encoding of a file"""
+        with open(file_path, 'rb') as f:
+            raw_data = f.read()
+            result = chardet.detect(raw_data)
+            return result['encoding'] or 'utf-8'
+        
     def process_xmi_file(self, file_path: Path) -> None:
         """Process an XMI file and convert it to JSON Schemas"""
-        with open(file_path, 'r', encoding='utf-8') as f:
-            xmi_data = xmltodict.parse(f.read())
+        try:
+            # Detect file encoding
+            encoding = self.detect_encoding(file_path)
+            print(f"Processing {file_path} with encoding {encoding}")
             
-        # Extract UML classes and convert them to JSON Schema
-        uml_model = xmi_data.get('uml:Model', {})
-        for package in uml_model.get('packagedElement', []):
-            if package.get('@xmi:type') == 'uml:Package':
-                self._process_package(package)
+            with open(file_path, 'r', encoding=encoding) as f:
+                content = f.read()
+                xmi_data = xmltodict.parse(content)
+                
+            # Extract UML classes and convert them to JSON Schema
+            uml_model = xmi_data.get('uml:Model', {})
+            for package in uml_model.get('packagedElement', []):
+                if package.get('@xmi:type') == 'uml:Package':
+                    self._process_package(package)
+                    
+        except Exception as e:
+            print(f"Error processing {file_path}: {str(e)}")
+            raise
                 
     def _process_package(self, package: dict) -> None:
         """Process a UML package and its classes"""
@@ -123,13 +141,22 @@ def main():
         versions = [d for d in os.listdir('.') if d.startswith('v')]
         
     for version in versions:
+        print(f"\nProcessing version: {version}")
         converter = UMLConverter(version)
         xmi_files = list(Path(version).glob('*.xml'))
         
+        if not xmi_files:
+            print(f"No XML files found in {version}")
+            continue
+            
+        print(f"Found {len(xmi_files)} XML files")
+        
         for xmi_file in xmi_files:
+            print(f"\nProcessing file: {xmi_file}")
             converter.process_xmi_file(xmi_file)
             
         converter.save_schemas()
+        print(f"\nSaved schemas to {version}/schemas/")
 
 if __name__ == "__main__":
     main() 
