@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Telefoonstatus",
+  "description": "Represents a Telefoonstatus in the system",
+  "properties": {
+    "contactConnectionState": {
+      "description": "Property contactConnectionState",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    }
+  }
+}

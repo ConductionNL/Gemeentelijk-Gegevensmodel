@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "CMDBItem",
+  "description": "Represents a CMDBItem in the system",
+  "properties": {
+    "beschrijving": {
+      "description": "Property beschrijving",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    }
+  }
+}

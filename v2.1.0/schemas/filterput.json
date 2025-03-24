@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Filterput",
+  "description": "Represents a Filterput in the system",
+  "properties": {
+    "drain": {
+      "description": "Property drain",
+      "type": "string"
+    },
+    "risicogebied": {
+      "description": "Property risicogebied",
+      "type": "string"
+    }
+  }
+}

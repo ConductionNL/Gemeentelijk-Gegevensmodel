@@ -14,11 +14,13 @@
     },
     "datumSeponering": {
       "description": "Property datumSeponering",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumtijdTot": {
       "description": "Property datumtijdTot",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "geseponeerd": {
       "description": "Property geseponeerd",

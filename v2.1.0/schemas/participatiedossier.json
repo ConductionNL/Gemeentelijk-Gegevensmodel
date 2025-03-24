@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Participatiedossier",
+  "description": "Represents a Participatiedossier in the system",
+  "properties": {
+    "arbeidsvermogen": {
+      "description": "Property arbeidsvermogen",
+      "type": "string"
+    },
+    "begeleiderscode": {
+      "description": "Property begeleiderscode",
+      "type": "string"
+    },
+    "beschutwerk": {
+      "description": "Property beschutwerk",
+      "type": "string"
+    },
+    "clientbegeleiderID": {
+      "description": "Property clientbegeleiderID",
+      "type": "string"
+    },
+    "datumEindeBegeleiding": {
+      "description": "Property datumEindeBegeleiding",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStartBegeleiding": {
+      "description": "Property datumStartBegeleiding",
+      "type": "string",
+      "format": "date"
+    },
+    "indicatieDoelgroepregister": {
+      "description": "Property indicatieDoelgroepregister",
+      "type": "string"
+    }
+  }
+}

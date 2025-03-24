@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "StrijdigheidOfNietigheid",
+  "description": "Represents a StrijdigheidOfNietigheid in the system",
+  "properties": {
+    "aanduidingStrijdigheidNietigheid": {
+      "description": "Property aanduidingStrijdigheidNietigheid",
+      "type": "string"
+    }
+  }
+}

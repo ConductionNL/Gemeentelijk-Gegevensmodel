@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Heffing",
+  "description": "Represents a Heffing in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "datumIndiening": {
+      "description": "Property datumIndiening",
+      "type": "string"
+    },
+    "gefactureerd": {
+      "description": "Property gefactureerd",
+      "type": "string"
+    },
+    "inrekening": {
+      "description": "Property inrekening",
+      "type": "string"
+    },
+    "nummer": {
+      "description": "Property nummer",
+      "type": "string"
+    },
+    "runnummer": {
+      "description": "Property runnummer",
+      "type": "string"
+    }
+  }
+}

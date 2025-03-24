@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Omgevingsdocument",
+  "description": "Represents a Omgevingsdocument in the system",
+  "properties": {}
+}

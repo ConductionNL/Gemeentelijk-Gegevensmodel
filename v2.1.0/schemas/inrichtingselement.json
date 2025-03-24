@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inrichtingselement",
+  "description": "Represents a Inrichtingselement in the system",
+  "properties": {
+    "datumBeginGeldigheidInrichtingselement": {
+      "description": "Property datumBeginGeldigheidInrichtingselement",
+      "type": "string"
+    },
+    "datumEindeGeldigheidInrichtingselement": {
+      "description": "Property datumEindeGeldigheidInrichtingselement",
+      "type": "string"
+    },
+    "geometrieInrichtingselement": {
+      "description": "Property geometrieInrichtingselement",
+      "type": "string"
+    },
+    "identificatieInrichtingselement": {
+      "description": "Property identificatieInrichtingselement",
+      "type": "string"
+    },
+    "LOD0GeometrieInrichtingselement": {
+      "description": "Property LOD0GeometrieInrichtingselement",
+      "type": "string"
+    },
+    "plusTypeInrichtingselement": {
+      "description": "Property plusTypeInrichtingselement",
+      "type": "string"
+    },
+    "relatieveHoogteliggingInrichtingselement": {
+      "description": "Property relatieveHoogteliggingInrichtingselement",
+      "type": "string"
+    },
+    "statusInrichtingselement": {
+      "description": "Property statusInrichtingselement",
+      "type": "string"
+    },
+    "typeInrichtingselement": {
+      "description": "Property typeInrichtingselement",
+      "type": "string"
+    }
+  }
+}

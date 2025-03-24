@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gebouw",
+  "description": "Represents a Gebouw in the system",
+  "properties": {
+    "aantal": {
+      "description": "Property aantal",
+      "type": "string"
+    },
+    "aantalAdressen": {
+      "description": "Property aantalAdressen",
+      "type": "string"
+    },
+    "aantalKamers": {
+      "description": "Property aantalKamers",
+      "type": "string"
+    },
+    "aardgasloos": {
+      "description": "Property aardgasloos",
+      "type": "string"
+    },
+    "duurzaam": {
+      "description": "Property duurzaam",
+      "type": "string"
+    },
+    "energielabel": {
+      "description": "Property energielabel",
+      "type": "string"
+    },
+    "natuurinclusief": {
+      "description": "Property natuurinclusief",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "regenwater": {
+      "description": "Property regenwater",
+      "type": "string"
+    }
+  }
+}

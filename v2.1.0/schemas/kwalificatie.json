@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Kwalificatie",
+  "description": "Represents a Kwalificatie in the system",
+  "properties": {
+    "eindeGeldigheid": {
+      "description": "Property eindeGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "startGeldigheid": {
+      "description": "Property startGeldigheid",
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

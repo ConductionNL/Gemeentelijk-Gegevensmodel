@@ -10,11 +10,13 @@
     },
     "datumMutatie": {
       "description": "Property datumMutatie",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumRetour": {
       "description": "Property datumRetour",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "memo": {
       "description": "Property memo",

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bak",
+  "description": "Represents a Bak in the system",
+  "properties": {
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "diameter": {
+      "description": "Property diameter",
+      "type": "string"
+    },
+    "gewichtLeeg": {
+      "description": "Property gewichtLeeg",
+      "type": "string"
+    },
+    "gewichtVol": {
+      "description": "Property gewichtVol",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "inhoud": {
+      "description": "Property inhoud",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "kwaliteitsniveauActueel": {
+      "description": "Property kwaliteitsniveauActueel",
+      "type": "string"
+    },
+    "kwaliteitsniveauGewenst": {
+      "description": "Property kwaliteitsniveauGewenst",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "materiaal": {
+      "description": "Property materiaal",
+      "type": "string"
+    },
+    "verplaatsbaar": {
+      "description": "Property verplaatsbaar",
+      "type": "string"
+    },
+    "vorm": {
+      "description": "Property vorm",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vacature",
+  "description": "Represents a Vacature in the system",
+  "properties": {
+    "datumGesloten": {
+      "description": "Property datumGesloten",
+      "type": "string",
+      "format": "date"
+    },
+    "datumOpengesteld": {
+      "description": "Property datumOpengesteld",
+      "type": "string",
+      "format": "date"
+    },
+    "deeltijd": {
+      "description": "Property deeltijd",
+      "type": "string"
+    },
+    "extern": {
+      "description": "Property extern",
+      "type": "string"
+    },
+    "intern": {
+      "description": "Property intern",
+      "type": "string"
+    },
+    "vastedienst": {
+      "description": "Property vastedienst",
+      "type": "string"
+    }
+  }
+}

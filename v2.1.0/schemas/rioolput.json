@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Rioolput",
+  "description": "Represents a Rioolput in the system",
+  "properties": {
+    "aantalBedrijven": {
+      "description": "Property aantalBedrijven",
+      "type": "string"
+    },
+    "aantalRecreatie": {
+      "description": "Property aantalRecreatie",
+      "type": "string"
+    },
+    "aantalWoningen": {
+      "description": "Property aantalWoningen",
+      "type": "string"
+    },
+    "afvoerendOppervlak": {
+      "description": "Property afvoerendOppervlak",
+      "type": "string"
+    },
+    "bergendOppervlak": {
+      "description": "Property bergendOppervlak",
+      "type": "string"
+    },
+    "rioolputConstructieonderdeel": {
+      "description": "Property rioolputConstructieonderdeel",
+      "type": "string"
+    },
+    "rioolputRioolleiding": {
+      "description": "Property rioolputRioolleiding",
+      "type": "string"
+    },
+    "risicogebied": {
+      "description": "Property risicogebied",
+      "type": "string"
+    },
+    "toegangBreedte": {
+      "description": "Property toegangBreedte",
+      "type": "string"
+    },
+    "toegangLengte": {
+      "description": "Property toegangLengte",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    }
+  }
+}

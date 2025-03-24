@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Betaling",
+  "description": "Represents a Betaling in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "datumtijd": {
+      "description": "Property datumtijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "valuta": {
+      "description": "Property valuta",
+      "type": "string"
+    }
+  }
+}

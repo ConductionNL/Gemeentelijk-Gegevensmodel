@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OverigeAdresseerbaarObjectAanduiding",
+  "description": "Represents a OverigeAdresseerbaarObjectAanduiding in the system",
+  "properties": {
+    "IdentificatiecodeOverigAdresseerbaarObjectAanduiding": {
+      "description": "Property IdentificatiecodeOverigAdresseerbaarObjectAanduiding",
+      "type": "string"
+    }
+  }
+}

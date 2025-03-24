@@ -7,9 +7,86 @@ This workflow automatically converts UML/XMI files to JSON Schema format and gen
 1. Monitors changes to the master branch
 2. When changes are detected, it:
    - Processes XML/XMI files in version folders (e.g., v2.1.0)
-   - Converts UML class definitions to JSON Schema format
+   - Validates files are in XMI 2.1 format
+   - Extracts UML class definitions and their attributes
+   - Converts them to JSON Schema format
    - Generates an OpenAPI specification that references all schemas
    - Saves the generated files in a `schemas` subfolder
+
+## XMI 2.1 Validation
+
+The converter only processes files that conform to the XMI 2.1 specification. A file is considered valid if it:
+
+1. Has an `xmi:XMI` root element
+2. Contains the required XMI 2.1 namespaces:
+   - `xmlns:xmi`
+   - `xmlns:uml`
+3. Contains a `uml:Model` element
+
+Files that don't meet these criteria are skipped with a warning message.
+
+## Filename Handling
+
+The converter sanitizes class names when creating schema files to ensure valid filenames:
+
+1. Replaces slashes and backslashes with underscores
+2. Replaces spaces and special characters with underscores
+3. Removes multiple consecutive underscores
+4. Trims leading and trailing underscores
+5. Converts to lowercase
+6. Limits filename length to 100 characters
+7. Uses 'unnamed' as fallback for empty names
+
+Example transformations:
+- "Deelplan/Veld" → "deelplan_veld"
+- "Fase/Oplevering" → "fase_oplevering"
+- "Gezinsmigrant en Overige migrant" → "gezinsmigrant_en_overige_migrant"
+
+## UML Class Processing
+
+The converter processes UML classes in the following way:
+
+1. For each `UML:Class` element:
+   ```xml
+   <UML:Class name="ClassName" ...>
+     <UML:ModelElement.taggedValue>
+       <!-- Class-level tagged values -->
+     </UML:ModelElement.taggedValue>
+     <UML:Classifier.feature>
+       <!-- Class attributes -->
+     </UML:Classifier.feature>
+   </UML:Class>
+   ```
+
+2. Extracts class information:
+   - Name from `name` attribute
+   - Documentation from tagged values
+   - Class-level tagged values
+
+3. For each attribute in `UML:Classifier.feature`:
+   ```xml
+   <UML:Attribute name="attributeName" ...>
+     <UML:StructuralFeature.type>
+       <!-- Attribute type -->
+     </UML:StructuralFeature.type>
+     <UML:ModelElement.taggedValue>
+       <!-- Attribute-level tagged values -->
+     </UML:ModelElement.taggedValue>
+   </UML:Attribute>
+   ```
+
+4. Extracts attribute information:
+   - Name from `name` attribute
+   - Type from `UML:StructuralFeature.type`
+   - Documentation and constraints from tagged values
+   - Multiplicity from `lowerBound` and `upperBound` tagged values
+
+5. Generates JSON Schema with:
+   - Class name as title
+   - Class documentation as description
+   - Attributes as properties
+   - Required fields based on multiplicity
+   - Class and attribute tagged values as extensions
 
 ## How it works
 

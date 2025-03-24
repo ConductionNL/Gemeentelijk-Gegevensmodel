@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VerlengingZaak",
+  "description": "Represents a VerlengingZaak in the system",
+  "properties": {
+    "duurVerlenging": {
+      "description": "Property duurVerlenging",
+      "type": "string"
+    },
+    "redenVerlenging": {
+      "description": "Property redenVerlenging",
+      "type": "string"
+    }
+  }
+}

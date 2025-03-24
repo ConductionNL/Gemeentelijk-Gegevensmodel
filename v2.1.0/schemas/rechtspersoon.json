@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Rechtspersoon",
+  "description": "Represents a Rechtspersoon in the system",
+  "properties": {
+    "adresBinnenland": {
+      "description": "Property adresBinnenland",
+      "type": "string"
+    },
+    "adresBuitenland": {
+      "description": "Property adresBuitenland",
+      "type": "string"
+    },
+    "adresCorrespondentie": {
+      "description": "Property adresCorrespondentie",
+      "type": "string"
+    },
+    "emailadres": {
+      "description": "Property emailadres",
+      "type": "string"
+    },
+    "faxnummer": {
+      "description": "Property faxnummer",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "KVKnummer": {
+      "description": "Property KVKnummer",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "rechtsvorm": {
+      "description": "Property rechtsvorm",
+      "type": "string"
+    },
+    "rekeningnummer": {
+      "description": "Property rekeningnummer",
+      "type": "string"
+    },
+    "telefoonnummer": {
+      "description": "Property telefoonnummer",
+      "type": "string"
+    }
+  }
+}

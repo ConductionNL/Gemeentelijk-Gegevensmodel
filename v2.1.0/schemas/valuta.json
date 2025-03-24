@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Valuta",
+  "description": "Represents a Valuta in the system",
+  "properties": {
+    "datumBeginGeldigheid": {
+      "description": "Property datumBeginGeldigheid",
+      "type": "string"
+    },
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "valutacode": {
+      "description": "Property valutacode",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VerstrekkingsbeperkingPartieelIngeschrevenNatuurlijkPersoon",
+  "description": "Represents a VerstrekkingsbeperkingPartieelIngeschrevenNatuurlijkPersoon in the system",
+  "properties": {
+    "gemeenteVerordening": {
+      "description": "Property gemeenteVerordening",
+      "type": "string"
+    },
+    "omschrijvingDerde": {
+      "description": "Property omschrijvingDerde",
+      "type": "string"
+    },
+    "partij": {
+      "description": "Property partij",
+      "type": "string"
+    }
+  }
+}

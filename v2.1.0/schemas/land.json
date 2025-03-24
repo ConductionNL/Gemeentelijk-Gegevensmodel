@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Land",
+  "description": "Represents a Land in the system",
+  "properties": {
+    "datumEindeFictief": {
+      "description": "Property datumEindeFictief",
+      "type": "string"
+    },
+    "datumEindeLand": {
+      "description": "Property datumEindeLand",
+      "type": "string"
+    },
+    "datumIngangLand": {
+      "description": "Property datumIngangLand",
+      "type": "string"
+    },
+    "landcode": {
+      "description": "Property landcode",
+      "type": "string"
+    },
+    "landcodeISODrieletterig": {
+      "description": "Property landcodeISODrieletterig",
+      "type": "string"
+    },
+    "landcodeISOTweeletterig": {
+      "description": "Property landcodeISOTweeletterig",
+      "type": "string"
+    },
+    "landnaam": {
+      "description": "Property landnaam",
+      "type": "string"
+    }
+  }
+}

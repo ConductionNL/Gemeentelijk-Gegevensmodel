@@ -14,19 +14,23 @@
     },
     "datumAfgedaan": {
       "description": "Property datumAfgedaan",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumBegrafenis": {
       "description": "Property datumBegrafenis",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumGemeld": {
       "description": "Property datumGemeld",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumRuimingGraf": {
       "description": "Property datumRuimingGraf",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "doodsoorzaak": {
       "description": "Property doodsoorzaak",

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ClassC",
+  "description": "Represents a ClassC in the system",
+  "properties": {
+    "M_Bronsysteem": {
+      "description": "Property M_Bronsysteem",
+      "type": "string"
+    },
+    "M_DatumTijdGeladen": {
+      "description": "Property M_DatumTijdGeladen",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ClassCID": {
+      "description": "Property ClassCID",
+      "type": "string"
+    },
+    "AliasrelasrcID": {
+      "description": "Property AliasrelasrcID",
+      "type": "string"
+    },
+    "AliasrelbsrcID": {
+      "description": "Property AliasrelbsrcID",
+      "type": "string"
+    },
+    "PK_ClassB": {
+      "description": "Property PK_ClassB",
+      "type": "string"
+    }
+  }
+}

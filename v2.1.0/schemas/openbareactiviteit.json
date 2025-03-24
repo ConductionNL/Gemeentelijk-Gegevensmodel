@@ -6,11 +6,13 @@
   "properties": {
     "datumEinde": {
       "description": "Property datumEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumStart": {
       "description": "Property datumStart",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "evenmentnaam": {
       "description": "Property evenmentnaam",

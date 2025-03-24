@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bankafschriftregel",
+  "description": "Represents a Bankafschriftregel in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "bij": {
+      "description": "Property bij",
+      "type": "string"
+    },
+    "datum": {
+      "description": "Property datum",
+      "type": "string",
+      "format": "date"
+    },
+    "rekeningVan": {
+      "description": "Property rekeningVan",
+      "type": "string"
+    }
+  }
+}

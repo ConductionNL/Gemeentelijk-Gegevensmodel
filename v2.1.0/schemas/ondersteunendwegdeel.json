@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OndersteunendWegdeel",
+  "description": "Represents a OndersteunendWegdeel in the system",
+  "properties": {
+    "datumBeginGeldigheidOndersteunendWegdeel": {
+      "description": "Property datumBeginGeldigheidOndersteunendWegdeel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidOndersteunendWegdeel": {
+      "description": "Property datumEindeGeldigheidOndersteunendWegdeel",
+      "type": "string"
+    },
+    "functieOndersteunendWegdeel": {
+      "description": "Property functieOndersteunendWegdeel",
+      "type": "string"
+    },
+    "fysiekVoorkomenOndersteunendWegdeel ": {
+      "description": "Property fysiekVoorkomenOndersteunendWegdeel ",
+      "type": "string"
+    },
+    "geometrieOndersteunendWegdeel": {
+      "description": "Property geometrieOndersteunendWegdeel",
+      "type": "string"
+    },
+    "identificatieOndersteunendWegdeel": {
+      "description": "Property identificatieOndersteunendWegdeel",
+      "type": "string"
+    },
+    "kruinlijngeometrieOndersteunendWegdeel": {
+      "description": "Property kruinlijngeometrieOndersteunendWegdeel",
+      "type": "string"
+    },
+    "LOD0GeometrieOndersteunendWegdeel": {
+      "description": "Property LOD0GeometrieOndersteunendWegdeel",
+      "type": "string"
+    },
+    "ondersteunendWegdeelOpTalud": {
+      "description": "Property ondersteunendWegdeelOpTalud",
+      "type": "string"
+    },
+    "plusFunctieOndersteunendWegdeel": {
+      "description": "Property plusFunctieOndersteunendWegdeel",
+      "type": "string"
+    },
+    "plusFysiekVoorkomenOndersteunendWegdeel": {
+      "description": "Property plusFysiekVoorkomenOndersteunendWegdeel",
+      "type": "string"
+    },
+    "relatieveHoogteliggingOndersteunendWegdeel": {
+      "description": "Property relatieveHoogteliggingOndersteunendWegdeel",
+      "type": "string"
+    },
+    "statusOndersteunendWegdeel": {
+      "description": "Property statusOndersteunendWegdeel",
+      "type": "string"
+    }
+  }
+}

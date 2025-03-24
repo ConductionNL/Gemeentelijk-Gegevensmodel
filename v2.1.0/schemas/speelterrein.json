@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Speelterrein",
+  "description": "Represents a Speelterrein in the system",
+  "properties": {
+    "jaarHerinrichting": {
+      "description": "Property jaarHerinrichting",
+      "type": "string"
+    },
+    "speelterreinLeeftijdDoelgroep": {
+      "description": "Property speelterreinLeeftijdDoelgroep",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    }
+  }
+}

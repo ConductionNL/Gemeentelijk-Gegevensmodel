@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Omgevingswaarderegel",
+  "description": "Represents a Omgevingswaarderegel in the system",
+  "properties": {
+    "groep": {
+      "description": "Property groep",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "KadastraleGemeente",
+  "description": "Represents a KadastraleGemeente in the system",
+  "properties": {
+    "datumBeginGeldigheidKadastraleGemeente": {
+      "description": "Property datumBeginGeldigheidKadastraleGemeente",
+      "type": "string"
+    },
+    "datumEindeGeldigheidKadastraleGemeente": {
+      "description": "Property datumEindeGeldigheidKadastraleGemeente",
+      "type": "string"
+    },
+    "kadastraleGemeentecode": {
+      "description": "Property kadastraleGemeentecode",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    }
+  }
+}

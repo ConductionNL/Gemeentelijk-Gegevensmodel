@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gemaal",
+  "description": "Represents a Gemaal in the system",
+  "properties": {
+    "aantalBedrijfsaansluitingen": {
+      "description": "Property aantalBedrijfsaansluitingen",
+      "type": "string"
+    },
+    "aantalHuisaansluitingen": {
+      "description": "Property aantalHuisaansluitingen",
+      "type": "string"
+    },
+    "aantalPompen": {
+      "description": "Property aantalPompen",
+      "type": "string"
+    },
+    "bedienaar": {
+      "description": "Property bedienaar",
+      "type": "string"
+    },
+    "effectieveGemaalcapaciteit": {
+      "description": "Property effectieveGemaalcapaciteit",
+      "type": "string"
+    },
+    "hijsinrichting": {
+      "description": "Property hijsinrichting",
+      "type": "string"
+    },
+    "lanceerinrichting": {
+      "description": "Property lanceerinrichting",
+      "type": "string"
+    },
+    "pompenInSamenloop": {
+      "description": "Property pompenInSamenloop",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "veiligheidsrooster": {
+      "description": "Property veiligheidsrooster",
+      "type": "string"
+    }
+  }
+}

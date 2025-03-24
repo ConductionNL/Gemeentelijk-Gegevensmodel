@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verlichtingsobject",
+  "description": "Represents a Verlichtingsobject in the system",
+  "properties": {}
+}

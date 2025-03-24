@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Balieafspraak",
+  "description": "Represents a Balieafspraak in the system",
+  "properties": {
+    "eindtijdGepland": {
+      "description": "Property eindtijdGepland",
+      "type": "string",
+      "format": "date-time"
+    },
+    "notitie": {
+      "description": "Property notitie",
+      "type": "string"
+    },
+    "starttijdGepland": {
+      "description": "Property starttijdGepland",
+      "type": "string",
+      "format": "date-time"
+    },
+    "tijdAangemaakt": {
+      "description": "Property tijdAangemaakt",
+      "type": "string",
+      "format": "date-time"
+    },
+    "tijdsduurGepland": {
+      "description": "Property tijdsduurGepland",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    },
+    "wachttijdNaStartAfspraak": {
+      "description": "Property wachttijdNaStartAfspraak",
+      "type": "string"
+    },
+    "wachttijdTotaal": {
+      "description": "Property wachttijdTotaal",
+      "type": "string"
+    },
+    "wachttijdVoorStartAfspraak": {
+      "description": "Property wachttijdVoorStartAfspraak",
+      "type": "string"
+    },
+    "werkelijkeTijdsduur": {
+      "description": "Property werkelijkeTijdsduur",
+      "type": "string"
+    }
+  }
+}

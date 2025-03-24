@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Nationaliteit",
+  "description": "Represents a Nationaliteit in the system",
+  "properties": {
+    "codeNationaliteit": {
+      "description": "Property codeNationaliteit",
+      "type": "string"
+    },
+    "datumBeginGeldigheidNationaliteit": {
+      "description": "Property datumBeginGeldigheidNationaliteit",
+      "type": "string"
+    },
+    "datumEindeGeldigheidNationaliteit": {
+      "description": "Property datumEindeGeldigheidNationaliteit",
+      "type": "string"
+    },
+    "nationaliteitOmschrijving": {
+      "description": "Property nationaliteitOmschrijving",
+      "type": "string"
+    }
+  }
+}

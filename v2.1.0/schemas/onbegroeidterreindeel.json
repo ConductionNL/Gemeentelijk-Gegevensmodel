@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OnbegroeidTerreindeel",
+  "description": "Represents a OnbegroeidTerreindeel in the system",
+  "properties": {
+    "datumBeginGeldigheidOnbegroeidTerreindeel": {
+      "description": "Property datumBeginGeldigheidOnbegroeidTerreindeel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidOnbegroeidTerreindeel": {
+      "description": "Property datumEindeGeldigheidOnbegroeidTerreindeel",
+      "type": "string"
+    },
+    "fysiekVoorkomenOnbegroeidTerreindeel": {
+      "description": "Property fysiekVoorkomenOnbegroeidTerreindeel",
+      "type": "string"
+    },
+    "geometrieOnbegroeidTerreindeel": {
+      "description": "Property geometrieOnbegroeidTerreindeel",
+      "type": "string"
+    },
+    "identificatieOnbegroeidTerreindeel": {
+      "description": "Property identificatieOnbegroeidTerreindeel",
+      "type": "string"
+    },
+    "kruinlijngeometrieOnbegroeidTerreindeel": {
+      "description": "Property kruinlijngeometrieOnbegroeidTerreindeel",
+      "type": "string"
+    },
+    "onbegroeidTerreindeelOpTalud": {
+      "description": "Property onbegroeidTerreindeelOpTalud",
+      "type": "string"
+    },
+    "plusFysiekVoorkomenOnbegroeidTerreindeel": {
+      "description": "Property plusFysiekVoorkomenOnbegroeidTerreindeel",
+      "type": "string"
+    },
+    "relatieveHoogteliggingOnbegroeidTerreindeel": {
+      "description": "Property relatieveHoogteliggingOnbegroeidTerreindeel",
+      "type": "string"
+    },
+    "statusOnbegroeidTerreindeel": {
+      "description": "Property statusOnbegroeidTerreindeel",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NaamAanschrijvingNatuurlijkPersoon",
+  "description": "Represents a NaamAanschrijvingNatuurlijkPersoon in the system",
+  "properties": {
+    "aanhefAanschrijving": {
+      "description": "Property aanhefAanschrijving",
+      "type": "string"
+    },
+    "geslachtsnaamAanschrijving": {
+      "description": "Property geslachtsnaamAanschrijving",
+      "type": "string"
+    },
+    "voorlettersAanschrijving": {
+      "description": "Property voorlettersAanschrijving",
+      "type": "string"
+    },
+    "voornamenAanschrijving": {
+      "description": "Property voornamenAanschrijving",
+      "type": "string"
+    }
+  }
+}

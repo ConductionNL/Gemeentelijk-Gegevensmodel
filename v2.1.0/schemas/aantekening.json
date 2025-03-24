@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Aantekening",
+  "description": "Represents a Aantekening in the system",
+  "properties": {
+    "aard": {
+      "description": "Property aard",
+      "type": "string"
+    },
+    "begrenzing": {
+      "description": "Property begrenzing",
+      "type": "string"
+    },
+    "betreftGedeelteVanPerceel": {
+      "description": "Property betreftGedeelteVanPerceel",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumEindeRecht": {
+      "description": "Property datumEindeRecht",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

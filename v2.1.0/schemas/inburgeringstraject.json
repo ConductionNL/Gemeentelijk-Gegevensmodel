@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inburgeringstraject",
+  "description": "Represents a Inburgeringstraject in the system",
+  "properties": {}
+}

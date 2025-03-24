@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OverigeScheiding",
+  "description": "Represents a OverigeScheiding in the system",
+  "properties": {
+    "datumBeginGeldigheidOverigeScheiding": {
+      "description": "Property datumBeginGeldigheidOverigeScheiding",
+      "type": "string"
+    },
+    "datumEindeGeldigheidOverigeScheiding": {
+      "description": "Property datumEindeGeldigheidOverigeScheiding",
+      "type": "string"
+    },
+    "geometrieOverigeScheiding": {
+      "description": "Property geometrieOverigeScheiding",
+      "type": "string"
+    },
+    "identificatieOverigeScheiding": {
+      "description": "Property identificatieOverigeScheiding",
+      "type": "string"
+    },
+    "LOD0GeometrieOverigeScheiding": {
+      "description": "Property LOD0GeometrieOverigeScheiding",
+      "type": "string"
+    },
+    "LOD1GeometrieOverigeScheiding": {
+      "description": "Property LOD1GeometrieOverigeScheiding",
+      "type": "string"
+    },
+    "LOD2GeometrieOverigeScheiding": {
+      "description": "Property LOD2GeometrieOverigeScheiding",
+      "type": "string"
+    },
+    "lod3GeometrieOverigeScheiding": {
+      "description": "Property lod3GeometrieOverigeScheiding",
+      "type": "string"
+    },
+    "relatieveHoogteliggingOverigeScheiding": {
+      "description": "Property relatieveHoogteliggingOverigeScheiding",
+      "type": "string"
+    },
+    "statusOverigeScheiding": {
+      "description": "Property statusOverigeScheiding",
+      "type": "string"
+    },
+    "typeOverigeScheiding": {
+      "description": "Property typeOverigeScheiding",
+      "type": "string"
+    }
+  }
+}

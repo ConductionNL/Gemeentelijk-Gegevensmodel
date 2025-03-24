@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Route",
+  "description": "Represents a Route in the system",
+  "properties": {
+    "geometrie": {
+      "description": "Property geometrie",
+      "type": "string"
+    },
+    "routecode": {
+      "description": "Property routecode",
+      "type": "string"
+    },
+    "routesoort": {
+      "description": "Property routesoort",
+      "type": "string"
+    }
+  }
+}

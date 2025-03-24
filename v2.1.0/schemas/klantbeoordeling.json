@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Klantbeoordeling",
+  "description": "Represents a Klantbeoordeling in the system",
+  "properties": {
+    "beoordeling": {
+      "description": "Property beoordeling",
+      "type": "string"
+    },
+    "categorie": {
+      "description": "Property categorie",
+      "type": "string"
+    },
+    "contactOpnemen": {
+      "description": "Property contactOpnemen",
+      "type": "string"
+    },
+    "ddBeoordeling": {
+      "description": "Property ddBeoordeling",
+      "type": "string",
+      "format": "date"
+    },
+    "kanaal": {
+      "description": "Property kanaal",
+      "type": "string"
+    },
+    "onderwerp": {
+      "description": "Property onderwerp",
+      "type": "string"
+    },
+    "subCategorie": {
+      "description": "Property subCategorie",
+      "type": "string"
+    }
+  }
+}

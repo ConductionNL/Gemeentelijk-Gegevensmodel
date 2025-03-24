@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Versie",
+  "description": "Represents a Versie in the system",
+  "properties": {
+    "aantal": {
+      "description": "Property aantal",
+      "type": "string"
+    },
+    "datumEindeSupport": {
+      "description": "Property datumEindeSupport",
+      "type": "string",
+      "format": "date"
+    },
+    "kosten": {
+      "description": "Property kosten",
+      "type": "string"
+    },
+    "licentie": {
+      "description": "Property licentie",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "versienummer": {
+      "description": "Property versienummer",
+      "type": "string"
+    }
+  }
+}

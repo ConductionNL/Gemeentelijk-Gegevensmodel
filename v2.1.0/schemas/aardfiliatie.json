@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AardFiliatie",
+  "description": "Represents a AardFiliatie in the system",
+  "properties": {
+    "codeAardFiliatie": {
+      "description": "Property codeAardFiliatie",
+      "type": "string"
+    },
+    "datumBeginGeldigheidAardFiliatie": {
+      "description": "Property datumBeginGeldigheidAardFiliatie",
+      "type": "string"
+    },
+    "datumEindeGeldigheidAardFiliatie": {
+      "description": "Property datumEindeGeldigheidAardFiliatie",
+      "type": "string"
+    },
+    "naamAardFiliatie": {
+      "description": "Property naamAardFiliatie",
+      "type": "string"
+    }
+  }
+}

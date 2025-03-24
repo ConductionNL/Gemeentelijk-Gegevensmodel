@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Projectontwikkelaar",
+  "description": "Represents a Projectontwikkelaar in the system",
+  "properties": {
+    "adres": {
+      "description": "Property adres",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    }
+  }
+}

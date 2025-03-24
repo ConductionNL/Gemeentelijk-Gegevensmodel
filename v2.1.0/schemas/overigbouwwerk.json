@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OverigBouwwerk",
+  "description": "Represents a OverigBouwwerk in the system",
+  "properties": {
+    "datumBeginGeldigheidOverigBouwwerk": {
+      "description": "Property datumBeginGeldigheidOverigBouwwerk",
+      "type": "string"
+    },
+    "datumEindeGeldigheidOverigBouwwerk": {
+      "description": "Property datumEindeGeldigheidOverigBouwwerk",
+      "type": "string"
+    },
+    "geometrieOverigBouwwerk": {
+      "description": "Property geometrieOverigBouwwerk",
+      "type": "string"
+    },
+    "identificatieOverigBouwwerk": {
+      "description": "Property identificatieOverigBouwwerk",
+      "type": "string"
+    },
+    "LOD0GeometrieOverigBouwwerk": {
+      "description": "Property LOD0GeometrieOverigBouwwerk",
+      "type": "string"
+    },
+    "LOD1GeometrieOverigBouwwerk": {
+      "description": "Property LOD1GeometrieOverigBouwwerk",
+      "type": "string"
+    },
+    "LOD2GeometrieOverigBouwwerk": {
+      "description": "Property LOD2GeometrieOverigBouwwerk",
+      "type": "string"
+    },
+    "lod3GeometrieOverigBouwwerk": {
+      "description": "Property lod3GeometrieOverigBouwwerk",
+      "type": "string"
+    },
+    "relatieveHoogteliggingOverigBouwwerk": {
+      "description": "Property relatieveHoogteliggingOverigBouwwerk",
+      "type": "string"
+    },
+    "statusOverigBouwwerk": {
+      "description": "Property statusOverigBouwwerk",
+      "type": "string"
+    }
+  }
+}

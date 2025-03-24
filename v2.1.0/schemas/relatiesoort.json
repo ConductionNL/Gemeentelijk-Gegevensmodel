@@ -10,7 +10,8 @@
     },
     "datumOpname": {
       "description": "Property datumOpname",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "definitie": {
       "description": "Property definitie",

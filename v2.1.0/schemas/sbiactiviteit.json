@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SBIActiviteit",
+  "description": "Represents a SBIActiviteit in the system",
+  "properties": {
+    "datumEindeSBIActiviteit": {
+      "description": "Property datumEindeSBIActiviteit",
+      "type": "string"
+    },
+    "datumIngangSBIActiviteit": {
+      "description": "Property datumIngangSBIActiviteit",
+      "type": "string"
+    },
+    "hoofdniveau": {
+      "description": "Property hoofdniveau",
+      "type": "string"
+    },
+    "hoofdniveauOmschrijving": {
+      "description": "Property hoofdniveauOmschrijving",
+      "type": "string"
+    },
+    "naamActiviteit": {
+      "description": "Property naamActiviteit",
+      "type": "string"
+    },
+    "SBICode": {
+      "description": "Property SBICode",
+      "type": "string"
+    },
+    "SBIGroep": {
+      "description": "Property SBIGroep",
+      "type": "string"
+    },
+    "SBIGroepOmschrijving": {
+      "description": "Property SBIGroepOmschrijving",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Componentsoort",
+  "description": "Represents a Componentsoort in the system",
+  "properties": {
+    "component": {
+      "description": "Property component",
+      "type": "string"
+    },
+    "componentCode": {
+      "description": "Property componentCode",
+      "type": "string"
+    },
+    "kolom": {
+      "description": "Property kolom",
+      "type": "string"
+    },
+    "kolomCode": {
+      "description": "Property kolomCode",
+      "type": "string"
+    },
+    "regeling": {
+      "description": "Property regeling",
+      "type": "string"
+    },
+    "regelingCode": {
+      "description": "Property regelingCode",
+      "type": "string"
+    }
+  }
+}

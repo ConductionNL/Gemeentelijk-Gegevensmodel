@@ -10,15 +10,18 @@
     },
     "datumAanvraag": {
       "description": "Property datumAanvraag",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEinde": {
       "description": "Property datumEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumStart": {
       "description": "Property datumStart",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "toestemmingDoor": {
       "description": "Property toestemmingDoor",

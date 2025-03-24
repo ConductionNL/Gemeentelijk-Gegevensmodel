@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "IngeschrevenPersoon",
+  "description": "Represents a IngeschrevenPersoon in the system",
+  "properties": {
+    "adresHerkomst": {
+      "description": "Property adresHerkomst",
+      "type": "string"
+    },
+    "anummer": {
+      "description": "Property anummer",
+      "type": "string"
+    },
+    "beschrijvingLocatie": {
+      "description": "Property beschrijvingLocatie",
+      "type": "string"
+    },
+    "buitenlandsReisdocument": {
+      "description": "Property buitenlandsReisdocument",
+      "type": "string"
+    },
+    "burgerlijkeStaat": {
+      "description": "Property burgerlijkeStaat",
+      "type": "string"
+    },
+    "datumBeginGeldigheidVerblijfplaats": {
+      "description": "Property datumBeginGeldigheidVerblijfplaats",
+      "type": "string"
+    },
+    "datumEindeGeldigheidVerblijfsplaats": {
+      "description": "Property datumEindeGeldigheidVerblijfsplaats",
+      "type": "string",
+      "format": "date"
+    },
+    "datumInschrijvingGemeente": {
+      "description": "Property datumInschrijvingGemeente",
+      "type": "string"
+    },
+    "datumOpschortingBijhouding": {
+      "description": "Property datumOpschortingBijhouding",
+      "type": "string"
+    },
+    "datumVertrekUitNederland": {
+      "description": "Property datumVertrekUitNederland",
+      "type": "string"
+    },
+    "datumVestigingNederland": {
+      "description": "Property datumVestigingNederland",
+      "type": "string"
+    },
+    "gemeenteVanInschrijving": {
+      "description": "Property gemeenteVanInschrijving",
+      "type": "string"
+    },
+    "gezinsrelatie": {
+      "description": "Property gezinsrelatie",
+      "type": "string"
+    },
+    "indicatieGeheim": {
+      "description": "Property indicatieGeheim",
+      "type": "string"
+    },
+    "ingezetene": {
+      "description": "Property ingezetene",
+      "type": "string"
+    },
+    "landWaarnaarVertrokken": {
+      "description": "Property landWaarnaarVertrokken",
+      "type": "string"
+    },
+    "landWaarvandaanIngeschreven": {
+      "description": "Property landWaarvandaanIngeschreven",
+      "type": "string"
+    },
+    "ouder1": {
+      "description": "Property ouder1",
+      "type": "string"
+    },
+    "ouder2": {
+      "description": "Property ouder2",
+      "type": "string"
+    },
+    "partnerID": {
+      "description": "Property partnerID",
+      "type": "string"
+    },
+    "redenEindeBewoning": {
+      "description": "Property redenEindeBewoning",
+      "type": "string"
+    },
+    "redenOpschortingBijhouding": {
+      "description": "Property redenOpschortingBijhouding",
+      "type": "string"
+    },
+    "signaleringReisdocument": {
+      "description": "Property signaleringReisdocument",
+      "type": "string"
+    },
+    "verblijfstitel": {
+      "description": "Property verblijfstitel",
+      "type": "string"
+    }
+  }
+}

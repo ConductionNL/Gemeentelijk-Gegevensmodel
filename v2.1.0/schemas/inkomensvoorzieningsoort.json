@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inkomensvoorzieningsoort",
+  "description": "Represents a Inkomensvoorzieningsoort in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "regeling": {
+      "description": "Property regeling",
+      "type": "string"
+    },
+    "regelingCode": {
+      "description": "Property regelingCode",
+      "type": "string"
+    },
+    "vergoeding": {
+      "description": "Property vergoeding",
+      "type": "string"
+    },
+    "vergoedingscode": {
+      "description": "Property vergoedingscode",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

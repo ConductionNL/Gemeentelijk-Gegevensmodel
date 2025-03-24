@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Formuliersoort",
+  "description": "Represents a Formuliersoort in the system",
+  "properties": {
+    "ingebruik": {
+      "description": "Property ingebruik",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "onderwerp": {
+      "description": "Property onderwerp",
+      "type": "string"
+    }
+  }
+}

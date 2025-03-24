@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inburgeraar",
+  "description": "Represents a Inburgeraar in the system",
+  "properties": {
+    "Doelgroep": {
+      "description": "Property Doelgroep",
+      "type": "string"
+    },
+    "Gedetailleerde Doelgroep": {
+      "description": "Property Gedetailleerde Doelgroep",
+      "type": "string"
+    }
+  }
+}

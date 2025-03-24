@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Kwaliteitskenmerken",
+  "description": "Represents a Kwaliteitskenmerken in the system",
+  "properties": {}
+}

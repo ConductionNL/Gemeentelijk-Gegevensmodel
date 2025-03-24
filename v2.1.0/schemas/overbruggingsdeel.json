@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Overbruggingsdeel",
+  "description": "Represents a Overbruggingsdeel in the system",
+  "properties": {
+    "datumBeginGeldigheidOverbruggingsdeel": {
+      "description": "Property datumBeginGeldigheidOverbruggingsdeel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidOverbruggingsdeel": {
+      "description": "Property datumEindeGeldigheidOverbruggingsdeel",
+      "type": "string"
+    },
+    "geometrieOverbruggingsdeel": {
+      "description": "Property geometrieOverbruggingsdeel",
+      "type": "string"
+    },
+    "hoortBijTypeOverbrugging": {
+      "description": "Property hoortBijTypeOverbrugging",
+      "type": "string"
+    },
+    "identificatieOverbruggingsdeel": {
+      "description": "Property identificatieOverbruggingsdeel",
+      "type": "string"
+    },
+    "LOD0GeometrieOverbruggingsdeel": {
+      "description": "Property LOD0GeometrieOverbruggingsdeel",
+      "type": "string"
+    },
+    "overbruggingIsBeweegbaar": {
+      "description": "Property overbruggingIsBeweegbaar",
+      "type": "string"
+    },
+    "relatieveHoogteliggingOverbruggingsdeel": {
+      "description": "Property relatieveHoogteliggingOverbruggingsdeel",
+      "type": "string"
+    },
+    "statusOverbruggingsdeel": {
+      "description": "Property statusOverbruggingsdeel",
+      "type": "string"
+    },
+    "typeOverbruggingsdeel": {
+      "description": "Property typeOverbruggingsdeel",
+      "type": "string"
+    }
+  }
+}

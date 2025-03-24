@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "WOZWaarde",
+  "description": "Represents a WOZWaarde in the system",
+  "properties": {
+    "datumPeilingToestand": {
+      "description": "Property datumPeilingToestand",
+      "type": "string"
+    },
+    "datumWaardepeiling": {
+      "description": "Property datumWaardepeiling",
+      "type": "string"
+    },
+    "statusBeschikking": {
+      "description": "Property statusBeschikking",
+      "type": "string"
+    },
+    "vastgesteldeWaarde": {
+      "description": "Property vastgesteldeWaarde",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OPENBARE RUIMTE",
+  "description": "Represents a OPENBARE RUIMTE in the system",
+  "properties": {
+    "Datum begin geldigheid": {
+      "description": "Property Datum begin geldigheid",
+      "type": "string"
+    },
+    "Datum Einde": {
+      "description": "Property Datum Einde",
+      "type": "string",
+      "format": "date"
+    },
+    "Datum einde geldigheid": {
+      "description": "Property Datum einde geldigheid",
+      "type": "string"
+    },
+    "Datum Ingang": {
+      "description": "Property Datum Ingang",
+      "type": "string",
+      "format": "date"
+    },
+    "Geconstateerd": {
+      "description": "Property Geconstateerd",
+      "type": "string"
+    },
+    "Geometrie": {
+      "description": "Property Geometrie",
+      "type": "string"
+    },
+    "Huisnummerrange even en oneven nummers": {
+      "description": "Property Huisnummerrange even en oneven nummers",
+      "type": "string"
+    },
+    "Huisnummerrange even nummers": {
+      "description": "Property Huisnummerrange even nummers",
+      "type": "string"
+    },
+    "Huisnummerrange oneven nummers": {
+      "description": "Property Huisnummerrange oneven nummers",
+      "type": "string"
+    },
+    "Identificatie": {
+      "description": "Property Identificatie",
+      "type": "string"
+    },
+    "inOnderzoek": {
+      "description": "Property inOnderzoek",
+      "type": "string"
+    },
+    "Label naam": {
+      "description": "Property Label naam",
+      "type": "string"
+    },
+    "Naam openbare ruimte": {
+      "description": "Property Naam openbare ruimte",
+      "type": "string"
+    },
+    "Status": {
+      "description": "Property Status",
+      "type": "string"
+    },
+    "Straatcode": {
+      "description": "Property Straatcode",
+      "type": "string"
+    },
+    "Straatnaam": {
+      "description": "Property Straatnaam",
+      "type": "string"
+    },
+    "Type openbare ruimte": {
+      "description": "Property Type openbare ruimte",
+      "type": "string"
+    },
+    "Versie": {
+      "description": "Property Versie",
+      "type": "string"
+    },
+    "Wegsegment": {
+      "description": "Property Wegsegment",
+      "type": "string"
+    }
+  }
+}

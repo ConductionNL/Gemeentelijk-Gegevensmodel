@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vestiging",
+  "description": "Represents a Vestiging in the system",
+  "properties": {
+    "commercieleVestiging": {
+      "description": "Property commercieleVestiging",
+      "type": "string"
+    },
+    "datumAanvang": {
+      "description": "Property datumAanvang",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumVoortzetting": {
+      "description": "Property datumVoortzetting",
+      "type": "string"
+    },
+    "fulltimeWerkzameMannen": {
+      "description": "Property fulltimeWerkzameMannen",
+      "type": "string"
+    },
+    "fulltimeWerkzameVrouwen": {
+      "description": "Property fulltimeWerkzameVrouwen",
+      "type": "string"
+    },
+    "handelsnaam": {
+      "description": "Property handelsnaam",
+      "type": "string"
+    },
+    "parttimeWerkzameMannen": {
+      "description": "Property parttimeWerkzameMannen",
+      "type": "string"
+    },
+    "parttimeWerkzameVrouwen": {
+      "description": "Property parttimeWerkzameVrouwen",
+      "type": "string"
+    },
+    "toevoegingAdres": {
+      "description": "Property toevoegingAdres",
+      "type": "string"
+    },
+    "totaalWerkzamePersonen": {
+      "description": "Property totaalWerkzamePersonen",
+      "type": "string"
+    },
+    "verkorteNaam": {
+      "description": "Property verkorteNaam",
+      "type": "string"
+    },
+    "vestigingsnummer": {
+      "description": "Property vestigingsnummer",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OntbindingHuwelijk/geregistreerdPartnerschap",
+  "description": "Represents a OntbindingHuwelijk/geregistreerdPartnerschap in the system",
+  "properties": {
+    "buitenlandsePlaatsEinde": {
+      "description": "Property buitenlandsePlaatsEinde",
+      "type": "string"
+    },
+    "buitenlandseRegioEinde": {
+      "description": "Property buitenlandseRegioEinde",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "gemeenteEinde": {
+      "description": "Property gemeenteEinde",
+      "type": "string"
+    },
+    "landOfGebiedEinde": {
+      "description": "Property landOfGebiedEinde",
+      "type": "string"
+    },
+    "omschrijvingLocatieEinde": {
+      "description": "Property omschrijvingLocatieEinde",
+      "type": "string"
+    },
+    "redenEinde": {
+      "description": "Property redenEinde",
+      "type": "string"
+    }
+  }
+}

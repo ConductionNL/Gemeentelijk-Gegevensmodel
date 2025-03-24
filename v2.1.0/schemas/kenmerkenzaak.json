@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "KenmerkenZaak",
+  "description": "Represents a KenmerkenZaak in the system",
+  "properties": {
+    "kenmerk": {
+      "description": "Property kenmerk",
+      "type": "string"
+    },
+    "kenmerkBron": {
+      "description": "Property kenmerkBron",
+      "type": "string"
+    }
+  }
+}

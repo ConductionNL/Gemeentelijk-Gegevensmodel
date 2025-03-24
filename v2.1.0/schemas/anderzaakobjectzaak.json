@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AnderZaakobjectZaak",
+  "description": "Represents a AnderZaakobjectZaak in the system",
+  "properties": {
+    "anderZaakobjectAanduiding": {
+      "description": "Property anderZaakobjectAanduiding",
+      "type": "string"
+    },
+    "anderZaakobjectLocatie": {
+      "description": "Property anderZaakobjectLocatie",
+      "type": "string"
+    },
+    "anderZaakobjectOmschrijving": {
+      "description": "Property anderZaakobjectOmschrijving",
+      "type": "string"
+    },
+    "anderZaakobjectRegistratie": {
+      "description": "Property anderZaakobjectRegistratie",
+      "type": "string"
+    }
+  }
+}

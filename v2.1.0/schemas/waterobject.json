@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Waterobject",
+  "description": "Represents a Waterobject in the system",
+  "properties": {
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "folie": {
+      "description": "Property folie",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "infiltrerendOppervlak": {
+      "description": "Property infiltrerendOppervlak",
+      "type": "string"
+    },
+    "infiltrerendVermogen": {
+      "description": "Property infiltrerendVermogen",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "lozingspunt": {
+      "description": "Property lozingspunt",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "porositeit": {
+      "description": "Property porositeit",
+      "type": "string"
+    },
+    "streefdiepte": {
+      "description": "Property streefdiepte",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "typePlus2": {
+      "description": "Property typePlus2",
+      "type": "string"
+    },
+    "typeVaarwater": {
+      "description": "Property typeVaarwater",
+      "type": "string"
+    },
+    "typeWaterplant": {
+      "description": "Property typeWaterplant",
+      "type": "string"
+    },
+    "uitstroomniveau": {
+      "description": "Property uitstroomniveau",
+      "type": "string"
+    },
+    "vaarwegtraject": {
+      "description": "Property vaarwegtraject",
+      "type": "string"
+    },
+    "vorm": {
+      "description": "Property vorm",
+      "type": "string"
+    },
+    "waternaam": {
+      "description": "Property waternaam",
+      "type": "string"
+    },
+    "waterpeil": {
+      "description": "Property waterpeil",
+      "type": "string"
+    },
+    "waterpeilWinter": {
+      "description": "Property waterpeilWinter",
+      "type": "string"
+    },
+    "waterpeilZomer": {
+      "description": "Property waterpeilZomer",
+      "type": "string"
+    },
+    "waterplanten": {
+      "description": "Property waterplanten",
+      "type": "string"
+    }
+  }
+}

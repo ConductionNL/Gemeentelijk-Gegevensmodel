@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Paal",
+  "description": "Represents a Paal in the system",
+  "properties": {
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "diameter": {
+      "description": "Property diameter",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "kwaliteitsniveauActueel": {
+      "description": "Property kwaliteitsniveauActueel",
+      "type": "string"
+    },
+    "kwaliteitsniveauGewenst": {
+      "description": "Property kwaliteitsniveauGewenst",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "materiaal": {
+      "description": "Property materiaal",
+      "type": "string"
+    },
+    "vorm": {
+      "description": "Property vorm",
+      "type": "string"
+    }
+  }
+}

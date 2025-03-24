@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ChildClassA",
+  "description": "Represents a ChildClassA in the system",
+  "properties": {
+    "Kleur": {
+      "description": "Property Kleur",
+      "type": "string"
+    },
+    "M_Bronsysteem": {
+      "description": "Property M_Bronsysteem",
+      "type": "string"
+    },
+    "M_DatumTijdGeladen": {
+      "description": "Property M_DatumTijdGeladen",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ChildClassAID": {
+      "description": "Property ChildClassAID",
+      "type": "string"
+    },
+    "PK_ClassA": {
+      "description": "Property PK_ClassA",
+      "type": "string"
+    }
+  }
+}

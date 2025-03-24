@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Norm",
+  "description": "Represents a Norm in the system",
+  "properties": {
+    "NEN3610ID": {
+      "description": "Property NEN3610ID",
+      "type": "string"
+    }
+  }
+}

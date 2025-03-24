@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Werknemer",
+  "description": "Represents a Werknemer in the system",
+  "properties": {
+    "geboortedatum": {
+      "description": "Property geboortedatum",
+      "type": "string",
+      "format": "date"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "voornaam": {
+      "description": "Property voornaam",
+      "type": "string"
+    },
+    "woonplaats": {
+      "description": "Property woonplaats",
+      "type": "string"
+    }
+  }
+}

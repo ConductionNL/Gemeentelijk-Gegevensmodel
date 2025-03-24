@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "FunctioneelGebied",
+  "description": "Represents a FunctioneelGebied in the system",
+  "properties": {
+    "datumBeginGeldigheidFunctioneelGebied": {
+      "description": "Property datumBeginGeldigheidFunctioneelGebied",
+      "type": "string"
+    },
+    "datumEindeGeldigheidFunctioneelGebied": {
+      "description": "Property datumEindeGeldigheidFunctioneelGebied",
+      "type": "string"
+    },
+    "geometrieFunctioneelGebied": {
+      "description": "Property geometrieFunctioneelGebied",
+      "type": "string"
+    },
+    "identificatieFunctioneelGebied": {
+      "description": "Property identificatieFunctioneelGebied",
+      "type": "string"
+    },
+    "naamFunctioneelGebied": {
+      "description": "Property naamFunctioneelGebied",
+      "type": "string"
+    },
+    "statusFunctioneelGebied": {
+      "description": "Property statusFunctioneelGebied",
+      "type": "string"
+    }
+  }
+}

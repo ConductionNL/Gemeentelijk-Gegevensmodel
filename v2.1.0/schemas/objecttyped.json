@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ObjecttypeD",
+  "description": "Represents a ObjecttypeD in the system",
+  "properties": {}
+}

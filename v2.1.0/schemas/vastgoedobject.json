@@ -1,0 +1,240 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vastgoedobject",
+  "description": "Represents a Vastgoedobject in the system",
+  "properties": {
+    "aantalEtages": {
+      "description": "Property aantalEtages",
+      "type": "string"
+    },
+    "aantalParkeerplaatsen": {
+      "description": "Property aantalParkeerplaatsen",
+      "type": "string"
+    },
+    "aantalRioleringen": {
+      "description": "Property aantalRioleringen",
+      "type": "string"
+    },
+    "adresaanduiding": {
+      "description": "Property adresaanduiding",
+      "type": "string"
+    },
+    "afgekochteErfpacht": {
+      "description": "Property afgekochteErfpacht",
+      "type": "string"
+    },
+    "afgesprokenConditiescore": {
+      "description": "Property afgesprokenConditiescore",
+      "type": "string"
+    },
+    "afkoopwaarde": {
+      "description": "Property afkoopwaarde",
+      "type": "string"
+    },
+    "asbestrapportageAanwezig": {
+      "description": "Property asbestrapportageAanwezig",
+      "type": "string"
+    },
+    "bedragAankoop": {
+      "description": "Property bedragAankoop",
+      "type": "string"
+    },
+    "bestemmingsplan": {
+      "description": "Property bestemmingsplan",
+      "type": "string"
+    },
+    "boekwaarde": {
+      "description": "Property boekwaarde",
+      "type": "string"
+    },
+    "bouwjaar": {
+      "description": "Property bouwjaar",
+      "type": "string"
+    },
+    "bouwwerk": {
+      "description": "Property bouwwerk",
+      "type": "string"
+    },
+    "bovenliggendNiveau": {
+      "description": "Property bovenliggendNiveau",
+      "type": "string"
+    },
+    "bovenliggendNiveaucode": {
+      "description": "Property bovenliggendNiveaucode",
+      "type": "string"
+    },
+    "brutoVloeroppervlakte": {
+      "description": "Property brutoVloeroppervlakte",
+      "type": "string"
+    },
+    "CO2Uitstoot": {
+      "description": "Property CO2Uitstoot",
+      "type": "string"
+    },
+    "conditiescore": {
+      "description": "Property conditiescore",
+      "type": "string"
+    },
+    "datumAfstoten": {
+      "description": "Property datumAfstoten",
+      "type": "string",
+      "format": "date"
+    },
+    "datumBerekeningOppervlak": {
+      "description": "Property datumBerekeningOppervlak",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEigendom": {
+      "description": "Property datumEigendom",
+      "type": "string",
+      "format": "date"
+    },
+    "datumVerkoop": {
+      "description": "Property datumVerkoop",
+      "type": "string",
+      "format": "date"
+    },
+    "deelportefeuille": {
+      "description": "Property deelportefeuille",
+      "type": "string"
+    },
+    "energiekosten": {
+      "description": "Property energiekosten",
+      "type": "string"
+    },
+    "energielabel": {
+      "description": "Property energielabel",
+      "type": "string"
+    },
+    "energieverbruik": {
+      "description": "Property energieverbruik",
+      "type": "string"
+    },
+    "fiscaleWaarde": {
+      "description": "Property fiscaleWaarde",
+      "type": "string"
+    },
+    "foto": {
+      "description": "Property foto",
+      "type": "string"
+    },
+    "gearchiveerd": {
+      "description": "Property gearchiveerd",
+      "type": "string"
+    },
+    "herbouwwaarde": {
+      "description": "Property herbouwwaarde",
+      "type": "string"
+    },
+    "hoofdstuk": {
+      "description": "Property hoofdstuk",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "jaarLaatsteRenovatie": {
+      "description": "Property jaarLaatsteRenovatie",
+      "type": "string"
+    },
+    "kostenplaats": {
+      "description": "Property kostenplaats",
+      "type": "string"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "marktwaarde": {
+      "description": "Property marktwaarde",
+      "type": "string"
+    },
+    "monument": {
+      "description": "Property monument",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "objectstatus": {
+      "description": "Property objectstatus",
+      "type": "string"
+    },
+    "objectstatuscode": {
+      "description": "Property objectstatuscode",
+      "type": "string"
+    },
+    "objecttype": {
+      "description": "Property objecttype",
+      "type": "string"
+    },
+    "objecttypecode": {
+      "description": "Property objecttypecode",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "onderhoudscategorie": {
+      "description": "Property onderhoudscategorie",
+      "type": "string"
+    },
+    "oppervlakteKantoor": {
+      "description": "Property oppervlakteKantoor",
+      "type": "string"
+    },
+    "portefeuille": {
+      "description": "Property portefeuille",
+      "type": "string"
+    },
+    "portefeuillecode": {
+      "description": "Property portefeuillecode",
+      "type": "string"
+    },
+    "provincie": {
+      "description": "Property provincie",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    },
+    "verhuurbaarVloeroppervlak": {
+      "description": "Property verhuurbaarVloeroppervlak",
+      "type": "string"
+    },
+    "verkoopbaarheid": {
+      "description": "Property verkoopbaarheid",
+      "type": "string"
+    },
+    "verkoopbedrag": {
+      "description": "Property verkoopbedrag",
+      "type": "string"
+    },
+    "verzekerdeWaarde": {
+      "description": "Property verzekerdeWaarde",
+      "type": "string"
+    },
+    "waardeGrond": {
+      "description": "Property waardeGrond",
+      "type": "string"
+    },
+    "waardeOpstal": {
+      "description": "Property waardeOpstal",
+      "type": "string"
+    },
+    "wijk": {
+      "description": "Property wijk",
+      "type": "string"
+    },
+    "WOZWaarde": {
+      "description": "Property WOZWaarde",
+      "type": "string"
+    }
+  }
+}

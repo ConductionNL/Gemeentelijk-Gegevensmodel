@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "LocatieaanduidingWOZObject",
+  "description": "Represents a LocatieaanduidingWOZObject in the system",
+  "properties": {
+    "datumBeginGeldigheid": {
+      "description": "Property datumBeginGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "locatieOmschrijving": {
+      "description": "Property locatieOmschrijving",
+      "type": "string"
+    },
+    "primair": {
+      "description": "Property primair",
+      "type": "string"
+    }
+  }
+}

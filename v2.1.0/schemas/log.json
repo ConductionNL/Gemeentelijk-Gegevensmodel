@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Log",
+  "description": "Represents a Log in the system",
+  "properties": {
+    "korteOmschrijving": {
+      "description": "Property korteOmschrijving",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "tijd": {
+      "description": "Property tijd",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

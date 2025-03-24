@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NatuurlijkPersoon",
+  "description": "Represents a NatuurlijkPersoon in the system",
+  "properties": {
+    "aanduidingBijzonderNederlanderschapPersoon": {
+      "description": "Property aanduidingBijzonderNederlanderschapPersoon",
+      "type": "string"
+    },
+    "aanduidingNaamgebruik": {
+      "description": "Property aanduidingNaamgebruik",
+      "type": "string"
+    },
+    "aanhefAanschrijving": {
+      "description": "Property aanhefAanschrijving",
+      "type": "string"
+    },
+    "academischeTitel": {
+      "description": "Property academischeTitel",
+      "type": "string"
+    },
+    "achternaam": {
+      "description": "Property achternaam",
+      "type": "string"
+    },
+    "adellijkeTitelOfPredikaat": {
+      "description": "Property adellijkeTitelOfPredikaat",
+      "type": "string"
+    },
+    "anummer": {
+      "description": "Property anummer",
+      "type": "string"
+    },
+    "burgerservicenummer": {
+      "description": "Property burgerservicenummer",
+      "type": "string"
+    },
+    "datumGeboorte": {
+      "description": "Property datumGeboorte",
+      "type": "string"
+    },
+    "datumOverlijden": {
+      "description": "Property datumOverlijden",
+      "type": "string"
+    },
+    "geboorteland": {
+      "description": "Property geboorteland",
+      "type": "string"
+    },
+    "geboorteplaats": {
+      "description": "Property geboorteplaats",
+      "type": "string"
+    },
+    "geslachtsaanduiding": {
+      "description": "Property geslachtsaanduiding",
+      "type": "string"
+    },
+    "geslachtsnaam": {
+      "description": "Property geslachtsnaam",
+      "type": "string"
+    },
+    "geslachtsnaamAanschrijving": {
+      "description": "Property geslachtsnaamAanschrijving",
+      "type": "string"
+    },
+    "handlichting": {
+      "description": "Property handlichting",
+      "type": "string"
+    },
+    "IndicatieAfschermingPersoonsgegevens": {
+      "description": "Property IndicatieAfschermingPersoonsgegevens",
+      "type": "string"
+    },
+    "indicatieOverleden": {
+      "description": "Property indicatieOverleden",
+      "type": "string"
+    },
+    "landOverlijden": {
+      "description": "Property landOverlijden",
+      "type": "string"
+    },
+    "nationaliteit": {
+      "description": "Property nationaliteit",
+      "type": "string"
+    },
+    "overlijdensplaats": {
+      "description": "Property overlijdensplaats",
+      "type": "string"
+    },
+    "voorlettersAanschrijving": {
+      "description": "Property voorlettersAanschrijving",
+      "type": "string"
+    },
+    "voornamen": {
+      "description": "Property voornamen",
+      "type": "string"
+    },
+    "voornamenAanschrijving": {
+      "description": "Property voornamenAanschrijving",
+      "type": "string"
+    },
+    "voorvoegselGeslachtsnaam": {
+      "description": "Property voorvoegselGeslachtsnaam",
+      "type": "string"
+    }
+  }
+}

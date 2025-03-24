@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Medewerker",
+  "description": "Represents a Medewerker in the system",
+  "properties": {
+    "achternaam": {
+      "description": "Property achternaam",
+      "type": "string"
+    },
+    "datumInDienst": {
+      "description": "Property datumInDienst",
+      "type": "string",
+      "format": "date"
+    },
+    "datumUitDienst": {
+      "description": "Property datumUitDienst",
+      "type": "string"
+    },
+    "emailadres": {
+      "description": "Property emailadres",
+      "type": "string"
+    },
+    "extern": {
+      "description": "Property extern",
+      "type": "string"
+    },
+    "functie": {
+      "description": "Property functie",
+      "type": "string"
+    },
+    "geslachtsaanduiding": {
+      "description": "Property geslachtsaanduiding",
+      "type": "string"
+    },
+    "medewerkerIdentificatie": {
+      "description": "Property medewerkerIdentificatie",
+      "type": "string"
+    },
+    "medewerkerToelichting": {
+      "description": "Property medewerkerToelichting",
+      "type": "string"
+    },
+    "roepnaam": {
+      "description": "Property roepnaam",
+      "type": "string"
+    },
+    "telefoonnummer": {
+      "description": "Property telefoonnummer",
+      "type": "string"
+    },
+    "voorletters": {
+      "description": "Property voorletters",
+      "type": "string"
+    },
+    "voorvoegselAchternaam": {
+      "description": "Property voorvoegselAchternaam",
+      "type": "string"
+    },
+    "organisatorische eenheid": {
+      "description": "Property organisatorische eenheid",
+      "type": "string"
+    }
+  }
+}

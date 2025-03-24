@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Stuwgebied",
+  "description": "Represents a Stuwgebied in the system",
+  "properties": {
+    "bemalingsgebied": {
+      "description": "Property bemalingsgebied",
+      "type": "string"
+    }
+  }
+}

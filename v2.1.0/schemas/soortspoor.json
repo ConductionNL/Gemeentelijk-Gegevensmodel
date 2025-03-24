@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SoortSpoor",
+  "description": "Represents a SoortSpoor in the system",
+  "properties": {
+    "functieSpoor": {
+      "description": "Property functieSpoor",
+      "type": "string"
+    },
+    "indicatiePlusBRPopulatie": {
+      "description": "Property indicatiePlusBRPopulatie",
+      "type": "string"
+    }
+  }
+}

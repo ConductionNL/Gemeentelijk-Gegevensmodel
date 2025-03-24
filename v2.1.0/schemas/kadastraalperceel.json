@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "KadastraalPerceel",
+  "description": "Represents a KadastraalPerceel in the system",
+  "properties": {
+    "aanduidingSoortGrootte": {
+      "description": "Property aanduidingSoortGrootte",
+      "type": "string"
+    },
+    "begrenzingPerceel": {
+      "description": "Property begrenzingPerceel",
+      "type": "string"
+    },
+    "groottePerceel": {
+      "description": "Property groottePerceel",
+      "type": "string"
+    },
+    "indicatieDeelperceel": {
+      "description": "Property indicatieDeelperceel",
+      "type": "string"
+    },
+    "omschrijvingDeelperceel": {
+      "description": "Property omschrijvingDeelperceel",
+      "type": "string"
+    },
+    "plaatscoordinatenPerceel": {
+      "description": "Property plaatscoordinatenPerceel",
+      "type": "string"
+    }
+  }
+}

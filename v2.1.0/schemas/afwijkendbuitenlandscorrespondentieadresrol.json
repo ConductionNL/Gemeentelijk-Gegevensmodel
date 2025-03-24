@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AfwijkendBuitenlandsCorrespondentieadresRol",
+  "description": "Represents a AfwijkendBuitenlandsCorrespondentieadresRol in the system",
+  "properties": {
+    "adresBuitenland1": {
+      "description": "Property adresBuitenland1",
+      "type": "string"
+    },
+    "adresBuitenland2": {
+      "description": "Property adresBuitenland2",
+      "type": "string"
+    },
+    "adresBuitenland3": {
+      "description": "Property adresBuitenland3",
+      "type": "string"
+    },
+    "landPostadres": {
+      "description": "Property landPostadres",
+      "type": "string"
+    }
+  }
+}

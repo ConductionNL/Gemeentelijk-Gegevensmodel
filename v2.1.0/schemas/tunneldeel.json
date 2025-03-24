@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Tunneldeel",
+  "description": "Represents a Tunneldeel in the system",
+  "properties": {
+    "datumBeginGeldigheidTunneldeel": {
+      "description": "Property datumBeginGeldigheidTunneldeel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidTunneldeel": {
+      "description": "Property datumEindeGeldigheidTunneldeel",
+      "type": "string"
+    },
+    "geometrieTunneldeel": {
+      "description": "Property geometrieTunneldeel",
+      "type": "string"
+    },
+    "identificatieTunneldeel": {
+      "description": "Property identificatieTunneldeel",
+      "type": "string"
+    },
+    "LOD0GeometrieTunneldeel": {
+      "description": "Property LOD0GeometrieTunneldeel",
+      "type": "string"
+    },
+    "relatieveHoogteliggingTunneldeel": {
+      "description": "Property relatieveHoogteliggingTunneldeel",
+      "type": "string"
+    },
+    "statusTunneldeel": {
+      "description": "Property statusTunneldeel",
+      "type": "string"
+    }
+  }
+}

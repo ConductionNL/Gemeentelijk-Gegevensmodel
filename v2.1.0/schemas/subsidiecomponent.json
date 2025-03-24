@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Subsidiecomponent",
+  "description": "Represents a Subsidiecomponent in the system",
+  "properties": {
+    "gereserveerdBedrag": {
+      "description": "Property gereserveerdBedrag",
+      "type": "string"
+    },
+    "toegekendBedrag": {
+      "description": "Property toegekendBedrag",
+      "type": "string"
+    }
+  }
+}

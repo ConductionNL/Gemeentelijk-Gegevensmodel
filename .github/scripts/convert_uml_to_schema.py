@@ -10,15 +10,11 @@ import os
 import sys
 import json
 import xmltodict
-from pathlib import Path
-from typing import Dict, Any, Optional, List, Union
-import chardet
-from tqdm import tqdm
-import yaml
-import logging
-import xml.etree.ElementTree as ET
 import re
-import io
+from pathlib import Path
+from typing import Dict, Any, Optional, List, Union, Tuple
+import logging
+from tqdm import tqdm
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, 
@@ -30,6 +26,7 @@ class UMLConverter:
     
     This class handles the conversion of Enterprise Architect UML exports to JSON Schema,
     specifically designed for the Gemeentelijk Gegevensmodel (GGM) project.
+    Only processes valid XMI 2.1 files.
     """
 
     def __init__(self, version_folder: str):
@@ -43,297 +40,159 @@ class UMLConverter:
         self.schemas: Dict[str, dict] = {}
         self.schema_folder = self.version_folder / 'schemas'
         self.schema_folder.mkdir(exist_ok=True)
-        self.namespaces = {'xmi': 'http://schema.omg.org/UML', 'uml': 'http://schema.omg.org/UML'}
 
-    def detect_encoding(self, file_path: Path) -> str:
+    def _is_valid_xmi_2_1(self, xmi_data: Dict[str, Any]) -> Tuple[bool, str]:
         """
-        Detect the encoding of a file.
-
-        Args:
-            file_path (Path): Path to the file
-
-        Returns:
-            str: Detected encoding
-        """
-        with open(file_path, 'rb') as file:
-            raw_data = file.read()
-            result = chardet.detect(raw_data)
-            return result['encoding'] or 'windows-1252'  # Default to windows-1252 for EA files
-
-    def read_file_with_encoding(self, file_path: Path) -> str:
-        """
-        Read a file with proper encoding detection.
-
-        Args:
-            file_path (Path): Path to the file
-
-        Returns:
-            str: File contents
-        """
-        encoding = self.detect_encoding(file_path)
-        try:
-            with open(file_path, 'r', encoding=encoding) as file:
-                return file.read()
-        except UnicodeDecodeError:
-            # Fallback to windows-1252 if specified in the XML
-            with open(file_path, 'r', encoding='windows-1252') as file:
-                return file.read()
-
-    def _sanitize_filename(self, filename: str) -> str:
-        """
-        Sanitize a filename by removing invalid characters and replacing spaces with underscores.
+        Check if the file is a valid XMI 2.1 file.
         
         Args:
-            filename: The filename to sanitize
+            xmi_data: Parsed XML data
             
         Returns:
-            The sanitized filename
+            Tuple of (is_valid, reason)
         """
-        # First normalize any newlines to spaces
-        filename = filename.replace('\n', ' ').replace('\r', ' ')
+        # Check for XMI root element
+        if 'xmi:XMI' not in xmi_data:
+            return False, "Missing XMI root element"
+            
+        xmi = xmi_data['xmi:XMI']
         
-        # Remove any backslashes or forward slashes
-        filename = filename.replace('\\', '_').replace('/', '_')
+        # Check for required XMI 2.1 namespaces
+        required_ns = ['xmi', 'uml']
+        for ns in required_ns:
+            if f'@xmlns:{ns}' not in xmi:
+                return False, f"Missing required namespace: {ns}"
+                
+        # Check for UML model
+        if 'uml:Model' not in xmi:
+            return False, "Missing UML model element"
+            
+        return True, "Valid XMI 2.1 file"
+
+    def _sanitize_filename(self, name: str) -> str:
+        """
+        Sanitize a filename by replacing invalid characters.
         
-        # Replace any other non-alphanumeric characters with underscores
-        filename = re.sub(r'[^a-zA-Z0-9]', '_', filename)
+        Args:
+            name: The original filename
+            
+        Returns:
+            A sanitized filename that is valid on all operating systems
+        """
+        # Replace newlines and other whitespace with underscores
+        name = re.sub(r'\s+', '_', name)
+        
+        # Replace slashes and backslashes with underscores
+        name = re.sub(r'[/\\]', '_', name)
+        
+        # Replace any other special characters with underscores
+        name = re.sub(r'[^a-zA-Z0-9_-]', '_', name)
         
         # Remove multiple consecutive underscores
-        filename = re.sub(r'_+', '_', filename)
+        name = re.sub(r'_+', '_', name)
         
-        # Remove leading/trailing underscores and whitespace
-        filename = filename.strip('_ ')
+        # Trim leading and trailing underscores
+        name = name.strip('_')
         
         # Convert to lowercase
-        filename = filename.lower()
+        name = name.lower()
         
-        # Limit filename length to 100 characters
-        if len(filename) > 100:
-            filename = filename[:100]
+        # Limit length to 100 characters
+        name = name[:100]
         
-        # Ensure the filename is not empty
-        if not filename:
-            filename = 'unnamed'
-        
-        return filename
+        # Use 'unnamed' as fallback for empty names
+        if not name:
+            name = 'unnamed'
+            
+        return name
 
-    def process_xmi_file(self, file_path: Path) -> None:
-        """Process an XMI file and generate JSON Schema files.
+    def _get_tagged_values(self, element: Dict[str, Any]) -> Dict[str, str]:
+        """
+        Extract tagged values from a UML element.
         
         Args:
-            file_path: Path to the XMI file
-        """
-        print(f"\nProcessing file: {file_path.name}")
-        try:
-            # Read and parse the file
-            content = self.read_file_with_encoding(file_path)
-            if not content:
-                print(f"  Skipping empty file: {file_path.name}")
-                return
-            
-            # Try to parse XML with error handling
-            root = None
-            try:
-                # First try with ElementTree
-                tree = ET.parse(io.StringIO(content))
-                root = tree.getroot()
-            except ET.ParseError as e:
-                print(f"  ElementTree parsing failed, trying xmltodict: {str(e)}")
-                try:
-                    xmi_data = xmltodict.parse(content)
-                    if 'xmi:XMI' in xmi_data:
-                        model = xmi_data['xmi:XMI'].get('uml:Model', {})
-                        if model and 'packagedElement' in model:
-                            self._process_package_elements(model['packagedElement'])
-                            return
-                except Exception as e:
-                    print(f"  Both XML parsers failed for {file_path.name}")
-                    print(f"  ElementTree error: {str(e)}")
-                    return
-            
-            if root is None:
-                print(f"  No valid XML structure found in {file_path.name}")
-                return
-            
-            # Count total classes and components for progress bar
-            total_elements = len(root.findall('.//packagedElement[@xmi:type="uml:Class"]', self.namespaces)) + \
-                           len(root.findall('.//packagedElement[@xmi:type="uml:Component"]', self.namespaces))
-            
-            if total_elements == 0:
-                print(f"  No classes or components found in {file_path.name}")
-                return
-                
-            print(f"  Found {total_elements} classes and components to process")
-            
-            # Process each UML class and component with progress bar
-            processed = 0
-            with tqdm(total=total_elements, desc="  Converting", unit="class") as pbar:
-                # Process classes
-                for class_elem in root.findall('.//packagedElement[@xmi:type="uml:Class"]', self.namespaces):
-                    try:
-                        name = class_elem.get('name', '')
-                        if name:
-                            # Generate schema
-                            schema = self._convert_class_to_schema(class_elem)
-                            
-                            # Save schema to file
-                            schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
-                            with open(schema_file, 'w', encoding='utf-8') as f:
-                                json.dump(schema, f, indent=2, ensure_ascii=False)
-                            processed += 1
-                    except Exception as e:
-                        print(f"    Error processing class {name}: {str(e)}")
-                    finally:
-                        pbar.update(1)
-                
-                # Process components
-                for component in root.findall('.//packagedElement[@xmi:type="uml:Component"]', self.namespaces):
-                    try:
-                        name = component.get('name', '')
-                        if name:
-                            # Generate schema
-                            schema = self._convert_class_to_schema(component)
-                            
-                            # Save schema to file
-                            schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
-                            with open(schema_file, 'w', encoding='utf-8') as f:
-                                json.dump(schema, f, indent=2, ensure_ascii=False)
-                            processed += 1
-                    except Exception as e:
-                        print(f"    Error processing component {name}: {str(e)}")
-                    finally:
-                        pbar.update(1)
-            
-            # Print summary
-            print(f"  Summary for {file_path.name}:")
-            print(f"    - Total elements found: {total_elements}")
-            print(f"    - Successfully processed: {processed}")
-            print(f"    - Failed: {total_elements - processed}")
-            
-        except Exception as e:
-            print(f"  Error processing file {file_path.name}: {str(e)}")
-            raise
-
-    def _process_package_elements(self, elements: Union[dict, list]) -> None:
-        """
-        Process package elements from the UML model.
-
-        Args:
-            elements: Package elements to process (dict or list)
-        """
-        if not elements:
-            return
-            
-        # Convert single element to list for consistent processing
-        if not isinstance(elements, list):
-            elements = [elements]
-            
-        for element in elements:
-            element_type = element.get('@xmi:type', '')
-            
-            if element_type == 'uml:Package':
-                # Process nested packages
-                if 'packagedElement' in element:
-                    self._process_package_elements(element['packagedElement'])
-                    
-            elif element_type == 'uml:Class':
-                # Convert class to schema
-                schema = self._convert_class_to_schema(element)
-                name = element.get('@name', 'Unknown')
-                if name != 'Unknown':
-                    self.schemas[name] = schema
-                    logging.info(f"Generated schema for class: {name}")
-                    
-            elif element_type == 'uml:Component':
-                # Handle components as classes if they have attributes
-                if 'ownedAttribute' in element:
-                    schema = self._convert_class_to_schema(element)
-                    name = element.get('@name', 'Unknown')
-                    if name != 'Unknown':
-                        self.schemas[name] = schema
-                        logging.info(f"Generated schema for component: {name}")
-
-    def _get_class_description(self, class_elem: Union[ET.Element, dict]) -> str:
-        """Get a meaningful description for a UML class.
-        
-        Args:
-            class_elem: The UML class element or dictionary
+            element: Dictionary containing the UML element
             
         Returns:
-            A meaningful description of the class
+            Dictionary of tagged values
         """
-        if isinstance(class_elem, dict):
-            name = class_elem.get('@name', '')
-            doc = class_elem.get('@documentation', '')
-            if doc:
-                return doc.strip()
-            return f"Represents a {name} in the system"
+        tagged_values = {}
         
-        # ElementTree element
-        doc = class_elem.find('.//ownedComment[@xmi:type="uml:Comment"]', self.namespaces)
-        if doc is not None:
-            return doc.get('body', '').strip()
-        
-        name = class_elem.get('name', '')
-        return f"Represents a {name} in the system"
+        # Handle both single and multiple tagged values
+        if 'properties' in element:
+            props = element['properties']
+            if isinstance(props, dict):
+                for key, value in props.items():
+                    if key not in ['isSpecification', 'sType', 'nType', 'scope']:
+                        tagged_values[key] = str(value)
+                        
+        return tagged_values
 
-    def _create_property_definition(self, attr: Union[ET.Element, dict], class_elem: Union[ET.Element, dict]) -> Dict[str, Any]:
-        """Create a JSON Schema property definition from a UML attribute.
+    def _get_attribute_type(self, attribute: Dict[str, Any]) -> str:
+        """
+        Get the type of a UML attribute.
         
         Args:
-            attr: The UML attribute element or dictionary
-            class_elem: The parent UML class element or dictionary
+            attribute: Dictionary containing the UML attribute
+            
+        Returns:
+            The attribute type as a string
+        """
+        if 'type' in attribute:
+            type_elem = attribute['type']
+            if isinstance(type_elem, dict):
+                return type_elem.get('@xmi:idref', 'string')
+        return 'string'
+
+    def _create_property_definition(self, attribute: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Create a JSON Schema property definition from a UML attribute.
+        
+        Args:
+            attribute: Dictionary containing the UML attribute
             
         Returns:
             A JSON Schema property definition
         """
-        if isinstance(attr, dict):
-            name = attr.get('@name', '')
-            doc = attr.get('@documentation', '')
-            type_info = attr.get('type', {})
-            type_name = type_info.get('@name', '')
-            lower = attr.get('@lowerBound', '0')
-            upper = attr.get('@upperBound', '1')
-        else:
-            name = attr.get('name', '')
-            doc = attr.find('.//ownedComment[@xmi:type="uml:Comment"]', self.namespaces)
-            doc = doc.get('body', '').strip() if doc is not None else ''
-            type_elem = attr.find('.//type', self.namespaces)
-            type_name = type_elem.get('name', '') if type_elem is not None else ''
-            lower = attr.get('lowerValue', '0')
-            upper = attr.get('upperValue', '1')
+        # Get attribute name and type
+        name = attribute.get('@name', '')
+        type_name = self._get_attribute_type(attribute)
         
-        description = doc if doc else f"Property {name}"
+        # Get tagged values for documentation and constraints
+        tagged_values = self._get_tagged_values(attribute)
         
         # Create property definition
         prop_def = {
-            'description': description,
+            'description': tagged_values.get('documentation', f'Property {name}'),
             'type': 'string'  # Default type
         }
         
         # Add format based on type name
-        if type_name:
-            type_name = type_name.lower()
-            if 'date' in type_name and 'time' not in type_name:
-                prop_def['format'] = 'date'
-            elif 'datetime' in type_name or 'timestamp' in type_name:
-                prop_def['format'] = 'date-time'
-            elif 'email' in type_name:
-                prop_def['format'] = 'email'
-            elif 'uri' in type_name:
-                prop_def['format'] = 'uri'
-            elif 'bsn' in type_name:
-                prop_def['pattern'] = '^[0-9]{9}$'
-            elif 'postcode' in type_name:
-                prop_def['pattern'] = '^[1-9][0-9]{3}[A-Z]{2}$'
-            elif type_name in ('integer', 'int'):
-                prop_def['type'] = 'integer'
-            elif type_name in ('double', 'float', 'decimal'):
-                prop_def['type'] = 'number'
-            elif type_name == 'boolean':
-                prop_def['type'] = 'boolean'
+        type_name = type_name.lower()
+        if 'date' in type_name and 'time' not in type_name:
+            prop_def['format'] = 'date'
+        elif 'datetime' in type_name or 'timestamp' in type_name:
+            prop_def['format'] = 'date-time'
+        elif 'email' in type_name:
+            prop_def['format'] = 'email'
+        elif 'uri' in type_name:
+            prop_def['format'] = 'uri'
+        elif 'bsn' in type_name:
+            prop_def['pattern'] = '^[0-9]{9}$'
+        elif 'postcode' in type_name:
+            prop_def['pattern'] = '^[1-9][0-9]{3}[A-Z]{2}$'
+        elif type_name in ('integer', 'int'):
+            prop_def['type'] = 'integer'
+        elif type_name in ('double', 'float', 'decimal'):
+            prop_def['type'] = 'number'
+        elif type_name == 'boolean':
+            prop_def['type'] = 'boolean'
         
         # Handle multiplicity
+        is_required = attribute.get('@isRequired', 'false').lower() == 'true'
+        lower = attribute.get('@lower', '0')
+        upper = attribute.get('@upper', '1')
+        
         if upper == '*' or (upper.isdigit() and int(upper) > 1):
             return {
                 'type': 'array',
@@ -343,101 +202,54 @@ class UMLConverter:
         
         return prop_def
 
-    def _get_tagged_values(self, element: Union[ET.Element, dict]) -> Dict[str, str]:
-        """Extract tagged values from a UML element.
-        
-        Args:
-            element: The UML element or dictionary
-            
-        Returns:
-            Dictionary of tagged values
+    def _convert_class_to_schema(self, class_elem: Dict[str, Any]) -> Dict[str, Any]:
         """
-        tagged_values = {}
-        
-        if isinstance(element, dict):
-            # Handle dictionary format
-            if 'taggedValue' in element:
-                tagged_values_elem = element['taggedValue']
-                if not isinstance(tagged_values_elem, list):
-                    tagged_values_elem = [tagged_values_elem]
-                
-                for tv in tagged_values_elem:
-                    if isinstance(tv, dict):
-                        key = tv.get('@key', '')
-                        value = tv.get('@value', '')
-                        if key and value:
-                            tagged_values[key] = value
-        else:
-            # Handle ElementTree format
-            for tv in element.findall('.//taggedValue', self.namespaces):
-                key = tv.get('key', '')
-                value = tv.get('value', '')
-                if key and value:
-                    tagged_values[key] = value
-        
-        return tagged_values
-
-    def _convert_class_to_schema(self, class_elem: Union[ET.Element, dict]) -> Dict[str, Any]:
-        """Convert a UML class to a JSON Schema.
+        Convert a UML class to a JSON Schema.
         
         Args:
-            class_elem: The UML class element or dictionary
+            class_elem: Dictionary containing the UML class
             
         Returns:
             A JSON Schema representation of the class
         """
-        if isinstance(class_elem, dict):
-            name = class_elem.get('@name', '')
-            description = self._get_class_description(class_elem)
-            attributes = class_elem.get('ownedAttribute', [])
-            if not isinstance(attributes, list):
-                attributes = [attributes]
-        else:
-            name = class_elem.get('name', '')
-            description = self._get_class_description(class_elem)
-            attributes = class_elem.findall('.//ownedAttribute', self.namespaces)
+        # Get class name and documentation
+        name = class_elem.get('@name', '')
+        tagged_values = self._get_tagged_values(class_elem)
         
         # Create properties and track required fields
         properties = {}
         required = []
         
-        for attr in attributes:
-            if isinstance(attr, dict):
-                attr_name = attr.get('@name', '')
-                # Skip association ends
-                if 'association' in attr:
-                    continue
-            else:
-                attr_name = attr.get('name', '')
-                # Skip association ends
-                if attr.find('.//association', self.namespaces) is not None:
-                    continue
+        # Process attributes
+        attributes = class_elem.get('ownedAttribute', [])
+        if not isinstance(attributes, list):
+            attributes = [attributes]
             
-            if attr_name:
-                prop_def = self._create_property_definition(attr, class_elem)
-                
-                # Add tagged values for the attribute
-                attr_tagged_values = self._get_tagged_values(attr)
-                if attr_tagged_values:
-                    prop_def['x-uml-tagged-value'] = attr_tagged_values
-                
-                properties[attr_name] = prop_def
-                
-                # Check if property is required
-                if isinstance(attr, dict):
-                    lower = attr.get('@lowerBound', '0')
-                else:
-                    lower = attr.get('lowerValue', '0')
-                
-                if lower != '0':
-                    required.append(attr_name)
+        for attribute in attributes:
+            if attribute.get('@xmi:type') == 'uml:Property':
+                attr_name = attribute.get('@name', '')
+                if attr_name:
+                    prop_def = self._create_property_definition(attribute)
+                    
+                    # Add attribute tagged values
+                    attr_tagged_values = self._get_tagged_values(attribute)
+                    if attr_tagged_values:
+                        prop_def['x-uml-tagged-value'] = attr_tagged_values
+                    
+                    properties[attr_name] = prop_def
+                    
+                    # Check if property is required
+                    is_required = attribute.get('@isRequired', 'false').lower() == 'true'
+                    lower = attribute.get('@lower', '0')
+                    if is_required or lower != '0':
+                        required.append(attr_name)
         
         # Create the schema
         schema = {
             '$schema': 'http://json-schema.org/draft-07/schema#',
             'type': 'object',
             'title': name,
-            'description': description,
+            'description': tagged_values.get('documentation', f'Represents a {name} in the system'),
             'properties': properties
         }
         
@@ -446,11 +258,78 @@ class UMLConverter:
             schema['required'] = required
         
         # Add class-level tagged values
-        class_tagged_values = self._get_tagged_values(class_elem)
-        if class_tagged_values:
-            schema['x-uml-tagged-value'] = class_tagged_values
+        if tagged_values:
+            schema['x-uml-tagged-value'] = tagged_values
         
         return schema
+
+    def process_xmi_file(self, file_path: Path) -> None:
+        """
+        Process an XMI file and generate JSON Schema files.
+        Only processes valid XMI 2.1 files.
+        
+        Args:
+            file_path: Path to the XMI file
+        """
+        try:
+            # Read and parse the file
+            with open(file_path, 'r', encoding='windows-1252') as f:
+                content = f.read()
+            
+            # Parse XML to dictionary
+            xmi_data = xmltodict.parse(content)
+            
+            # Validate XMI 2.1
+            is_valid, reason = self._is_valid_xmi_2_1(xmi_data)
+            if not is_valid:
+                logging.warning(f"Skipping {file_path}: {reason}")
+                return
+            
+            # Find all UML classes
+            classes = []
+            if 'xmi:XMI' in xmi_data:
+                model = xmi_data['xmi:XMI'].get('uml:Model', {})
+                if model:
+                    # Process all packages recursively
+                    def process_package(pkg):
+                        elements = []
+                        if 'packagedElement' in pkg:
+                            pkg_elements = pkg['packagedElement']
+                            if not isinstance(pkg_elements, list):
+                                pkg_elements = [pkg_elements]
+                            
+                            for elem in pkg_elements:
+                                if elem.get('@xmi:type') == 'uml:Class':
+                                    elements.append(elem)
+                                elif elem.get('@xmi:type') == 'uml:Package':
+                                    elements.extend(process_package(elem))
+                        return elements
+                    
+                    classes = process_package(model)
+            
+            # Process each class
+            for class_elem in classes:
+                try:
+                    name = class_elem.get('@name', '')
+                    if name:
+                        # Generate schema
+                        schema = self._convert_class_to_schema(class_elem)
+                        
+                        # Sanitize filename
+                        safe_name = self._sanitize_filename(name)
+                        
+                        # Save schema to file
+                        schema_file = self.schema_folder / f"{safe_name}.json"
+                        with open(schema_file, 'w', encoding='utf-8') as f:
+                            json.dump(schema, f, indent=2, ensure_ascii=False)
+                            
+                        self.schemas[name] = schema
+                        logging.info(f"Generated schema for class: {name}")
+                except Exception as e:
+                    logging.error(f"Error processing class {name}: {str(e)}")
+                    
+        except Exception as e:
+            logging.error(f"Error processing file {file_path}: {str(e)}")
 
     def generate_openapi_spec(self) -> dict:
         """

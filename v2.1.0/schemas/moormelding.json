@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "MOORMelding",
+  "description": "Represents a MOORMelding in the system",
+  "properties": {
+    "adresaanduiding": {
+      "description": "Property adresaanduiding",
+      "type": "string"
+    },
+    "datumAanmelding": {
+      "description": "Property datumAanmelding",
+      "type": "string",
+      "format": "date-time"
+    },
+    "datumGoedkeuring": {
+      "description": "Property datumGoedkeuring",
+      "type": "string",
+      "format": "date-time"
+    },
+    "eindtijd": {
+      "description": "Property eindtijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "goedgekeurd": {
+      "description": "Property goedgekeurd",
+      "type": "string"
+    },
+    "herstelwerkzaamhedenVereist": {
+      "description": "Property herstelwerkzaamhedenVereist",
+      "type": "string"
+    },
+    "omschrijvingHerstelwerkzaamheden": {
+      "description": "Property omschrijvingHerstelwerkzaamheden",
+      "type": "string"
+    },
+    "publiceren": {
+      "description": "Property publiceren",
+      "type": "string"
+    },
+    "starttijd": {
+      "description": "Property starttijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "wegbeheerder": {
+      "description": "Property wegbeheerder",
+      "type": "string"
+    }
+  }
+}

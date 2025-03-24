@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Sportterrein",
+  "description": "Represents a Sportterrein in the system",
+  "properties": {
+    "drainage": {
+      "description": "Property drainage",
+      "type": "string"
+    },
+    "gebruiksvorm": {
+      "description": "Property gebruiksvorm",
+      "type": "string"
+    },
+    "sportcomplex": {
+      "description": "Property sportcomplex",
+      "type": "string"
+    },
+    "sportterreinTypeSport": {
+      "description": "Property sportterreinTypeSport",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "veldnummer": {
+      "description": "Property veldnummer",
+      "type": "string"
+    },
+    "verlicht": {
+      "description": "Property verlicht",
+      "type": "string"
+    }
+  }
+}

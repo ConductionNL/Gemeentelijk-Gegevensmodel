@@ -1,0 +1,244 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verhardingsobject",
+  "description": "Represents a Verhardingsobject in the system",
+  "properties": {
+    "aanleghoogte": {
+      "description": "Property aanleghoogte",
+      "type": "string"
+    },
+    "aanOfVrijliggend": {
+      "description": "Property aanOfVrijliggend",
+      "type": "string"
+    },
+    "aantalDeklagen": {
+      "description": "Property aantalDeklagen",
+      "type": "string"
+    },
+    "aantalOnderlagen": {
+      "description": "Property aantalOnderlagen",
+      "type": "string"
+    },
+    "aantalTussenlagen": {
+      "description": "Property aantalTussenlagen",
+      "type": "string"
+    },
+    "afmeting": {
+      "description": "Property afmeting",
+      "type": "string"
+    },
+    "belasting": {
+      "description": "Property belasting",
+      "type": "string"
+    },
+    "bergendVermogen": {
+      "description": "Property bergendVermogen",
+      "type": "string"
+    },
+    "BGTFysiekVoorkomen": {
+      "description": "Property BGTFysiekVoorkomen",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "dikteConstructie": {
+      "description": "Property dikteConstructie",
+      "type": "string"
+    },
+    "draagkrachtig": {
+      "description": "Property draagkrachtig",
+      "type": "string"
+    },
+    "formaat": {
+      "description": "Property formaat",
+      "type": "string"
+    },
+    "fysiekVoorkomenIMGeo": {
+      "description": "Property fysiekVoorkomenIMGeo",
+      "type": "string"
+    },
+    "geluidsreducerend": {
+      "description": "Property geluidsreducerend",
+      "type": "string"
+    },
+    "jaarConserveren": {
+      "description": "Property jaarConserveren",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "jaarPraktischEinde": {
+      "description": "Property jaarPraktischEinde",
+      "type": "string"
+    },
+    "kleur": {
+      "description": "Property kleur",
+      "type": "string"
+    },
+    "kwaliteitsniveauActueel": {
+      "description": "Property kwaliteitsniveauActueel",
+      "type": "string"
+    },
+    "kwaliteitsniveauGewenst": {
+      "description": "Property kwaliteitsniveauGewenst",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "lengteKunstgras": {
+      "description": "Property lengteKunstgras",
+      "type": "string"
+    },
+    "lengteVoegen": {
+      "description": "Property lengteVoegen",
+      "type": "string"
+    },
+    "levensduur": {
+      "description": "Property levensduur",
+      "type": "string"
+    },
+    "materiaal": {
+      "description": "Property materiaal",
+      "type": "string"
+    },
+    "maximaleValhoogte": {
+      "description": "Property maximaleValhoogte",
+      "type": "string"
+    },
+    "omtrek": {
+      "description": "Property omtrek",
+      "type": "string"
+    },
+    "ondergrondcode": {
+      "description": "Property ondergrondcode",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "opTalud": {
+      "description": "Property opTalud",
+      "type": "string"
+    },
+    "plaatsorientatie": {
+      "description": "Property plaatsorientatie",
+      "type": "string"
+    },
+    "prijsAanschaf": {
+      "description": "Property prijsAanschaf",
+      "type": "string"
+    },
+    "rijstrook": {
+      "description": "Property rijstrook",
+      "type": "string"
+    },
+    "soortVoeg": {
+      "description": "Property soortVoeg",
+      "type": "string"
+    },
+    "toelichtingGemengdeBestrating": {
+      "description": "Property toelichtingGemengdeBestrating",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typeConstructie": {
+      "description": "Property typeConstructie",
+      "type": "string"
+    },
+    "typeFundering": {
+      "description": "Property typeFundering",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "typePlus2": {
+      "description": "Property typePlus2",
+      "type": "string"
+    },
+    "typeRijstrook": {
+      "description": "Property typeRijstrook",
+      "type": "string"
+    },
+    "typeVoeg": {
+      "description": "Property typeVoeg",
+      "type": "string"
+    },
+    "typeVoegvulling": {
+      "description": "Property typeVoegvulling",
+      "type": "string"
+    },
+    "vegen": {
+      "description": "Property vegen",
+      "type": "string"
+    },
+    "verhardingsobjectConstructielaag": {
+      "description": "Property verhardingsobjectConstructielaag",
+      "type": "string"
+    },
+    "verhardingsobjectModaliteit": {
+      "description": "Property verhardingsobjectModaliteit",
+      "type": "string"
+    },
+    "verhardingsobjectRand": {
+      "description": "Property verhardingsobjectRand",
+      "type": "string"
+    },
+    "verhardingsobjectWegfunctie": {
+      "description": "Property verhardingsobjectWegfunctie",
+      "type": "string"
+    },
+    "verhoogdeLigging": {
+      "description": "Property verhoogdeLigging",
+      "type": "string"
+    },
+    "vulmateriaalKunstgras": {
+      "description": "Property vulmateriaalKunstgras",
+      "type": "string"
+    },
+    "waterdoorlatendheid": {
+      "description": "Property waterdoorlatendheid",
+      "type": "string"
+    },
+    "wegas": {
+      "description": "Property wegas",
+      "type": "string"
+    },
+    "wegcategorieDV": {
+      "description": "Property wegcategorieDV",
+      "type": "string"
+    },
+    "wegcategorieDVPlus": {
+      "description": "Property wegcategorieDVPlus",
+      "type": "string"
+    },
+    "wegnummer": {
+      "description": "Property wegnummer",
+      "type": "string"
+    },
+    "wegtypeBestaand": {
+      "description": "Property wegtypeBestaand",
+      "type": "string"
+    },
+    "wegvak": {
+      "description": "Property wegvak",
+      "type": "string"
+    },
+    "wegvaknummer": {
+      "description": "Property wegvaknummer",
+      "type": "string"
+    }
+  }
+}

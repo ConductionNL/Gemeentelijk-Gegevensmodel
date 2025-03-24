@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OverigBenoemdTerrein",
+  "description": "Represents a OverigBenoemdTerrein in the system",
+  "properties": {
+    "gebruiksdoelOverigBenoemdTerrein": {
+      "description": "Property gebruiksdoelOverigBenoemdTerrein",
+      "type": "string"
+    },
+    "overigBenoemdTerreinIdentificatie": {
+      "description": "Property overigBenoemdTerreinIdentificatie",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Specificatie",
+  "description": "Represents a Specificatie in the system",
+  "properties": {
+    "antwoord": {
+      "description": "Property antwoord",
+      "type": "string"
+    },
+    "groepering": {
+      "description": "Property groepering",
+      "type": "string"
+    },
+    "publiceerbaar": {
+      "description": "Property publiceerbaar",
+      "type": "string"
+    },
+    "vraagClassificatie": {
+      "description": "Property vraagClassificatie",
+      "type": "string"
+    },
+    "vraagID": {
+      "description": "Property vraagID",
+      "type": "string"
+    },
+    "vraagreferentie": {
+      "description": "Property vraagreferentie",
+      "type": "string"
+    },
+    "vraagtekst": {
+      "description": "Property vraagtekst",
+      "type": "string"
+    }
+  }
+}

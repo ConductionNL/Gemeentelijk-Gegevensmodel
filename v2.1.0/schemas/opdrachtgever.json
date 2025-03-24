@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Opdrachtgever",
+  "description": "Represents a Opdrachtgever in the system",
+  "properties": {
+    "clustercode": {
+      "description": "Property clustercode",
+      "type": "string"
+    },
+    "clusterOmschrijving": {
+      "description": "Property clusterOmschrijving",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "nummer": {
+      "description": "Property nummer",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

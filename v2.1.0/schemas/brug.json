@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Brug",
+  "description": "Represents a Brug in the system",
+  "properties": {
+    "aantalOverspanningen": {
+      "description": "Property aantalOverspanningen",
+      "type": "string"
+    },
+    "bedienaar": {
+      "description": "Property bedienaar",
+      "type": "string"
+    },
+    "bedieningstijden": {
+      "description": "Property bedieningstijden",
+      "type": "string"
+    },
+    "belastingklasseNieuw": {
+      "description": "Property belastingklasseNieuw",
+      "type": "string"
+    },
+    "belastingklasseOud": {
+      "description": "Property belastingklasseOud",
+      "type": "string"
+    },
+    "beweegbaar": {
+      "description": "Property beweegbaar",
+      "type": "string"
+    },
+    "doorrijbreedte": {
+      "description": "Property doorrijbreedte",
+      "type": "string"
+    },
+    "draagvermogen": {
+      "description": "Property draagvermogen",
+      "type": "string"
+    },
+    "hoofdroute": {
+      "description": "Property hoofdroute",
+      "type": "string"
+    },
+    "hoofdvaarroute": {
+      "description": "Property hoofdvaarroute",
+      "type": "string"
+    },
+    "maximaalToelaatbaarVoertuiggewicht": {
+      "description": "Property maximaalToelaatbaarVoertuiggewicht",
+      "type": "string"
+    },
+    "maximaleAsbelasting": {
+      "description": "Property maximaleAsbelasting",
+      "type": "string"
+    },
+    "maximaleOverspanning": {
+      "description": "Property maximaleOverspanning",
+      "type": "string"
+    },
+    "statischMoment": {
+      "description": "Property statischMoment",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "zwaarsteVoertuig": {
+      "description": "Property zwaarsteVoertuig",
+      "type": "string"
+    }
+  }
+}

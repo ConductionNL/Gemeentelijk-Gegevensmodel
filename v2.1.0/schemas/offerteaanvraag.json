@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Offerteaanvraag",
+  "description": "Represents a Offerteaanvraag in the system",
+  "properties": {
+    "datumAanvraag": {
+      "description": "Property datumAanvraag",
+      "type": "string",
+      "format": "date"
+    },
+    "datumSluiting": {
+      "description": "Property datumSluiting",
+      "type": "string",
+      "format": "date"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

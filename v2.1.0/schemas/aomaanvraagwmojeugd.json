@@ -10,23 +10,28 @@
     },
     "datumBeschikking": {
       "description": "Property datumBeschikking",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEersteAfspraak": {
       "description": "Property datumEersteAfspraak",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEinde": {
       "description": "Property datumEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumPlanVastgesteld": {
       "description": "Property datumPlanVastgesteld",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumStartAanvraag": {
       "description": "Property datumStartAanvraag",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "deskundigheid": {
       "description": "Property deskundigheid",

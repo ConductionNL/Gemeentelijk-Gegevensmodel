@@ -10,11 +10,13 @@
     },
     "datumEinde": {
       "description": "Property datumEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumToekenning": {
       "description": "Property datumToekenning",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     }
   }
 }

@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "MaatschappelijkeActiviteit",
+  "description": "Represents a MaatschappelijkeActiviteit in the system",
+  "properties": {
+    "adresBinnenland": {
+      "description": "Property adresBinnenland",
+      "type": "string"
+    },
+    "adresCorrespondentie": {
+      "description": "Property adresCorrespondentie",
+      "type": "string"
+    },
+    "datumAanvang": {
+      "description": "Property datumAanvang",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEindeGeldig": {
+      "description": "Property datumEindeGeldig",
+      "type": "string",
+      "format": "date"
+    },
+    "datumFaillisement": {
+      "description": "Property datumFaillisement",
+      "type": "string",
+      "format": "date"
+    },
+    "indicatieEconomischActief": {
+      "description": "Property indicatieEconomischActief",
+      "type": "string"
+    },
+    "KVKnummer": {
+      "description": "Property KVKnummer",
+      "type": "string"
+    },
+    "rechtsvorm": {
+      "description": "Property rechtsvorm",
+      "type": "string"
+    },
+    "RSIN": {
+      "description": "Property RSIN",
+      "type": "string"
+    },
+    "statutaireNaam": {
+      "description": "Property statutaireNaam",
+      "type": "string"
+    },
+    "telefoonnummer": {
+      "description": "Property telefoonnummer",
+      "type": "string"
+    },
+    "URL": {
+      "description": "Property URL",
+      "type": "string"
+    }
+  }
+}

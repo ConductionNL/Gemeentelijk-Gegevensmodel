@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "JuridischeRegel",
+  "description": "Represents a JuridischeRegel in the system",
+  "properties": {
+    "datumBekend": {
+      "description": "Property datumBekend",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "datumInWerking": {
+      "description": "Property datumInWerking",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "regeltekst": {
+      "description": "Property regeltekst",
+      "type": "string"
+    },
+    "thema": {
+      "description": "Property thema",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Klimplant",
+  "description": "Represents a Klimplant in the system",
+  "properties": {
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "knipfrequentie": {
+      "description": "Property knipfrequentie",
+      "type": "string"
+    },
+    "knipoppervlakte": {
+      "description": "Property knipoppervlakte",
+      "type": "string"
+    },
+    "ondersteuningsvorm": {
+      "description": "Property ondersteuningsvorm",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

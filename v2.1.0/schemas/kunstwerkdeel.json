@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Kunstwerkdeel",
+  "description": "Represents a Kunstwerkdeel in the system",
+  "properties": {
+    "datumBeginGeldigheidKunstwerkdeel": {
+      "description": "Property datumBeginGeldigheidKunstwerkdeel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidKunstwerkdeel": {
+      "description": "Property datumEindeGeldigheidKunstwerkdeel",
+      "type": "string"
+    },
+    "geometrieKunstwerkdeel": {
+      "description": "Property geometrieKunstwerkdeel",
+      "type": "string"
+    },
+    "identificatieKunstwerkdeel": {
+      "description": "Property identificatieKunstwerkdeel",
+      "type": "string"
+    },
+    "LOD0GeometrieKunstwerkdeel": {
+      "description": "Property LOD0GeometrieKunstwerkdeel",
+      "type": "string"
+    },
+    "LOD1GeometrieKunstwerkdeel": {
+      "description": "Property LOD1GeometrieKunstwerkdeel",
+      "type": "string"
+    },
+    "LOD2GeometrieKunstwerkdeel": {
+      "description": "Property LOD2GeometrieKunstwerkdeel",
+      "type": "string"
+    },
+    "lod3GeometrieKunstwerkdeel": {
+      "description": "Property lod3GeometrieKunstwerkdeel",
+      "type": "string"
+    },
+    "relatieveHoogteliggingKunstwerkdeel": {
+      "description": "Property relatieveHoogteliggingKunstwerkdeel",
+      "type": "string"
+    },
+    "statusKunstwerkdeel": {
+      "description": "Property statusKunstwerkdeel",
+      "type": "string"
+    }
+  }
+}

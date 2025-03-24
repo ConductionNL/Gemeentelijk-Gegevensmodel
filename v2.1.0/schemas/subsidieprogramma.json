@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Subsidieprogramma",
+  "description": "Represents a Subsidieprogramma in the system",
+  "properties": {
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "programmabegroting": {
+      "description": "Property programmabegroting",
+      "type": "string"
+    }
+  }
+}

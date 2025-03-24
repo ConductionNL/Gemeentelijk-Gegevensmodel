@@ -6,7 +6,8 @@
   "properties": {
     "aanmaaktijd": {
       "description": "Property aanmaaktijd",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "bedragAankoop": {
       "description": "Property bedragAankoop",
@@ -18,11 +19,13 @@
     },
     "datumtijdEinde": {
       "description": "Property datumtijdEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumtijdStart": {
       "description": "Property datumtijdStart",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "productnaam": {
       "description": "Property productnaam",

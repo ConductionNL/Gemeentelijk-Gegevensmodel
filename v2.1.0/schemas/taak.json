@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Taak",
+  "description": "Represents a Taak in the system",
+  "properties": {
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "taakomschrijving": {
+      "description": "Property taakomschrijving",
+      "type": "string"
+    },
+    "termijn": {
+      "description": "Property termijn",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vegetatieobject",
+  "description": "Represents a Vegetatieobject in the system",
+  "properties": {
+    "datumBeginGeldigheidVegetatieobject": {
+      "description": "Property datumBeginGeldigheidVegetatieobject",
+      "type": "string"
+    },
+    "datumEindeGeldigheidVegetatieobject": {
+      "description": "Property datumEindeGeldigheidVegetatieobject",
+      "type": "string"
+    },
+    "geometrieVegetatieobject": {
+      "description": "Property geometrieVegetatieobject",
+      "type": "string"
+    },
+    "identificatieVegetatieobject": {
+      "description": "Property identificatieVegetatieobject",
+      "type": "string"
+    },
+    "LOD0GeometrieVegetatieobject": {
+      "description": "Property LOD0GeometrieVegetatieobject",
+      "type": "string"
+    },
+    "relatieveHoogteliggingVegetatieobject": {
+      "description": "Property relatieveHoogteliggingVegetatieobject",
+      "type": "string"
+    },
+    "statusVegetatieobject": {
+      "description": "Property statusVegetatieobject",
+      "type": "string"
+    },
+    "typeVegetatieobject": {
+      "description": "Property typeVegetatieobject",
+      "type": "string"
+    }
+  }
+}

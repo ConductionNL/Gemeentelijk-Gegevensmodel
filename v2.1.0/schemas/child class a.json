@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Child Class A",
+  "description": "Represents a Child Class A in the system",
+  "properties": {
+    "kleur": {
+      "description": "Property kleur",
+      "type": "string"
+    }
+  }
+}

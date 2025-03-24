@@ -14,19 +14,23 @@
     },
     "datumAanschaf": {
       "description": "Property datumAanschaf",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEindeToewijzing": {
       "description": "Property datumEindeToewijzing",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumStartToewijzing": {
       "description": "Property datumStartToewijzing",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumToewijzing": {
       "description": "Property datumToewijzing",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "eenheid": {
       "description": "Property eenheid",

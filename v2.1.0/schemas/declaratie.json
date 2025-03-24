@@ -14,11 +14,13 @@
     },
     "datumDeclaratie": {
       "description": "Property datumDeclaratie",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumIndiening": {
       "description": "Property datumIndiening",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "omschrijving": {
       "description": "Property omschrijving",

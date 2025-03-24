@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "KNM?",
+  "description": "Represents a KNM? in the system",
+  "properties": {}
+}

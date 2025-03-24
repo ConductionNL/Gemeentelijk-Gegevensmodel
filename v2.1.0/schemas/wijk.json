@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Wijk",
+  "description": "Represents a Wijk in the system",
+  "properties": {
+    "datumBeginGeldigheidWijk": {
+      "description": "Property datumBeginGeldigheidWijk",
+      "type": "string"
+    },
+    "datumEindeGeldigheidWijk": {
+      "description": "Property datumEindeGeldigheidWijk",
+      "type": "string"
+    },
+    "geometrieWijk": {
+      "description": "Property geometrieWijk",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "identificatieIMGeoWYK": {
+      "description": "Property identificatieIMGeoWYK",
+      "type": "string"
+    },
+    "wijkcode": {
+      "description": "Property wijkcode",
+      "type": "string"
+    },
+    "wijknaam": {
+      "description": "Property wijknaam",
+      "type": "string"
+    }
+  }
+}

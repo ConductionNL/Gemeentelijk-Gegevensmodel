@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Provincie",
+  "description": "Represents a Provincie in the system",
+  "properties": {
+    "datumEindeProvincie": {
+      "description": "Property datumEindeProvincie",
+      "type": "string"
+    },
+    "datumIngangProvincie": {
+      "description": "Property datumIngangProvincie",
+      "type": "string"
+    },
+    "hoofdstad": {
+      "description": "Property hoofdstad",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "oppervlakteLand": {
+      "description": "Property oppervlakteLand",
+      "type": "string"
+    },
+    "provinciecode": {
+      "description": "Property provinciecode",
+      "type": "string"
+    },
+    "provincienaam": {
+      "description": "Property provincienaam",
+      "type": "string"
+    }
+  }
+}

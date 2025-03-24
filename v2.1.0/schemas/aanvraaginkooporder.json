@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AanvraagInkooporder",
+  "description": "Represents a AanvraagInkooporder in the system",
+  "properties": {
+    "betalingOverMeerJaren": {
+      "description": "Property betalingOverMeerJaren",
+      "type": "string"
+    },
+    "correspondentienummer": {
+      "description": "Property correspondentienummer",
+      "type": "string"
+    },
+    "inhuurAnders": {
+      "description": "Property inhuurAnders",
+      "type": "string"
+    },
+    "leveringOfDienst": {
+      "description": "Property leveringOfDienst",
+      "type": "string"
+    },
+    "nettoTotaalBedrag": {
+      "description": "Property nettoTotaalBedrag",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "onderwerp": {
+      "description": "Property onderwerp",
+      "type": "string"
+    },
+    "reactie": {
+      "description": "Property reactie",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "wijzeVanInhuur": {
+      "description": "Property wijzeVanInhuur",
+      "type": "string"
+    }
+  }
+}

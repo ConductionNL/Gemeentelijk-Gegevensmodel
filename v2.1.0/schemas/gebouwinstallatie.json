@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gebouwinstallatie",
+  "description": "Represents a Gebouwinstallatie in the system",
+  "properties": {
+    "datumBeginGeldigheidGebouwinstallatie": {
+      "description": "Property datumBeginGeldigheidGebouwinstallatie",
+      "type": "string"
+    },
+    "datumEindeGeldigheidGebouwinstallatie": {
+      "description": "Property datumEindeGeldigheidGebouwinstallatie",
+      "type": "string"
+    },
+    "geometrieGebouwinstallatie": {
+      "description": "Property geometrieGebouwinstallatie",
+      "type": "string"
+    },
+    "identificatieGebouwinstallatie": {
+      "description": "Property identificatieGebouwinstallatie",
+      "type": "string"
+    },
+    "LOD0GeometrieGebouwinstallatie": {
+      "description": "Property LOD0GeometrieGebouwinstallatie",
+      "type": "string"
+    },
+    "relatieveHoogteliggingGebouwinstallatie": {
+      "description": "Property relatieveHoogteliggingGebouwinstallatie",
+      "type": "string"
+    },
+    "statusGebouwinstallatie": {
+      "description": "Property statusGebouwinstallatie",
+      "type": "string"
+    },
+    "typeGebouwinstallatie": {
+      "description": "Property typeGebouwinstallatie",
+      "type": "string"
+    }
+  }
+}

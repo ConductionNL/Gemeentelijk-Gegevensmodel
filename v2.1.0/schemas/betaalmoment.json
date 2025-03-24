@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Betaalmoment",
+  "description": "Represents a Betaalmoment in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "datum": {
+      "description": "Property datum",
+      "type": "string"
+    },
+    "voorschot": {
+      "description": "Property voorschot",
+      "type": "string"
+    }
+  }
+}

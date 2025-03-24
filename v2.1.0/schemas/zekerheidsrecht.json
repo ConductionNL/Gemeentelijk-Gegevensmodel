@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Zekerheidsrecht",
+  "description": "Represents a Zekerheidsrecht in the system",
+  "properties": {
+    "aandeelInBetrokkenRecht": {
+      "description": "Property aandeelInBetrokkenRecht",
+      "type": "string"
+    },
+    "datumEindeRecht": {
+      "description": "Property datumEindeRecht",
+      "type": "string"
+    },
+    "datumIngangRecht": {
+      "description": "Property datumIngangRecht",
+      "type": "string"
+    },
+    "identificatieZekerheidsrecht": {
+      "description": "Property identificatieZekerheidsrecht",
+      "type": "string"
+    },
+    "omschrijvingBetrokkenRecht": {
+      "description": "Property omschrijvingBetrokkenRecht",
+      "type": "string"
+    },
+    "typeZekerheidsrecht": {
+      "description": "Property typeZekerheidsrecht",
+      "type": "string"
+    }
+  }
+}

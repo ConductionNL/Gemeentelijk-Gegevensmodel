@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Uren",
+  "description": "Represents a Uren in the system",
+  "properties": {
+    "aantal": {
+      "description": "Property aantal",
+      "type": "string"
+    }
+  }
+}

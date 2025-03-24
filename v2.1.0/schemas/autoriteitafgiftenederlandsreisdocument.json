@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AutoriteitAfgifteNederlandsReisdocument",
+  "description": "Represents a AutoriteitAfgifteNederlandsReisdocument in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "datumBeginGeldigheidAutoriteitVanAfgifte": {
+      "description": "Property datumBeginGeldigheidAutoriteitVanAfgifte",
+      "type": "string"
+    },
+    "datumEindeGeldigheidAutoriteitVanAfgifte": {
+      "description": "Property datumEindeGeldigheidAutoriteitVanAfgifte",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

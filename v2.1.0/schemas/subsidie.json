@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Subsidie",
+  "description": "Represents a Subsidie in the system",
+  "properties": {
+    "accountantscontrole": {
+      "description": "Property accountantscontrole",
+      "type": "string"
+    },
+    "coFinanciering": {
+      "description": "Property coFinanciering",
+      "type": "string"
+    },
+    "datumBehandeltermijn": {
+      "description": "Property datumBehandeltermijn",
+      "type": "string",
+      "format": "date"
+    },
+    "datumBewaartermijn": {
+      "description": "Property datumBewaartermijn",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "datumSubsidievaststelling": {
+      "description": "Property datumSubsidievaststelling",
+      "type": "string",
+      "format": "date"
+    },
+    "datumVerzendingEindeafrekening": {
+      "description": "Property datumVerzendingEindeafrekening",
+      "type": "string",
+      "format": "date"
+    },
+    "deadlineIndiening": {
+      "description": "Property deadlineIndiening",
+      "type": "string",
+      "format": "date"
+    },
+    "doelstelling": {
+      "description": "Property doelstelling",
+      "type": "string"
+    },
+    "gerealiseerdeProjectkosten": {
+      "description": "Property gerealiseerdeProjectkosten",
+      "type": "string",
+      "format": "date"
+    },
+    "hoogteSubsidie": {
+      "description": "Property hoogteSubsidie",
+      "type": "string"
+    },
+    "niveau": {
+      "description": "Property niveau",
+      "type": "string"
+    },
+    "onderwerp": {
+      "description": "Property onderwerp",
+      "type": "string"
+    },
+    "ontvangenBedrag": {
+      "description": "Property ontvangenBedrag",
+      "type": "string"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    },
+    "opmerkingenVoorschotten": {
+      "description": "Property opmerkingenVoorschotten",
+      "type": "string"
+    },
+    "prestatiesubsidie": {
+      "description": "Property prestatiesubsidie",
+      "type": "string"
+    },
+    "socialReturnBedrag": {
+      "description": "Property socialReturnBedrag",
+      "type": "string"
+    },
+    "socialReturnNagekomen": {
+      "description": "Property socialReturnNagekomen",
+      "type": "string"
+    },
+    "socialReturnVerplichting": {
+      "description": "Property socialReturnVerplichting",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "subsidiebedrag": {
+      "description": "Property subsidiebedrag",
+      "type": "string"
+    },
+    "subsidiesoort": {
+      "description": "Property subsidiesoort",
+      "type": "string"
+    },
+    "subsidievaststellingBedrag": {
+      "description": "Property subsidievaststellingBedrag",
+      "type": "string"
+    },
+    "uitgaandeSubsidie": {
+      "description": "Property uitgaandeSubsidie",
+      "type": "string"
+    },
+    "verantwoordenOp": {
+      "description": "Property verantwoordenOp",
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

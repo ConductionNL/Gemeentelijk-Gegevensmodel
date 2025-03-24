@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ClassA",
+  "description": "Represents a ClassA in the system",
+  "properties": {
+    "AttribuutA": {
+      "description": "Property AttribuutA",
+      "type": "string"
+    },
+    "AttrubuutB_EnumID": {
+      "description": "Property AttrubuutB_EnumID",
+      "type": "string"
+    },
+    "DWH_RECORD_ID": {
+      "description": "Property DWH_RECORD_ID",
+      "type": "string"
+    },
+    "DWH_ODS_RECORD_ID": {
+      "description": "Property DWH_ODS_RECORD_ID",
+      "type": "string"
+    },
+    "DWH_START_DT": {
+      "description": "Property DWH_START_DT",
+      "type": "string",
+      "format": "date"
+    },
+    "DWH_EIND_DT": {
+      "description": "Property DWH_EIND_DT",
+      "type": "string",
+      "format": "date"
+    },
+    "DWH_RUN_ID": {
+      "description": "Property DWH_RUN_ID",
+      "type": "string"
+    },
+    "DWH_BRON": {
+      "description": "Property DWH_BRON",
+      "type": "string"
+    },
+    "DWH_LAAD_DT": {
+      "description": "Property DWH_LAAD_DT",
+      "type": "string",
+      "format": "date"
+    },
+    "DWH_ACTUEEL": {
+      "description": "Property DWH_ACTUEEL",
+      "type": "string"
+    },
+    "ClassAID": {
+      "description": "Property ClassAID",
+      "type": "string"
+    },
+    "PK_Enum_enumerationA": {
+      "description": "Property PK_Enum_enumerationA",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bergingsbassin",
+  "description": "Represents a Bergingsbassin in the system",
+  "properties": {
+    "bergendVermogen": {
+      "description": "Property bergendVermogen",
+      "type": "string"
+    },
+    "pompLedigingsVoorziening": {
+      "description": "Property pompLedigingsVoorziening",
+      "type": "string"
+    },
+    "pompSpoelVoorziening": {
+      "description": "Property pompSpoelVoorziening",
+      "type": "string"
+    },
+    "spoelleiding": {
+      "description": "Property spoelleiding",
+      "type": "string"
+    },
+    "vorm": {
+      "description": "Property vorm",
+      "type": "string"
+    }
+  }
+}

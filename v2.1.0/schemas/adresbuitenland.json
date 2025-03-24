@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AdresBuitenland",
+  "description": "Represents a AdresBuitenland in the system",
+  "properties": {
+    "adresregelBuitenland1": {
+      "description": "Property adresregelBuitenland1",
+      "type": "string"
+    },
+    "adresregelBuitenland2": {
+      "description": "Property adresregelBuitenland2",
+      "type": "string"
+    },
+    "adresregelBuitenland3": {
+      "description": "Property adresregelBuitenland3",
+      "type": "string"
+    },
+    "datumAanvangAdresBuitenland": {
+      "description": "Property datumAanvangAdresBuitenland",
+      "type": "string"
+    },
+    "datumInschrijvingGemeente": {
+      "description": "Property datumInschrijvingGemeente",
+      "type": "string"
+    },
+    "datumVestigingNederland": {
+      "description": "Property datumVestigingNederland",
+      "type": "string"
+    },
+    "gemeenteVanInschrijving": {
+      "description": "Property gemeenteVanInschrijving",
+      "type": "string"
+    },
+    "landAdresBuitenland": {
+      "description": "Property landAdresBuitenland",
+      "type": "string"
+    },
+    "landWaarvandaanIngeschreven": {
+      "description": "Property landWaarvandaanIngeschreven",
+      "type": "string"
+    },
+    "omschrijvingVanDeAangifteAdreshouding": {
+      "description": "Property omschrijvingVanDeAangifteAdreshouding",
+      "type": "string"
+    }
+  }
+}

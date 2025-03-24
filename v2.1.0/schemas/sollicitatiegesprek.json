@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Sollicitatiegesprek",
+  "description": "Represents a Sollicitatiegesprek in the system",
+  "properties": {
+    "aangenomen": {
+      "description": "Property aangenomen",
+      "type": "string"
+    },
+    "datum": {
+      "description": "Property datum",
+      "type": "string",
+      "format": "date"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    },
+    "volgendGesprek": {
+      "description": "Property volgendGesprek",
+      "type": "string"
+    }
+  }
+}

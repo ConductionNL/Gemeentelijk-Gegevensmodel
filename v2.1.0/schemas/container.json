@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Container",
+  "description": "Represents a Container in the system",
+  "properties": {
+    "containercode": {
+      "description": "Property containercode",
+      "type": "string"
+    },
+    "sensorID": {
+      "description": "Property sensorID",
+      "type": "string"
+    }
+  }
+}

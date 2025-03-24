@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Identificatiekenmerk",
+  "description": "Represents a Identificatiekenmerk in the system",
+  "properties": {
+    "kenmerk": {
+      "description": "Property kenmerk",
+      "type": "string"
+    }
+  }
+}

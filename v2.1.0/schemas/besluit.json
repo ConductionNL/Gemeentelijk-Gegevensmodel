@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Besluit",
+  "description": "Represents a Besluit in the system",
+  "properties": {
+    "besluit": {
+      "description": "Property besluit",
+      "type": "string"
+    },
+    "besluitidentificatie": {
+      "description": "Property besluitidentificatie",
+      "type": "string"
+    },
+    "besluittoelichting": {
+      "description": "Property besluittoelichting",
+      "type": "string"
+    },
+    "datumBesluit": {
+      "description": "Property datumBesluit",
+      "type": "string"
+    },
+    "datumPublicatie": {
+      "description": "Property datumPublicatie",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "datumUiterlijkeReactie": {
+      "description": "Property datumUiterlijkeReactie",
+      "type": "string"
+    },
+    "datumVerval": {
+      "description": "Property datumVerval",
+      "type": "string"
+    },
+    "datumVerzending": {
+      "description": "Property datumVerzending",
+      "type": "string"
+    },
+    "redenVerval": {
+      "description": "Property redenVerval",
+      "type": "string"
+    },
+    "document": {
+      "description": "Property document",
+      "type": "string"
+    },
+    "zaak": {
+      "description": "Property zaak",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

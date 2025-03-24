@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Aanbesteding",
+  "description": "Represents a Aanbesteding in the system",
+  "properties": {
+    "datumPublicatie": {
+      "description": "Property datumPublicatie",
+      "type": "string",
+      "format": "date-time"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "digitaal": {
+      "description": "Property digitaal",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "procedure": {
+      "description": "Property procedure",
+      "type": "string"
+    },
+    "referentienummer": {
+      "description": "Property referentienummer",
+      "type": "string"
+    },
+    "scoreMaximaal": {
+      "description": "Property scoreMaximaal",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "tendernedKenmerk": {
+      "description": "Property tendernedKenmerk",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "volgendeSluiting": {
+      "description": "Property volgendeSluiting",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

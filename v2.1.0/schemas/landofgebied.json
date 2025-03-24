@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "LandOfGebied",
+  "description": "Represents a LandOfGebied in the system",
+  "properties": {
+    "datumEindeLand": {
+      "description": "Property datumEindeLand",
+      "type": "string"
+    },
+    "datumIngangLand": {
+      "description": "Property datumIngangLand",
+      "type": "string"
+    },
+    "landcode": {
+      "description": "Property landcode",
+      "type": "string"
+    },
+    "landcodeISO": {
+      "description": "Property landcodeISO",
+      "type": "string"
+    },
+    "landnaam": {
+      "description": "Property landnaam",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SamengesteldeNaamNatuurlijkPersoon",
+  "description": "Represents a SamengesteldeNaamNatuurlijkPersoon in the system",
+  "properties": {
+    "adellijkeTitel": {
+      "description": "Property adellijkeTitel",
+      "type": "string"
+    },
+    "geslachtsnaamstam": {
+      "description": "Property geslachtsnaamstam",
+      "type": "string"
+    },
+    "namenreeks": {
+      "description": "Property namenreeks",
+      "type": "string"
+    },
+    "predicaat": {
+      "description": "Property predicaat",
+      "type": "string"
+    },
+    "scheidingsteken": {
+      "description": "Property scheidingsteken",
+      "type": "string"
+    },
+    "voornamen": {
+      "description": "Property voornamen",
+      "type": "string"
+    },
+    "voorvoegsel": {
+      "description": "Property voorvoegsel",
+      "type": "string"
+    }
+  }
+}

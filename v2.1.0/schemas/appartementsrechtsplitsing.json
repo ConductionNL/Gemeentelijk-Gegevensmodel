@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Appartementsrechtsplitsing",
+  "description": "Represents a Appartementsrechtsplitsing in the system",
+  "properties": {
+    "ddentificatieAppartementsrechtsplitsing": {
+      "description": "Property ddentificatieAppartementsrechtsplitsing",
+      "type": "string"
+    },
+    "typeSplitsing": {
+      "description": "Property typeSplitsing",
+      "type": "string"
+    }
+  }
+}

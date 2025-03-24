@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "IndividueelKeuzebudget",
+  "description": "Represents a IndividueelKeuzebudget in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "datumToekenning": {
+      "description": "Property datumToekenning",
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

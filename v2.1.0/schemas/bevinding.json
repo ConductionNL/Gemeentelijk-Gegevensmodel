@@ -22,11 +22,13 @@
     },
     "datumAanmaak": {
       "description": "Property datumAanmaak",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumMutatie": {
       "description": "Property datumMutatie",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "diepte": {
       "description": "Property diepte",

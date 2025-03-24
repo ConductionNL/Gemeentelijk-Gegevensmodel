@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inkooppakket",
+  "description": "Represents a Inkooppakket in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Plan",
+  "description": "Represents a Plan in the system",
+  "properties": {
+    "70ProcentVerkocht": {
+      "description": "Property 70ProcentVerkocht",
+      "type": "string"
+    },
+    "aardgasloos": {
+      "description": "Property aardgasloos",
+      "type": "string"
+    },
+    "bestemmingGoedgekeurd": {
+      "description": "Property bestemmingGoedgekeurd",
+      "type": "string"
+    },
+    "eersteOplevering": {
+      "description": "Property eersteOplevering",
+      "type": "string",
+      "format": "date"
+    },
+    "eigendomGemeente": {
+      "description": "Property eigendomGemeente",
+      "type": "string"
+    },
+    "gebiedstransformatie": {
+      "description": "Property gebiedstransformatie",
+      "type": "string"
+    },
+    "intentie": {
+      "description": "Property intentie",
+      "type": "string"
+    },
+    "laatsteOplevering": {
+      "description": "Property laatsteOplevering",
+      "type": "string",
+      "format": "date"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "nummer": {
+      "description": "Property nummer",
+      "type": "string"
+    },
+    "onherroepelijk": {
+      "description": "Property onherroepelijk",
+      "type": "string"
+    },
+    "percelen": {
+      "description": "Property percelen",
+      "type": "string"
+    },
+    "startbouw": {
+      "description": "Property startbouw",
+      "type": "string",
+      "format": "date"
+    },
+    "startVerkoop": {
+      "description": "Property startVerkoop",
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

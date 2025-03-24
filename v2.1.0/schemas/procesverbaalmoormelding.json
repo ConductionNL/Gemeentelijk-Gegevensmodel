@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ProcesVerbaalMoorMelding",
+  "description": "Represents a ProcesVerbaalMoorMelding in the system",
+  "properties": {
+    "datum": {
+      "description": "Property datum",
+      "type": "string",
+      "format": "date-time"
+    },
+    "goedkeuring": {
+      "description": "Property goedkeuring",
+      "type": "string"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    }
+  }
+}

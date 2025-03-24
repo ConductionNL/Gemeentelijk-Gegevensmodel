@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Pand",
+  "description": "Represents a Pand in the system",
+  "properties": {
+    "brutoInhoudPand": {
+      "description": "Property brutoInhoudPand",
+      "type": "string"
+    },
+    "datumBeginGeldigheidPand": {
+      "description": "Property datumBeginGeldigheidPand",
+      "type": "string"
+    },
+    "datumEindeGeldigheidPand": {
+      "description": "Property datumEindeGeldigheidPand",
+      "type": "string"
+    },
+    "geometriePunt": {
+      "description": "Property geometriePunt",
+      "type": "string"
+    },
+    "hoogsteBouwlaagPand": {
+      "description": "Property hoogsteBouwlaagPand",
+      "type": "string"
+    },
+    "identificatieBGTPND": {
+      "description": "Property identificatieBGTPND",
+      "type": "string"
+    },
+    "indicatieGeconstateerdPand": {
+      "description": "Property indicatieGeconstateerdPand",
+      "type": "string"
+    },
+    "indicatiePlanobject": {
+      "description": "Property indicatiePlanobject",
+      "type": "string"
+    },
+    "inwinningGeometrieBovenaanzicht": {
+      "description": "Property inwinningGeometrieBovenaanzicht",
+      "type": "string"
+    },
+    "inwinningGeometrieMaaiveld": {
+      "description": "Property inwinningGeometrieMaaiveld",
+      "type": "string"
+    },
+    "laagsteBouwlaagPand": {
+      "description": "Property laagsteBouwlaagPand",
+      "type": "string"
+    },
+    "labelNummeraanduidingreeks": {
+      "description": "Property labelNummeraanduidingreeks",
+      "type": "string"
+    },
+    "LOD1GeometriePand": {
+      "description": "Property LOD1GeometriePand",
+      "type": "string"
+    },
+    "LOD2GeometriePand": {
+      "description": "Property LOD2GeometriePand",
+      "type": "string"
+    },
+    "lod3GeometriePand": {
+      "description": "Property lod3GeometriePand",
+      "type": "string"
+    },
+    "oorspronkelijkBouwjaarPand": {
+      "description": "Property oorspronkelijkBouwjaarPand",
+      "type": "string"
+    },
+    "oppervlaktePand": {
+      "description": "Property oppervlaktePand",
+      "type": "string"
+    },
+    "pandgeometrieBovenaanzicht": {
+      "description": "Property pandgeometrieBovenaanzicht",
+      "type": "string"
+    },
+    "pandgeometrieMaaiveld": {
+      "description": "Property pandgeometrieMaaiveld",
+      "type": "string"
+    },
+    "pandidentificatie": {
+      "description": "Property pandidentificatie",
+      "type": "string"
+    },
+    "pandstatus": {
+      "description": "Property pandstatus",
+      "type": "string"
+    },
+    "relatieveHoogteliggingPand": {
+      "description": "Property relatieveHoogteliggingPand",
+      "type": "string"
+    },
+    "statusVoortgangBouw": {
+      "description": "Property statusVoortgangBouw",
+      "type": "string"
+    }
+  }
+}

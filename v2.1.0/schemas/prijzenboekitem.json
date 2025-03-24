@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Prijzenboekitem",
+  "description": "Represents a Prijzenboekitem in the system",
+  "properties": {
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "prijs": {
+      "description": "Property prijs",
+      "type": "string"
+    },
+    "verrichting": {
+      "description": "Property verrichting",
+      "type": "string"
+    }
+  }
+}

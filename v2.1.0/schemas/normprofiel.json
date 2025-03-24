@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NormProfiel",
+  "description": "Represents a NormProfiel in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "schaal": {
+      "description": "Property schaal",
+      "type": "string"
+    }
+  }
+}

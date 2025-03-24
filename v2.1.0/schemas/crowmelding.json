@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "CROWMelding",
+  "description": "Represents a CROWMelding in the system",
+  "properties": {
+    "kwaliteitsniveau": {
+      "description": "Property kwaliteitsniveau",
+      "type": "string"
+    }
+  }
+}

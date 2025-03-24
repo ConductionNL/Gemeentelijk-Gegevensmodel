@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Factuur",
+  "description": "Represents a Factuur in the system",
+  "properties": {
+    "betaalbaarPer": {
+      "description": "Property betaalbaarPer",
+      "type": "string",
+      "format": "date"
+    },
+    "betaaltermijn": {
+      "description": "Property betaaltermijn",
+      "type": "string"
+    },
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "datumFactuur": {
+      "description": "Property datumFactuur",
+      "type": "string",
+      "format": "date"
+    },
+    "factuurbedragBTW": {
+      "description": "Property factuurbedragBTW",
+      "type": "string"
+    },
+    "factuurbedragExclusiefBTW": {
+      "description": "Property factuurbedragExclusiefBTW",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

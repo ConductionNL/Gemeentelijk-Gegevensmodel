@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "StartformulierAanbesteden",
+  "description": "Represents a StartformulierAanbesteden in the system",
+  "properties": {
+    "beoogdeLooptijd": {
+      "description": "Property beoogdeLooptijd",
+      "type": "string"
+    },
+    "beoogdeTotaleOpdrachtwaarde": {
+      "description": "Property beoogdeTotaleOpdrachtwaarde",
+      "type": "string"
+    },
+    "indicatieAanvullendeOpdrachtLeverancier": {
+      "description": "Property indicatieAanvullendeOpdrachtLeverancier",
+      "type": "string"
+    },
+    "indicatieBeoogdeAanbestedingOnderhands": {
+      "description": "Property indicatieBeoogdeAanbestedingOnderhands",
+      "type": "string"
+    },
+    "indicatieBeoogdeProcKomtOvereen": {
+      "description": "Property indicatieBeoogdeProcKomtOvereen",
+      "type": "string"
+    },
+    "indicatieEenmaligeLos": {
+      "description": "Property indicatieEenmaligeLos",
+      "type": "string"
+    },
+    "indicatieMeerjarigeRaamovereenkomst": {
+      "description": "Property indicatieMeerjarigeRaamovereenkomst",
+      "type": "string"
+    },
+    "indicatieMeerjarigRepeterend": {
+      "description": "Property indicatieMeerjarigRepeterend",
+      "type": "string"
+    },
+    "indicatorOverkoepelendProject": {
+      "description": "Property indicatorOverkoepelendProject",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "opdrachtcategorie": {
+      "description": "Property opdrachtcategorie",
+      "type": "string"
+    },
+    "opdrachtsoort": {
+      "description": "Property opdrachtsoort",
+      "type": "string"
+    },
+    "toelichtingAanvullendeOpdracht": {
+      "description": "Property toelichtingAanvullendeOpdracht",
+      "type": "string"
+    },
+    "toelichtingEenmaligOfRepeterend": {
+      "description": "Property toelichtingEenmaligOfRepeterend",
+      "type": "string"
+    }
+  }
+}

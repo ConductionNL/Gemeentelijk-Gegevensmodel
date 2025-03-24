@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ClassJ",
+  "description": "Represents a ClassJ in the system",
+  "properties": {
+    "M_Bronsysteem": {
+      "description": "Property M_Bronsysteem",
+      "type": "string"
+    },
+    "M_DatumTijdGeladen": {
+      "description": "Property M_DatumTijdGeladen",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ClassJID": {
+      "description": "Property ClassJID",
+      "type": "string"
+    }
+  }
+}

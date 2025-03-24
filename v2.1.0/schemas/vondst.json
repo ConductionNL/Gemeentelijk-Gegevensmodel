@@ -6,7 +6,8 @@
   "properties": {
     "datum": {
       "description": "Property datum",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "key": {
       "description": "Property key",

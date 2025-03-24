@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Weginrichtingsobject",
+  "description": "Represents a Weginrichtingsobject in the system",
+  "properties": {
+    "aanleghoogte": {
+      "description": "Property aanleghoogte",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "jaarConserveren": {
+      "description": "Property jaarConserveren",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "kwaliteitsniveauActueel": {
+      "description": "Property kwaliteitsniveauActueel",
+      "type": "string"
+    },
+    "kwaliteitsniveauGewenst": {
+      "description": "Property kwaliteitsniveauGewenst",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "materiaal": {
+      "description": "Property materiaal",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "weginrichtingsobjectWegfunctie": {
+      "description": "Property weginrichtingsobjectWegfunctie",
+      "type": "string"
+    }
+  }
+}

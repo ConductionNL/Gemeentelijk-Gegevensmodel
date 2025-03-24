@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vuilniswagen",
+  "description": "Represents a Vuilniswagen in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "kenteken": {
+      "description": "Property kenteken",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

@@ -22,7 +22,8 @@
     },
     "tijdstip": {
       "description": "Property tijdstip",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "verkeerWilGroen": {
       "description": "Property verkeerWilGroen",

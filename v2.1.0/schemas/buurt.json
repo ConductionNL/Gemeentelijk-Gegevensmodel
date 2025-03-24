@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Buurt",
+  "description": "Represents a Buurt in the system",
+  "properties": {
+    "buurtcode": {
+      "description": "Property buurtcode",
+      "type": "string"
+    },
+    "buurtgeometrie": {
+      "description": "Property buurtgeometrie",
+      "type": "string"
+    },
+    "buurtnaam": {
+      "description": "Property buurtnaam",
+      "type": "string"
+    },
+    "datumBeginGeldigheidBuurt": {
+      "description": "Property datumBeginGeldigheidBuurt",
+      "type": "string"
+    },
+    "datumEindeGeldigheidBuurt": {
+      "description": "Property datumEindeGeldigheidBuurt",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "identificatieIMGeoBRT": {
+      "description": "Property identificatieIMGeoBRT",
+      "type": "string"
+    }
+  }
+}

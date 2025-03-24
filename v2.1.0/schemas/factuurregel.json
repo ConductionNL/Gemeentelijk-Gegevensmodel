@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Factuurregel",
+  "description": "Represents a Factuurregel in the system",
+  "properties": {
+    "aantal": {
+      "description": "Property aantal",
+      "type": "string"
+    },
+    "bedragBTW": {
+      "description": "Property bedragBTW",
+      "type": "string"
+    },
+    "bedragExBTW": {
+      "description": "Property bedragExBTW",
+      "type": "string"
+    },
+    "BTWPercentage": {
+      "description": "Property BTWPercentage",
+      "type": "string"
+    },
+    "nummer": {
+      "description": "Property nummer",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vulgraadmeting",
+  "description": "Represents a Vulgraadmeting in the system",
+  "properties": {
+    "tijdstip": {
+      "description": "Property tijdstip",
+      "type": "string",
+      "format": "date-time"
+    },
+    "vulgraad": {
+      "description": "Property vulgraad",
+      "type": "string"
+    },
+    "vullingGewicht": {
+      "description": "Property vullingGewicht",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Reisdocumentsoort",
+  "description": "Represents a Reisdocumentsoort in the system",
+  "properties": {
+    "datumBeginGeldigheidReisdocumentsoort": {
+      "description": "Property datumBeginGeldigheidReisdocumentsoort",
+      "type": "string"
+    },
+    "datumEindeGeldigheidReisdocumentsoort": {
+      "description": "Property datumEindeGeldigheidReisdocumentsoort",
+      "type": "string"
+    },
+    "reisdocumentcode": {
+      "description": "Property reisdocumentcode",
+      "type": "string"
+    },
+    "reisdocumentOmschrijving": {
+      "description": "Property reisdocumentOmschrijving",
+      "type": "string"
+    }
+  }
+}

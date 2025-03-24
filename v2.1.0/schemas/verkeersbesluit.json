@@ -6,15 +6,18 @@
   "properties": {
     "datumBesluit": {
       "description": "Property datumBesluit",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEinde": {
       "description": "Property datumEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumStart": {
       "description": "Property datumStart",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "huisnummer": {
       "description": "Property huisnummer",

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Normwaarde",
+  "description": "Represents a Normwaarde in the system",
+  "properties": {
+    "kwalitatieveWaarde": {
+      "description": "Property kwalitatieveWaarde",
+      "type": "string"
+    },
+    "kwantitatieveWaardeEenheid": {
+      "description": "Property kwantitatieveWaardeEenheid",
+      "type": "string"
+    },
+    "kwantitatieveWaardeOmvang": {
+      "description": "Property kwantitatieveWaardeOmvang",
+      "type": "string"
+    }
+  }
+}

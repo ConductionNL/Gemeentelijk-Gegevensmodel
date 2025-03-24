@@ -10,11 +10,13 @@
     },
     "datumAanstelling": {
       "description": "Property datumAanstelling",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumUittreding": {
       "description": "Property datumUittreding",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "fractie": {
       "description": "Property fractie",

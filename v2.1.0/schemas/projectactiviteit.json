@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Projectactiviteit",
+  "description": "Represents a Projectactiviteit in the system",
+  "properties": {}
+}

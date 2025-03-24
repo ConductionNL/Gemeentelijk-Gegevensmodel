@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "MJOPItem",
+  "description": "Represents a MJOPItem in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumOpzeggingAanbieder": {
+      "description": "Property datumOpzeggingAanbieder",
+      "type": "string",
+      "format": "date"
+    },
+    "datumOpzeggingOntvanger": {
+      "description": "Property datumOpzeggingOntvanger",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "kosten": {
+      "description": "Property kosten",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "opzegtermijnAanbieder": {
+      "description": "Property opzegtermijnAanbieder",
+      "type": "string"
+    },
+    "opzegtermijnOntvanger": {
+      "description": "Property opzegtermijnOntvanger",
+      "type": "string"
+    }
+  }
+}

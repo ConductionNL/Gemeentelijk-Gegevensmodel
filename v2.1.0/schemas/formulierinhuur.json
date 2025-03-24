@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "FormulierInhuur",
+  "description": "Represents a FormulierInhuur in the system",
+  "properties": {
+    "akkoordFinancieelAdviseur": {
+      "description": "Property akkoordFinancieelAdviseur",
+      "type": "string"
+    },
+    "akkoordHRAdviseur": {
+      "description": "Property akkoordHRAdviseur",
+      "type": "string"
+    },
+    "datumIngangInhuur": {
+      "description": "Property datumIngangInhuur",
+      "type": "string",
+      "format": "date"
+    },
+    "functienaamInhuur": {
+      "description": "Property functienaamInhuur",
+      "type": "string"
+    }
+  }
+}

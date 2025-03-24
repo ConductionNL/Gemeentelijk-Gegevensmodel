@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Putdeksel",
+  "description": "Represents a Putdeksel in the system",
+  "properties": {
+    "diameter": {
+      "description": "Property diameter",
+      "type": "string"
+    },
+    "put": {
+      "description": "Property put",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "vorm": {
+      "description": "Property vorm",
+      "type": "string"
+    }
+  }
+}

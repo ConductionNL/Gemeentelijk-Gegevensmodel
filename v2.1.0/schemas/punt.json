@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Punt",
+  "description": "Represents a Punt in the system",
+  "properties": {
+    "punt": {
+      "description": "Property punt",
+      "type": "string"
+    }
+  }
+}

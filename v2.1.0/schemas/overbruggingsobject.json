@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Overbruggingsobject",
+  "description": "Represents a Overbruggingsobject in the system",
+  "properties": {
+    "aanleghoogte": {
+      "description": "Property aanleghoogte",
+      "type": "string"
+    },
+    "antiGraffitiVoorziening": {
+      "description": "Property antiGraffitiVoorziening",
+      "type": "string"
+    },
+    "bereikbaarheid": {
+      "description": "Property bereikbaarheid",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "installateur": {
+      "description": "Property installateur",
+      "type": "string"
+    },
+    "jaarConserveren": {
+      "description": "Property jaarConserveren",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "jaarRenovatie": {
+      "description": "Property jaarRenovatie",
+      "type": "string"
+    },
+    "jaarVervanging": {
+      "description": "Property jaarVervanging",
+      "type": "string"
+    },
+    "kleur": {
+      "description": "Property kleur",
+      "type": "string"
+    },
+    "kwaliteitsniveauActueel": {
+      "description": "Property kwaliteitsniveauActueel",
+      "type": "string"
+    },
+    "kwaliteitsniveauGewenst": {
+      "description": "Property kwaliteitsniveauGewenst",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "looprichel": {
+      "description": "Property looprichel",
+      "type": "string"
+    },
+    "minimumConditiescore": {
+      "description": "Property minimumConditiescore",
+      "type": "string"
+    },
+    "onderhoudsregime": {
+      "description": "Property onderhoudsregime",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "overbruggingsobjectMateriaal": {
+      "description": "Property overbruggingsobjectMateriaal",
+      "type": "string"
+    },
+    "overbruggingsobjectModaliteit": {
+      "description": "Property overbruggingsobjectModaliteit",
+      "type": "string"
+    },
+    "technischeLevensduur": {
+      "description": "Property technischeLevensduur",
+      "type": "string"
+    },
+    "typeFundering": {
+      "description": "Property typeFundering",
+      "type": "string"
+    },
+    "vervangingswaarde": {
+      "description": "Property vervangingswaarde",
+      "type": "string"
+    }
+  }
+}

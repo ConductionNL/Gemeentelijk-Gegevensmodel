@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verplichting WMO Jeugd",
+  "description": "Represents a Verplichting WMO Jeugd in the system",
+  "properties": {
+    "Budgetsoort": {
+      "description": "Property Budgetsoort",
+      "type": "string"
+    },
+    "budgetsoortgroep": {
+      "description": "Property budgetsoortgroep",
+      "type": "string"
+    },
+    "Einddatumgepland": {
+      "description": "Property Einddatumgepland",
+      "type": "string"
+    },
+    "Feitelijke Einddatum": {
+      "description": "Property Feitelijke Einddatum",
+      "type": "string"
+    },
+    "Jaar": {
+      "description": "Property Jaar",
+      "type": "string"
+    },
+    "Periodiciteit": {
+      "description": "Property Periodiciteit",
+      "type": "string"
+    },
+    "verplichtingsoort": {
+      "description": "Property verplichtingsoort",
+      "type": "string"
+    }
+  }
+}

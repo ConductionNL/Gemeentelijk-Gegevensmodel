@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SBIActiviteitVestiging",
+  "description": "Represents a SBIActiviteitVestiging in the system",
+  "properties": {
+    "indicatieHoofdactiviteit": {
+      "description": "Property indicatieHoofdactiviteit",
+      "type": "string"
+    },
+    "SBICode": {
+      "description": "Property SBICode",
+      "type": "string"
+    }
+  }
+}

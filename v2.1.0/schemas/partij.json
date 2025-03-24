@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Partij",
+  "description": "Represents a Partij in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "datumAanvangGeldigheidPartij": {
+      "description": "Property datumAanvangGeldigheidPartij",
+      "type": "string"
+    },
+    "datumEindeGeldigheidPartij": {
+      "description": "Property datumEindeGeldigheidPartij",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "soort": {
+      "description": "Property soort",
+      "type": "string"
+    },
+    "verstrekkingsbeperkingMogelijk": {
+      "description": "Property verstrekkingsbeperkingMogelijk",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Uitkeringsrun",
+  "description": "Represents a Uitkeringsrun in the system",
+  "properties": {
+    "datumRun": {
+      "description": "Property datumRun",
+      "type": "string",
+      "format": "date"
+    },
+    "frequentie": {
+      "description": "Property frequentie",
+      "type": "string"
+    },
+    "periodeRun": {
+      "description": "Property periodeRun",
+      "type": "string"
+    },
+    "soortRun": {
+      "description": "Property soortRun",
+      "type": "string"
+    }
+  }
+}

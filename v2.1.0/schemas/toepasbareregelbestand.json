@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ToepasbareRegelBestand",
+  "description": "Represents a ToepasbareRegelBestand in the system",
+  "properties": {
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

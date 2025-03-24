@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Brondocumenten",
+  "description": "Represents a Brondocumenten in the system",
+  "properties": {
+    "akteGemeente": {
+      "description": "Property akteGemeente",
+      "type": "string"
+    },
+    "datumDocument": {
+      "description": "Property datumDocument",
+      "type": "string"
+    },
+    "documentGemeente": {
+      "description": "Property documentGemeente",
+      "type": "string"
+    },
+    "documentIdentificatie": {
+      "description": "Property documentIdentificatie",
+      "type": "string"
+    },
+    "documentOmschrijving": {
+      "description": "Property documentOmschrijving",
+      "type": "string"
+    }
+  }
+}

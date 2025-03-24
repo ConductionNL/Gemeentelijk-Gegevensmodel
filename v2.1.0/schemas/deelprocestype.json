@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Deelprocestype",
+  "description": "Represents a Deelprocestype in the system",
+  "properties": {
+    "Omschrijving": {
+      "description": "Property Omschrijving",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Speeltoestel",
+  "description": "Represents a Speeltoestel in the system",
+  "properties": {
+    "catalogusprijs": {
+      "description": "Property catalogusprijs",
+      "type": "string"
+    },
+    "certificaat": {
+      "description": "Property certificaat",
+      "type": "string"
+    },
+    "certificaatnummer": {
+      "description": "Property certificaatnummer",
+      "type": "string"
+    },
+    "certificeringsinstantie": {
+      "description": "Property certificeringsinstantie",
+      "type": "string"
+    },
+    "controlefrequentie": {
+      "description": "Property controlefrequentie",
+      "type": "string"
+    },
+    "datumCertificaat": {
+      "description": "Property datumCertificaat",
+      "type": "string"
+    },
+    "gemakkelijkToegankelijk": {
+      "description": "Property gemakkelijkToegankelijk",
+      "type": "string"
+    },
+    "inspectievolgorde": {
+      "description": "Property inspectievolgorde",
+      "type": "string"
+    },
+    "installatiekosten": {
+      "description": "Property installatiekosten",
+      "type": "string"
+    },
+    "speelterrein": {
+      "description": "Property speelterrein",
+      "type": "string"
+    },
+    "speeltoestelToestelonderdeel": {
+      "description": "Property speeltoestelToestelonderdeel",
+      "type": "string"
+    },
+    "technischeLevensduur": {
+      "description": "Property technischeLevensduur",
+      "type": "string"
+    },
+    "toestelcode": {
+      "description": "Property toestelcode",
+      "type": "string"
+    },
+    "toestelgroep": {
+      "description": "Property toestelgroep",
+      "type": "string"
+    },
+    "toestelnaam": {
+      "description": "Property toestelnaam",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typenummer": {
+      "description": "Property typenummer",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "typePlus2": {
+      "description": "Property typePlus2",
+      "type": "string"
+    },
+    "valruimteHoogte": {
+      "description": "Property valruimteHoogte",
+      "type": "string"
+    },
+    "valruimteOmvang": {
+      "description": "Property valruimteOmvang",
+      "type": "string"
+    },
+    "vrijeValhoogte": {
+      "description": "Property vrijeValhoogte",
+      "type": "string"
+    }
+  }
+}

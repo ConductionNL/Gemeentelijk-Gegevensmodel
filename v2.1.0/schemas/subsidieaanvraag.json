@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Subsidieaanvraag",
+  "description": "Represents a Subsidieaanvraag in the system",
+  "properties": {
+    "aangevraagdBedrag": {
+      "description": "Property aangevraagdBedrag",
+      "type": "string"
+    },
+    "datumIndiening": {
+      "description": "Property datumIndiening",
+      "type": "string",
+      "format": "date"
+    },
+    "kenmerk": {
+      "description": "Property kenmerk",
+      "type": "string"
+    },
+    "ontvangstbevestiging": {
+      "description": "Property ontvangstbevestiging",
+      "type": "string",
+      "format": "date"
+    },
+    "verwachteBeschikking": {
+      "description": "Property verwachteBeschikking",
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AcademischeTitel",
+  "description": "Represents a AcademischeTitel in the system",
+  "properties": {
+    "codeAcademischeTitel": {
+      "description": "Property codeAcademischeTitel",
+      "type": "string"
+    },
+    "datumBeginGeldigheidTitel": {
+      "description": "Property datumBeginGeldigheidTitel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidTitel": {
+      "description": "Property datumEindeGeldigheidTitel",
+      "type": "string"
+    },
+    "omschrijvingAcademischeTitel": {
+      "description": "Property omschrijvingAcademischeTitel",
+      "type": "string"
+    },
+    "positieAcademischeTitelTOVNaam": {
+      "description": "Property positieAcademischeTitelTOVNaam",
+      "type": "string"
+    }
+  }
+}

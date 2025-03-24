@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "InformatieDakloosheid",
+  "description": "Represents a InformatieDakloosheid in the system",
+  "properties": {
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "gemeenteOorsprong": {
+      "description": "Property gemeenteOorsprong",
+      "type": "string"
+    },
+    "toestemmingGemeentelijkBriefadres": {
+      "description": "Property toestemmingGemeentelijkBriefadres",
+      "type": "string"
+    },
+    "toestemmingNachtopvang": {
+      "description": "Property toestemmingNachtopvang",
+      "type": "string"
+    }
+  }
+}

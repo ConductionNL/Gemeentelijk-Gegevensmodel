@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OpenbareRuimte",
+  "description": "Represents a OpenbareRuimte in the system",
+  "properties": {
+    "datumBeginGeldigheidOpenbareRuimte": {
+      "description": "Property datumBeginGeldigheidOpenbareRuimte",
+      "type": "string"
+    },
+    "datumEindeGeldigheidOpenbareRuimte": {
+      "description": "Property datumEindeGeldigheidOpenbareRuimte",
+      "type": "string"
+    },
+    "huisnummerrangeEvenEnOnevenNummers": {
+      "description": "Property huisnummerrangeEvenEnOnevenNummers",
+      "type": "string"
+    },
+    "huisnummerrangeEvenNummers": {
+      "description": "Property huisnummerrangeEvenNummers",
+      "type": "string"
+    },
+    "HuisnummerrangeOnevenNummers": {
+      "description": "Property HuisnummerrangeOnevenNummers",
+      "type": "string"
+    },
+    "IdentificatiecodeOpenbareRuimte": {
+      "description": "Property IdentificatiecodeOpenbareRuimte",
+      "type": "string"
+    },
+    "identificatieIMGeoOPR": {
+      "description": "Property identificatieIMGeoOPR",
+      "type": "string"
+    },
+    "indicatieGeconstateerdeOpenbareRuimte": {
+      "description": "Property indicatieGeconstateerdeOpenbareRuimte",
+      "type": "string"
+    },
+    "inOnderzoek": {
+      "description": "Property inOnderzoek",
+      "type": "string"
+    },
+    "labelNaamOpenbareRuimte": {
+      "description": "Property labelNaamOpenbareRuimte",
+      "type": "string"
+    },
+    "naamOpenbareRuimte": {
+      "description": "Property naamOpenbareRuimte",
+      "type": "string"
+    },
+    "openbareRuimteGeometrie": {
+      "description": "Property openbareRuimteGeometrie",
+      "type": "string"
+    },
+    "statusOpenbareRuimte": {
+      "description": "Property statusOpenbareRuimte",
+      "type": "string"
+    },
+    "straatnaam": {
+      "description": "Property straatnaam",
+      "type": "string"
+    },
+    "typeOpenbareRuimte": {
+      "description": "Property typeOpenbareRuimte",
+      "type": "string"
+    },
+    "wegsegment": {
+      "description": "Property wegsegment",
+      "type": "string"
+    }
+  }
+}

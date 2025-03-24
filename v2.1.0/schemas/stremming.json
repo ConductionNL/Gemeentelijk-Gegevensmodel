@@ -10,19 +10,23 @@
     },
     "datumAanmelding": {
       "description": "Property datumAanmelding",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumEinde": {
       "description": "Property datumEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumStart": {
       "description": "Property datumStart",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumWijziging": {
       "description": "Property datumWijziging",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "delenToegestaan": {
       "description": "Property delenToegestaan",

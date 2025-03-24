@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Pas",
+  "description": "Represents a Pas in the system",
+  "properties": {
+    "adresaanduiding": {
+      "description": "Property adresaanduiding",
+      "type": "string"
+    },
+    "pasnummer": {
+      "description": "Property pasnummer",
+      "type": "string"
+    }
+  }
+}

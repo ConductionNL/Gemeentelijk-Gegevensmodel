@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Scheiding",
+  "description": "Represents a Scheiding in the system",
+  "properties": {
+    "datumBeginGeldigheidScheiding": {
+      "description": "Property datumBeginGeldigheidScheiding",
+      "type": "string"
+    },
+    "datumEindeGeldigheidScheiding": {
+      "description": "Property datumEindeGeldigheidScheiding",
+      "type": "string"
+    },
+    "geometrieScheiding": {
+      "description": "Property geometrieScheiding",
+      "type": "string"
+    },
+    "identificatieScheiding": {
+      "description": "Property identificatieScheiding",
+      "type": "string"
+    },
+    "LOD0GeometrieScheiding": {
+      "description": "Property LOD0GeometrieScheiding",
+      "type": "string"
+    },
+    "LOD1GeometrieScheiding": {
+      "description": "Property LOD1GeometrieScheiding",
+      "type": "string"
+    },
+    "LOD2GeometrieScheiding": {
+      "description": "Property LOD2GeometrieScheiding",
+      "type": "string"
+    },
+    "lod3GeometrieScheiding": {
+      "description": "Property lod3GeometrieScheiding",
+      "type": "string"
+    },
+    "relatieveHoogteliggingScheiding": {
+      "description": "Property relatieveHoogteliggingScheiding",
+      "type": "string"
+    },
+    "statusScheiding": {
+      "description": "Property statusScheiding",
+      "type": "string"
+    }
+  }
+}

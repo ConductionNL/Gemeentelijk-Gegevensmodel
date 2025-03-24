@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verlof",
+  "description": "Represents a Verlof in the system",
+  "properties": {
+    "datumAanvraag": {
+      "description": "Property datumAanvraag",
+      "type": "string",
+      "format": "date"
+    },
+    "datumtijdEinde": {
+      "description": "Property datumtijdEinde",
+      "type": "string",
+      "format": "date-time"
+    },
+    "datumtijdStart": {
+      "description": "Property datumtijdStart",
+      "type": "string",
+      "format": "date-time"
+    },
+    "datumToekenning": {
+      "description": "Property datumToekenning",
+      "type": "string",
+      "format": "date"
+    },
+    "goedgekeurd": {
+      "description": "Property goedgekeurd",
+      "type": "string"
+    }
+  }
+}

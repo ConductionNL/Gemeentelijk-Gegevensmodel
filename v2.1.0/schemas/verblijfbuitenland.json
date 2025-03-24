@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VerblijfBuitenland",
+  "description": "Represents a VerblijfBuitenland in the system",
+  "properties": {
+    "adresregelBuitenland1": {
+      "description": "Property adresregelBuitenland1",
+      "type": "string"
+    },
+    "adresregelBuitenland2": {
+      "description": "Property adresregelBuitenland2",
+      "type": "string"
+    },
+    "adresregelBuitenland3": {
+      "description": "Property adresregelBuitenland3",
+      "type": "string"
+    },
+    "adresregelBuitenland4": {
+      "description": "Property adresregelBuitenland4",
+      "type": "string"
+    },
+    "adresregelBuitenland5": {
+      "description": "Property adresregelBuitenland5",
+      "type": "string"
+    },
+    "adresregelBuitenland6": {
+      "description": "Property adresregelBuitenland6",
+      "type": "string"
+    },
+    "landOfGebiedVerblijfadres": {
+      "description": "Property landOfGebiedVerblijfadres",
+      "type": "string"
+    }
+  }
+}

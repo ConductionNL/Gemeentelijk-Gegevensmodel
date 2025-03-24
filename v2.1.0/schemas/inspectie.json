@@ -10,7 +10,8 @@
     },
     "datum": {
       "description": "Property datum",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     }
   }
 }

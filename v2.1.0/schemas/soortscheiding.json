@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SoortScheiding",
+  "description": "Represents a SoortScheiding in the system",
+  "properties": {
+    "indicatiePlusBRPopulatie": {
+      "description": "Property indicatiePlusBRPopulatie",
+      "type": "string"
+    },
+    "typeScheiding": {
+      "description": "Property typeScheiding",
+      "type": "string"
+    }
+  }
+}

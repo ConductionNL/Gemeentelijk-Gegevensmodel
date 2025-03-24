@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Kademuur",
+  "description": "Represents a Kademuur in the system",
+  "properties": {
+    "belastingklasseNieuw": {
+      "description": "Property belastingklasseNieuw",
+      "type": "string"
+    },
+    "belastingklasseOud": {
+      "description": "Property belastingklasseOud",
+      "type": "string"
+    },
+    "grijpstenen": {
+      "description": "Property grijpstenen",
+      "type": "string"
+    },
+    "hoogteBovenkantKademuur": {
+      "description": "Property hoogteBovenkantKademuur",
+      "type": "string"
+    },
+    "materiaalBovenkantKademuur": {
+      "description": "Property materiaalBovenkantKademuur",
+      "type": "string"
+    },
+    "oppervlakteBovenkantKademuur": {
+      "description": "Property oppervlakteBovenkantKademuur",
+      "type": "string"
+    },
+    "reddingslijn": {
+      "description": "Property reddingslijn",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typeBovenkantKademuur": {
+      "description": "Property typeBovenkantKademuur",
+      "type": "string"
+    },
+    "typeFundering": {
+      "description": "Property typeFundering",
+      "type": "string"
+    },
+    "typeVerankering": {
+      "description": "Property typeVerankering",
+      "type": "string"
+    }
+  }
+}

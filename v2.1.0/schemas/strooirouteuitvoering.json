@@ -6,11 +6,13 @@
   "properties": {
     "geplandEinde": {
       "description": "Property geplandEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "geplandStart": {
       "description": "Property geplandStart",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "route": {
       "description": "Property route",
@@ -18,11 +20,13 @@
     },
     "werkelijkEinde": {
       "description": "Property werkelijkEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "werkelijkeStart": {
       "description": "Property werkelijkeStart",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     }
   }
 }

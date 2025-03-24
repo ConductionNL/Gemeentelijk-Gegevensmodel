@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AanduidingVerblijfsrecht",
+  "description": "Represents a AanduidingVerblijfsrecht in the system",
+  "properties": {
+    "datumAanvangGeldigheidVerblijfsrecht": {
+      "description": "Property datumAanvangGeldigheidVerblijfsrecht",
+      "type": "string"
+    },
+    "datumEindeGeldigheidVerblijfsrecht": {
+      "description": "Property datumEindeGeldigheidVerblijfsrecht",
+      "type": "string"
+    },
+    "verblijfsrechtnummer": {
+      "description": "Property verblijfsrechtnummer",
+      "type": "string"
+    },
+    "verblijfsrechtomschrijving": {
+      "description": "Property verblijfsrechtomschrijving",
+      "type": "string"
+    }
+  }
+}

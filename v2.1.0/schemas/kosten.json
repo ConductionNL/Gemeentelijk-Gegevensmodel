@@ -22,11 +22,13 @@
     },
     "datumAanmaak": {
       "description": "Property datumAanmaak",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumMutatie": {
       "description": "Property datumMutatie",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "eenheid": {
       "description": "Property eenheid",
@@ -38,7 +40,8 @@
     },
     "gefactureerdOp": {
       "description": "Property gefactureerdOp",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "gemuteerdDoor": {
       "description": "Property gemuteerdDoor",

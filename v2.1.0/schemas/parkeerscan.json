@@ -30,7 +30,8 @@
     },
     "tijdstip": {
       "description": "Property tijdstip",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "transactieID": {
       "description": "Property transactieID",

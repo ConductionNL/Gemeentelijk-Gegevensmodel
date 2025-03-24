@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bedrijfsprocestype",
+  "description": "Represents a Bedrijfsprocestype in the system",
+  "properties": {
+    "Omschrijving": {
+      "description": "Property Omschrijving",
+      "type": "string"
+    }
+  }
+}

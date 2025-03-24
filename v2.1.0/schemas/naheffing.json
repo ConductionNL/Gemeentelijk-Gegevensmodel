@@ -10,15 +10,18 @@
     },
     "bezwaarAfgehandeld": {
       "description": "Property bezwaarAfgehandeld",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "bezwaarIngetrokken": {
       "description": "Property bezwaarIngetrokken",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "bezwaarToegewezen": {
       "description": "Property bezwaarToegewezen",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "bonnummer": {
       "description": "Property bonnummer",
@@ -26,19 +29,23 @@
     },
     "datumBetaling": {
       "description": "Property datumBetaling",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumBezwaar": {
       "description": "Property datumBezwaar",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumGeseponeerd": {
       "description": "Property datumGeseponeerd",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumIndiening": {
       "description": "Property datumIndiening",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "dienstCD": {
       "description": "Property dienstCD",

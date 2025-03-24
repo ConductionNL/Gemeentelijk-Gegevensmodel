@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AKRKadastraleGemeentecode",
+  "description": "Represents a AKRKadastraleGemeentecode in the system",
+  "properties": {
+    "AKRCode": {
+      "description": "Property AKRCode",
+      "type": "string"
+    },
+    "codeAKRKadadastraleGemeentecode": {
+      "description": "Property codeAKRKadadastraleGemeentecode",
+      "type": "string"
+    },
+    "datumBeginGeldigheidAKRCode": {
+      "description": "Property datumBeginGeldigheidAKRCode",
+      "type": "string"
+    },
+    "datumEindeGeldigheidAKRCode": {
+      "description": "Property datumEindeGeldigheidAKRCode",
+      "type": "string"
+    }
+  }
+}

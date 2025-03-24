@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inkooporder",
+  "description": "Represents a Inkooporder in the system",
+  "properties": {
+    "artikelcode": {
+      "description": "Property artikelcode",
+      "type": "string"
+    },
+    "betalingMeerdereJaren": {
+      "description": "Property betalingMeerdereJaren",
+      "type": "string"
+    },
+    "betreft": {
+      "description": "Property betreft",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumIngediend": {
+      "description": "Property datumIngediend",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "goederencode": {
+      "description": "Property goederencode",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "ordernummer": {
+      "description": "Property ordernummer",
+      "type": "string"
+    },
+    "saldo": {
+      "description": "Property saldo",
+      "type": "string"
+    },
+    "totaalNettoBedrag": {
+      "description": "Property totaalNettoBedrag",
+      "type": "string"
+    },
+    "wijzeVanAanbesteden": {
+      "description": "Property wijzeVanAanbesteden",
+      "type": "string"
+    }
+  }
+}

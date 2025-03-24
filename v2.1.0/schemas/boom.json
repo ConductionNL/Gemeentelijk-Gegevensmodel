@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Boom",
+  "description": "Represents a Boom in the system",
+  "properties": {
+    "beleidsstatus": {
+      "description": "Property beleidsstatus",
+      "type": "string"
+    },
+    "beoogdeOmlooptijd": {
+      "description": "Property beoogdeOmlooptijd",
+      "type": "string"
+    },
+    "boombeeld": {
+      "description": "Property boombeeld",
+      "type": "string"
+    },
+    "boombeschermer": {
+      "description": "Property boombeschermer",
+      "type": "string"
+    },
+    "boomgroep": {
+      "description": "Property boomgroep",
+      "type": "string"
+    },
+    "boomhoogteActueel": {
+      "description": "Property boomhoogteActueel",
+      "type": "string"
+    },
+    "boomhoogteklasseActueel": {
+      "description": "Property boomhoogteklasseActueel",
+      "type": "string"
+    },
+    "boomhoogteklasseEindebeeld": {
+      "description": "Property boomhoogteklasseEindebeeld",
+      "type": "string"
+    },
+    "boomspiegel": {
+      "description": "Property boomspiegel",
+      "type": "string"
+    },
+    "boomTypeBeschermingsstatusPlus": {
+      "description": "Property boomTypeBeschermingsstatusPlus",
+      "type": "string"
+    },
+    "boomvoorziening": {
+      "description": "Property boomvoorziening",
+      "type": "string"
+    },
+    "controlefrequentie": {
+      "description": "Property controlefrequentie",
+      "type": "string"
+    },
+    "feestverlichting": {
+      "description": "Property feestverlichting",
+      "type": "string"
+    },
+    "groeifase": {
+      "description": "Property groeifase",
+      "type": "string"
+    },
+    "groeiplaatsinrichting": {
+      "description": "Property groeiplaatsinrichting",
+      "type": "string"
+    },
+    "herplantplicht": {
+      "description": "Property herplantplicht",
+      "type": "string"
+    },
+    "kiemjaar": {
+      "description": "Property kiemjaar",
+      "type": "string"
+    },
+    "kroondiameterklasseActueel": {
+      "description": "Property kroondiameterklasseActueel",
+      "type": "string"
+    },
+    "kroondiameterklasseEindebeeld": {
+      "description": "Property kroondiameterklasseEindebeeld",
+      "type": "string"
+    },
+    "kroonvolume": {
+      "description": "Property kroonvolume",
+      "type": "string"
+    },
+    "leeftijd": {
+      "description": "Property leeftijd",
+      "type": "string"
+    },
+    "meerstammig": {
+      "description": "Property meerstammig",
+      "type": "string"
+    },
+    "monetaireBoomwaarde": {
+      "description": "Property monetaireBoomwaarde",
+      "type": "string"
+    },
+    "snoeifase": {
+      "description": "Property snoeifase",
+      "type": "string"
+    },
+    "stamdiameter": {
+      "description": "Property stamdiameter",
+      "type": "string"
+    },
+    "stamdiameterklasse": {
+      "description": "Property stamdiameterklasse",
+      "type": "string"
+    },
+    "takvrijeRuimteTotGebouw": {
+      "description": "Property takvrijeRuimteTotGebouw",
+      "type": "string"
+    },
+    "takvrijeStam": {
+      "description": "Property takvrijeStam",
+      "type": "string"
+    },
+    "takvrijeZonePrimair": {
+      "description": "Property takvrijeZonePrimair",
+      "type": "string"
+    },
+    "takvrijeZoneSecundair": {
+      "description": "Property takvrijeZoneSecundair",
+      "type": "string"
+    },
+    "transponder": {
+      "description": "Property transponder",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typeBeschermingsstatus": {
+      "description": "Property typeBeschermingsstatus",
+      "type": "string"
+    },
+    "typeOmgevingsrisicoklasse": {
+      "description": "Property typeOmgevingsrisicoklasse",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "typeVermeerderingsvorm": {
+      "description": "Property typeVermeerderingsvorm",
+      "type": "string"
+    },
+    "veiligheidsklasseBoom": {
+      "description": "Property veiligheidsklasseBoom",
+      "type": "string"
+    },
+    "verplant": {
+      "description": "Property verplant",
+      "type": "string"
+    },
+    "verplantbaar": {
+      "description": "Property verplantbaar",
+      "type": "string"
+    },
+    "vrijeDoorrijhoogte": {
+      "description": "Property vrijeDoorrijhoogte",
+      "type": "string"
+    },
+    "vrijeDoorrijhoogtePrimair": {
+      "description": "Property vrijeDoorrijhoogtePrimair",
+      "type": "string"
+    },
+    "vrijeDoorrijhoogteSecundair": {
+      "description": "Property vrijeDoorrijhoogteSecundair",
+      "type": "string"
+    },
+    "vrijeTakval": {
+      "description": "Property vrijeTakval",
+      "type": "string"
+    }
+  }
+}

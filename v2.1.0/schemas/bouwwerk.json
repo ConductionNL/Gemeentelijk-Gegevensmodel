@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bouwwerk",
+  "description": "Represents a Bouwwerk in the system",
+  "properties": {
+    "aanleghoogte": {
+      "description": "Property aanleghoogte",
+      "type": "string"
+    },
+    "bouwwerkMateriaal": {
+      "description": "Property bouwwerkMateriaal",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "fabrikant": {
+      "description": "Property fabrikant",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "typeFundering": {
+      "description": "Property typeFundering",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ContactpersoonRol",
+  "description": "Represents a ContactpersoonRol in the system",
+  "properties": {
+    "contactpersoonEmailadres": {
+      "description": "Property contactpersoonEmailadres",
+      "type": "string"
+    },
+    "contactpersoonFunctie": {
+      "description": "Property contactpersoonFunctie",
+      "type": "string"
+    },
+    "Contactpersoonnaam": {
+      "description": "Property Contactpersoonnaam",
+      "type": "string"
+    },
+    "contactpersoonTelefoonnummer": {
+      "description": "Property contactpersoonTelefoonnummer",
+      "type": "string"
+    }
+  }
+}

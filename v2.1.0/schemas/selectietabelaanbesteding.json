@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SelectietabelAanbesteding",
+  "description": "Represents a SelectietabelAanbesteding in the system",
+  "properties": {
+    "aanbestedingsoort": {
+      "description": "Property aanbestedingsoort",
+      "type": "string"
+    },
+    "drempelbedragTot": {
+      "description": "Property drempelbedragTot",
+      "type": "string"
+    },
+    "drempelbedragVanaf": {
+      "description": "Property drempelbedragVanaf",
+      "type": "string"
+    },
+    "opdrachtcategorie": {
+      "description": "Property opdrachtcategorie",
+      "type": "string"
+    },
+    "openbaar": {
+      "description": "Property openbaar",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "TrajectActiviteit",
+  "description": "Represents a TrajectActiviteit in the system",
+  "properties": {
+    "contract": {
+      "description": "Property contract",
+      "type": "string"
+    },
+    "crediteur": {
+      "description": "Property crediteur",
+      "type": "string"
+    },
+    "datumBegin": {
+      "description": "Property datumBegin",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStatus": {
+      "description": "Property datumStatus",
+      "type": "string",
+      "format": "date"
+    },
+    "kinderopvang": {
+      "description": "Property kinderopvang",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "succesvol": {
+      "description": "Property succesvol",
+      "type": "string"
+    }
+  }
+}

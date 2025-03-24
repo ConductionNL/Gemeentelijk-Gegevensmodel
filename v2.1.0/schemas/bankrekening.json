@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bankrekening",
+  "description": "Represents a Bankrekening in the system",
+  "properties": {
+    "bank": {
+      "description": "Property bank",
+      "type": "string"
+    },
+    "nummer": {
+      "description": "Property nummer",
+      "type": "string"
+    },
+    "tennaamstelling": {
+      "description": "Property tennaamstelling",
+      "type": "string"
+    }
+  }
+}

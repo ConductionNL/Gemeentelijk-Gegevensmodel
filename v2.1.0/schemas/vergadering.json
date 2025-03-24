@@ -6,7 +6,8 @@
   "properties": {
     "eindtijd": {
       "description": "Property eindtijd",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "locatie": {
       "description": "Property locatie",
@@ -14,7 +15,8 @@
     },
     "starttijd": {
       "description": "Property starttijd",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "titel": {
       "description": "Property titel",

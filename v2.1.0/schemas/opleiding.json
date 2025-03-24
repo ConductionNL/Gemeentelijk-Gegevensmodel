@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Opleiding",
+  "description": "Represents a Opleiding in the system",
+  "properties": {
+    "instituut": {
+      "description": "Property instituut",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "prijs": {
+      "description": "Property prijs",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GeboorteIngeschrevenNatuurlijkPersoon",
+  "description": "Represents a GeboorteIngeschrevenNatuurlijkPersoon in the system",
+  "properties": {
+    "buitenlandsePlaatsGeboorte": {
+      "description": "Property buitenlandsePlaatsGeboorte",
+      "type": "string"
+    },
+    "buitenlandseRegioGeboorte": {
+      "description": "Property buitenlandseRegioGeboorte",
+      "type": "string"
+    },
+    "datumGeboorte": {
+      "description": "Property datumGeboorte",
+      "type": "string"
+    },
+    "gemeenteGeboorte": {
+      "description": "Property gemeenteGeboorte",
+      "type": "string"
+    },
+    "landOfGebiedGeboorte": {
+      "description": "Property landOfGebiedGeboorte",
+      "type": "string"
+    },
+    "omschrijvingLocatieGeboorte": {
+      "description": "Property omschrijvingLocatieGeboorte",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Rit",
+  "description": "Represents a Rit in the system",
+  "properties": {
+    "eindtijd": {
+      "description": "Property eindtijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ritcode": {
+      "description": "Property ritcode",
+      "type": "string"
+    },
+    "starttijd": {
+      "description": "Property starttijd",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -18,7 +18,8 @@
     },
     "datumMutatie": {
       "description": "Property datumMutatie",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "geaccordeerd": {
       "description": "Property geaccordeerd",

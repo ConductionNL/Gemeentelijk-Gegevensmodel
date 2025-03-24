@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Sensor",
+  "description": "Represents a Sensor in the system",
+  "properties": {
+    "aanleghoogte": {
+      "description": "Property aanleghoogte",
+      "type": "string"
+    },
+    "elektrakast": {
+      "description": "Property elektrakast",
+      "type": "string"
+    },
+    "frequentieOmvormer": {
+      "description": "Property frequentieOmvormer",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "meetpunt": {
+      "description": "Property meetpunt",
+      "type": "string"
+    },
+    "PLC": {
+      "description": "Property PLC",
+      "type": "string"
+    }
+  }
+}

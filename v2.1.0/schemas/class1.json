@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Class1",
+  "description": "Represents a Class1 in the system",
+  "properties": {
+    "waarde": {
+      "description": "Property waarde",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Subsidiebeschikking",
+  "description": "Represents a Subsidiebeschikking in the system",
+  "properties": {
+    "beschikkingsnummer": {
+      "description": "Property beschikkingsnummer",
+      "type": "string"
+    },
+    "beschiktBedrag": {
+      "description": "Property beschiktBedrag",
+      "type": "string"
+    },
+    "besluit": {
+      "description": "Property besluit",
+      "type": "string"
+    },
+    "internKenmerk": {
+      "description": "Property internKenmerk",
+      "type": "string"
+    },
+    "kenmerk": {
+      "description": "Property kenmerk",
+      "type": "string"
+    },
+    "ontvangen": {
+      "description": "Property ontvangen",
+      "type": "string",
+      "format": "date"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    }
+  }
+}

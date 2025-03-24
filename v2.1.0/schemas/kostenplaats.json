@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Kostenplaats",
+  "description": "Represents a Kostenplaats in the system",
+  "properties": {
+    "BTWCode": {
+      "description": "Property BTWCode",
+      "type": "string"
+    },
+    "BTWOmschrijving": {
+      "description": "Property BTWOmschrijving",
+      "type": "string"
+    },
+    "kostenplaatssoortCode": {
+      "description": "Property kostenplaatssoortCode",
+      "type": "string"
+    },
+    "kostenplaatssoortOmschrijving": {
+      "description": "Property kostenplaatssoortOmschrijving",
+      "type": "string"
+    },
+    "kostenplaatstypeCode": {
+      "description": "Property kostenplaatstypeCode",
+      "type": "string"
+    },
+    "kostenplaatstypeOmschrijving": {
+      "description": "Property kostenplaatstypeOmschrijving",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

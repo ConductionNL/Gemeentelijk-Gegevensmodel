@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "WOZDeelobject",
+  "description": "Represents a WOZDeelobject in the system",
+  "properties": {
+    "codeWOZDeelobject": {
+      "description": "Property codeWOZDeelobject",
+      "type": "string"
+    },
+    "datumBeginGeldigheidDeelobject": {
+      "description": "Property datumBeginGeldigheidDeelobject",
+      "type": "string"
+    },
+    "datumEindeGeldigheidDeelobject": {
+      "description": "Property datumEindeGeldigheidDeelobject",
+      "type": "string"
+    },
+    "statusWOZDeelobject": {
+      "description": "Property statusWOZDeelobject",
+      "type": "string"
+    },
+    "WOZDeelobjectNummer": {
+      "description": "Property WOZDeelobjectNummer",
+      "type": "string"
+    }
+  }
+}

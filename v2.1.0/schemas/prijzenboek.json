@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Prijzenboek",
+  "description": "Represents a Prijzenboek in the system",
+  "properties": {}
+}

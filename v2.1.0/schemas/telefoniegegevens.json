@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Telefoniegegevens",
+  "description": "Represents a Telefoniegegevens in the system",
+  "properties": {}
+}

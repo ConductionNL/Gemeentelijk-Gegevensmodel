@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "PIP",
+  "description": "Represents a PIP in the system",
+  "properties": {}
+}

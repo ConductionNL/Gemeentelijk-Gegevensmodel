@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GebouwdObject",
+  "description": "Represents a GebouwdObject in the system",
+  "properties": {
+    "bouwkundigeBestemmingActueel": {
+      "description": "Property bouwkundigeBestemmingActueel",
+      "type": "string"
+    },
+    "brutoInhoud": {
+      "description": "Property brutoInhoud",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "inwinningOppervlakte": {
+      "description": "Property inwinningOppervlakte",
+      "type": "string"
+    },
+    "oppervlakteObject": {
+      "description": "Property oppervlakteObject",
+      "type": "string"
+    },
+    "statusVoortgangBouw": {
+      "description": "Property statusVoortgangBouw",
+      "type": "string"
+    }
+  }
+}

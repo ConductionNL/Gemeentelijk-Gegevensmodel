@@ -14,7 +14,8 @@
     },
     "verkooptijd": {
       "description": "Property verkooptijd",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     }
   }
 }

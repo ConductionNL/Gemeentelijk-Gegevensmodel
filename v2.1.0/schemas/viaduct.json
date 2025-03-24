@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Viaduct",
+  "description": "Represents a Viaduct in the system",
+  "properties": {
+    "aantalOverspanningen": {
+      "description": "Property aantalOverspanningen",
+      "type": "string"
+    },
+    "belastingklasseNieuw": {
+      "description": "Property belastingklasseNieuw",
+      "type": "string"
+    },
+    "belastingklasseOud": {
+      "description": "Property belastingklasseOud",
+      "type": "string"
+    },
+    "draagvermogen": {
+      "description": "Property draagvermogen",
+      "type": "string"
+    },
+    "maximaalToelaatbaarVoertuiggewicht": {
+      "description": "Property maximaalToelaatbaarVoertuiggewicht",
+      "type": "string"
+    },
+    "maximaleAsbelasting": {
+      "description": "Property maximaleAsbelasting",
+      "type": "string"
+    },
+    "maximaleOverspanning": {
+      "description": "Property maximaleOverspanning",
+      "type": "string"
+    },
+    "overbruggingsobjectDoorrijopening": {
+      "description": "Property overbruggingsobjectDoorrijopening",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "waterobject": {
+      "description": "Property waterobject",
+      "type": "string"
+    },
+    "zwaarsteVoertuig": {
+      "description": "Property zwaarsteVoertuig",
+      "type": "string"
+    }
+  }
+}

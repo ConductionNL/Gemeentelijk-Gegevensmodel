@@ -10,7 +10,8 @@
     },
     "datumAanvraag": {
       "description": "Property datumAanvraag",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     }
   }
 }

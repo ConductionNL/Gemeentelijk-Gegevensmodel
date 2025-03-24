@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Tunnelobject",
+  "description": "Represents a Tunnelobject in the system",
+  "properties": {
+    "aanleghoogte": {
+      "description": "Property aanleghoogte",
+      "type": "string"
+    },
+    "aantalTunnelbuizen": {
+      "description": "Property aantalTunnelbuizen",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "doorrijbreedte": {
+      "description": "Property doorrijbreedte",
+      "type": "string"
+    },
+    "doorrijhoogte": {
+      "description": "Property doorrijhoogte",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "jaarConserveren": {
+      "description": "Property jaarConserveren",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "objectnaam": {
+      "description": "Property objectnaam",
+      "type": "string"
+    },
+    "objectnummer": {
+      "description": "Property objectnummer",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "tunnelobjectMateriaal": {
+      "description": "Property tunnelobjectMateriaal",
+      "type": "string"
+    }
+  }
+}

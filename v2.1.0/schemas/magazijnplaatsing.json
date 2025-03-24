@@ -10,7 +10,8 @@
     },
     "datumGeplaatst": {
       "description": "Property datumGeplaatst",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "herkomst": {
       "description": "Property herkomst",

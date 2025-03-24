@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bedrijfsproces",
+  "description": "Represents a Bedrijfsproces in the system",
+  "properties": {
+    "Afgerond": {
+      "description": "Property Afgerond",
+      "type": "string"
+    },
+    "Datum_eind": {
+      "description": "Property Datum_eind",
+      "type": "string",
+      "format": "date"
+    },
+    "Datum_start": {
+      "description": "Property Datum_start",
+      "type": "string",
+      "format": "date"
+    },
+    "Naam": {
+      "description": "Property Naam",
+      "type": "string"
+    },
+    "Omschrijving": {
+      "description": "Property Omschrijving",
+      "type": "string"
+    }
+  }
+}

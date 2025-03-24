@@ -6,15 +6,18 @@
   "properties": {
     "datumEindeGeldigheid": {
       "description": "Property datumEindeGeldigheid",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumStart": {
       "description": "Property datumStart",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "gebruiktOp": {
       "description": "Property gebruiktOp",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "rondleiding": {
       "description": "Property rondleiding",

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OverlijdenIngeschrevenNatuurlijkPersoon",
+  "description": "Represents a OverlijdenIngeschrevenNatuurlijkPersoon in the system",
+  "properties": {
+    "buitenlandsePlaatsOverlijden": {
+      "description": "Property buitenlandsePlaatsOverlijden",
+      "type": "string"
+    },
+    "buitenlandseRegioOverlijden": {
+      "description": "Property buitenlandseRegioOverlijden",
+      "type": "string"
+    },
+    "datumOverlijden": {
+      "description": "Property datumOverlijden",
+      "type": "string"
+    },
+    "gemeenteOverlijden": {
+      "description": "Property gemeenteOverlijden",
+      "type": "string"
+    },
+    "landOfGebiedOverlijden": {
+      "description": "Property landOfGebiedOverlijden",
+      "type": "string"
+    },
+    "omschrijvingLocatieOverlijden": {
+      "description": "Property omschrijvingLocatieOverlijden",
+      "type": "string"
+    }
+  }
+}

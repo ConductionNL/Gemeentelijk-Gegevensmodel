@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VideoOpname",
+  "description": "Represents a VideoOpname in the system",
+  "properties": {
+    "bestandsgrootte": {
+      "description": "Property bestandsgrootte",
+      "type": "string"
+    },
+    "datumtijd": {
+      "description": "Property datumtijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "videoformaat": {
+      "description": "Property videoformaat",
+      "type": "string"
+    }
+  }
+}

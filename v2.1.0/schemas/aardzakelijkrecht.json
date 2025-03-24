@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AardZakelijkRecht",
+  "description": "Represents a AardZakelijkRecht in the system",
+  "properties": {
+    "codeAardZakelijkRecht": {
+      "description": "Property codeAardZakelijkRecht",
+      "type": "string"
+    },
+    "datumBeginGeldigheidAardZakelijkRecht": {
+      "description": "Property datumBeginGeldigheidAardZakelijkRecht",
+      "type": "string"
+    },
+    "datumEindeGeldigheidAardZakelijkRecht": {
+      "description": "Property datumEindeGeldigheidAardZakelijkRecht",
+      "type": "string"
+    },
+    "naamAardZakelijkRecht": {
+      "description": "Property naamAardZakelijkRecht",
+      "type": "string"
+    }
+  }
+}

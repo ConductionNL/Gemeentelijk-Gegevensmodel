@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verzoek",
+  "description": "Represents a Verzoek in the system",
+  "properties": {
+    "akkoordverklaring": {
+      "description": "Property akkoordverklaring",
+      "type": "string"
+    },
+    "ambtshalve": {
+      "description": "Property ambtshalve",
+      "type": "string"
+    },
+    "datumIndiening": {
+      "description": "Property datumIndiening",
+      "type": "string",
+      "format": "date"
+    },
+    "doel": {
+      "description": "Property doel",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "referentieAanvrager": {
+      "description": "Property referentieAanvrager",
+      "type": "string"
+    },
+    "toelichtingLaterAanTeLeverenInformatie": {
+      "description": "Property toelichtingLaterAanTeLeverenInformatie",
+      "type": "string"
+    },
+    "toelichtingNietAanTeLeverenInformatie": {
+      "description": "Property toelichtingNietAanTeLeverenInformatie",
+      "type": "string"
+    },
+    "toelichtingVerzoek": {
+      "description": "Property toelichtingVerzoek",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "verzoeknummer": {
+      "description": "Property verzoeknummer",
+      "type": "string"
+    },
+    "volgnummer": {
+      "description": "Property volgnummer",
+      "type": "string"
+    }
+  }
+}

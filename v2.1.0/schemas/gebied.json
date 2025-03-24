@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gebied",
+  "description": "Represents a Gebied in the system",
+  "properties": {
+    "datumBeginGeldigheidBuurt": {
+      "description": "Property datumBeginGeldigheidBuurt",
+      "type": "string"
+    },
+    "datumEindeGeldigheidGebied": {
+      "description": "Property datumEindeGeldigheidGebied",
+      "type": "string"
+    },
+    "gebiedcode": {
+      "description": "Property gebiedcode",
+      "type": "string"
+    },
+    "gebiedsoort": {
+      "description": "Property gebiedsoort",
+      "type": "string"
+    },
+    "geometrie": {
+      "description": "Property geometrie",
+      "type": "string"
+    },
+    "identificatieIMGeoBRT": {
+      "description": "Property identificatieIMGeoBRT",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    }
+  }
+}

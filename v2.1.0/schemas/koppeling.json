@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Koppeling",
+  "description": "Represents a Koppeling in the system",
+  "properties": {
+    "beschrijving": {
+      "description": "Property beschrijving",
+      "type": "string"
+    },
+    "direct": {
+      "description": "Property direct",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Klantbeoordelingreden",
+  "description": "Represents a Klantbeoordelingreden in the system",
+  "properties": {
+    "reden": {
+      "description": "Property reden",
+      "type": "string"
+    }
+  }
+}

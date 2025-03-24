@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VerblijfadresIngeschrevenPersoon",
+  "description": "Represents a VerblijfadresIngeschrevenPersoon in the system",
+  "properties": {
+    "adresHerkomst": {
+      "description": "Property adresHerkomst",
+      "type": "string"
+    },
+    "beschrijvingLocatie": {
+      "description": "Property beschrijvingLocatie",
+      "type": "string"
+    }
+  }
+}

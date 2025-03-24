@@ -6,11 +6,13 @@
   "properties": {
     "datumBeginStatus": {
       "description": "Property datumBeginStatus",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEindeStatus": {
       "description": "Property datumEindeStatus",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "status": {
       "description": "Property status",

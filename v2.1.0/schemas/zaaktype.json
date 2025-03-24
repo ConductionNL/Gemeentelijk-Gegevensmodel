@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Zaaktype",
+  "description": "Represents a Zaaktype in the system",
+  "properties": {
+    "archiefcode": {
+      "description": "Property archiefcode",
+      "type": "string"
+    },
+    "datumBeginGeldigheidZaaktype": {
+      "description": "Property datumBeginGeldigheidZaaktype",
+      "type": "string"
+    },
+    "datumEindeGeldigheidZaaktype": {
+      "description": "Property datumEindeGeldigheidZaaktype",
+      "type": "string"
+    },
+    "doorlooptijdBehandeling": {
+      "description": "Property doorlooptijdBehandeling",
+      "type": "string"
+    },
+    "indicatiePublicatie": {
+      "description": "Property indicatiePublicatie",
+      "type": "string"
+    },
+    "publicatietekst": {
+      "description": "Property publicatietekst",
+      "type": "string"
+    },
+    "servicenormBehandeling": {
+      "description": "Property servicenormBehandeling",
+      "type": "string"
+    },
+    "trefwoord": {
+      "description": "Property trefwoord",
+      "type": "string"
+    },
+    "vertrouwelijkAanduiding": {
+      "description": "Property vertrouwelijkAanduiding",
+      "type": "string"
+    },
+    "zaakcategorie": {
+      "description": "Property zaakcategorie",
+      "type": "string"
+    },
+    "zaaktypeOmschrijving": {
+      "description": "Property zaaktypeOmschrijving",
+      "type": "string"
+    },
+    "zaaktypeOmschrijvingGeneriek": {
+      "description": "Property zaaktypeOmschrijvingGeneriek",
+      "type": "string"
+    },
+    "statustype": {
+      "description": "Property statustype",
+      "type": "string"
+    }
+  }
+}

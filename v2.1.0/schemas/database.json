@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Database",
+  "description": "Represents a Database in the system",
+  "properties": {
+    "architectuur": {
+      "description": "Property architectuur",
+      "type": "string"
+    },
+    "database": {
+      "description": "Property database",
+      "type": "string"
+    },
+    "databaseVersie": {
+      "description": "Property databaseVersie",
+      "type": "string"
+    },
+    "DBMS": {
+      "description": "Property DBMS",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "OTAP": {
+      "description": "Property OTAP",
+      "type": "string"
+    },
+    "vlan": {
+      "description": "Property vlan",
+      "type": "string"
+    }
+  }
+}

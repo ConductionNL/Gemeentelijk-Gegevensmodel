@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SoortFunctioneelGebied",
+  "description": "Represents a SoortFunctioneelGebied in the system",
+  "properties": {
+    "indicatiePlusBRPopulatie": {
+      "description": "Property indicatiePlusBRPopulatie",
+      "type": "string"
+    },
+    "typeFunctioneelGebied": {
+      "description": "Property typeFunctioneelGebied",
+      "type": "string"
+    }
+  }
+}

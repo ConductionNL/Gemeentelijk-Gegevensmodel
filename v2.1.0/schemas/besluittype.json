@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Besluittype",
+  "description": "Represents a Besluittype in the system",
+  "properties": {
+    "besluitcategorie": {
+      "description": "Property besluitcategorie",
+      "type": "string"
+    },
+    "besluittypeOmschrijving": {
+      "description": "Property besluittypeOmschrijving",
+      "type": "string"
+    },
+    "besluittypeOmschrijvingGeneriek": {
+      "description": "Property besluittypeOmschrijvingGeneriek",
+      "type": "string"
+    },
+    "datumBeginGeldigheidBesluittype": {
+      "description": "Property datumBeginGeldigheidBesluittype",
+      "type": "string"
+    },
+    "datumEindeGeldigheidBesluittype": {
+      "description": "Property datumEindeGeldigheidBesluittype",
+      "type": "string"
+    },
+    "indicatiePublicatie": {
+      "description": "Property indicatiePublicatie",
+      "type": "string"
+    },
+    "publicatietekst": {
+      "description": "Property publicatietekst",
+      "type": "string"
+    },
+    "publicatietermijn": {
+      "description": "Property publicatietermijn",
+      "type": "string"
+    },
+    "reactietermijn": {
+      "description": "Property reactietermijn",
+      "type": "string"
+    }
+  }
+}

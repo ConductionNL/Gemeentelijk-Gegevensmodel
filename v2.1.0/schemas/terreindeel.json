@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Terreindeel",
+  "description": "Represents a Terreindeel in the system",
+  "properties": {
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "cultuurhistorischWaardevol": {
+      "description": "Property cultuurhistorischWaardevol",
+      "type": "string"
+    },
+    "herplantplicht": {
+      "description": "Property herplantplicht",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "opTalud": {
+      "description": "Property opTalud",
+      "type": "string"
+    },
+    "percentageLoofbos": {
+      "description": "Property percentageLoofbos",
+      "type": "string"
+    },
+    "terreindeelSoortnaam": {
+      "description": "Property terreindeelSoortnaam",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typeBewerking": {
+      "description": "Property typeBewerking",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "typePlus2": {
+      "description": "Property typePlus2",
+      "type": "string"
+    }
+  }
+}

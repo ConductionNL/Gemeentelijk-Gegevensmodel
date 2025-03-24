@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Meubilair",
+  "description": "Represents a Meubilair in the system",
+  "properties": {
+    "aanleghoogte": {
+      "description": "Property aanleghoogte",
+      "type": "string"
+    },
+    "bouwjaar": {
+      "description": "Property bouwjaar",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "datumAanschaf": {
+      "description": "Property datumAanschaf",
+      "type": "string"
+    },
+    "diameter": {
+      "description": "Property diameter",
+      "type": "string"
+    },
+    "fabrikant": {
+      "description": "Property fabrikant",
+      "type": "string"
+    },
+    "gewicht": {
+      "description": "Property gewicht",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "installateur": {
+      "description": "Property installateur",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "jaarPraktischEinde": {
+      "description": "Property jaarPraktischEinde",
+      "type": "string"
+    },
+    "kleur": {
+      "description": "Property kleur",
+      "type": "string"
+    },
+    "kwaliteitsniveauActueel": {
+      "description": "Property kwaliteitsniveauActueel",
+      "type": "string"
+    },
+    "kwaliteitsniveauGewenst": {
+      "description": "Property kwaliteitsniveauGewenst",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "meubilairMateriaal": {
+      "description": "Property meubilairMateriaal",
+      "type": "string"
+    },
+    "model": {
+      "description": "Property model",
+      "type": "string"
+    },
+    "ondergrond": {
+      "description": "Property ondergrond",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "prijsAanschaf": {
+      "description": "Property prijsAanschaf",
+      "type": "string"
+    },
+    "serienummer": {
+      "description": "Property serienummer",
+      "type": "string"
+    },
+    "transponder": {
+      "description": "Property transponder",
+      "type": "string"
+    },
+    "transponderlocatie": {
+      "description": "Property transponderlocatie",
+      "type": "string"
+    },
+    "typeFundering": {
+      "description": "Property typeFundering",
+      "type": "string"
+    },
+    "typePlaat": {
+      "description": "Property typePlaat",
+      "type": "string"
+    }
+  }
+}

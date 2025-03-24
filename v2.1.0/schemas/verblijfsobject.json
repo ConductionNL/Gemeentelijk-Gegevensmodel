@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verblijfsobject",
+  "description": "Represents a Verblijfsobject in the system",
+  "properties": {
+    "aantalKamers": {
+      "description": "Property aantalKamers",
+      "type": "string"
+    },
+    "hoogsteBouwlaagVerblijfsobject": {
+      "description": "Property hoogsteBouwlaagVerblijfsobject",
+      "type": "string"
+    },
+    "indicatieGeconstateerdVerblijfsobject": {
+      "description": "Property indicatieGeconstateerdVerblijfsobject",
+      "type": "string"
+    },
+    "inOnderzoek": {
+      "description": "Property inOnderzoek",
+      "type": "string"
+    },
+    "laagsteBouwlaagVerblijfsobject": {
+      "description": "Property laagsteBouwlaagVerblijfsobject",
+      "type": "string"
+    },
+    "ontsluitingVerdieping": {
+      "description": "Property ontsluitingVerdieping",
+      "type": "string"
+    },
+    "soortWoonobject": {
+      "description": "Property soortWoonobject",
+      "type": "string"
+    },
+    "toegangBouwlaagVerblijfsobject": {
+      "description": "Property toegangBouwlaagVerblijfsobject",
+      "type": "string"
+    },
+    "verblijfsobjectidentificatie": {
+      "description": "Property verblijfsobjectidentificatie",
+      "type": "string"
+    },
+    "verblijfsobjectstatus": {
+      "description": "Property verblijfsobjectstatus",
+      "type": "string"
+    }
+  }
+}

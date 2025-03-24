@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NationaliteitIngeschrevenNatuurlijkPersoon",
+  "description": "Represents a NationaliteitIngeschrevenNatuurlijkPersoon in the system",
+  "properties": {
+    "buitenlandsPersoonsnummer": {
+      "description": "Property buitenlandsPersoonsnummer",
+      "type": "string"
+    },
+    "nationaliteit": {
+      "description": "Property nationaliteit",
+      "type": "string"
+    },
+    "redenVerkrijging": {
+      "description": "Property redenVerkrijging",
+      "type": "string"
+    },
+    "redenVerlies": {
+      "description": "Property redenVerlies",
+      "type": "string"
+    }
+  }
+}

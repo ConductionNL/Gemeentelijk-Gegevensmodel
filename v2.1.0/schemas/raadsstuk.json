@@ -10,15 +10,18 @@
     },
     "datumExpiratie": {
       "description": "Property datumExpiratie",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumPublicatie": {
       "description": "Property datumPublicatie",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumRegistratie": {
       "description": "Property datumRegistratie",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "typeRaadsstuk": {
       "description": "Property typeRaadsstuk",

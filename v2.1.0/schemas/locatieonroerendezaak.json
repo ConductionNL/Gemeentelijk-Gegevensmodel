@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Locatieonroerendezaak",
+  "description": "Represents a Locatieonroerendezaak in the system",
+  "properties": {
+    "adrestype": {
+      "description": "Property adrestype",
+      "type": "string"
+    },
+    "cultuurcodeBebouwd": {
+      "description": "Property cultuurcodeBebouwd",
+      "type": "string"
+    },
+    "datumBeginGeldigheid": {
+      "description": "Property datumBeginGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "geometrie": {
+      "description": "Property geometrie",
+      "type": "string"
+    },
+    "locatieOmschrijving": {
+      "description": "Property locatieOmschrijving",
+      "type": "string"
+    }
+  }
+}

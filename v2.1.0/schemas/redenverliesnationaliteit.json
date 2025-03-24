@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "RedenVerliesNationaliteit",
+  "description": "Represents a RedenVerliesNationaliteit in the system",
+  "properties": {
+    "datumAanvangGeldigheidVerlies": {
+      "description": "Property datumAanvangGeldigheidVerlies",
+      "type": "string"
+    },
+    "datumEindeGeldigheidVerlies": {
+      "description": "Property datumEindeGeldigheidVerlies",
+      "type": "string"
+    },
+    "omschrijvingVerlies": {
+      "description": "Property omschrijvingVerlies",
+      "type": "string"
+    },
+    "redennummerVerlies": {
+      "description": "Property redennummerVerlies",
+      "type": "string"
+    }
+  }
+}

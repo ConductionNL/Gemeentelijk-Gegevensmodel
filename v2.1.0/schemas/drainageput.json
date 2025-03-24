@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Drainageput",
+  "description": "Represents a Drainageput in the system",
+  "properties": {
+    "risicogebied": {
+      "description": "Property risicogebied",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

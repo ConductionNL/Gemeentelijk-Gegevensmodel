@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Adresaanduiding",
+  "description": "Represents a Adresaanduiding in the system",
+  "properties": {
+    "BAGID": {
+      "description": "Property BAGID",
+      "type": "string"
+    },
+    "gemeentenaam": {
+      "description": "Property gemeentenaam",
+      "type": "string"
+    },
+    "huisletter": {
+      "description": "Property huisletter",
+      "type": "string"
+    },
+    "huisnummer": {
+      "description": "Property huisnummer",
+      "type": "string"
+    },
+    "huisnummertoevoeging": {
+      "description": "Property huisnummertoevoeging",
+      "type": "string"
+    },
+    "postcode": {
+      "description": "Property postcode",
+      "type": "string"
+    },
+    "straatnaam": {
+      "description": "Property straatnaam",
+      "type": "string"
+    }
+  }
+}

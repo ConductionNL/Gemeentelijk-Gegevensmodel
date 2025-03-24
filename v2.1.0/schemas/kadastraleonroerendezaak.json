@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "KadastraleOnroerendeZaak",
+  "description": "Represents a KadastraleOnroerendeZaak in the system",
+  "properties": {
+    "appartementsrechtvolgnummer": {
+      "description": "Property appartementsrechtvolgnummer",
+      "type": "string"
+    },
+    "begrenzing": {
+      "description": "Property begrenzing",
+      "type": "string"
+    },
+    "cultuurcodeOnbebouwd": {
+      "description": "Property cultuurcodeOnbebouwd",
+      "type": "string"
+    },
+    "datumBeginGeldigheidKadastraleOnroerendeZaak": {
+      "description": "Property datumBeginGeldigheidKadastraleOnroerendeZaak",
+      "type": "string"
+    },
+    "datumEindeGeldigheidKadastraleOnroerendeZaak": {
+      "description": "Property datumEindeGeldigheidKadastraleOnroerendeZaak",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "kadastraleGemeente": {
+      "description": "Property kadastraleGemeente",
+      "type": "string"
+    },
+    "kadastraleGemeentecode": {
+      "description": "Property kadastraleGemeentecode",
+      "type": "string"
+    },
+    "koopjaar": {
+      "description": "Property koopjaar",
+      "type": "string"
+    },
+    "koopsom": {
+      "description": "Property koopsom",
+      "type": "string"
+    },
+    "landInrichtingRenteBedrag": {
+      "description": "Property landInrichtingRenteBedrag",
+      "type": "string"
+    },
+    "landInrichtingRenteEindejaar": {
+      "description": "Property landInrichtingRenteEindejaar",
+      "type": "string"
+    },
+    "ligging": {
+      "description": "Property ligging",
+      "type": "string"
+    },
+    "locatieOmschrijving": {
+      "description": "Property locatieOmschrijving",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "oud": {
+      "description": "Property oud",
+      "type": "string"
+    },
+    "perceelnummer": {
+      "description": "Property perceelnummer",
+      "type": "string"
+    },
+    "sectie": {
+      "description": "Property sectie",
+      "type": "string"
+    },
+    "valutacode": {
+      "description": "Property valutacode",
+      "type": "string"
+    }
+  }
+}

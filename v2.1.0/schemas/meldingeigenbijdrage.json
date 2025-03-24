@@ -6,11 +6,13 @@
   "properties": {
     "datumStart": {
       "description": "Property datumStart",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumStop": {
       "description": "Property datumStop",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     }
   }
 }

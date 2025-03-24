@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SoortGrootte",
+  "description": "Represents a SoortGrootte in the system",
+  "properties": {
+    "codeSoortGrootte": {
+      "description": "Property codeSoortGrootte",
+      "type": "string"
+    },
+    "datumBeginGeldigheidSoortGrootte": {
+      "description": "Property datumBeginGeldigheidSoortGrootte",
+      "type": "string"
+    },
+    "datumEindeGeldigheidSoortGrootte": {
+      "description": "Property datumEindeGeldigheidSoortGrootte",
+      "type": "string"
+    },
+    "naamSoortGrootte": {
+      "description": "Property naamSoortGrootte",
+      "type": "string"
+    }
+  }
+}

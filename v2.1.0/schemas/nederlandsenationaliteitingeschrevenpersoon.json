@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NederlandseNationaliteitIngeschrevenPersoon",
+  "description": "Represents a NederlandseNationaliteitIngeschrevenPersoon in the system",
+  "properties": {
+    "aanduidingBijzonderNederlanderschap": {
+      "description": "Property aanduidingBijzonderNederlanderschap",
+      "type": "string"
+    },
+    "nationaliteit": {
+      "description": "Property nationaliteit",
+      "type": "string"
+    },
+    "redenVerkrijgingNederlandseNationaliteit": {
+      "description": "Property redenVerkrijgingNederlandseNationaliteit",
+      "type": "string"
+    },
+    "redenVerliesNederlandseNationaliteit": {
+      "description": "Property redenVerliesNederlandseNationaliteit",
+      "type": "string"
+    }
+  }
+}

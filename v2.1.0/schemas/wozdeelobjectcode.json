@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "WOZDeelobjectcode",
+  "description": "Represents a WOZDeelobjectcode in the system",
+  "properties": {
+    "datumBeginGeldigheidDeelojectcode": {
+      "description": "Property datumBeginGeldigheidDeelojectcode",
+      "type": "string"
+    },
+    "datumEindeGeldigheidDeelobjectcode": {
+      "description": "Property datumEindeGeldigheidDeelobjectcode",
+      "type": "string"
+    },
+    "deelobjectcode": {
+      "description": "Property deelobjectcode",
+      "type": "string"
+    },
+    "naamDeelobjectcode": {
+      "description": "Property naamDeelobjectcode",
+      "type": "string"
+    }
+  }
+}

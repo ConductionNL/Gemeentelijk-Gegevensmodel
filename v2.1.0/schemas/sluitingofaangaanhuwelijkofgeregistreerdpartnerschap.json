@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SluitingOfAangaanHuwelijkOfGeregistreerdPartnerschap",
+  "description": "Represents a SluitingOfAangaanHuwelijkOfGeregistreerdPartnerschap in the system",
+  "properties": {
+    "buitenlandsePlaatsAanvang": {
+      "description": "Property buitenlandsePlaatsAanvang",
+      "type": "string"
+    },
+    "buitenlandseRegioAanvang": {
+      "description": "Property buitenlandseRegioAanvang",
+      "type": "string"
+    },
+    "datumAanvang": {
+      "description": "Property datumAanvang",
+      "type": "string"
+    },
+    "gemeenteAanvang": {
+      "description": "Property gemeenteAanvang",
+      "type": "string"
+    },
+    "landOfGebiedAanvang": {
+      "description": "Property landOfGebiedAanvang",
+      "type": "string"
+    },
+    "omschrijvingLocatieAanvang": {
+      "description": "Property omschrijvingLocatieAanvang",
+      "type": "string"
+    }
+  }
+}

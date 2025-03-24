@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "MaterieleHistorie",
+  "description": "Represents a MaterieleHistorie in the system",
+  "properties": {
+    "datumBeginGeldigheidGegevens": {
+      "description": "Property datumBeginGeldigheidGegevens",
+      "type": "string"
+    },
+    "datumEindeGeldigheidGegevens": {
+      "description": "Property datumEindeGeldigheidGegevens",
+      "type": "string"
+    }
+  }
+}

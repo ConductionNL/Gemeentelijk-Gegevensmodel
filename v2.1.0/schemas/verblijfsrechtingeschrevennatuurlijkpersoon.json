@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VerblijfsrechtIngeschrevenNatuurlijkPersoon",
+  "description": "Represents a VerblijfsrechtIngeschrevenNatuurlijkPersoon in the system",
+  "properties": {
+    "aanduidingVerblijfsrecht": {
+      "description": "Property aanduidingVerblijfsrecht",
+      "type": "string"
+    },
+    "datumAanvangVerblijfsrecht": {
+      "description": "Property datumAanvangVerblijfsrecht",
+      "type": "string"
+    },
+    "datumMededelingVerblijfsrecht": {
+      "description": "Property datumMededelingVerblijfsrecht",
+      "type": "string"
+    },
+    "datumVoorzienEindeVerblijfsrecht": {
+      "description": "Property datumVoorzienEindeVerblijfsrecht",
+      "type": "string"
+    }
+  }
+}

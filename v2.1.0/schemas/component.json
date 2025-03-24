@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Component",
+  "description": "Represents a Component in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "datumBeginBetrekkingOp": {
+      "description": "Property datumBeginBetrekkingOp",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEindeBetrekkingOp": {
+      "description": "Property datumEindeBetrekkingOp",
+      "type": "string",
+      "format": "date"
+    },
+    "debetCredit": {
+      "description": "Property debetCredit",
+      "type": "string"
+    },
+    "groep": {
+      "description": "Property groep",
+      "type": "string"
+    },
+    "groepCode": {
+      "description": "Property groepCode",
+      "type": "string"
+    },
+    "grootboekCode": {
+      "description": "Property grootboekCode",
+      "type": "string"
+    },
+    "grootboekOmschrijving": {
+      "description": "Property grootboekOmschrijving",
+      "type": "string"
+    },
+    "kostenplaats": {
+      "description": "Property kostenplaats",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "rekeningnummer": {
+      "description": "Property rekeningnummer",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    }
+  }
+}

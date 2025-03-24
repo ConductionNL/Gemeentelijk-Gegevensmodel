@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Prijsafspraak",
+  "description": "Represents a Prijsafspraak in the system",
+  "properties": {
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "titel": {
+      "description": "Property titel",
+      "type": "string"
+    }
+  }
+}

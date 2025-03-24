@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bankafschrift",
+  "description": "Represents a Bankafschrift in the system",
+  "properties": {
+    "datum": {
+      "description": "Property datum",
+      "type": "string",
+      "format": "date"
+    },
+    "nummer": {
+      "description": "Property nummer",
+      "type": "string"
+    }
+  }
+}

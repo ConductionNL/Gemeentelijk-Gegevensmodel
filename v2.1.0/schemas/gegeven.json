@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gegeven",
+  "description": "Represents a Gegeven in the system",
+  "properties": {
+    "alias": {
+      "description": "Property alias",
+      "type": "string"
+    },
+    "ea_guid": {
+      "description": "Property ea_guid",
+      "type": "string"
+    },
+    "id": {
+      "description": "Property id",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "stereotype": {
+      "description": "Property stereotype",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    }
+  }
+}

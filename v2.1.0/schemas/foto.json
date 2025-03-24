@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Foto",
+  "description": "Represents a Foto in the system",
+  "properties": {
+    "bestandsgrootte": {
+      "description": "Property bestandsgrootte",
+      "type": "string"
+    },
+    "bestandsnaam": {
+      "description": "Property bestandsnaam",
+      "type": "string"
+    },
+    "bestandstype": {
+      "description": "Property bestandstype",
+      "type": "string"
+    },
+    "datumtijd": {
+      "description": "Property datumtijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "pixelsX": {
+      "description": "Property pixelsX",
+      "type": "string"
+    },
+    "pixelsY": {
+      "description": "Property pixelsY",
+      "type": "string"
+    }
+  }
+}

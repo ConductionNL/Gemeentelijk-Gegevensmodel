@@ -10,11 +10,13 @@
     },
     "bezitTot": {
       "description": "Property bezitTot",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "bezitVanaf": {
       "description": "Property bezitVanaf",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "medium": {
       "description": "Property medium",

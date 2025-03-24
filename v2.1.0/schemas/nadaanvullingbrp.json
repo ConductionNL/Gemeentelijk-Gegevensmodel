@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NADAanvullingBRP",
+  "description": "Represents a NADAanvullingBRP in the system",
+  "properties": {
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    }
+  }
+}

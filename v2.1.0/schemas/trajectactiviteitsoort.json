@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "TrajectActiviteitsoort",
+  "description": "Represents a TrajectActiviteitsoort in the system",
+  "properties": {
+    "aanleverenSRG": {
+      "description": "Property aanleverenSRG",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "typeTrajectSRG": {
+      "description": "Property typeTrajectSRG",
+      "type": "string"
+    }
+  }
+}

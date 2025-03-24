@@ -6,15 +6,18 @@
   "properties": {
     "datumEindeGeldigheid": {
       "description": "Property datumEindeGeldigheid",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "datumReservering": {
       "description": "Property datumReservering",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumStart": {
       "description": "Property datumStart",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "kenteken": {
       "description": "Property kenteken",

@@ -10,11 +10,13 @@
     },
     "tijdTot": {
       "description": "Property tijdTot",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "tijdVanaf": {
       "description": "Property tijdVanaf",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     }
   }
 }

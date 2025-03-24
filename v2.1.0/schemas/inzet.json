@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inzet",
+  "description": "Represents a Inzet in the system",
+  "properties": {
+    "datumBegin": {
+      "description": "Property datumBegin",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "percentage": {
+      "description": "Property percentage",
+      "type": "string"
+    },
+    "uren": {
+      "description": "Property uren",
+      "type": "string"
+    }
+  }
+}

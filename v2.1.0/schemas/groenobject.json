@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Groenobject",
+  "description": "Represents a Groenobject in the system",
+  "properties": {
+    "aantalObstakels": {
+      "description": "Property aantalObstakels",
+      "type": "string"
+    },
+    "aantalZijden": {
+      "description": "Property aantalZijden",
+      "type": "string"
+    },
+    "afvoeren": {
+      "description": "Property afvoeren",
+      "type": "string"
+    },
+    "bereikbaarheid": {
+      "description": "Property bereikbaarheid",
+      "type": "string"
+    },
+    "bergendVermogen": {
+      "description": "Property bergendVermogen",
+      "type": "string"
+    },
+    "bewerkingspercentage": {
+      "description": "Property bewerkingspercentage",
+      "type": "string"
+    },
+    "BGTFysiekVoorkomen": {
+      "description": "Property BGTFysiekVoorkomen",
+      "type": "string"
+    },
+    "bollen": {
+      "description": "Property bollen",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "breedteklasseHaag": {
+      "description": "Property breedteklasseHaag",
+      "type": "string"
+    },
+    "BVC": {
+      "description": "Property BVC",
+      "type": "string"
+    },
+    "cultuurhistorischWaardevol": {
+      "description": "Property cultuurhistorischWaardevol",
+      "type": "string"
+    },
+    "draagkrachtig": {
+      "description": "Property draagkrachtig",
+      "type": "string"
+    },
+    "ecologischBeheer": {
+      "description": "Property ecologischBeheer",
+      "type": "string"
+    },
+    "fysiekVoorkomenIMGeo": {
+      "description": "Property fysiekVoorkomenIMGeo",
+      "type": "string"
+    },
+    "gewenstSluitingspercentage": {
+      "description": "Property gewenstSluitingspercentage",
+      "type": "string"
+    },
+    "groenobjectBereikbaarheidPlus": {
+      "description": "Property groenobjectBereikbaarheidPlus",
+      "type": "string"
+    },
+    "groenobjectConstructielaag": {
+      "description": "Property groenobjectConstructielaag",
+      "type": "string"
+    },
+    "groenobjectRand": {
+      "description": "Property groenobjectRand",
+      "type": "string"
+    },
+    "groenobjectSoortnaam": {
+      "description": "Property groenobjectSoortnaam",
+      "type": "string"
+    },
+    "haagvoetLengte": {
+      "description": "Property haagvoetLengte",
+      "type": "string"
+    },
+    "haagvoetOppervlakte": {
+      "description": "Property haagvoetOppervlakte",
+      "type": "string"
+    },
+    "herplantplicht": {
+      "description": "Property herplantplicht",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "hoogteklasseHaag": {
+      "description": "Property hoogteklasseHaag",
+      "type": "string"
+    },
+    "knipfrequentie": {
+      "description": "Property knipfrequentie",
+      "type": "string"
+    },
+    "knipoppervlakte": {
+      "description": "Property knipoppervlakte",
+      "type": "string"
+    },
+    "kwaliteitsniveauActueel": {
+      "description": "Property kwaliteitsniveauActueel",
+      "type": "string"
+    },
+    "kwaliteitsniveauGewenst": {
+      "description": "Property kwaliteitsniveauGewenst",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "maaifrequentie": {
+      "description": "Property maaifrequentie",
+      "type": "string"
+    },
+    "maximaleValhoogte": {
+      "description": "Property maximaleValhoogte",
+      "type": "string"
+    },
+    "objectnummer": {
+      "description": "Property objectnummer",
+      "type": "string"
+    },
+    "obstakels": {
+      "description": "Property obstakels",
+      "type": "string"
+    },
+    "omtrek": {
+      "description": "Property omtrek",
+      "type": "string"
+    },
+    "ondergroei": {
+      "description": "Property ondergroei",
+      "type": "string"
+    },
+    "oppervlakte": {
+      "description": "Property oppervlakte",
+      "type": "string"
+    },
+    "opTalud": {
+      "description": "Property opTalud",
+      "type": "string"
+    },
+    "taludsteilte": {
+      "description": "Property taludsteilte",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typeBewerking": {
+      "description": "Property typeBewerking",
+      "type": "string"
+    },
+    "typeOmgevingsrisicoklasse": {
+      "description": "Property typeOmgevingsrisicoklasse",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "typePlus2": {
+      "description": "Property typePlus2",
+      "type": "string"
+    },
+    "veiligheidsklasseBoom": {
+      "description": "Property veiligheidsklasseBoom",
+      "type": "string"
+    }
+  }
+}

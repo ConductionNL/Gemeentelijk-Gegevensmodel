@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AardAantekening",
+  "description": "Represents a AardAantekening in the system",
+  "properties": {
+    "codeAardAantekening": {
+      "description": "Property codeAardAantekening",
+      "type": "string"
+    },
+    "datumBeginGeldigheidAardAantekening": {
+      "description": "Property datumBeginGeldigheidAardAantekening",
+      "type": "string"
+    },
+    "datumEindeGeldigheidAardAantekening": {
+      "description": "Property datumEindeGeldigheidAardAantekening",
+      "type": "string"
+    },
+    "naamAardAantekening": {
+      "description": "Property naamAardAantekening",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Objecttype",
+  "description": "Represents a Objecttype in the system",
+  "properties": {
+    "datumOpname": {
+      "description": "Property datumOpname",
+      "type": "string",
+      "format": "date"
+    },
+    "definitie": {
+      "description": "Property definitie",
+      "type": "string"
+    },
+    "ea_guid": {
+      "description": "Property ea_guid",
+      "type": "string"
+    },
+    "herkomst": {
+      "description": "Property herkomst",
+      "type": "string"
+    },
+    "herkomstDefinitie": {
+      "description": "Property herkomstDefinitie",
+      "type": "string"
+    },
+    "id": {
+      "description": "Property id",
+      "type": "string"
+    },
+    "indicatieAbstract": {
+      "description": "Property indicatieAbstract",
+      "type": "string"
+    },
+    "kwaliteit": {
+      "description": "Property kwaliteit",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "populatie": {
+      "description": "Property populatie",
+      "type": "string"
+    },
+    "stereotype": {
+      "description": "Property stereotype",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    },
+    "uniekeAanduiding": {
+      "description": "Property uniekeAanduiding",
+      "type": "string"
+    },
+    "supertype": {
+      "description": "Property supertype",
+      "type": "string"
+    }
+  }
+}

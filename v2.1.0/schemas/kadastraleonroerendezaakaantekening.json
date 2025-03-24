@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "KadastraleOnroerendeZaakAantekening",
+  "description": "Represents a KadastraleOnroerendeZaakAantekening in the system",
+  "properties": {
+    "aardAantekeningKadastraalObject": {
+      "description": "Property aardAantekeningKadastraalObject",
+      "type": "string"
+    },
+    "beschrijvingAantekeningKadastraalObject": {
+      "description": "Property beschrijvingAantekeningKadastraalObject",
+      "type": "string"
+    },
+    "datumBeginAantekeningKadastraalObject": {
+      "description": "Property datumBeginAantekeningKadastraalObject",
+      "type": "string"
+    },
+    "datumEindeAantekeningKadastraalObject": {
+      "description": "Property datumEindeAantekeningKadastraalObject",
+      "type": "string"
+    },
+    "kadasterIdentificatieAantekening": {
+      "description": "Property kadasterIdentificatieAantekening",
+      "type": "string"
+    }
+  }
+}

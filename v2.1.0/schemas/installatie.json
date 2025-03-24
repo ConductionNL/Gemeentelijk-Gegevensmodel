@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Installatie",
+  "description": "Represents a Installatie in the system",
+  "properties": {
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "EANCode": {
+      "description": "Property EANCode",
+      "type": "string"
+    },
+    "fabrikant": {
+      "description": "Property fabrikant",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "inbelgegevens": {
+      "description": "Property inbelgegevens",
+      "type": "string"
+    },
+    "installateur": {
+      "description": "Property installateur",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "typeCommunicatie": {
+      "description": "Property typeCommunicatie",
+      "type": "string"
+    }
+  }
+}

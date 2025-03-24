@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "InOnderzoek",
+  "description": "Represents a InOnderzoek in the system",
+  "properties": {
+    "aanduidingGegevensInOnderzoek": {
+      "description": "Property aanduidingGegevensInOnderzoek",
+      "type": "string"
+    }
+  }
+}

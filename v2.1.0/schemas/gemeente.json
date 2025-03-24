@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gemeente",
+  "description": "Represents a Gemeente in the system",
+  "properties": {
+    "datumBeginGeldigheidGemeente": {
+      "description": "Property datumBeginGeldigheidGemeente",
+      "type": "string"
+    },
+    "datumEindeGeldigheidGemeente": {
+      "description": "Property datumEindeGeldigheidGemeente",
+      "type": "string"
+    },
+    "gemeentecode": {
+      "description": "Property gemeentecode",
+      "type": "string"
+    },
+    "gemeenteGeometrie": {
+      "description": "Property gemeenteGeometrie",
+      "type": "string"
+    },
+    "gemeentenaam": {
+      "description": "Property gemeentenaam",
+      "type": "string"
+    },
+    "gemeentenaamNEN": {
+      "description": "Property gemeentenaamNEN",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "nieuwe gemeente": {
+      "description": "Property nieuwe gemeente",
+      "type": "string"
+    }
+  }
+}

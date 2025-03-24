@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ClassH",
+  "description": "Represents a ClassH in the system",
+  "properties": {
+    "M_Bronsysteem": {
+      "description": "Property M_Bronsysteem",
+      "type": "string"
+    },
+    "M_DatumTijdGeladen": {
+      "description": "Property M_DatumTijdGeladen",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ClassHID": {
+      "description": "Property ClassHID",
+      "type": "string"
+    },
+    "ClassGID": {
+      "description": "Property ClassGID",
+      "type": "string"
+    },
+    "PK_ClassG": {
+      "description": "Property PK_ClassG",
+      "type": "string"
+    }
+  }
+}

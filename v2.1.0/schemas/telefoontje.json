@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Telefoontje",
+  "description": "Represents a Telefoontje in the system",
+  "properties": {
+    "afhandeltijdNaGesprek": {
+      "description": "Property afhandeltijdNaGesprek",
+      "type": "string"
+    },
+    "deltaISDNConnectie": {
+      "description": "Property deltaISDNConnectie",
+      "type": "string"
+    },
+    "eindtijd": {
+      "description": "Property eindtijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "starttijd": {
+      "description": "Property starttijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "totaleOnHoldTijd": {
+      "description": "Property totaleOnHoldTijd",
+      "type": "string"
+    },
+    "totaleSpreektijd": {
+      "description": "Property totaleSpreektijd",
+      "type": "string"
+    },
+    "totaleWachttijd": {
+      "description": "Property totaleWachttijd",
+      "type": "string"
+    },
+    "totLateTijdsduur": {
+      "description": "Property totLateTijdsduur",
+      "type": "string"
+    },
+    "trackID": {
+      "description": "Property trackID",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Class C",
+  "description": "Represents a Class C in the system",
+  "properties": {}
+}

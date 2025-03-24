@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Contract",
+  "description": "Represents a Contract in the system",
+  "properties": {
+    "autorisatiegroep": {
+      "description": "Property autorisatiegroep",
+      "type": "string"
+    },
+    "beschrijving": {
+      "description": "Property beschrijving",
+      "type": "string"
+    },
+    "categorie": {
+      "description": "Property categorie",
+      "type": "string"
+    },
+    "classificatie": {
+      "description": "Property classificatie",
+      "type": "string"
+    },
+    "contractRevisie": {
+      "description": "Property contractRevisie",
+      "type": "string"
+    },
+    "datumCreatie": {
+      "description": "Property datumCreatie",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "groep": {
+      "description": "Property groep",
+      "type": "string"
+    },
+    "internContractID": {
+      "description": "Property internContractID",
+      "type": "string"
+    },
+    "internContractRevisie": {
+      "description": "Property internContractRevisie",
+      "type": "string"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "voorwaarde": {
+      "description": "Property voorwaarde",
+      "type": "string"
+    },
+    "zoekwoorden": {
+      "description": "Property zoekwoorden",
+      "type": "string"
+    }
+  }
+}

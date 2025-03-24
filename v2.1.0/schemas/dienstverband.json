@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Dienstverband",
+  "description": "Represents a Dienstverband in the system",
+  "properties": {
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "periodiek": {
+      "description": "Property periodiek",
+      "type": "string"
+    },
+    "salaris": {
+      "description": "Property salaris",
+      "type": "string"
+    },
+    "schaal": {
+      "description": "Property schaal",
+      "type": "string"
+    },
+    "uren per week": {
+      "description": "Property uren per week",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Documenttype",
+  "description": "Represents a Documenttype in the system",
+  "properties": {
+    "datumBeginGeldigheidDocumenttype": {
+      "description": "Property datumBeginGeldigheidDocumenttype",
+      "type": "string"
+    },
+    "datumEindeGeldigheidDocumenttype": {
+      "description": "Property datumEindeGeldigheidDocumenttype",
+      "type": "string"
+    },
+    "documentCategorie": {
+      "description": "Property documentCategorie",
+      "type": "string"
+    },
+    "documenttypeOmschrijving": {
+      "description": "Property documenttypeOmschrijving",
+      "type": "string"
+    },
+    "documenttypeOmschrijvingGeneriek": {
+      "description": "Property documenttypeOmschrijvingGeneriek",
+      "type": "string"
+    },
+    "documenttypeTrefwoord": {
+      "description": "Property documenttypeTrefwoord",
+      "type": "string"
+    }
+  }
+}

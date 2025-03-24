@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Leiding",
+  "description": "Represents a Leiding in the system",
+  "properties": {
+    "afwijkendeDieptelegging": {
+      "description": "Property afwijkendeDieptelegging",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "diameter": {
+      "description": "Property diameter",
+      "type": "string"
+    },
+    "diepte": {
+      "description": "Property diepte",
+      "type": "string"
+    },
+    "eisVoorzorgsmaatregel": {
+      "description": "Property eisVoorzorgsmaatregel",
+      "type": "string"
+    },
+    "geoNauwkeurigheidXY": {
+      "description": "Property geoNauwkeurigheidXY",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "materiaal": {
+      "description": "Property materiaal",
+      "type": "string"
+    },
+    "themaIMKL": {
+      "description": "Property themaIMKL",
+      "type": "string"
+    },
+    "verhoogdRisico": {
+      "description": "Property verhoogdRisico",
+      "type": "string"
+    }
+  }
+}

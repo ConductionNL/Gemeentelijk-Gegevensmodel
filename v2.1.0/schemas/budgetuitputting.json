@@ -6,7 +6,8 @@
   "properties": {
     "datum": {
       "description": "Property datum",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "uitgenutBedrag": {
       "description": "Property uitgenutBedrag",

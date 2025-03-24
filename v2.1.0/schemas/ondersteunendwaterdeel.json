@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OndersteunendWaterdeel",
+  "description": "Represents a OndersteunendWaterdeel in the system",
+  "properties": {
+    "datumBeginGeldigheidOndersteunendWaterdeel": {
+      "description": "Property datumBeginGeldigheidOndersteunendWaterdeel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidOndersteunendWaterdeel": {
+      "description": "Property datumEindeGeldigheidOndersteunendWaterdeel",
+      "type": "string"
+    },
+    "geometrieOndersteunendWaterdeel": {
+      "description": "Property geometrieOndersteunendWaterdeel",
+      "type": "string"
+    },
+    "identificatieOndersteunendWaterdeel": {
+      "description": "Property identificatieOndersteunendWaterdeel",
+      "type": "string"
+    },
+    "plusTypeOndersteunendWaterdeel": {
+      "description": "Property plusTypeOndersteunendWaterdeel",
+      "type": "string"
+    },
+    "relatieveHoogteliggingOndersteunendWaterdeel": {
+      "description": "Property relatieveHoogteliggingOndersteunendWaterdeel",
+      "type": "string"
+    },
+    "statusOndersteunendWaterdeel": {
+      "description": "Property statusOndersteunendWaterdeel",
+      "type": "string"
+    },
+    "typeOndersteunendWaterdeel": {
+      "description": "Property typeOndersteunendWaterdeel",
+      "type": "string"
+    }
+  }
+}

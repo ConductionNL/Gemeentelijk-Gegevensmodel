@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Taalniveau",
+  "description": "Represents a Taalniveau in the system",
+  "properties": {
+    "mondeling": {
+      "description": "Property mondeling",
+      "type": "string"
+    },
+    "schriftelijk": {
+      "description": "Property schriftelijk",
+      "type": "string"
+    }
+  }
+}

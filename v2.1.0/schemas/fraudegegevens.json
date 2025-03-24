@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Fraudegegevens",
+  "description": "Represents a Fraudegegevens in the system",
+  "properties": {
+    "bedragFraude": {
+      "description": "Property bedragFraude",
+      "type": "string"
+    },
+    "datumEindeFraude": {
+      "description": "Property datumEindeFraude",
+      "type": "string",
+      "format": "date"
+    },
+    "datumGeconstateerd": {
+      "description": "Property datumGeconstateerd",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStartFraude": {
+      "description": "Property datumStartFraude",
+      "type": "string",
+      "format": "date"
+    },
+    "verrekening": {
+      "description": "Property verrekening",
+      "type": "string"
+    },
+    "vorderingen": {
+      "description": "Property vorderingen",
+      "type": "string"
+    }
+  }
+}

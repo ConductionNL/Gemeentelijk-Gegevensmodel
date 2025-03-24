@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "CorrespondentieadresBuitenland",
+  "description": "Represents a CorrespondentieadresBuitenland in the system",
+  "properties": {
+    "adresBuitenland1": {
+      "description": "Property adresBuitenland1",
+      "type": "string"
+    },
+    "adresBuitenland2": {
+      "description": "Property adresBuitenland2",
+      "type": "string"
+    },
+    "adresBuitenland3": {
+      "description": "Property adresBuitenland3",
+      "type": "string"
+    },
+    "adresBuitenland4": {
+      "description": "Property adresBuitenland4",
+      "type": "string"
+    },
+    "adresBuitenland5": {
+      "description": "Property adresBuitenland5",
+      "type": "string"
+    },
+    "adresBuitenland6": {
+      "description": "Property adresBuitenland6",
+      "type": "string"
+    },
+    "landCorrespondentieadres": {
+      "description": "Property landCorrespondentieadres",
+      "type": "string"
+    }
+  }
+}

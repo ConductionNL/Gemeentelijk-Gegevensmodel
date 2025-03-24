@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Storting",
+  "description": "Represents a Storting in the system",
+  "properties": {
+    "datumtijd": {
+      "description": "Property datumtijd",
+      "type": "string",
+      "format": "date-time"
+    },
+    "gewicht": {
+      "description": "Property gewicht",
+      "type": "string"
+    }
+  }
+}

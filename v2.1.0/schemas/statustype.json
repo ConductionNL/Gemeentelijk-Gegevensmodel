@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Statustype",
+  "description": "Represents a Statustype in the system",
+  "properties": {
+    "datumBeginGeldigheidStatustype": {
+      "description": "Property datumBeginGeldigheidStatustype",
+      "type": "string"
+    },
+    "datumEindeGeldigheidStatustype": {
+      "description": "Property datumEindeGeldigheidStatustype",
+      "type": "string"
+    },
+    "doorlooptijdStatus": {
+      "description": "Property doorlooptijdStatus",
+      "type": "string"
+    },
+    "statustypeOmschrijving": {
+      "description": "Property statustypeOmschrijving",
+      "type": "string"
+    },
+    "statustypeOmschrijvingGeneriek": {
+      "description": "Property statustypeOmschrijvingGeneriek",
+      "type": "string"
+    },
+    "statustypeVolgnummer": {
+      "description": "Property statustypeVolgnummer",
+      "type": "string"
+    }
+  }
+}

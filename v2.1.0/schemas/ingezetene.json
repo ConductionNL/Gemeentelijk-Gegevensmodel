@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Ingezetene",
+  "description": "Represents a Ingezetene in the system",
+  "properties": {
+    "aanduidingEuropeesKiesrecht": {
+      "description": "Property aanduidingEuropeesKiesrecht",
+      "type": "string"
+    },
+    "aanduidingUitgeslotenKiesrecht": {
+      "description": "Property aanduidingUitgeslotenKiesrecht",
+      "type": "string"
+    },
+    "datumVerkrijgingVerblijfstitel": {
+      "description": "Property datumVerkrijgingVerblijfstitel",
+      "type": "string"
+    },
+    "datumVerliesVerblijfstitel": {
+      "description": "Property datumVerliesVerblijfstitel",
+      "type": "string"
+    },
+    "indicatieBlokkering": {
+      "description": "Property indicatieBlokkering",
+      "type": "string"
+    },
+    "indicatieCurateleregister": {
+      "description": "Property indicatieCurateleregister",
+      "type": "string"
+    },
+    "indicatieGezagMinderjarige": {
+      "description": "Property indicatieGezagMinderjarige",
+      "type": "string"
+    },
+    "verblijfstitel": {
+      "description": "Property verblijfstitel",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Postadres",
+  "description": "Represents a Postadres in the system",
+  "properties": {
+    "postadresType": {
+      "description": "Property postadresType",
+      "type": "string"
+    },
+    "postbusOfAntwoordnummer": {
+      "description": "Property postbusOfAntwoordnummer",
+      "type": "string"
+    },
+    "postcodePostadres": {
+      "description": "Property postcodePostadres",
+      "type": "string",
+      "pattern": "^[1-9][0-9]{3}[A-Z]{2}$"
+    }
+  }
+}

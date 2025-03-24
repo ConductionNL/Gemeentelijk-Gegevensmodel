@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verkeersdrempel",
+  "description": "Represents a Verkeersdrempel in the system",
+  "properties": {
+    "ontwerpsnelheid": {
+      "description": "Property ontwerpsnelheid",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    }
+  }
+}

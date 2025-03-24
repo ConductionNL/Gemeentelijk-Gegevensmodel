@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bemalingsgebied",
+  "description": "Represents a Bemalingsgebied in the system",
+  "properties": {
+    "rioleringsgebied": {
+      "description": "Property rioleringsgebied",
+      "type": "string"
+    }
+  }
+}

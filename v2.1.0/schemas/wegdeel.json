@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Wegdeel",
+  "description": "Represents a Wegdeel in the system",
+  "properties": {
+    "datumBeginGeldigheidWegdeel": {
+      "description": "Property datumBeginGeldigheidWegdeel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidWegdeel": {
+      "description": "Property datumEindeGeldigheidWegdeel",
+      "type": "string"
+    },
+    "functieWegdeel": {
+      "description": "Property functieWegdeel",
+      "type": "string"
+    },
+    "fysiekVoorkomenWegdeel": {
+      "description": "Property fysiekVoorkomenWegdeel",
+      "type": "string"
+    },
+    "geometrieWegdeel": {
+      "description": "Property geometrieWegdeel",
+      "type": "string"
+    },
+    "identificatieWegdeel": {
+      "description": "Property identificatieWegdeel",
+      "type": "string"
+    },
+    "kruinlijngeometrieWegdeel": {
+      "description": "Property kruinlijngeometrieWegdeel",
+      "type": "string"
+    },
+    "LOD0GeometrieWegdeel": {
+      "description": "Property LOD0GeometrieWegdeel",
+      "type": "string"
+    },
+    "plusFunctieWegdeel": {
+      "description": "Property plusFunctieWegdeel",
+      "type": "string"
+    },
+    "plusFysiekVoorkomenWegdeel": {
+      "description": "Property plusFysiekVoorkomenWegdeel",
+      "type": "string"
+    },
+    "relatieveHoogteliggingWegdeel": {
+      "description": "Property relatieveHoogteliggingWegdeel",
+      "type": "string"
+    },
+    "statusWegdeel": {
+      "description": "Property statusWegdeel",
+      "type": "string"
+    },
+    "wegdeelOpTalud": {
+      "description": "Property wegdeelOpTalud",
+      "type": "string"
+    }
+  }
+}

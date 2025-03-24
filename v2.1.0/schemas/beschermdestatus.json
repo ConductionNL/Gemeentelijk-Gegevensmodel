@@ -14,7 +14,8 @@
     },
     "datumInschrijvingRegister": {
       "description": "Property datumInschrijvingRegister",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "gemeentelijkMonumentCode": {
       "description": "Property gemeentelijkMonumentCode",

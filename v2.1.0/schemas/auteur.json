@@ -6,11 +6,13 @@
   "properties": {
     "datumGeboorte": {
       "description": "Property datumGeboorte",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumOverlijden": {
       "description": "Property datumOverlijden",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     }
   }
 }

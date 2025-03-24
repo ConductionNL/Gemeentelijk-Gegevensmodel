@@ -10,15 +10,18 @@
     },
     "datumEinde": {
       "description": "Property datumEinde",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEindeOorspronkelijk": {
       "description": "Property datumEindeOorspronkelijk",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumStart": {
       "description": "Property datumStart",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "eenheid": {
       "description": "Property eenheid",

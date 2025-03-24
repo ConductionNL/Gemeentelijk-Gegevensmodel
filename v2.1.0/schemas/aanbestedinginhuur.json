@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AanbestedingInhuur",
+  "description": "Represents a AanbestedingInhuur in the system",
+  "properties": {
+    "aanvraagGesloten": {
+      "description": "Property aanvraagGesloten",
+      "type": "string",
+      "format": "date-time"
+    },
+    "aanvraagnummer": {
+      "description": "Property aanvraagnummer",
+      "type": "string"
+    },
+    "datumCreatie": {
+      "description": "Property datumCreatie",
+      "type": "string",
+      "format": "date-time"
+    },
+    "datumOpeningKluis": {
+      "description": "Property datumOpeningKluis",
+      "type": "string",
+      "format": "date-time"
+    },
+    "datumSluiting": {
+      "description": "Property datumSluiting",
+      "type": "string",
+      "format": "date-time"
+    },
+    "datumVerzending": {
+      "description": "Property datumVerzending",
+      "type": "string",
+      "format": "date-time"
+    },
+    "fase": {
+      "description": "Property fase",
+      "type": "string"
+    },
+    "hoogsteTarief": {
+      "description": "Property hoogsteTarief",
+      "type": "string"
+    },
+    "laagsteTarief": {
+      "description": "Property laagsteTarief",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "perceel": {
+      "description": "Property perceel",
+      "type": "string"
+    },
+    "procedure": {
+      "description": "Property procedure",
+      "type": "string"
+    },
+    "projectnaam": {
+      "description": "Property projectnaam",
+      "type": "string"
+    },
+    "projectreferentie": {
+      "description": "Property projectreferentie",
+      "type": "string"
+    },
+    "publicatie": {
+      "description": "Property publicatie",
+      "type": "string"
+    },
+    "referentie": {
+      "description": "Property referentie",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "titel": {
+      "description": "Property titel",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

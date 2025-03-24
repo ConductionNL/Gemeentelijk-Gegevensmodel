@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "LocatieKadastraleOnroerendeZaak",
+  "description": "Represents a LocatieKadastraleOnroerendeZaak in the system",
+  "properties": {
+    "aardCultuurBebouwd": {
+      "description": "Property aardCultuurBebouwd",
+      "type": "string"
+    },
+    "locatieOmschrijving": {
+      "description": "Property locatieOmschrijving",
+      "type": "string"
+    }
+  }
+}

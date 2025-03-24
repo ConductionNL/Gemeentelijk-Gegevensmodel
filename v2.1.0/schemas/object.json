@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Object",
+  "description": "Represents a Object in the system",
+  "properties": {
+    "adresBinnenland": {
+      "description": "Property adresBinnenland",
+      "type": "string"
+    },
+    "adresBuitenland": {
+      "description": "Property adresBuitenland",
+      "type": "string"
+    },
+    "domein": {
+      "description": "Property domein",
+      "type": "string"
+    },
+    "geometrie": {
+      "description": "Property geometrie",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "indicatieRisico": {
+      "description": "Property indicatieRisico",
+      "type": "string"
+    },
+    "kadastraleAanduiding": {
+      "description": "Property kadastraleAanduiding",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "objecttype": {
+      "description": "Property objecttype",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    },
+    "huishouden": {
+      "description": "Property huishouden",
+      "type": "string"
+    },
+    "besluit": {
+      "description": "Property besluit",
+      "type": "string"
+    }
+  }
+}

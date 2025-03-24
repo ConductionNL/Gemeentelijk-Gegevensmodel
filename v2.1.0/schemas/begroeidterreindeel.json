@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "BegroeidTerreindeel",
+  "description": "Represents a BegroeidTerreindeel in the system",
+  "properties": {
+    "begroeidTerreindeelOpTalud": {
+      "description": "Property begroeidTerreindeelOpTalud",
+      "type": "string"
+    },
+    "datumBeginGeldigheidBegroeidTerreindeel": {
+      "description": "Property datumBeginGeldigheidBegroeidTerreindeel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidBegroeidTerreindeel": {
+      "description": "Property datumEindeGeldigheidBegroeidTerreindeel",
+      "type": "string"
+    },
+    "fysiekVoorkomenBegroeidTerreindeel": {
+      "description": "Property fysiekVoorkomenBegroeidTerreindeel",
+      "type": "string"
+    },
+    "geometrieBegroeidTerreindeel": {
+      "description": "Property geometrieBegroeidTerreindeel",
+      "type": "string"
+    },
+    "identificatieBegroeidTerreindeel": {
+      "description": "Property identificatieBegroeidTerreindeel",
+      "type": "string"
+    },
+    "kruinlijngeometrieBegroeidTerreindeel": {
+      "description": "Property kruinlijngeometrieBegroeidTerreindeel",
+      "type": "string"
+    },
+    "LOD0GeometrieBegroeidTerreindeel": {
+      "description": "Property LOD0GeometrieBegroeidTerreindeel",
+      "type": "string"
+    },
+    "plusFysiekVoorkomenBegroeidTerreindeel": {
+      "description": "Property plusFysiekVoorkomenBegroeidTerreindeel",
+      "type": "string"
+    },
+    "relatieveHoogteliggingBegroeidTerreindeel": {
+      "description": "Property relatieveHoogteliggingBegroeidTerreindeel",
+      "type": "string"
+    },
+    "statusBegroeidTerreindeel": {
+      "description": "Property statusBegroeidTerreindeel",
+      "type": "string"
+    }
+  }
+}

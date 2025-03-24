@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Aankondiging",
+  "description": "Represents a Aankondiging in the system",
+  "properties": {
+    "beschrijving": {
+      "description": "Property beschrijving",
+      "type": "string"
+    },
+    "categorie": {
+      "description": "Property categorie",
+      "type": "string"
+    },
+    "datum": {
+      "description": "Property datum",
+      "type": "string",
+      "format": "date-time"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

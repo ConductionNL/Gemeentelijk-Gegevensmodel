@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ZaakOrigineel",
+  "description": "Represents a ZaakOrigineel in the system",
+  "properties": {
+    "anderZaakobject": {
+      "description": "Property anderZaakobject",
+      "type": "string"
+    },
+    "archiefnominatie": {
+      "description": "Property archiefnominatie",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumEindeGepland": {
+      "description": "Property datumEindeGepland",
+      "type": "string"
+    },
+    "datumEindeUiterlijkeAfdoening": {
+      "description": "Property datumEindeUiterlijkeAfdoening",
+      "type": "string"
+    },
+    "datumLaatsteBetaling": {
+      "description": "Property datumLaatsteBetaling",
+      "type": "string"
+    },
+    "datumPublicatie": {
+      "description": "Property datumPublicatie",
+      "type": "string"
+    },
+    "datumRegistratie": {
+      "description": "Property datumRegistratie",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "datumVernietigingDossier": {
+      "description": "Property datumVernietigingDossier",
+      "type": "string"
+    },
+    "indicatieBetaling": {
+      "description": "Property indicatieBetaling",
+      "type": "string"
+    },
+    "indicatieDeelzaken": {
+      "description": "Property indicatieDeelzaken",
+      "type": "string"
+    },
+    "kenmerk": {
+      "description": "Property kenmerk",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "omschrijvingResultaat": {
+      "description": "Property omschrijvingResultaat",
+      "type": "string"
+    },
+    "opschorting": {
+      "description": "Property opschorting",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    },
+    "toelichtingResultaat": {
+      "description": "Property toelichtingResultaat",
+      "type": "string"
+    },
+    "verlenging": {
+      "description": "Property verlenging",
+      "type": "string"
+    },
+    "zaakidentificatie": {
+      "description": "Property zaakidentificatie",
+      "type": "string"
+    },
+    "zaakniveau": {
+      "description": "Property zaakniveau",
+      "type": "string"
+    }
+  }
+}

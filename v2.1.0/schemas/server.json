@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Server",
+  "description": "Represents a Server in the system",
+  "properties": {
+    "actief": {
+      "description": "Property actief",
+      "type": "string"
+    },
+    "IPAdres": {
+      "description": "Property IPAdres",
+      "type": "string"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "organisatie": {
+      "description": "Property organisatie",
+      "type": "string"
+    },
+    "serienummer": {
+      "description": "Property serienummer",
+      "type": "string"
+    },
+    "serverID": {
+      "description": "Property serverID",
+      "type": "string"
+    },
+    "servertype": {
+      "description": "Property servertype",
+      "type": "string"
+    },
+    "vlan": {
+      "description": "Property vlan",
+      "type": "string"
+    }
+  }
+}

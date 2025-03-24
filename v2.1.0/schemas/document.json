@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Document",
+  "description": "Represents a Document in the system",
+  "properties": {
+    "cocumentBeschrijving": {
+      "description": "Property cocumentBeschrijving",
+      "type": "string"
+    },
+    "datumCreatieDocument": {
+      "description": "Property datumCreatieDocument",
+      "type": "string"
+    },
+    "datumOntvangstdocument": {
+      "description": "Property datumOntvangstdocument",
+      "type": "string"
+    },
+    "datumVerzendingDocument": {
+      "description": "Property datumVerzendingDocument",
+      "type": "string"
+    },
+    "documentAuteur": {
+      "description": "Property documentAuteur",
+      "type": "string"
+    },
+    "documentIdentificatie": {
+      "description": "Property documentIdentificatie",
+      "type": "string"
+    },
+    "documentTitel": {
+      "description": "Property documentTitel",
+      "type": "string"
+    },
+    "vertrouwelijkAanduiding": {
+      "description": "Property vertrouwelijkAanduiding",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

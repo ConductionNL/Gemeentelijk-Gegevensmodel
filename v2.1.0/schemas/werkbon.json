@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Werkbon",
+  "description": "Represents a Werkbon in the system",
+  "properties": {}
+}

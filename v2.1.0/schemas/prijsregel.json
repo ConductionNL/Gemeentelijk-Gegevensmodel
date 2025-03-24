@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Prijsregel",
+  "description": "Represents a Prijsregel in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "credit": {
+      "description": "Property credit",
+      "type": "string"
+    }
+  }
+}

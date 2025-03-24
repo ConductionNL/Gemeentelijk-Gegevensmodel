@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gemachtigde",
+  "description": "Represents a Gemachtigde in the system",
+  "properties": {}
+}

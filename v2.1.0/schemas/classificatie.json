@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Classificatie",
+  "description": "Represents a Classificatie in the system",
+  "properties": {
+    "bevatPersoonsgegevens": {
+      "description": "Property bevatPersoonsgegevens",
+      "type": "string"
+    },
+    "gerelateerdPersoonsgegevens": {
+      "description": "Property gerelateerdPersoonsgegevens",
+      "type": "string"
+    },
+    "id": {
+      "description": "Property id",
+      "type": "string"
+    }
+  }
+}

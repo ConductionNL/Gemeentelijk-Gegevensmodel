@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "EnkelvoudigDocument",
+  "description": "Represents a EnkelvoudigDocument in the system",
+  "properties": {
+    "bestandsnaam": {
+      "description": "Property bestandsnaam",
+      "type": "string"
+    },
+    "documentFormaat": {
+      "description": "Property documentFormaat",
+      "type": "string"
+    },
+    "documentInhoud": {
+      "description": "Property documentInhoud",
+      "type": "string"
+    },
+    "documentLink": {
+      "description": "Property documentLink",
+      "type": "string"
+    },
+    "documentStatus": {
+      "description": "Property documentStatus",
+      "type": "string"
+    },
+    "documentTaal": {
+      "description": "Property documentTaal",
+      "type": "string"
+    },
+    "documentVersie": {
+      "description": "Property documentVersie",
+      "type": "string"
+    }
+  }
+}

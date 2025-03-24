@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gebruiksdoel",
+  "description": "Represents a Gebruiksdoel in the system",
+  "properties": {
+    "gebruiksdoelGebouwdObject": {
+      "description": "Property gebruiksdoelGebouwdObject",
+      "type": "string"
+    }
+  }
+}

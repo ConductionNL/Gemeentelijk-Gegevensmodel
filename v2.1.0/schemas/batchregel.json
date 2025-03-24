@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Batchregel",
+  "description": "Represents a Batchregel in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "datumBetaling": {
+      "description": "Property datumBetaling",
+      "type": "string",
+      "format": "date"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "rekeningNaar": {
+      "description": "Property rekeningNaar",
+      "type": "string"
+    },
+    "rekeningVan": {
+      "description": "Property rekeningVan",
+      "type": "string"
+    }
+  }
+}

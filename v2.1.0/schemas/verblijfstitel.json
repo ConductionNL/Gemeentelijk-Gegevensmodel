@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verblijfstitel",
+  "description": "Represents a Verblijfstitel in the system",
+  "properties": {
+    "datumAanvangGeldigheidVerblijfstitel": {
+      "description": "Property datumAanvangGeldigheidVerblijfstitel",
+      "type": "string"
+    },
+    "datumEindeGeldigheidVerblijfstitel": {
+      "description": "Property datumEindeGeldigheidVerblijfstitel",
+      "type": "string"
+    },
+    "verblijfstitelNumeriek": {
+      "description": "Property verblijfstitelNumeriek",
+      "type": "string"
+    },
+    "verblijfstitelOmschrijving": {
+      "description": "Property verblijfstitelOmschrijving",
+      "type": "string"
+    }
+  }
+}

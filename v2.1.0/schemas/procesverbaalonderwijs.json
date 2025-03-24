@@ -6,23 +6,28 @@
   "properties": {
     "datumAfgehandeld": {
       "description": "Property datumAfgehandeld",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEindeProeftijd": {
       "description": "Property datumEindeProeftijd",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumIngelicht": {
       "description": "Property datumIngelicht",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumUitspraak": {
       "description": "Property datumUitspraak",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumZitting": {
       "description": "Property datumZitting",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "geldboete": {
       "description": "Property geldboete",

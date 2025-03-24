@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NietNatuurlijkPersoon",
+  "description": "Represents a NietNatuurlijkPersoon in the system",
+  "properties": {
+    "datumAanvang": {
+      "description": "Property datumAanvang",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumUitschrijving": {
+      "description": "Property datumUitschrijving",
+      "type": "string"
+    },
+    "datumVoortzetting": {
+      "description": "Property datumVoortzetting",
+      "type": "string"
+    },
+    "faxnummer": {
+      "description": "Property faxnummer",
+      "type": "string"
+    },
+    "ingeschreven": {
+      "description": "Property ingeschreven",
+      "type": "string"
+    },
+    "inOprichting": {
+      "description": "Property inOprichting",
+      "type": "string"
+    },
+    "KVKnummer": {
+      "description": "Property KVKnummer",
+      "type": "string"
+    },
+    "NNPID": {
+      "description": "Property NNPID",
+      "type": "string"
+    },
+    "rechtsvorm": {
+      "description": "Property rechtsvorm",
+      "type": "string"
+    },
+    "RSINNummer": {
+      "description": "Property RSINNummer",
+      "type": "string"
+    },
+    "statutaireNaam": {
+      "description": "Property statutaireNaam",
+      "type": "string"
+    },
+    "statutaireZetel": {
+      "description": "Property statutaireZetel",
+      "type": "string"
+    },
+    "websiteURL": {
+      "description": "Property websiteURL",
+      "type": "string"
+    }
+  }
+}

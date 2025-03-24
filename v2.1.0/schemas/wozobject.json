@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "WOZObject",
+  "description": "Represents a WOZObject in the system",
+  "properties": {
+    "datumBeginGeldigheidWOZObject": {
+      "description": "Property datumBeginGeldigheidWOZObject",
+      "type": "string"
+    },
+    "datumEindeGeldigheidWOZObject": {
+      "description": "Property datumEindeGeldigheidWOZObject",
+      "type": "string"
+    },
+    "datumWaardepeiling": {
+      "description": "Property datumWaardepeiling",
+      "type": "string"
+    },
+    "gebruikscode": {
+      "description": "Property gebruikscode",
+      "type": "string"
+    },
+    "geometrieWOZObject": {
+      "description": "Property geometrieWOZObject",
+      "type": "string"
+    },
+    "grondoppervlakte": {
+      "description": "Property grondoppervlakte",
+      "type": "string"
+    },
+    "soortobjectcode": {
+      "description": "Property soortobjectcode",
+      "type": "string"
+    },
+    "statusWOZObject": {
+      "description": "Property statusWOZObject",
+      "type": "string"
+    },
+    "vastgesteldeWaarde": {
+      "description": "Property vastgesteldeWaarde",
+      "type": "string"
+    },
+    "WOZObjectnummer": {
+      "description": "Property WOZObjectnummer",
+      "type": "string"
+    }
+  }
+}

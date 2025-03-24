@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Overstortconstructie",
+  "description": "Represents a Overstortconstructie in the system",
+  "properties": {
+    "bassin": {
+      "description": "Property bassin",
+      "type": "string"
+    },
+    "drempelbreedte": {
+      "description": "Property drempelbreedte",
+      "type": "string"
+    },
+    "drempelniveau": {
+      "description": "Property drempelniveau",
+      "type": "string"
+    },
+    "klep": {
+      "description": "Property klep",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "vormDrempel": {
+      "description": "Property vormDrempel",
+      "type": "string"
+    },
+    "waking": {
+      "description": "Property waking",
+      "type": "string"
+    }
+  }
+}

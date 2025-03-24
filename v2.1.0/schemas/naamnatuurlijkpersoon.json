@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NaamNatuurlijkPersoon",
+  "description": "Represents a NaamNatuurlijkPersoon in the system",
+  "properties": {
+    "adellijkeTitelOfPredikaat": {
+      "description": "Property adellijkeTitelOfPredikaat",
+      "type": "string"
+    },
+    "geslachtsnaam": {
+      "description": "Property geslachtsnaam",
+      "type": "string"
+    },
+    "voornamen": {
+      "description": "Property voornamen",
+      "type": "string"
+    },
+    "voorvoegselGeslachtsnaam": {
+      "description": "Property voorvoegselGeslachtsnaam",
+      "type": "string"
+    }
+  }
+}

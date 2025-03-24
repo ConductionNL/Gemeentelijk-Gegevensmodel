@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Lst_class1",
+  "description": "Represents a Lst_class1 in the system",
+  "properties": {
+    "Waarde": {
+      "description": "Property Waarde",
+      "type": "string"
+    },
+    "DWH_RECORD_ID": {
+      "description": "Property DWH_RECORD_ID",
+      "type": "string"
+    },
+    "DWH_ODS_RECORD_ID": {
+      "description": "Property DWH_ODS_RECORD_ID",
+      "type": "string"
+    },
+    "DWH_START_DT": {
+      "description": "Property DWH_START_DT",
+      "type": "string",
+      "format": "date"
+    },
+    "DWH_EIND_DT": {
+      "description": "Property DWH_EIND_DT",
+      "type": "string",
+      "format": "date"
+    },
+    "DWH_RUN_ID": {
+      "description": "Property DWH_RUN_ID",
+      "type": "string"
+    },
+    "DWH_BRON": {
+      "description": "Property DWH_BRON",
+      "type": "string"
+    },
+    "DWH_LAAD_DT": {
+      "description": "Property DWH_LAAD_DT",
+      "type": "string",
+      "format": "date"
+    },
+    "DWH_ACTUEEL": {
+      "description": "Property DWH_ACTUEEL",
+      "type": "string"
+    },
+    "Lst_class1ID": {
+      "description": "Property Lst_class1ID",
+      "type": "string"
+    }
+  }
+}

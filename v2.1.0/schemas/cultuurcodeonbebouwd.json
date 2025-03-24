@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "CultuurcodeOnbebouwd",
+  "description": "Represents a CultuurcodeOnbebouwd in the system",
+  "properties": {
+    "cultuurcodeOnbebouwd": {
+      "description": "Property cultuurcodeOnbebouwd",
+      "type": "string"
+    },
+    "datumBeginGeldigheidCultuurcodeOnbebouwd": {
+      "description": "Property datumBeginGeldigheidCultuurcodeOnbebouwd",
+      "type": "string"
+    },
+    "datumEindeGeldigheidCultuurcodeOnbebouwd": {
+      "description": "Property datumEindeGeldigheidCultuurcodeOnbebouwd",
+      "type": "string"
+    },
+    "naamCultuurcodeOnbebouwd": {
+      "description": "Property naamCultuurcodeOnbebouwd",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verzuim",
+  "description": "Represents a Verzuim in the system",
+  "properties": {
+    "datumtijdEinde": {
+      "description": "Property datumtijdEinde",
+      "type": "string",
+      "format": "date-time"
+    },
+    "datumtijdStart": {
+      "description": "Property datumtijdStart",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -14,7 +14,8 @@
     },
     "datumLeveringBestelling": {
       "description": "Property datumLeveringBestelling",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "locatie": {
       "description": "Property locatie",

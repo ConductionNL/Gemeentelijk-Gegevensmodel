@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Ecoduct",
+  "description": "Represents a Ecoduct in the system",
+  "properties": {
+    "aantalOverspanningen": {
+      "description": "Property aantalOverspanningen",
+      "type": "string"
+    },
+    "draagvermogen": {
+      "description": "Property draagvermogen",
+      "type": "string"
+    },
+    "maximaalToelaatbaarVoertuiggewicht": {
+      "description": "Property maximaalToelaatbaarVoertuiggewicht",
+      "type": "string"
+    },
+    "maximaleAsbelasting": {
+      "description": "Property maximaleAsbelasting",
+      "type": "string"
+    },
+    "maximaleOverspanning": {
+      "description": "Property maximaleOverspanning",
+      "type": "string"
+    },
+    "overbruggingsobjectDoorrijopening": {
+      "description": "Property overbruggingsobjectDoorrijopening",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "zwaarsteVoertuig": {
+      "description": "Property zwaarsteVoertuig",
+      "type": "string"
+    }
+  }
+}

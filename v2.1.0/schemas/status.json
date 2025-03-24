@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Status",
+  "description": "Represents a Status in the system",
+  "properties": {
+    "datumStatusGezet": {
+      "description": "Property datumStatusGezet",
+      "type": "string"
+    },
+    "indicatieIaatstGezetteStatus": {
+      "description": "Property indicatieIaatstGezetteStatus",
+      "type": "string"
+    },
+    "statustoelichting": {
+      "description": "Property statustoelichting",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Functie",
+  "description": "Represents a Functie in the system",
+  "properties": {
+    "Code": {
+      "description": "Property Code",
+      "type": "string"
+    },
+    "Naam": {
+      "description": "Property Naam",
+      "type": "string"
+    },
+    "Omschrijving": {
+      "description": "Property Omschrijving",
+      "type": "string"
+    },
+    "Schaal": {
+      "description": "Property Schaal",
+      "type": "string"
+    },
+    "Taken": {
+      "description": "Property Taken",
+      "type": "string"
+    }
+  }
+}

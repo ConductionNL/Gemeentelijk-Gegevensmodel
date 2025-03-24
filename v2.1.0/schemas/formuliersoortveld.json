@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Formuliersoortveld",
+  "description": "Represents a Formuliersoortveld in the system",
+  "properties": {
+    "helptekst": {
+      "description": "Property helptekst",
+      "type": "string"
+    },
+    "isVerplicht": {
+      "description": "Property isVerplicht",
+      "type": "string"
+    },
+    "label": {
+      "description": "Property label",
+      "type": "string"
+    },
+    "maxLengte": {
+      "description": "Property maxLengte",
+      "type": "string"
+    },
+    "veldnaam": {
+      "description": "Property veldnaam",
+      "type": "string"
+    },
+    "veldtype": {
+      "description": "Property veldtype",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Beheerobject",
+  "description": "Represents a Beheerobject in the system",
+  "properties": {
+    "aangemaaktDoor": {
+      "description": "Property aangemaaktDoor",
+      "type": "string"
+    },
+    "beginGarantieperiode": {
+      "description": "Property beginGarantieperiode",
+      "type": "string"
+    },
+    "beheergebied": {
+      "description": "Property beheergebied",
+      "type": "string"
+    },
+    "beheerobjectBeheervak": {
+      "description": "Property beheerobjectBeheervak",
+      "type": "string"
+    },
+    "beheerobjectGebruiksfunctie": {
+      "description": "Property beheerobjectGebruiksfunctie",
+      "type": "string"
+    },
+    "beheerobjectMemo": {
+      "description": "Property beheerobjectMemo",
+      "type": "string"
+    },
+    "beschermdeFloraEnFauna": {
+      "description": "Property beschermdeFloraEnFauna",
+      "type": "string"
+    },
+    "buurt": {
+      "description": "Property buurt",
+      "type": "string"
+    },
+    "conversieID": {
+      "description": "Property conversieID",
+      "type": "string"
+    },
+    "datumMutatie": {
+      "description": "Property datumMutatie",
+      "type": "string"
+    },
+    "datumOplevering": {
+      "description": "Property datumOplevering",
+      "type": "string"
+    },
+    "datumPublicatieLV": {
+      "description": "Property datumPublicatieLV",
+      "type": "string"
+    },
+    "datumVerwijdering": {
+      "description": "Property datumVerwijdering",
+      "type": "string"
+    },
+    "eindeGarantieperiode": {
+      "description": "Property eindeGarantieperiode",
+      "type": "string"
+    },
+    "gebiedstype": {
+      "description": "Property gebiedstype",
+      "type": "string"
+    },
+    "gemeente": {
+      "description": "Property gemeente",
+      "type": "string"
+    },
+    "geometrie": {
+      "description": "Property geometrie",
+      "type": "string"
+    },
+    "gewijzigdDoor": {
+      "description": "Property gewijzigdDoor",
+      "type": "string"
+    },
+    "grondsoort": {
+      "description": "Property grondsoort",
+      "type": "string"
+    },
+    "grondsoortPlus": {
+      "description": "Property grondsoortPlus",
+      "type": "string"
+    },
+    "identificatieIMBOR": {
+      "description": "Property identificatieIMBOR",
+      "type": "string"
+    },
+    "identificatieIMGeo": {
+      "description": "Property identificatieIMGeo",
+      "type": "string"
+    },
+    "jaarVanAanleg": {
+      "description": "Property jaarVanAanleg",
+      "type": "string"
+    },
+    "objectBeginTijd": {
+      "description": "Property objectBeginTijd",
+      "type": "string"
+    },
+    "objectEindtijd": {
+      "description": "Property objectEindtijd",
+      "type": "string"
+    },
+    "onderhoudsplichtige": {
+      "description": "Property onderhoudsplichtige",
+      "type": "string"
+    },
+    "openbareRuimte": {
+      "description": "Property openbareRuimte",
+      "type": "string"
+    },
+    "postcode": {
+      "description": "Property postcode",
+      "type": "string"
+    },
+    "relatieveHoogteligging": {
+      "description": "Property relatieveHoogteligging",
+      "type": "string"
+    },
+    "stadsdeel": {
+      "description": "Property stadsdeel",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "theoretischEindejaar": {
+      "description": "Property theoretischEindejaar",
+      "type": "string"
+    },
+    "tijdstipRegistratie": {
+      "description": "Property tijdstipRegistratie",
+      "type": "string"
+    },
+    "typeBeheerder": {
+      "description": "Property typeBeheerder",
+      "type": "string"
+    },
+    "typeBeheerderPlus": {
+      "description": "Property typeBeheerderPlus",
+      "type": "string"
+    },
+    "typeEigenaar": {
+      "description": "Property typeEigenaar",
+      "type": "string"
+    },
+    "typeEigenaarPlus": {
+      "description": "Property typeEigenaarPlus",
+      "type": "string"
+    },
+    "typeLigging": {
+      "description": "Property typeLigging",
+      "type": "string"
+    },
+    "waterschap": {
+      "description": "Property waterschap",
+      "type": "string"
+    },
+    "wijk": {
+      "description": "Property wijk",
+      "type": "string"
+    },
+    "woonplaats": {
+      "description": "Property woonplaats",
+      "type": "string"
+    },
+    "zettingsgevoeligheid": {
+      "description": "Property zettingsgevoeligheid",
+      "type": "string"
+    },
+    "zettingsgevoeligheidPlus": {
+      "description": "Property zettingsgevoeligheidPlus",
+      "type": "string"
+    }
+  }
+}

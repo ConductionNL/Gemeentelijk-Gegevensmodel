@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Rapportagemoment",
+  "description": "Represents a Rapportagemoment in the system",
+  "properties": {
+    "datum": {
+      "description": "Property datum",
+      "type": "string",
+      "format": "date"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "termijn": {
+      "description": "Property termijn",
+      "type": "string"
+    }
+  }
+}

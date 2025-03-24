@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VerhuurbaarEenheid",
+  "description": "Represents a VerhuurbaarEenheid in the system",
+  "properties": {
+    "adres": {
+      "description": "Property adres",
+      "type": "string"
+    },
+    "afmeting": {
+      "description": "Property afmeting",
+      "type": "string"
+    },
+    "bezetting": {
+      "description": "Property bezetting",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string",
+      "format": "date"
+    },
+    "datumWerkelijkBegin": {
+      "description": "Property datumWerkelijkBegin",
+      "type": "string",
+      "format": "date"
+    },
+    "datumWerkelijkEinde": {
+      "description": "Property datumWerkelijkEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "huurprijs": {
+      "description": "Property huurprijs",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "nettoOmtrek": {
+      "description": "Property nettoOmtrek",
+      "type": "string"
+    },
+    "nettoOppervlak": {
+      "description": "Property nettoOppervlak",
+      "type": "string"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

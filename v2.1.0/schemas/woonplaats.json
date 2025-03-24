@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Woonplaats",
+  "description": "Represents a Woonplaats in the system",
+  "properties": {
+    "datumBeginGeldigheidWoonplaats": {
+      "description": "Property datumBeginGeldigheidWoonplaats",
+      "type": "string"
+    },
+    "datumEindeGeldigheidWoonplaats": {
+      "description": "Property datumEindeGeldigheidWoonplaats",
+      "type": "string"
+    },
+    "geometrieWoonplaats": {
+      "description": "Property geometrieWoonplaats",
+      "type": "string"
+    },
+    "indicatieGeconstateerdeWoonplaats": {
+      "description": "Property indicatieGeconstateerdeWoonplaats",
+      "type": "string"
+    },
+    "inOnderzoek": {
+      "description": "Property inOnderzoek",
+      "type": "string"
+    },
+    "woonplaatsIdentificatie": {
+      "description": "Property woonplaatsIdentificatie",
+      "type": "string"
+    },
+    "woonplaatsNaam": {
+      "description": "Property woonplaatsNaam",
+      "type": "string"
+    },
+    "woonplaatsNaamNEN": {
+      "description": "Property woonplaatsNaamNEN",
+      "type": "string"
+    },
+    "woonplaatsStatus": {
+      "description": "Property woonplaatsStatus",
+      "type": "string"
+    }
+  }
+}

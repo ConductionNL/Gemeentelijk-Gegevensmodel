@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Rol",
+  "description": "Represents a Rol in the system",
+  "properties": {
+    "datumBegin": {
+      "description": "Property datumBegin",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string",
+      "format": "date"
+    },
+    "rol": {
+      "description": "Property rol",
+      "type": "string"
+    }
+  }
+}

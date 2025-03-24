@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ToepasbareRegel",
+  "description": "Represents a ToepasbareRegel in the system",
+  "properties": {
+    "datumBeginGeldigheid": {
+      "description": "Property datumBeginGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string",
+      "format": "date"
+    },
+    "domein": {
+      "description": "Property domein",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "soortAansluitpunt": {
+      "description": "Property soortAansluitpunt",
+      "type": "string"
+    },
+    "toestemming": {
+      "description": "Property toestemming",
+      "type": "string"
+    }
+  }
+}

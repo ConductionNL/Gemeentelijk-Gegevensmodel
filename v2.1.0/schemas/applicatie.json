@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Applicatie",
+  "description": "Represents a Applicatie in the system",
+  "properties": {
+    "applicatieURL": {
+      "description": "Property applicatieURL",
+      "type": "string"
+    },
+    "beheerstatus": {
+      "description": "Property beheerstatus",
+      "type": "string"
+    },
+    "beleidsdomein": {
+      "description": "Property beleidsdomein",
+      "type": "string"
+    },
+    "categorie": {
+      "description": "Property categorie",
+      "type": "string"
+    },
+    "guid": {
+      "description": "Property guid",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "packagingstatus": {
+      "description": "Property packagingstatus",
+      "type": "string"
+    }
+  }
+}

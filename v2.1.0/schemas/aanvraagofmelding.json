@@ -18,19 +18,23 @@
     },
     "datumAanmaak": {
       "description": "Property datumAanmaak",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumAfhandeling": {
       "description": "Property datumAfhandeling",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumBeginStatus": {
       "description": "Property datumBeginStatus",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "datumEindeStatus": {
       "description": "Property datumEindeStatus",
-      "type": "string"
+      "type": "string",
+      "format": "date"
     },
     "hoofdcategorie": {
       "description": "Property hoofdcategorie",

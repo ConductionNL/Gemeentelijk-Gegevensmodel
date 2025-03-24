@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OrganisatorischeEenheid",
+  "description": "Represents a OrganisatorischeEenheid in the system",
+  "properties": {
+    "datumOntstaan": {
+      "description": "Property datumOntstaan",
+      "type": "string"
+    },
+    "datumOpheffing": {
+      "description": "Property datumOpheffing",
+      "type": "string"
+    },
+    "emailadres": {
+      "description": "Property emailadres",
+      "type": "string"
+    },
+    "faxnummer": {
+      "description": "Property faxnummer",
+      "type": "string"
+    },
+    "Formatie": {
+      "description": "Property Formatie",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "naamVerkort": {
+      "description": "Property naamVerkort",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "organisatieIdentificatie": {
+      "description": "Property organisatieIdentificatie",
+      "type": "string"
+    },
+    "telefoonnummer": {
+      "description": "Property telefoonnummer",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    },
+    "vestiging": {
+      "description": "Property vestiging",
+      "type": "string"
+    },
+    "zaaktype": {
+      "description": "Property zaaktype",
+      "type": "string"
+    }
+  }
+}

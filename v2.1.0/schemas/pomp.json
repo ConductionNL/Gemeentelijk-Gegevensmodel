@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Pomp",
+  "description": "Represents a Pomp in the system",
+  "properties": {
+    "aanslagniveau": {
+      "description": "Property aanslagniveau",
+      "type": "string"
+    },
+    "beginstandDraaiurenteller": {
+      "description": "Property beginstandDraaiurenteller",
+      "type": "string"
+    },
+    "besturingskast": {
+      "description": "Property besturingskast",
+      "type": "string"
+    },
+    "laatsteStandDraaiurenteller": {
+      "description": "Property laatsteStandDraaiurenteller",
+      "type": "string"
+    },
+    "laatsteStandkWhTeller": {
+      "description": "Property laatsteStandkWhTeller",
+      "type": "string"
+    },
+    "levensduur": {
+      "description": "Property levensduur",
+      "type": "string"
+    },
+    "model": {
+      "description": "Property model",
+      "type": "string"
+    },
+    "motorvermogen": {
+      "description": "Property motorvermogen",
+      "type": "string"
+    },
+    "onderdeelMetPomp": {
+      "description": "Property onderdeelMetPomp",
+      "type": "string"
+    },
+    "ontwerpcapaciteit": {
+      "description": "Property ontwerpcapaciteit",
+      "type": "string"
+    },
+    "pompcapaciteit": {
+      "description": "Property pompcapaciteit",
+      "type": "string"
+    },
+    "serienummer": {
+      "description": "Property serienummer",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "typeOnderdeelMetPomp": {
+      "description": "Property typeOnderdeelMetPomp",
+      "type": "string"
+    },
+    "typePlus": {
+      "description": "Property typePlus",
+      "type": "string"
+    },
+    "typeWaaier": {
+      "description": "Property typeWaaier",
+      "type": "string"
+    },
+    "uitslagpeil": {
+      "description": "Property uitslagpeil",
+      "type": "string"
+    }
+  }
+}
