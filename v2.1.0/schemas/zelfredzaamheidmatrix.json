@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ZelfredzaamheidMatrix",
+  "description": "Represents a ZelfredzaamheidMatrix in the system",
+  "properties": {
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string"
+    },
+    "datumStartGeldigheid": {
+      "description": "Property datumStartGeldigheid",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Binnenlocatie",
+  "description": "Represents a Binnenlocatie in the system",
+  "properties": {
+    "adres": {
+      "description": "Property adres",
+      "type": "string"
+    },
+    "bouwjaar": {
+      "description": "Property bouwjaar",
+      "type": "string"
+    },
+    "gemeentelijk": {
+      "description": "Property gemeentelijk",
+      "type": "string"
+    },
+    "geschatteKostenPerJaar": {
+      "description": "Property geschatteKostenPerJaar",
+      "type": "string"
+    },
+    "gymzaal": {
+      "description": "Property gymzaal",
+      "type": "string"
+    },
+    "klokurenOnderwijs": {
+      "description": "Property klokurenOnderwijs",
+      "type": "string"
+    },
+    "klokurenVerenigingen": {
+      "description": "Property klokurenVerenigingen",
+      "type": "string"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "onderhoudsniveau": {
+      "description": "Property onderhoudsniveau",
+      "type": "string"
+    },
+    "onderhoudsstatus": {
+      "description": "Property onderhoudsstatus",
+      "type": "string"
+    },
+    "sporthal": {
+      "description": "Property sporthal",
+      "type": "string"
+    },
+    "vloeroppervlakte": {
+      "description": "Property vloeroppervlakte",
+      "type": "string"
+    }
+  }
+}

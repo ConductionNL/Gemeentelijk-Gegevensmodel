@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AOMAanvraagWMOJeugd",
+  "description": "Represents a AOMAanvraagWMOJeugd in the system",
+  "properties": {
+    "clientReactie": {
+      "description": "Property clientReactie",
+      "type": "string"
+    },
+    "datumBeschikking": {
+      "description": "Property datumBeschikking",
+      "type": "string"
+    },
+    "datumEersteAfspraak": {
+      "description": "Property datumEersteAfspraak",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumPlanVastgesteld": {
+      "description": "Property datumPlanVastgesteld",
+      "type": "string"
+    },
+    "datumStartAanvraag": {
+      "description": "Property datumStartAanvraag",
+      "type": "string"
+    },
+    "deskundigheid": {
+      "description": "Property deskundigheid",
+      "type": "string"
+    },
+    "doorloopmethodiek": {
+      "description": "Property doorloopmethodiek",
+      "type": "string"
+    },
+    "maximaleDoorlooptijd": {
+      "description": "Property maximaleDoorlooptijd",
+      "type": "string"
+    },
+    "redenAfsluiting": {
+      "description": "Property redenAfsluiting",
+      "type": "string"
+    }
+  }
+}

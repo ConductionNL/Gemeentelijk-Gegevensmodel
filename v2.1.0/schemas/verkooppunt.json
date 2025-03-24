@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verkooppunt",
+  "description": "Represents a Verkooppunt in the system",
+  "properties": {
+    "winkelformule": {
+      "description": "Property winkelformule",
+      "type": "string"
+    }
+  }
+}

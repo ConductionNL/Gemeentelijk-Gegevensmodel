@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "MagazijnPlaatsing",
+  "description": "Represents a MagazijnPlaatsing in the system",
+  "properties": {
+    "beschrijving": {
+      "description": "Property beschrijving",
+      "type": "string"
+    },
+    "datumGeplaatst": {
+      "description": "Property datumGeplaatst",
+      "type": "string"
+    },
+    "herkomst": {
+      "description": "Property herkomst",
+      "type": "string"
+    },
+    "key": {
+      "description": "Property key",
+      "type": "string"
+    },
+    "keyDoos": {
+      "description": "Property keyDoos",
+      "type": "string"
+    },
+    "keyMagazijnlocatie": {
+      "description": "Property keyMagazijnlocatie",
+      "type": "string"
+    },
+    "projectCD": {
+      "description": "Property projectCD",
+      "type": "string"
+    },
+    "uitgeleend": {
+      "description": "Property uitgeleend",
+      "type": "string"
+    }
+  }
+}

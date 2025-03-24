@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "SubProducttype",
+  "description": "Represents a SubProducttype in the system",
+  "properties": {
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "prioriteit": {
+      "description": "Property prioriteit",
+      "type": "string"
+    }
+  }
+}

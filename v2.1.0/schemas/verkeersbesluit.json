@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Verkeersbesluit",
+  "description": "Represents a Verkeersbesluit in the system",
+  "properties": {
+    "datumBesluit": {
+      "description": "Property datumBesluit",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "huisnummer": {
+      "description": "Property huisnummer",
+      "type": "string"
+    },
+    "postcode": {
+      "description": "Property postcode",
+      "type": "string"
+    },
+    "referentienummer": {
+      "description": "Property referentienummer",
+      "type": "string"
+    },
+    "straat": {
+      "description": "Property straat",
+      "type": "string"
+    },
+    "titel": {
+      "description": "Property titel",
+      "type": "string"
+    }
+  }
+}

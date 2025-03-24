@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Asielstatushouder",
+  "description": "Represents a Asielstatushouder in the system",
+  "properties": {
+    "DigiD aangevraagd": {
+      "description": "Property DigiD aangevraagd",
+      "type": "string"
+    },
+    "Emailadres verblijf AZC": {
+      "description": "Property Emailadres verblijf AZC",
+      "type": "string"
+    },
+    "Is gekoppeld aan": {
+      "description": "Property Is gekoppeld aan",
+      "type": "string"
+    },
+    "Land Rijbewijs": {
+      "description": "Property Land Rijbewijs",
+      "type": "string"
+    },
+    "Rijbewijs": {
+      "description": "Property Rijbewijs",
+      "type": "string"
+    },
+    "Telefoonnummer verblijf AZC": {
+      "description": "Property Telefoonnummer verblijf AZC",
+      "type": "string"
+    }
+  }
+}

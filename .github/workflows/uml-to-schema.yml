@@ -37,6 +37,15 @@ jobs:
         run: python .github/scripts/convert_uml_to_schema.py ${{ inputs.version }}
         continue-on-error: true  # Continue even if this step fails
 
+      # - name: Commit changes
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add v*/schemas/
+      #     git commit -m "Update JSON Schemas and OpenAPI spec" || echo "No changes to commit"
+      #     git push 
+
+
   generate-openapi:
     needs: convert  # Run after convert job, even if it failed
     runs-on: ubuntu-latest

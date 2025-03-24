@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Kosten",
+  "description": "Represents a Kosten in the system",
+  "properties": {
+    "aangemaaktDoor": {
+      "description": "Property aangemaaktDoor",
+      "type": "string"
+    },
+    "aantal": {
+      "description": "Property aantal",
+      "type": "string"
+    },
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "bedragTotaal": {
+      "description": "Property bedragTotaal",
+      "type": "string"
+    },
+    "datumAanmaak": {
+      "description": "Property datumAanmaak",
+      "type": "string"
+    },
+    "datumMutatie": {
+      "description": "Property datumMutatie",
+      "type": "string"
+    },
+    "eenheid": {
+      "description": "Property eenheid",
+      "type": "string"
+    },
+    "geaccordeerd": {
+      "description": "Property geaccordeerd",
+      "type": "string"
+    },
+    "gefactureerdOp": {
+      "description": "Property gefactureerdOp",
+      "type": "string"
+    },
+    "gemuteerdDoor": {
+      "description": "Property gemuteerdDoor",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "opBasisVanGrondslag": {
+      "description": "Property opBasisVanGrondslag",
+      "type": "string"
+    },
+    "tarief": {
+      "description": "Property tarief",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "vastgesteldBedrag": {
+      "description": "Property vastgesteldBedrag",
+      "type": "string"
+    }
+  }
+}

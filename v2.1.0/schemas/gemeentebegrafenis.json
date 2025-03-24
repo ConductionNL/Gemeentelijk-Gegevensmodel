@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Gemeentebegrafenis",
+  "description": "Represents a Gemeentebegrafenis in the system",
+  "properties": {
+    "achtergrondMelding": {
+      "description": "Property achtergrondMelding",
+      "type": "string"
+    },
+    "begrafeniskosten": {
+      "description": "Property begrafeniskosten",
+      "type": "string"
+    },
+    "datumAfgedaan": {
+      "description": "Property datumAfgedaan",
+      "type": "string"
+    },
+    "datumBegrafenis": {
+      "description": "Property datumBegrafenis",
+      "type": "string"
+    },
+    "datumGemeld": {
+      "description": "Property datumGemeld",
+      "type": "string"
+    },
+    "datumRuimingGraf": {
+      "description": "Property datumRuimingGraf",
+      "type": "string"
+    },
+    "doodsoorzaak": {
+      "description": "Property doodsoorzaak",
+      "type": "string"
+    },
+    "gemeentelijkeKosten": {
+      "description": "Property gemeentelijkeKosten",
+      "type": "string"
+    },
+    "inkoopordernummer": {
+      "description": "Property inkoopordernummer",
+      "type": "string"
+    },
+    "melder": {
+      "description": "Property melder",
+      "type": "string"
+    },
+    "urenGemeente": {
+      "description": "Property urenGemeente",
+      "type": "string"
+    },
+    "verhaaldBedrag": {
+      "description": "Property verhaaldBedrag",
+      "type": "string"
+    }
+  }
+}

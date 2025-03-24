@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vondst",
+  "description": "Represents a Vondst in the system",
+  "properties": {
+    "datum": {
+      "description": "Property datum",
+      "type": "string"
+    },
+    "key": {
+      "description": "Property key",
+      "type": "string"
+    },
+    "keyVulling": {
+      "description": "Property keyVulling",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "omstandigheden": {
+      "description": "Property omstandigheden",
+      "type": "string"
+    },
+    "projectCD": {
+      "description": "Property projectCD",
+      "type": "string"
+    },
+    "putnummer": {
+      "description": "Property putnummer",
+      "type": "string"
+    },
+    "spoornummer": {
+      "description": "Property spoornummer",
+      "type": "string"
+    },
+    "vlaknummer": {
+      "description": "Property vlaknummer",
+      "type": "string"
+    },
+    "vondstnummer": {
+      "description": "Property vondstnummer",
+      "type": "string"
+    },
+    "vullingnummer": {
+      "description": "Property vullingnummer",
+      "type": "string"
+    },
+    "XCoordinaat": {
+      "description": "Property XCoordinaat",
+      "type": "string"
+    },
+    "YCoordinaat": {
+      "description": "Property YCoordinaat",
+      "type": "string"
+    }
+  }
+}

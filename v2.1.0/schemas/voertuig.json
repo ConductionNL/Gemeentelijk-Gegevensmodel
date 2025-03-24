@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Voertuig",
+  "description": "Represents a Voertuig in the system",
+  "properties": {
+    "kenteken": {
+      "description": "Property kenteken",
+      "type": "string"
+    },
+    "kleur": {
+      "description": "Property kleur",
+      "type": "string"
+    },
+    "land": {
+      "description": "Property land",
+      "type": "string"
+    },
+    "merk": {
+      "description": "Property merk",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

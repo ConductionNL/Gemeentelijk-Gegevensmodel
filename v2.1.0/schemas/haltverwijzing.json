@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "HALTVerwijzing",
+  "description": "Represents a HALTVerwijzing in the system",
+  "properties": {
+    "afdoening": {
+      "description": "Property afdoening",
+      "type": "string"
+    },
+    "datumMutatie": {
+      "description": "Property datumMutatie",
+      "type": "string"
+    },
+    "datumRetour": {
+      "description": "Property datumRetour",
+      "type": "string"
+    },
+    "memo": {
+      "description": "Property memo",
+      "type": "string"
+    }
+  }
+}

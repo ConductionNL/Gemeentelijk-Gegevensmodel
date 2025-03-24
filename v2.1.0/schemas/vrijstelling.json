@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vrijstelling",
+  "description": "Represents a Vrijstelling in the system",
+  "properties": {
+    "aanvraagToegekend": {
+      "description": "Property aanvraagToegekend",
+      "type": "string"
+    },
+    "buitenlandseSchoollocatie": {
+      "description": "Property buitenlandseSchoollocatie",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "verzuimsoort": {
+      "description": "Property verzuimsoort",
+      "type": "string"
+    }
+  }
+}

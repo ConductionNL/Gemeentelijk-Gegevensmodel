@@ -1,8 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "GGM API Specification",
-    "version": "2.1.0"
+    "title": "Gemeentelijk Gegevensmodel API",
+    "version": "2.1.0",
+    "description": "Generated from UML models"
   },
   "paths": {},
   "components": {

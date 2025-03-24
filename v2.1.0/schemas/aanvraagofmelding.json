@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AanvraagOfMelding",
+  "description": "Represents a AanvraagOfMelding in the system",
+  "properties": {
+    "afgehandeld": {
+      "description": "Property afgehandeld",
+      "type": "string"
+    },
+    "categorie": {
+      "description": "Property categorie",
+      "type": "string"
+    },
+    "categoriecode": {
+      "description": "Property categoriecode",
+      "type": "string"
+    },
+    "datumAanmaak": {
+      "description": "Property datumAanmaak",
+      "type": "string"
+    },
+    "datumAfhandeling": {
+      "description": "Property datumAfhandeling",
+      "type": "string"
+    },
+    "datumBeginStatus": {
+      "description": "Property datumBeginStatus",
+      "type": "string"
+    },
+    "datumEindeStatus": {
+      "description": "Property datumEindeStatus",
+      "type": "string"
+    },
+    "hoofdcategorie": {
+      "description": "Property hoofdcategorie",
+      "type": "string"
+    },
+    "hoofdcategoriecode": {
+      "description": "Property hoofdcategoriecode",
+      "type": "string"
+    },
+    "identificatie": {
+      "description": "Property identificatie",
+      "type": "string"
+    },
+    "kanaal": {
+      "description": "Property kanaal",
+      "type": "string"
+    },
+    "onderwerp": {
+      "description": "Property onderwerp",
+      "type": "string"
+    },
+    "onderwerpcode": {
+      "description": "Property onderwerpcode",
+      "type": "string"
+    },
+    "soort": {
+      "description": "Property soort",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "statuscode": {
+      "description": "Property statuscode",
+      "type": "string"
+    },
+    "statusVolgorde": {
+      "description": "Property statusVolgorde",
+      "type": "string"
+    },
+    "subcategorie": {
+      "description": "Property subcategorie",
+      "type": "string"
+    },
+    "subcategoriecode": {
+      "description": "Property subcategoriecode",
+      "type": "string"
+    }
+  }
+}

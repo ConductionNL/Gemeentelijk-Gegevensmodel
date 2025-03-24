@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Toewijzing",
+  "description": "Represents a Toewijzing in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "commentaar": {
+      "description": "Property commentaar",
+      "type": "string"
+    },
+    "datumAanschaf": {
+      "description": "Property datumAanschaf",
+      "type": "string"
+    },
+    "datumEindeToewijzing": {
+      "description": "Property datumEindeToewijzing",
+      "type": "string"
+    },
+    "datumStartToewijzing": {
+      "description": "Property datumStartToewijzing",
+      "type": "string"
+    },
+    "datumToewijzing": {
+      "description": "Property datumToewijzing",
+      "type": "string"
+    },
+    "eenheid": {
+      "description": "Property eenheid",
+      "type": "string"
+    },
+    "frequentie": {
+      "description": "Property frequentie",
+      "type": "string"
+    },
+    "omvang": {
+      "description": "Property omvang",
+      "type": "string"
+    },
+    "redenWijziging": {
+      "description": "Property redenWijziging",
+      "type": "string"
+    },
+    "toewijzingnummer": {
+      "description": "Property toewijzingnummer",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Werkgelegenheid",
+  "description": "Represents a Werkgelegenheid in the system",
+  "properties": {
+    "aantalFulltimeMannen": {
+      "description": "Property aantalFulltimeMannen",
+      "type": "string"
+    },
+    "aantalFulltimeVrouwen": {
+      "description": "Property aantalFulltimeVrouwen",
+      "type": "string"
+    },
+    "aantalParttimeMannen": {
+      "description": "Property aantalParttimeMannen",
+      "type": "string"
+    },
+    "aantalParttimeVrouwen": {
+      "description": "Property aantalParttimeVrouwen",
+      "type": "string"
+    },
+    "grootteklasse": {
+      "description": "Property grootteklasse",
+      "type": "string"
+    }
+  }
+}

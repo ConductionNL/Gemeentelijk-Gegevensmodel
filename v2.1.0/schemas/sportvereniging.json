@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Sportvereniging",
+  "description": "Represents a Sportvereniging in the system",
+  "properties": {
+    "aantalNormTeams": {
+      "description": "Property aantalNormTeams",
+      "type": "string"
+    },
+    "adres": {
+      "description": "Property adres",
+      "type": "string"
+    },
+    "binnensport": {
+      "description": "Property binnensport",
+      "type": "string"
+    },
+    "buitensport": {
+      "description": "Property buitensport",
+      "type": "string"
+    },
+    "email": {
+      "description": "Property email",
+      "type": "string"
+    },
+    "ledenaantal": {
+      "description": "Property ledenaantal",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "typeSport": {
+      "description": "Property typeSport",
+      "type": "string"
+    }
+  }
+}

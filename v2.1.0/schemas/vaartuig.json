@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vaartuig",
+  "description": "Represents a Vaartuig in the system",
+  "properties": {
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "kleur": {
+      "description": "Property kleur",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "naamVaartuig": {
+      "description": "Property naamVaartuig",
+      "type": "string"
+    },
+    "registratienummer": {
+      "description": "Property registratienummer",
+      "type": "string"
+    }
+  }
+}

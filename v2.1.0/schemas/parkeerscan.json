@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Parkeerscan",
+  "description": "Represents a Parkeerscan in the system",
+  "properties": {
+    "codeGebruiker": {
+      "description": "Property codeGebruiker",
+      "type": "string"
+    },
+    "codeScanvoertuig": {
+      "description": "Property codeScanvoertuig",
+      "type": "string"
+    },
+    "coordinaten": {
+      "description": "Property coordinaten",
+      "type": "string"
+    },
+    "foto": {
+      "description": "Property foto",
+      "type": "string"
+    },
+    "kenteken": {
+      "description": "Property kenteken",
+      "type": "string"
+    },
+    "parkeerrecht": {
+      "description": "Property parkeerrecht",
+      "type": "string"
+    },
+    "tijdstip": {
+      "description": "Property tijdstip",
+      "type": "string"
+    },
+    "transactieID": {
+      "description": "Property transactieID",
+      "type": "string"
+    }
+  }
+}

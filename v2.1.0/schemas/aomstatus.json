@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AOMStatus",
+  "description": "Represents a AOMStatus in the system",
+  "properties": {
+    "datumBeginStatus": {
+      "description": "Property datumBeginStatus",
+      "type": "string"
+    },
+    "datumEindeStatus": {
+      "description": "Property datumEindeStatus",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "statuscode": {
+      "description": "Property statuscode",
+      "type": "string"
+    },
+    "statusVolgorde": {
+      "description": "Property statusVolgorde",
+      "type": "string"
+    }
+  }
+}

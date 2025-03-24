@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Collegelid",
+  "description": "Represents a Collegelid in the system",
+  "properties": {
+    "achternaam": {
+      "description": "Property achternaam",
+      "type": "string"
+    },
+    "datumAanstelling": {
+      "description": "Property datumAanstelling",
+      "type": "string"
+    },
+    "datumUittreding": {
+      "description": "Property datumUittreding",
+      "type": "string"
+    },
+    "fractie": {
+      "description": "Property fractie",
+      "type": "string"
+    },
+    "portefeuille": {
+      "description": "Property portefeuille",
+      "type": "string"
+    },
+    "titel": {
+      "description": "Property titel",
+      "type": "string"
+    },
+    "voornaam": {
+      "description": "Property voornaam",
+      "type": "string"
+    }
+  }
+}

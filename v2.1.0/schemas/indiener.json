@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Indiener",
+  "description": "Represents a Indiener in the system",
+  "properties": {}
+}

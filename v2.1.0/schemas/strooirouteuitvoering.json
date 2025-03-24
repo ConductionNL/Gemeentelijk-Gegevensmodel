@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "StrooirouteUitvoering",
+  "description": "Represents a StrooirouteUitvoering in the system",
+  "properties": {
+    "geplandEinde": {
+      "description": "Property geplandEinde",
+      "type": "string"
+    },
+    "geplandStart": {
+      "description": "Property geplandStart",
+      "type": "string"
+    },
+    "route": {
+      "description": "Property route",
+      "type": "string"
+    },
+    "werkelijkEinde": {
+      "description": "Property werkelijkEinde",
+      "type": "string"
+    },
+    "werkelijkeStart": {
+      "description": "Property werkelijkeStart",
+      "type": "string"
+    }
+  }
+}

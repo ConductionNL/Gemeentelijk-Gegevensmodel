@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Declaratie",
+  "description": "Represents a Declaratie in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "betreft": {
+      "description": "Property betreft",
+      "type": "string"
+    },
+    "datumDeclaratie": {
+      "description": "Property datumDeclaratie",
+      "type": "string"
+    },
+    "datumIndiening": {
+      "description": "Property datumIndiening",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Beschikking",
+  "description": "Represents a Beschikking in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "commentaar": {
+      "description": "Property commentaar",
+      "type": "string"
+    },
+    "datumAfgifte": {
+      "description": "Property datumAfgifte",
+      "type": "string"
+    },
+    "grondslagen": {
+      "description": "Property grondslagen",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "MORAanvraagOfMelding",
+  "description": "Represents a MORAanvraagOfMelding in the system",
+  "properties": {
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "locatieOmschrijving": {
+      "description": "Property locatieOmschrijving",
+      "type": "string"
+    },
+    "meldingOmschrijving": {
+      "description": "Property meldingOmschrijving",
+      "type": "string"
+    },
+    "meldingTekst": {
+      "description": "Property meldingTekst",
+      "type": "string"
+    }
+  }
+}

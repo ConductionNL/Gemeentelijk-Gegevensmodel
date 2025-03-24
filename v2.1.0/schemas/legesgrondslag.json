@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "LegesGrondslag",
+  "description": "Represents a LegesGrondslag in the system",
+  "properties": {
+    "aangemaaktDoor": {
+      "description": "Property aangemaaktDoor",
+      "type": "string"
+    },
+    "aantalOpgegeven": {
+      "description": "Property aantalOpgegeven",
+      "type": "string"
+    },
+    "aantalVastgesteld": {
+      "description": "Property aantalVastgesteld",
+      "type": "string"
+    },
+    "automatisch": {
+      "description": "Property automatisch",
+      "type": "string"
+    },
+    "datumAanmaak": {
+      "description": "Property datumAanmaak",
+      "type": "string"
+    },
+    "datumMutatie": {
+      "description": "Property datumMutatie",
+      "type": "string"
+    },
+    "eenheid": {
+      "description": "Property eenheid",
+      "type": "string"
+    },
+    "gemuteerdDoor": {
+      "description": "Property gemuteerdDoor",
+      "type": "string"
+    },
+    "legesGrondslag": {
+      "description": "Property legesGrondslag",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

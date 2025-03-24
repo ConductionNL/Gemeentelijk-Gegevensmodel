@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bouwactiviteit",
+  "description": "Represents a Bouwactiviteit in the system",
+  "properties": {
+    "bouwjaarklasse": {
+      "description": "Property bouwjaarklasse",
+      "type": "string"
+    },
+    "bouwjaarTot": {
+      "description": "Property bouwjaarTot",
+      "type": "string"
+    },
+    "bouwjaarVan": {
+      "description": "Property bouwjaarVan",
+      "type": "string"
+    },
+    "indicatie": {
+      "description": "Property indicatie",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vulling",
+  "description": "Represents a Vulling in the system",
+  "properties": {
+    "grondsoort": {
+      "description": "Property grondsoort",
+      "type": "string"
+    },
+    "key": {
+      "description": "Property key",
+      "type": "string"
+    },
+    "keySpoor": {
+      "description": "Property keySpoor",
+      "type": "string"
+    },
+    "kleur": {
+      "description": "Property kleur",
+      "type": "string"
+    },
+    "projectCD": {
+      "description": "Property projectCD",
+      "type": "string"
+    },
+    "putnummer": {
+      "description": "Property putnummer",
+      "type": "string"
+    },
+    "spoornummer": {
+      "description": "Property spoornummer",
+      "type": "string"
+    },
+    "structuur": {
+      "description": "Property structuur",
+      "type": "string"
+    },
+    "vlaknummer": {
+      "description": "Property vlaknummer",
+      "type": "string"
+    },
+    "vullingnummer": {
+      "description": "Property vullingnummer",
+      "type": "string"
+    }
+  }
+}

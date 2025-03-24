@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Archief",
+  "description": "Represents a Archief in the system",
+  "properties": {
+    "archiefnummer": {
+      "description": "Property archiefnummer",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "openbaarheidsbeperking": {
+      "description": "Property openbaarheidsbeperking",
+      "type": "string"
+    }
+  }
+}

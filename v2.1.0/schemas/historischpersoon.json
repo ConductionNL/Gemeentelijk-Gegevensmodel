@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "HistorischPersoon",
+  "description": "Represents a HistorischPersoon in the system",
+  "properties": {
+    "beroep": {
+      "description": "Property beroep",
+      "type": "string"
+    },
+    "datumGeboorte": {
+      "description": "Property datumGeboorte",
+      "type": "string"
+    },
+    "datumOverlijden": {
+      "description": "Property datumOverlijden",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "publiekToegankelijk": {
+      "description": "Property publiekToegankelijk",
+      "type": "string"
+    },
+    "woondeOp": {
+      "description": "Property woondeOp",
+      "type": "string"
+    }
+  }
+}

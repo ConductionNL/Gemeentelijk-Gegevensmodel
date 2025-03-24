@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Startkwalificatie",
+  "description": "Represents a Startkwalificatie in the system",
+  "properties": {
+    "datumBehaald": {
+      "description": "Property datumBehaald",
+      "type": "string"
+    }
+  }
+}

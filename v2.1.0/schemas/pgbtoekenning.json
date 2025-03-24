@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "PGBToekenning",
+  "description": "Represents a PGBToekenning in the system",
+  "properties": {
+    "budget": {
+      "description": "Property budget",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumToekenning": {
+      "description": "Property datumToekenning",
+      "type": "string"
+    }
+  }
+}

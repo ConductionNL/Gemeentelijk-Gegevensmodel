@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "DigitaalBestand",
+  "description": "Represents a DigitaalBestand in the system",
+  "properties": {
+    "blob": {
+      "description": "Property blob",
+      "type": "string"
+    },
+    "mimetype": {
+      "description": "Property mimetype",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AanvraagVrijstelling",
+  "description": "Represents a AanvraagVrijstelling in the system",
+  "properties": {
+    "buitenlandseSchoollocatie": {
+      "description": "Property buitenlandseSchoollocatie",
+      "type": "string"
+    },
+    "datumAanvraag": {
+      "description": "Property datumAanvraag",
+      "type": "string"
+    }
+  }
+}

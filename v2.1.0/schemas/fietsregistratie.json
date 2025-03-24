@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Fietsregistratie",
+  "description": "Represents a Fietsregistratie in the system",
+  "properties": {
+    "gelabeld": {
+      "description": "Property gelabeld",
+      "type": "string"
+    },
+    "verwijderd": {
+      "description": "Property verwijderd",
+      "type": "string"
+    }
+  }
+}

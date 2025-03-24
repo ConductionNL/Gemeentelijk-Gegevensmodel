@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Doos",
+  "description": "Represents a Doos in the system",
+  "properties": {
+    "doosnummer": {
+      "description": "Property doosnummer",
+      "type": "string"
+    },
+    "herkomst": {
+      "description": "Property herkomst",
+      "type": "string"
+    },
+    "inhoud": {
+      "description": "Property inhoud",
+      "type": "string"
+    },
+    "key": {
+      "description": "Property key",
+      "type": "string"
+    },
+    "keyMagazijnlocatie": {
+      "description": "Property keyMagazijnlocatie",
+      "type": "string"
+    },
+    "projectCD": {
+      "description": "Property projectCD",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Voorzieningsoort",
+  "description": "Represents a Voorzieningsoort in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "productcategorie": {
+      "description": "Property productcategorie",
+      "type": "string"
+    },
+    "productcategoriecode": {
+      "description": "Property productcategoriecode",
+      "type": "string"
+    },
+    "productcode": {
+      "description": "Property productcode",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

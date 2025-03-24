@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vervoerder",
+  "description": "Represents a Vervoerder in the system",
+  "properties": {}
+}

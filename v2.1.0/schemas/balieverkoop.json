@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Balieverkoop",
+  "description": "Represents a Balieverkoop in the system",
+  "properties": {
+    "aantal": {
+      "description": "Property aantal",
+      "type": "string"
+    },
+    "kanaal": {
+      "description": "Property kanaal",
+      "type": "string"
+    },
+    "verkooptijd": {
+      "description": "Property verkooptijd",
+      "type": "string"
+    }
+  }
+}

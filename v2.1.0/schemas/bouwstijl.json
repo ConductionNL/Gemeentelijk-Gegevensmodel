@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bouwstijl",
+  "description": "Represents a Bouwstijl in the system",
+  "properties": {
+    "hoofdstijl": {
+      "description": "Property hoofdstijl",
+      "type": "string"
+    },
+    "substijl": {
+      "description": "Property substijl",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    },
+    "zuiverheid": {
+      "description": "Property zuiverheid",
+      "type": "string"
+    }
+  }
+}

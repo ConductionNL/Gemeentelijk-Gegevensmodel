@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inspectie",
+  "description": "Represents a Inspectie in the system",
+  "properties": {
+    "bevindingen": {
+      "description": "Property bevindingen",
+      "type": "string"
+    },
+    "datum": {
+      "description": "Property datum",
+      "type": "string"
+    }
+  }
+}

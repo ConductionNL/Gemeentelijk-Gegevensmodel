@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Aanvraag",
+  "description": "Represents a Aanvraag in the system",
+  "properties": {}
+}

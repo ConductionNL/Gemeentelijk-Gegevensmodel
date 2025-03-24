@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vorderingregel",
+  "description": "Represents a Vorderingregel in the system",
+  "properties": {
+    "Aangemaakt_door": {
+      "description": "Property Aangemaakt_door",
+      "type": "string"
+    },
+    "Aanmaakdatum": {
+      "description": "Property Aanmaakdatum",
+      "type": "string"
+    },
+    "Bedrag_excl_btw": {
+      "description": "Property Bedrag_excl_btw",
+      "type": "string"
+    },
+    "Bedrag_incl_btw": {
+      "description": "Property Bedrag_incl_btw",
+      "type": "string"
+    },
+    "Btwcategorie": {
+      "description": "Property Btwcategorie",
+      "type": "string"
+    },
+    "Gemuteerd_door": {
+      "description": "Property Gemuteerd_door",
+      "type": "string"
+    },
+    "Mutatiedatum": {
+      "description": "Property Mutatiedatum",
+      "type": "string"
+    },
+    "Omschrijving": {
+      "description": "Property Omschrijving",
+      "type": "string"
+    },
+    "Periodiek": {
+      "description": "Property Periodiek",
+      "type": "string"
+    },
+    "Type": {
+      "description": "Property Type",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "BeschikteVoorziening",
+  "description": "Represents a BeschikteVoorziening in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumEindeOorspronkelijk": {
+      "description": "Property datumEindeOorspronkelijk",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "eenheid": {
+      "description": "Property eenheid",
+      "type": "string"
+    },
+    "frequentie": {
+      "description": "Property frequentie",
+      "type": "string"
+    },
+    "leveringsvorm": {
+      "description": "Property leveringsvorm",
+      "type": "string"
+    },
+    "omvang": {
+      "description": "Property omvang",
+      "type": "string"
+    },
+    "redenEinde": {
+      "description": "Property redenEinde",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

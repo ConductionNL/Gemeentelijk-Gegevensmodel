@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Scoresoort",
+  "description": "Represents a Scoresoort in the system",
+  "properties": {
+    "niveau": {
+      "description": "Property niveau",
+      "type": "string"
+    }
+  }
+}

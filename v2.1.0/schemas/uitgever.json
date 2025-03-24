@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Uitgever",
+  "description": "Represents a Uitgever in the system",
+  "properties": {}
+}

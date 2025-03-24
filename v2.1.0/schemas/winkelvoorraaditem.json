@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Winkelvoorraaditem",
+  "description": "Represents a Winkelvoorraaditem in the system",
+  "properties": {
+    "aantal": {
+      "description": "Property aantal",
+      "type": "string"
+    },
+    "aantalInBestelling": {
+      "description": "Property aantalInBestelling",
+      "type": "string"
+    },
+    "datumLeveringBestelling": {
+      "description": "Property datumLeveringBestelling",
+      "type": "string"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    }
+  }
+}

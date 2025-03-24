@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Spoor",
+  "description": "Represents a Spoor in the system",
+  "properties": {
+    "datumBeginGeldigheidSpoor": {
+      "description": "Property datumBeginGeldigheidSpoor",
+      "type": "string"
+    },
+    "datumEindeGeldigheidSpoor": {
+      "description": "Property datumEindeGeldigheidSpoor",
+      "type": "string"
+    },
+    "geometrieSpoor": {
+      "description": "Property geometrieSpoor",
+      "type": "string"
+    },
+    "identificatieSpoor": {
+      "description": "Property identificatieSpoor",
+      "type": "string"
+    },
+    "LOD0GeometrieSpoor": {
+      "description": "Property LOD0GeometrieSpoor",
+      "type": "string"
+    },
+    "relatieveHoogteliggingSpoor": {
+      "description": "Property relatieveHoogteliggingSpoor",
+      "type": "string"
+    },
+    "statusSpoor": {
+      "description": "Property statusSpoor",
+      "type": "string"
+    }
+  }
+}

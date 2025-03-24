@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Hotel",
+  "description": "Represents a Hotel in the system",
+  "properties": {
+    "aantalKamers": {
+      "description": "Property aantalKamers",
+      "type": "string"
+    }
+  }
+}

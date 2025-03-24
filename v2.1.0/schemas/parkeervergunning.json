@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Parkeervergunning",
+  "description": "Represents a Parkeervergunning in the system",
+  "properties": {
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string"
+    },
+    "datumReservering": {
+      "description": "Property datumReservering",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "kenteken": {
+      "description": "Property kenteken",
+      "type": "string"
+    },
+    "minutenAfgeschreven": {
+      "description": "Property minutenAfgeschreven",
+      "type": "string"
+    },
+    "minutenGeldig": {
+      "description": "Property minutenGeldig",
+      "type": "string"
+    },
+    "minutenResterend": {
+      "description": "Property minutenResterend",
+      "type": "string"
+    },
+    "nummer": {
+      "description": "Property nummer",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

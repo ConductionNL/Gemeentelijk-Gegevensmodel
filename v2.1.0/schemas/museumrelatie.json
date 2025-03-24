@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Museumrelatie",
+  "description": "Represents a Museumrelatie in the system",
+  "properties": {
+    "relatiesoort": {
+      "description": "Property relatiesoort",
+      "type": "string"
+    }
+  }
+}

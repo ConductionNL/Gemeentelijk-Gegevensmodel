@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Archeologiebesluit",
+  "description": "Represents a Archeologiebesluit in the system",
+  "properties": {}
+}

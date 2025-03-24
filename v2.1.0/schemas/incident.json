@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Incident",
+  "description": "Represents a Incident in the system",
+  "properties": {
+    "datum": {
+      "description": "Property datum",
+      "type": "string"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bruikleen",
+  "description": "Represents a Bruikleen in the system",
+  "properties": {
+    "aanvraagDoor": {
+      "description": "Property aanvraagDoor",
+      "type": "string"
+    },
+    "datumAanvraag": {
+      "description": "Property datumAanvraag",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "toestemmingDoor": {
+      "description": "Property toestemmingDoor",
+      "type": "string"
+    }
+  }
+}

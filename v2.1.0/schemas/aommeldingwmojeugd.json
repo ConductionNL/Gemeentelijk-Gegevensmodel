@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AOMMeldingWMOJeugd",
+  "description": "Represents a AOMMeldingWMOJeugd in the system",
+  "properties": {
+    "aanmelder": {
+      "description": "Property aanmelder",
+      "type": "string"
+    },
+    "aanmeldingDoor": {
+      "description": "Property aanmeldingDoor",
+      "type": "string"
+    },
+    "aanmeldingDoorLandelijk": {
+      "description": "Property aanmeldingDoorLandelijk",
+      "type": "string"
+    },
+    "aanmeldwijze": {
+      "description": "Property aanmeldwijze",
+      "type": "string"
+    },
+    "deskundigheid": {
+      "description": "Property deskundigheid",
+      "type": "string"
+    },
+    "isClientOpDeHoogte": {
+      "description": "Property isClientOpDeHoogte",
+      "type": "string"
+    },
+    "onderzoekswijze": {
+      "description": "Property onderzoekswijze",
+      "type": "string"
+    },
+    "redenAfsluiting": {
+      "description": "Property redenAfsluiting",
+      "type": "string"
+    },
+    "vervolg": {
+      "description": "Property vervolg",
+      "type": "string"
+    },
+    "verwezen": {
+      "description": "Property verwezen",
+      "type": "string"
+    }
+  }
+}

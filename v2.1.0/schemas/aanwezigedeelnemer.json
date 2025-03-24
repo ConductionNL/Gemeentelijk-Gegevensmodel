@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "AanwezigeDeelnemer",
+  "description": "Represents a AanwezigeDeelnemer in the system",
+  "properties": {
+    "aanvangAanwezigheid": {
+      "description": "Property aanvangAanwezigheid",
+      "type": "string"
+    },
+    "eindeAanwezigheid": {
+      "description": "Property eindeAanwezigheid",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "rol": {
+      "description": "Property rol",
+      "type": "string"
+    },
+    "vertegenwoordigtOrganisatie": {
+      "description": "Property vertegenwoordigtOrganisatie",
+      "type": "string"
+    }
+  }
+}

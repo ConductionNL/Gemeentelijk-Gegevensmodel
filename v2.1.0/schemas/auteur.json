@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Auteur",
+  "description": "Represents a Auteur in the system",
+  "properties": {
+    "datumGeboorte": {
+      "description": "Property datumGeboorte",
+      "type": "string"
+    },
+    "datumOverlijden": {
+      "description": "Property datumOverlijden",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Parkeerrecht",
+  "description": "Represents a Parkeerrecht in the system",
+  "properties": {
+    "aanmaaktijd": {
+      "description": "Property aanmaaktijd",
+      "type": "string"
+    },
+    "bedragAankoop": {
+      "description": "Property bedragAankoop",
+      "type": "string"
+    },
+    "bedragBTW": {
+      "description": "Property bedragBTW",
+      "type": "string"
+    },
+    "datumtijdEinde": {
+      "description": "Property datumtijdEinde",
+      "type": "string"
+    },
+    "datumtijdStart": {
+      "description": "Property datumtijdStart",
+      "type": "string"
+    },
+    "productnaam": {
+      "description": "Property productnaam",
+      "type": "string"
+    },
+    "productomschrijving": {
+      "description": "Property productomschrijving",
+      "type": "string"
+    }
+  }
+}

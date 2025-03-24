@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Plank",
+  "description": "Represents a Plank in the system",
+  "properties": {
+    "planknummer": {
+      "description": "Property planknummer",
+      "type": "string"
+    }
+  }
+}

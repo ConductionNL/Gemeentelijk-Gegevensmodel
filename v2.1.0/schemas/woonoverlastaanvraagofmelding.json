@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "WoonoverlastAanvraagOfMelding",
+  "description": "Represents a WoonoverlastAanvraagOfMelding in the system",
+  "properties": {
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "locatieOmschrijving": {
+      "description": "Property locatieOmschrijving",
+      "type": "string"
+    },
+    "meldingOmschrijving": {
+      "description": "Property meldingOmschrijving",
+      "type": "string"
+    },
+    "meldingTekst": {
+      "description": "Property meldingTekst",
+      "type": "string"
+    }
+  }
+}

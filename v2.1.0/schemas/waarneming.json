@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Waarneming",
+  "description": "Represents a Waarneming in the system",
+  "properties": {}
+}

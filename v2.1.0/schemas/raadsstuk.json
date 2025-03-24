@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Raadsstuk",
+  "description": "Represents a Raadsstuk in the system",
+  "properties": {
+    "besloten": {
+      "description": "Property besloten",
+      "type": "string"
+    },
+    "datumExpiratie": {
+      "description": "Property datumExpiratie",
+      "type": "string"
+    },
+    "datumPublicatie": {
+      "description": "Property datumPublicatie",
+      "type": "string"
+    },
+    "datumRegistratie": {
+      "description": "Property datumRegistratie",
+      "type": "string"
+    },
+    "typeRaadsstuk": {
+      "description": "Property typeRaadsstuk",
+      "type": "string"
+    }
+  }
+}

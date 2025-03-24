@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Beperking",
+  "description": "Represents a Beperking in the system",
+  "properties": {
+    "categorie": {
+      "description": "Property categorie",
+      "type": "string"
+    },
+    "commentaar": {
+      "description": "Property commentaar",
+      "type": "string"
+    },
+    "duur": {
+      "description": "Property duur",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

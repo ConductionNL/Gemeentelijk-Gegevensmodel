@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Beperkingscore",
+  "description": "Represents a Beperkingscore in the system",
+  "properties": {
+    "commentaar": {
+      "description": "Property commentaar",
+      "type": "string"
+    },
+    "score": {
+      "description": "Property score",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

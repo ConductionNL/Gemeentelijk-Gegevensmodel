@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vlak",
+  "description": "Represents a Vlak in the system",
+  "properties": {
+    "diepteTot": {
+      "description": "Property diepteTot",
+      "type": "string"
+    },
+    "diepteVan": {
+      "description": "Property diepteVan",
+      "type": "string"
+    },
+    "key": {
+      "description": "Property key",
+      "type": "string"
+    },
+    "keyPut": {
+      "description": "Property keyPut",
+      "type": "string"
+    },
+    "projectCD": {
+      "description": "Property projectCD",
+      "type": "string"
+    },
+    "putnummer": {
+      "description": "Property putnummer",
+      "type": "string"
+    },
+    "vlaknummer": {
+      "description": "Property vlaknummer",
+      "type": "string"
+    }
+  }
+}

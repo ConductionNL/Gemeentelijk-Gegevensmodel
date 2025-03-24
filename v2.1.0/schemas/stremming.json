@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Stremming",
+  "description": "Represents a Stremming in the system",
+  "properties": {
+    "aantalGehinderden": {
+      "description": "Property aantalGehinderden",
+      "type": "string"
+    },
+    "datumAanmelding": {
+      "description": "Property datumAanmelding",
+      "type": "string"
+    },
+    "datumEinde": {
+      "description": "Property datumEinde",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "datumWijziging": {
+      "description": "Property datumWijziging",
+      "type": "string"
+    },
+    "delenToegestaan": {
+      "description": "Property delenToegestaan",
+      "type": "string"
+    },
+    "geschiktVoorPublicatie": {
+      "description": "Property geschiktVoorPublicatie",
+      "type": "string"
+    },
+    "hinderklasse": {
+      "description": "Property hinderklasse",
+      "type": "string"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    }
+  }
+}

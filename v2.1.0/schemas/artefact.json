@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Artefact",
+  "description": "Represents a Artefact in the system",
+  "properties": {
+    "artefectnummer": {
+      "description": "Property artefectnummer",
+      "type": "string"
+    },
+    "beschrijving": {
+      "description": "Property beschrijving",
+      "type": "string"
+    },
+    "conserveren": {
+      "description": "Property conserveren",
+      "type": "string"
+    },
+    "datering": {
+      "description": "Property datering",
+      "type": "string"
+    },
+    "dateringComplex": {
+      "description": "Property dateringComplex",
+      "type": "string"
+    },
+    "determinatieniveau": {
+      "description": "Property determinatieniveau",
+      "type": "string"
+    },
+    "dianummer": {
+      "description": "Property dianummer",
+      "type": "string"
+    },
+    "doosnummer": {
+      "description": "Property doosnummer",
+      "type": "string"
+    },
+    "exposabel": {
+      "description": "Property exposabel",
+      "type": "string"
+    },
+    "fotonummer": {
+      "description": "Property fotonummer",
+      "type": "string"
+    },
+    "functie": {
+      "description": "Property functie",
+      "type": "string"
+    },
+    "herkomst": {
+      "description": "Property herkomst",
+      "type": "string"
+    },
+    "key": {
+      "description": "Property key",
+      "type": "string"
+    },
+    "keyDoos": {
+      "description": "Property keyDoos",
+      "type": "string"
+    },
+    "keyMagazijnplaatsing": {
+      "description": "Property keyMagazijnplaatsing",
+      "type": "string"
+    },
+    "keyPut": {
+      "description": "Property keyPut",
+      "type": "string"
+    },
+    "keyVondst": {
+      "description": "Property keyVondst",
+      "type": "string"
+    },
+    "literatuur": {
+      "description": "Property literatuur",
+      "type": "string"
+    },
+    "maten": {
+      "description": "Property maten",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    },
+    "origine": {
+      "description": "Property origine",
+      "type": "string"
+    },
+    "projectCD": {
+      "description": "Property projectCD",
+      "type": "string"
+    },
+    "putnummer": {
+      "description": "Property putnummer",
+      "type": "string"
+    },
+    "restauratieWenselijk": {
+      "description": "Property restauratieWenselijk",
+      "type": "string"
+    },
+    "tekeningnummer": {
+      "description": "Property tekeningnummer",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    },
+    "vondstnummer": {
+      "description": "Property vondstnummer",
+      "type": "string"
+    }
+  }
+}

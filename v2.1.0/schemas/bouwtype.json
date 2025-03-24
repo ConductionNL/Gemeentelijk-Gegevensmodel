@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bouwtype",
+  "description": "Represents a Bouwtype in the system",
+  "properties": {
+    "hoofdcategorie": {
+      "description": "Property hoofdcategorie",
+      "type": "string"
+    },
+    "subcategorie": {
+      "description": "Property subcategorie",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    }
+  }
+}

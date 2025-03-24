@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "WoonfraudeAanvraagOfMelding",
+  "description": "Represents a WoonfraudeAanvraagOfMelding in the system",
+  "properties": {
+    "adres": {
+      "description": "Property adres",
+      "type": "string"
+    },
+    "categorie": {
+      "description": "Property categorie",
+      "type": "string"
+    },
+    "locatieOmschrijving": {
+      "description": "Property locatieOmschrijving",
+      "type": "string"
+    },
+    "meldingOmschrijving": {
+      "description": "Property meldingOmschrijving",
+      "type": "string"
+    },
+    "meldingTekst": {
+      "description": "Property meldingTekst",
+      "type": "string"
+    }
+  }
+}

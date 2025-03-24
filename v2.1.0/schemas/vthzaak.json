@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VTHZaak",
+  "description": "Represents a VTHZaak in the system",
+  "properties": {
+    "behandelaar": {
+      "description": "Property behandelaar",
+      "type": "string"
+    },
+    "bevoegdGezag": {
+      "description": "Property bevoegdGezag",
+      "type": "string"
+    },
+    "prioritering": {
+      "description": "Property prioritering",
+      "type": "string"
+    },
+    "teamBehandelaar": {
+      "description": "Property teamBehandelaar",
+      "type": "string"
+    },
+    "uitvoerendeInstantie": {
+      "description": "Property uitvoerendeInstantie",
+      "type": "string"
+    },
+    "verkamering": {
+      "description": "Property verkamering",
+      "type": "string"
+    }
+  }
+}

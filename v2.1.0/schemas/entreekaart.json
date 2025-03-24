@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Entreekaart",
+  "description": "Represents a Entreekaart in the system",
+  "properties": {
+    "rondleiding": {
+      "description": "Property rondleiding",
+      "type": "string"
+    }
+  }
+}

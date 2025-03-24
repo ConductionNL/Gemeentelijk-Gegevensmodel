@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Parkeervlak",
+  "description": "Represents a Parkeervlak in the system",
+  "properties": {
+    "aantal": {
+      "description": "Property aantal",
+      "type": "string"
+    },
+    "coordinaten": {
+      "description": "Property coordinaten",
+      "type": "string"
+    },
+    "doelgroep": {
+      "description": "Property doelgroep",
+      "type": "string"
+    },
+    "fiscaal": {
+      "description": "Property fiscaal",
+      "type": "string"
+    },
+    "plaats": {
+      "description": "Property plaats",
+      "type": "string"
+    },
+    "vlakID": {
+      "description": "Property vlakID",
+      "type": "string"
+    }
+  }
+}

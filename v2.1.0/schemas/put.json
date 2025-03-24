@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Put",
+  "description": "Represents a Put in the system",
+  "properties": {
+    "bovengrondsZichtbaar": {
+      "description": "Property bovengrondsZichtbaar",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "diameter": {
+      "description": "Property diameter",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "maaiveldhoogte": {
+      "description": "Property maaiveldhoogte",
+      "type": "string"
+    },
+    "materiaal": {
+      "description": "Property materiaal",
+      "type": "string"
+    },
+    "toegankelijk": {
+      "description": "Property toegankelijk",
+      "type": "string"
+    },
+    "typeAfdekking": {
+      "description": "Property typeAfdekking",
+      "type": "string"
+    },
+    "vorm": {
+      "description": "Property vorm",
+      "type": "string"
+    },
+    "wanddikte": {
+      "description": "Property wanddikte",
+      "type": "string"
+    }
+  }
+}

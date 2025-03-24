@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VLogInfo",
+  "description": "Represents a VLogInfo in the system",
+  "properties": {
+    "detectieVerkeer": {
+      "description": "Property detectieVerkeer",
+      "type": "string"
+    },
+    "eindegroen": {
+      "description": "Property eindegroen",
+      "type": "string"
+    },
+    "snelheid": {
+      "description": "Property snelheid",
+      "type": "string"
+    },
+    "startgroen": {
+      "description": "Property startgroen",
+      "type": "string"
+    },
+    "tijdstip": {
+      "description": "Property tijdstip",
+      "type": "string"
+    },
+    "verkeerWilGroen": {
+      "description": "Property verkeerWilGroen",
+      "type": "string"
+    },
+    "wachttijd": {
+      "description": "Property wachttijd",
+      "type": "string"
+    }
+  }
+}

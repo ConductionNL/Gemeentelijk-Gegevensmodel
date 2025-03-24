@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VomAanvraagOfMelding",
+  "description": "Represents a VomAanvraagOfMelding in the system",
+  "properties": {
+    "activiteiten": {
+      "description": "Property activiteiten",
+      "type": "string"
+    },
+    "adres": {
+      "description": "Property adres",
+      "type": "string"
+    },
+    "BAGID": {
+      "description": "Property BAGID",
+      "type": "string"
+    },
+    "dossiernummer": {
+      "description": "Property dossiernummer",
+      "type": "string"
+    },
+    "intaketype": {
+      "description": "Property intaketype",
+      "type": "string"
+    },
+    "internNummer": {
+      "description": "Property internNummer",
+      "type": "string"
+    },
+    "kadastraleAanduiding": {
+      "description": "Property kadastraleAanduiding",
+      "type": "string"
+    },
+    "kenmerk": {
+      "description": "Property kenmerk",
+      "type": "string"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "locatieOmschrijving": {
+      "description": "Property locatieOmschrijving",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    }
+  }
+}

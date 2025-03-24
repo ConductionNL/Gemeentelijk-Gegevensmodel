@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Huishouden",
+  "description": "Represents a Huishouden in the system",
+  "properties": {
+    "datumBeginGeldigheidHuishouden": {
+      "description": "Property datumBeginGeldigheidHuishouden",
+      "type": "string"
+    },
+    "datumEindeGeldigheidHuishouden": {
+      "description": "Property datumEindeGeldigheidHuishouden",
+      "type": "string"
+    },
+    "huishoudengrootte": {
+      "description": "Property huishoudengrootte",
+      "type": "string"
+    },
+    "huishoudennummer": {
+      "description": "Property huishoudennummer",
+      "type": "string"
+    },
+    "huishoudensoort": {
+      "description": "Property huishoudensoort",
+      "type": "string"
+    },
+    "relatie": {
+      "description": "Property relatie",
+      "type": "string"
+    }
+  }
+}

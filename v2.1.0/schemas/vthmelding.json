@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VTHMelding",
+  "description": "Represents a VTHMelding in the system",
+  "properties": {
+    "activiteit": {
+      "description": "Property activiteit",
+      "type": "string"
+    },
+    "beoordeling": {
+      "description": "Property beoordeling",
+      "type": "string"
+    },
+    "datumSeponering": {
+      "description": "Property datumSeponering",
+      "type": "string"
+    },
+    "datumtijdTot": {
+      "description": "Property datumtijdTot",
+      "type": "string"
+    },
+    "geseponeerd": {
+      "description": "Property geseponeerd",
+      "type": "string"
+    },
+    "locatie": {
+      "description": "Property locatie",
+      "type": "string"
+    },
+    "organisatieonderdeel": {
+      "description": "Property organisatieonderdeel",
+      "type": "string"
+    },
+    "overtredingscode": {
+      "description": "Property overtredingscode",
+      "type": "string"
+    },
+    "overtredingsgroep": {
+      "description": "Property overtredingsgroep",
+      "type": "string"
+    },
+    "referentienummer": {
+      "description": "Property referentienummer",
+      "type": "string"
+    },
+    "resultaat": {
+      "description": "Property resultaat",
+      "type": "string"
+    },
+    "soortVTHMelding": {
+      "description": "Property soortVTHMelding",
+      "type": "string"
+    },
+    "status": {
+      "description": "Property status",
+      "type": "string"
+    },
+    "straatnaam": {
+      "description": "Property straatnaam",
+      "type": "string"
+    },
+    "taaktype": {
+      "description": "Property taaktype",
+      "type": "string"
+    },
+    "zaaknummer": {
+      "description": "Property zaaknummer",
+      "type": "string"
+    }
+  }
+}

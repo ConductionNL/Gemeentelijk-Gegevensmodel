@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Museumobject",
+  "description": "Represents a Museumobject in the system",
+  "properties": {
+    "afmeting": {
+      "description": "Property afmeting",
+      "type": "string"
+    },
+    "bezitTot": {
+      "description": "Property bezitTot",
+      "type": "string"
+    },
+    "bezitVanaf": {
+      "description": "Property bezitVanaf",
+      "type": "string"
+    },
+    "medium": {
+      "description": "Property medium",
+      "type": "string"
+    },
+    "verkrijging": {
+      "description": "Property verkrijging",
+      "type": "string"
+    }
+  }
+}

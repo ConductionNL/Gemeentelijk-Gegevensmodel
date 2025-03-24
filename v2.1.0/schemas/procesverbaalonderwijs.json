@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ProcesverbaalOnderwijs",
+  "description": "Represents a ProcesverbaalOnderwijs in the system",
+  "properties": {
+    "datumAfgehandeld": {
+      "description": "Property datumAfgehandeld",
+      "type": "string"
+    },
+    "datumEindeProeftijd": {
+      "description": "Property datumEindeProeftijd",
+      "type": "string"
+    },
+    "datumIngelicht": {
+      "description": "Property datumIngelicht",
+      "type": "string"
+    },
+    "datumUitspraak": {
+      "description": "Property datumUitspraak",
+      "type": "string"
+    },
+    "datumZitting": {
+      "description": "Property datumZitting",
+      "type": "string"
+    },
+    "geldboete": {
+      "description": "Property geldboete",
+      "type": "string"
+    },
+    "geldboeteVoorwaardelijk": {
+      "description": "Property geldboeteVoorwaardelijk",
+      "type": "string"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    },
+    "proeftijd": {
+      "description": "Property proeftijd",
+      "type": "string"
+    },
+    "reden": {
+      "description": "Property reden",
+      "type": "string"
+    },
+    "sanctiesoort": {
+      "description": "Property sanctiesoort",
+      "type": "string"
+    },
+    "uitspraak": {
+      "description": "Property uitspraak",
+      "type": "string"
+    },
+    "verzuimsoort": {
+      "description": "Property verzuimsoort",
+      "type": "string"
+    }
+  }
+}

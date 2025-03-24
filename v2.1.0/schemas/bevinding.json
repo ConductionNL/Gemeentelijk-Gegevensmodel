@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bevinding",
+  "description": "Represents a Bevinding in the system",
+  "properties": {
+    "aangemaaktDoor": {
+      "description": "Property aangemaaktDoor",
+      "type": "string"
+    },
+    "activiteit": {
+      "description": "Property activiteit",
+      "type": "string"
+    },
+    "controleElement": {
+      "description": "Property controleElement",
+      "type": "string"
+    },
+    "controleniveau": {
+      "description": "Property controleniveau",
+      "type": "string"
+    },
+    "datumAanmaak": {
+      "description": "Property datumAanmaak",
+      "type": "string"
+    },
+    "datumMutatie": {
+      "description": "Property datumMutatie",
+      "type": "string"
+    },
+    "diepte": {
+      "description": "Property diepte",
+      "type": "string"
+    },
+    "fase": {
+      "description": "Property fase",
+      "type": "string"
+    },
+    "gemuteerdDoor": {
+      "description": "Property gemuteerdDoor",
+      "type": "string"
+    },
+    "resultaat": {
+      "description": "Property resultaat",
+      "type": "string"
+    },
+    "risico": {
+      "description": "Property risico",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "MulderFeit",
+  "description": "Represents a MulderFeit in the system",
+  "properties": {
+    "bedrag": {
+      "description": "Property bedrag",
+      "type": "string"
+    },
+    "bezwaarAfgehandeld": {
+      "description": "Property bezwaarAfgehandeld",
+      "type": "string"
+    },
+    "bezwaarIngetrokken": {
+      "description": "Property bezwaarIngetrokken",
+      "type": "string"
+    },
+    "bezwaarToegewezen": {
+      "description": "Property bezwaarToegewezen",
+      "type": "string"
+    },
+    "bonnummer": {
+      "description": "Property bonnummer",
+      "type": "string"
+    },
+    "datumBetaling": {
+      "description": "Property datumBetaling",
+      "type": "string"
+    },
+    "datumBezwaar": {
+      "description": "Property datumBezwaar",
+      "type": "string"
+    },
+    "datumGeseponeerd": {
+      "description": "Property datumGeseponeerd",
+      "type": "string"
+    },
+    "datumIndiening": {
+      "description": "Property datumIndiening",
+      "type": "string"
+    },
+    "dienstCD": {
+      "description": "Property dienstCD",
+      "type": "string"
+    },
+    "organisatie": {
+      "description": "Property organisatie",
+      "type": "string"
+    },
+    "overtreding": {
+      "description": "Property overtreding",
+      "type": "string"
+    },
+    "parkeertarief": {
+      "description": "Property parkeertarief",
+      "type": "string"
+    },
+    "redenSeponeren": {
+      "description": "Property redenSeponeren",
+      "type": "string"
+    },
+    "vorderingnummer": {
+      "description": "Property vorderingnummer",
+      "type": "string"
+    }
+  }
+}

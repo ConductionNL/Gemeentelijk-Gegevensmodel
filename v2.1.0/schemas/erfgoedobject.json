@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ErfgoedObject",
+  "description": "Represents a ErfgoedObject in the system",
+  "properties": {
+    "dateringTot": {
+      "description": "Property dateringTot",
+      "type": "string"
+    },
+    "dateringVanaf": {
+      "description": "Property dateringVanaf",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "titel": {
+      "description": "Property titel",
+      "type": "string"
+    }
+  }
+}

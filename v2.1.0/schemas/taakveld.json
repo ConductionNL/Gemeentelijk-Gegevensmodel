@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Taakveld",
+  "description": "Represents a Taakveld in the system",
+  "properties": {
+    "functiecodeIV3": {
+      "description": "Property functiecodeIV3",
+      "type": "string"
+    },
+    "functieomschrijvingIV3": {
+      "description": "Property functieomschrijvingIV3",
+      "type": "string"
+    },
+    "hoofdfunctie": {
+      "description": "Property hoofdfunctie",
+      "type": "string"
+    },
+    "hoofdfunctieOmschrijving": {
+      "description": "Property hoofdfunctieOmschrijving",
+      "type": "string"
+    },
+    "subtaakveldCode": {
+      "description": "Property subtaakveldCode",
+      "type": "string"
+    },
+    "subtaakveldOmschrijving": {
+      "description": "Property subtaakveldOmschrijving",
+      "type": "string"
+    },
+    "taakveldcode": {
+      "description": "Property taakveldcode",
+      "type": "string"
+    },
+    "taakveldOmschrijving": {
+      "description": "Property taakveldOmschrijving",
+      "type": "string"
+    }
+  }
+}

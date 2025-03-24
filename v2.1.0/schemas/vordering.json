@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Vordering",
+  "description": "Represents a Vordering in the system",
+  "properties": {
+    "aangemaaktDoor": {
+      "description": "Property aangemaaktDoor",
+      "type": "string"
+    },
+    "bedragBTW": {
+      "description": "Property bedragBTW",
+      "type": "string"
+    },
+    "datumAanmaak": {
+      "description": "Property datumAanmaak",
+      "type": "string"
+    },
+    "datumMutatie": {
+      "description": "Property datumMutatie",
+      "type": "string"
+    },
+    "geaccordeerd": {
+      "description": "Property geaccordeerd",
+      "type": "string"
+    },
+    "geaccordeerdDoor": {
+      "description": "Property geaccordeerdDoor",
+      "type": "string"
+    },
+    "geaccordeerdOp": {
+      "description": "Property geaccordeerdOp",
+      "type": "string"
+    },
+    "geexporteerd": {
+      "description": "Property geexporteerd",
+      "type": "string"
+    },
+    "gemuteerdDoor": {
+      "description": "Property gemuteerdDoor",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "totaalbedrag": {
+      "description": "Property totaalbedrag",
+      "type": "string"
+    },
+    "totaalbedragInclusief": {
+      "description": "Property totaalbedragInclusief",
+      "type": "string"
+    },
+    "vorderingnummer": {
+      "description": "Property vorderingnummer",
+      "type": "string"
+    }
+  }
+}

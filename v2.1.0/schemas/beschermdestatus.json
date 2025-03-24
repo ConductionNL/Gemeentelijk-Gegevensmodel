@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "BeschermdeStatus",
+  "description": "Represents a BeschermdeStatus in the system",
+  "properties": {
+    "bronnen": {
+      "description": "Property bronnen",
+      "type": "string"
+    },
+    "complex": {
+      "description": "Property complex",
+      "type": "string"
+    },
+    "datumInschrijvingRegister": {
+      "description": "Property datumInschrijvingRegister",
+      "type": "string"
+    },
+    "gemeentelijkMonumentCode": {
+      "description": "Property gemeentelijkMonumentCode",
+      "type": "string"
+    },
+    "gezichtscode": {
+      "description": "Property gezichtscode",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "opmerkingen": {
+      "description": "Property opmerkingen",
+      "type": "string"
+    },
+    "rijksmonumentcode": {
+      "description": "Property rijksmonumentcode",
+      "type": "string"
+    },
+    "type": {
+      "description": "Property type",
+      "type": "string"
+    }
+  }
+}

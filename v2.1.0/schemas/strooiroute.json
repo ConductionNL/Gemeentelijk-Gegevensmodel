@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Strooiroute",
+  "description": "Represents a Strooiroute in the system",
+  "properties": {
+    "route": {
+      "description": "Property route",
+      "type": "string"
+    }
+  }
+}

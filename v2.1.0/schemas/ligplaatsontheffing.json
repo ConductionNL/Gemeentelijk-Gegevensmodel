@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Ligplaatsontheffing",
+  "description": "Represents a Ligplaatsontheffing in the system",
+  "properties": {
+    "stickernummer": {
+      "description": "Property stickernummer",
+      "type": "string"
+    }
+  }
+}

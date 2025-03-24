@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Budgetuitputting",
+  "description": "Represents a Budgetuitputting in the system",
+  "properties": {
+    "datum": {
+      "description": "Property datum",
+      "type": "string"
+    },
+    "uitgenutBedrag": {
+      "description": "Property uitgenutBedrag",
+      "type": "string"
+    }
+  }
+}

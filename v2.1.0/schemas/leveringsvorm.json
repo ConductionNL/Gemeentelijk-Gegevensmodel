@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Leveringsvorm",
+  "description": "Represents a Leveringsvorm in the system",
+  "properties": {
+    "leveringsvormCode": {
+      "description": "Property leveringsvormCode",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

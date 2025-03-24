@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "BalieverkoopEntreekaart",
+  "description": "Represents a BalieverkoopEntreekaart in the system",
+  "properties": {
+    "datumEindeGeldigheid": {
+      "description": "Property datumEindeGeldigheid",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "gebruiktOp": {
+      "description": "Property gebruiktOp",
+      "type": "string"
+    },
+    "rondleiding": {
+      "description": "Property rondleiding",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "OorspronkelijkeFunctie",
+  "description": "Represents a OorspronkelijkeFunctie in the system",
+  "properties": {
+    "functie": {
+      "description": "Property functie",
+      "type": "string"
+    },
+    "functiesoort": {
+      "description": "Property functiesoort",
+      "type": "string"
+    },
+    "hoofdcategorie": {
+      "description": "Property hoofdcategorie",
+      "type": "string"
+    },
+    "hoofdfunctie": {
+      "description": "Property hoofdfunctie",
+      "type": "string"
+    },
+    "subcategorie": {
+      "description": "Property subcategorie",
+      "type": "string"
+    },
+    "toelichting": {
+      "description": "Property toelichting",
+      "type": "string"
+    },
+    "verbijzondering": {
+      "description": "Property verbijzondering",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Kast",
+  "description": "Represents a Kast in the system",
+  "properties": {
+    "aantalDeuren": {
+      "description": "Property aantalDeuren",
+      "type": "string"
+    },
+    "adresTelecom": {
+      "description": "Property adresTelecom",
+      "type": "string"
+    },
+    "BAGCode": {
+      "description": "Property BAGCode",
+      "type": "string"
+    },
+    "breedte": {
+      "description": "Property breedte",
+      "type": "string"
+    },
+    "EANCode": {
+      "description": "Property EANCode",
+      "type": "string"
+    },
+    "fabrikant": {
+      "description": "Property fabrikant",
+      "type": "string"
+    },
+    "hoogte": {
+      "description": "Property hoogte",
+      "type": "string"
+    },
+    "inbelgegevens": {
+      "description": "Property inbelgegevens",
+      "type": "string"
+    },
+    "installateur": {
+      "description": "Property installateur",
+      "type": "string"
+    },
+    "jaarOnderhoudUitgevoerd": {
+      "description": "Property jaarOnderhoudUitgevoerd",
+      "type": "string"
+    },
+    "kleur": {
+      "description": "Property kleur",
+      "type": "string"
+    },
+    "lengte": {
+      "description": "Property lengte",
+      "type": "string"
+    },
+    "leverancier": {
+      "description": "Property leverancier",
+      "type": "string"
+    },
+    "typeCommunicatie": {
+      "description": "Property typeCommunicatie",
+      "type": "string"
+    },
+    "typeFundering": {
+      "description": "Property typeFundering",
+      "type": "string"
+    },
+    "typeSlot": {
+      "description": "Property typeSlot",
+      "type": "string"
+    },
+    "vermogen": {
+      "description": "Property vermogen",
+      "type": "string"
+    }
+  }
+}

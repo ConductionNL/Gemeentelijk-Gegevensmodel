@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Agendapunt",
+  "description": "Represents a Agendapunt in the system",
+  "properties": {
+    "nummer": {
+      "description": "Property nummer",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "titel": {
+      "description": "Property titel",
+      "type": "string"
+    }
+  }
+}

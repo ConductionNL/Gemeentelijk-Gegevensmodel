@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Magazijnlocatie",
+  "description": "Represents a Magazijnlocatie in the system",
+  "properties": {
+    "key": {
+      "description": "Property key",
+      "type": "string"
+    },
+    "stelling": {
+      "description": "Property stelling",
+      "type": "string"
+    },
+    "vaknummer": {
+      "description": "Property vaknummer",
+      "type": "string"
+    },
+    "volgletter": {
+      "description": "Property volgletter",
+      "type": "string"
+    }
+  }
+}

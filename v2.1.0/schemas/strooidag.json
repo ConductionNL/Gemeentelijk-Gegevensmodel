@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Strooidag",
+  "description": "Represents a Strooidag in the system",
+  "properties": {
+    "datum": {
+      "description": "Property datum",
+      "type": "string"
+    },
+    "maximumtemperatuur": {
+      "description": "Property maximumtemperatuur",
+      "type": "string"
+    },
+    "minimumtemperatuur": {
+      "description": "Property minimumtemperatuur",
+      "type": "string"
+    },
+    "tijdMaximumtemperatuur": {
+      "description": "Property tijdMaximumtemperatuur",
+      "type": "string"
+    },
+    "tijdMinimumtemperatuur": {
+      "description": "Property tijdMinimumtemperatuur",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Index",
+  "description": "Represents a Index in the system",
+  "properties": {
+    "indexnaam": {
+      "description": "Property indexnaam",
+      "type": "string"
+    },
+    "indexwaarde": {
+      "description": "Property indexwaarde",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Beperkingscoresoort",
+  "description": "Represents a Beperkingscoresoort in the system",
+  "properties": {
+    "vraag": {
+      "description": "Property vraag",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

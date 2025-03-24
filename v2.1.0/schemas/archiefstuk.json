@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Archiefstuk",
+  "description": "Represents a Archiefstuk in the system",
+  "properties": {
+    "beschrijving": {
+      "description": "Property beschrijving",
+      "type": "string"
+    },
+    "inventarisnummer": {
+      "description": "Property inventarisnummer",
+      "type": "string"
+    },
+    "omvang": {
+      "description": "Property omvang",
+      "type": "string"
+    },
+    "openbaarheidsbeperking": {
+      "description": "Property openbaarheidsbeperking",
+      "type": "string"
+    },
+    "trefwoorden": {
+      "description": "Property trefwoorden",
+      "type": "string"
+    },
+    "uiterlijkeVorm": {
+      "description": "Property uiterlijkeVorm",
+      "type": "string"
+    }
+  }
+}

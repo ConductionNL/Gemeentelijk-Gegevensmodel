@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Productsoort",
+  "description": "Represents a Productsoort in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "tarief": {
+      "description": "Property tarief",
+      "type": "string"
+    },
+    "tariefperiode": {
+      "description": "Property tariefperiode",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Stemming",
+  "description": "Represents a Stemming in the system",
+  "properties": {
+    "resultaat": {
+      "description": "Property resultaat",
+      "type": "string"
+    },
+    "stemmingstype": {
+      "description": "Property stemmingstype",
+      "type": "string"
+    }
+  }
+}

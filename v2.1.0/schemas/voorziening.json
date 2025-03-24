@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Voorziening",
+  "description": "Represents a Voorziening in the system",
+  "properties": {
+    "afhandelwijze": {
+      "description": "Property afhandelwijze",
+      "type": "string"
+    },
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "omschrijving": {
+      "description": "Property omschrijving",
+      "type": "string"
+    },
+    "productcode": {
+      "description": "Property productcode",
+      "type": "string"
+    },
+    "wet": {
+      "description": "Property wet",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Perkeerzone",
+  "description": "Represents a Perkeerzone in the system",
+  "properties": {
+    "aantalParkeervlakken": {
+      "description": "Property aantalParkeervlakken",
+      "type": "string"
+    },
+    "alleenDagtarief": {
+      "description": "Property alleenDagtarief",
+      "type": "string"
+    },
+    "dagtarief": {
+      "description": "Property dagtarief",
+      "type": "string"
+    },
+    "eindedag": {
+      "description": "Property eindedag",
+      "type": "string"
+    },
+    "eindtijd": {
+      "description": "Property eindtijd",
+      "type": "string"
+    },
+    "gebruik": {
+      "description": "Property gebruik",
+      "type": "string"
+    },
+    "geometrie": {
+      "description": "Property geometrie",
+      "type": "string"
+    },
+    "IPMCode": {
+      "description": "Property IPMCode",
+      "type": "string"
+    },
+    "IPMNaam": {
+      "description": "Property IPMNaam",
+      "type": "string"
+    },
+    "naam": {
+      "description": "Property naam",
+      "type": "string"
+    },
+    "parkeergarage": {
+      "description": "Property parkeergarage",
+      "type": "string"
+    },
+    "sectorcode": {
+      "description": "Property sectorcode",
+      "type": "string"
+    },
+    "soortCode": {
+      "description": "Property soortCode",
+      "type": "string"
+    },
+    "startdag": {
+      "description": "Property startdag",
+      "type": "string"
+    },
+    "starttarief": {
+      "description": "Property starttarief",
+      "type": "string"
+    },
+    "starttijd": {
+      "description": "Property starttijd",
+      "type": "string"
+    },
+    "typeCode": {
+      "description": "Property typeCode",
+      "type": "string"
+    },
+    "typeNaam": {
+      "description": "Property typeNaam",
+      "type": "string"
+    },
+    "uurtarief": {
+      "description": "Property uurtarief",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Levering",
+  "description": "Represents a Levering in the system",
+  "properties": {
+    "code": {
+      "description": "Property code",
+      "type": "string"
+    },
+    "datumStart": {
+      "description": "Property datumStart",
+      "type": "string"
+    },
+    "datumStop": {
+      "description": "Property datumStop",
+      "type": "string"
+    },
+    "eenheid": {
+      "description": "Property eenheid",
+      "type": "string"
+    },
+    "frequentie": {
+      "description": "Property frequentie",
+      "type": "string"
+    },
+    "omvang": {
+      "description": "Property omvang",
+      "type": "string"
+    },
+    "stopreden": {
+      "description": "Property stopreden",
+      "type": "string"
+    }
+  }
+}

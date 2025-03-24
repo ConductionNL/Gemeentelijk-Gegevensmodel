@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "VerzoekOmToewijzing",
+  "description": "Represents a VerzoekOmToewijzing in the system",
+  "properties": {
+    "beschikkingsnummer": {
+      "description": "Property beschikkingsnummer",
+      "type": "string"
+    },
+    "commentaar": {
+      "description": "Property commentaar",
+      "type": "string"
+    },
+    "datumEindeToewijzing": {
+      "description": "Property datumEindeToewijzing",
+      "type": "string"
+    },
+    "datumIngangBeschikking": {
+      "description": "Property datumIngangBeschikking",
+      "type": "string"
+    },
+    "datumIngangToewijzing": {
+      "description": "Property datumIngangToewijzing",
+      "type": "string"
+    },
+    "datumOntvangst": {
+      "description": "Property datumOntvangst",
+      "type": "string"
+    },
+    "eenheid": {
+      "description": "Property eenheid",
+      "type": "string"
+    },
+    "frequentie": {
+      "description": "Property frequentie",
+      "type": "string"
+    },
+    "raamcontract": {
+      "description": "Property raamcontract",
+      "type": "string"
+    },
+    "referentieAanbieder": {
+      "description": "Property referentieAanbieder",
+      "type": "string"
+    },
+    "soortVerwijzer": {
+      "description": "Property soortVerwijzer",
+      "type": "string"
+    },
+    "verwijzer": {
+      "description": "Property verwijzer",
+      "type": "string"
+    },
+    "volume": {
+      "description": "Property volume",
+      "type": "string"
+    }
+  }
+}
