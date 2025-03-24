@@ -132,22 +132,28 @@ class UMLConverter:
                 return
             
             # Try to parse XML with error handling
+            root = None
             try:
                 # First try with ElementTree
                 tree = ET.parse(io.StringIO(content))
                 root = tree.getroot()
             except ET.ParseError as e:
-                # If ElementTree fails, try with xmltodict
+                print(f"  ElementTree parsing failed, trying xmltodict: {str(e)}")
                 try:
                     xmi_data = xmltodict.parse(content)
                     if 'xmi:XMI' in xmi_data:
                         model = xmi_data['xmi:XMI'].get('uml:Model', {})
                         if model and 'packagedElement' in model:
                             self._process_package_elements(model['packagedElement'])
-                        return
+                            return
                 except Exception as e:
-                    print(f"  Error parsing XML file: {str(e)}")
+                    print(f"  Both XML parsers failed for {file_path.name}")
+                    print(f"  ElementTree error: {str(e)}")
                     return
+            
+            if root is None:
+                print(f"  No valid XML structure found in {file_path.name}")
+                return
             
             # Count total classes and components for progress bar
             total_elements = len(root.findall('.//packagedElement[@xmi:type="uml:Class"]', self.namespaces)) + \
@@ -164,31 +170,39 @@ class UMLConverter:
             with tqdm(total=total_elements, desc="  Converting", unit="class") as pbar:
                 # Process classes
                 for class_elem in root.findall('.//packagedElement[@xmi:type="uml:Class"]', self.namespaces):
-                    name = class_elem.get('name', '')
-                    if name:
-                        # Generate schema
-                        schema = self._convert_class_to_schema(class_elem)
-                        
-                        # Save schema to file
-                        schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
-                        with open(schema_file, 'w', encoding='utf-8') as f:
-                            json.dump(schema, f, indent=2, ensure_ascii=False)
-                        processed += 1
-                    pbar.update(1)
+                    try:
+                        name = class_elem.get('name', '')
+                        if name:
+                            # Generate schema
+                            schema = self._convert_class_to_schema(class_elem)
+                            
+                            # Save schema to file
+                            schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
+                            with open(schema_file, 'w', encoding='utf-8') as f:
+                                json.dump(schema, f, indent=2, ensure_ascii=False)
+                            processed += 1
+                    except Exception as e:
+                        print(f"    Error processing class {name}: {str(e)}")
+                    finally:
+                        pbar.update(1)
                 
                 # Process components
                 for component in root.findall('.//packagedElement[@xmi:type="uml:Component"]', self.namespaces):
-                    name = component.get('name', '')
-                    if name:
-                        # Generate schema
-                        schema = self._convert_class_to_schema(component)
-                        
-                        # Save schema to file
-                        schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
-                        with open(schema_file, 'w', encoding='utf-8') as f:
-                            json.dump(schema, f, indent=2, ensure_ascii=False)
-                        processed += 1
-                    pbar.update(1)
+                    try:
+                        name = component.get('name', '')
+                        if name:
+                            # Generate schema
+                            schema = self._convert_class_to_schema(component)
+                            
+                            # Save schema to file
+                            schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
+                            with open(schema_file, 'w', encoding='utf-8') as f:
+                                json.dump(schema, f, indent=2, ensure_ascii=False)
+                            processed += 1
+                    except Exception as e:
+                        print(f"    Error processing component {name}: {str(e)}")
+                    finally:
+                        pbar.update(1)
             
             # Print summary
             print(f"  Summary for {file_path.name}:")
