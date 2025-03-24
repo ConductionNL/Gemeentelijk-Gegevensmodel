@@ -123,10 +123,12 @@ class UMLConverter:
         Args:
             file_path: Path to the XMI file
         """
+        print(f"\nProcessing file: {file_path.name}")
         try:
             # Read and parse the file
             content = self.read_file_with_encoding(file_path)
             if not content:
+                print(f"  Skipping empty file: {file_path.name}")
                 return
             
             # Try to parse XML with error handling
@@ -144,35 +146,58 @@ class UMLConverter:
                             self._process_package_elements(model['packagedElement'])
                         return
                 except Exception as e:
-                    logging.error(f"Failed to parse XML file {file_path}: {str(e)}")
+                    print(f"  Error parsing XML file: {str(e)}")
                     return
             
-            # Process each UML class
-            for class_elem in root.findall('.//packagedElement[@xmi:type="uml:Class"]', self.namespaces):
-                name = class_elem.get('name', '')
-                if name:
-                    # Generate schema
-                    schema = self._convert_class_to_schema(class_elem)
-                    
-                    # Save schema to file
-                    schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
-                    with open(schema_file, 'w', encoding='utf-8') as f:
-                        json.dump(schema, f, indent=2, ensure_ascii=False)
+            # Count total classes and components for progress bar
+            total_elements = len(root.findall('.//packagedElement[@xmi:type="uml:Class"]', self.namespaces)) + \
+                           len(root.findall('.//packagedElement[@xmi:type="uml:Component"]', self.namespaces))
             
-            # Process each UML component
-            for component in root.findall('.//packagedElement[@xmi:type="uml:Component"]', self.namespaces):
-                name = component.get('name', '')
-                if name:
-                    # Generate schema
-                    schema = self._convert_class_to_schema(component)
-                    
-                    # Save schema to file
-                    schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
-                    with open(schema_file, 'w', encoding='utf-8') as f:
-                        json.dump(schema, f, indent=2, ensure_ascii=False)
+            if total_elements == 0:
+                print(f"  No classes or components found in {file_path.name}")
+                return
+                
+            print(f"  Found {total_elements} classes and components to process")
+            
+            # Process each UML class and component with progress bar
+            processed = 0
+            with tqdm(total=total_elements, desc="  Converting", unit="class") as pbar:
+                # Process classes
+                for class_elem in root.findall('.//packagedElement[@xmi:type="uml:Class"]', self.namespaces):
+                    name = class_elem.get('name', '')
+                    if name:
+                        # Generate schema
+                        schema = self._convert_class_to_schema(class_elem)
+                        
+                        # Save schema to file
+                        schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
+                        with open(schema_file, 'w', encoding='utf-8') as f:
+                            json.dump(schema, f, indent=2, ensure_ascii=False)
+                        processed += 1
+                    pbar.update(1)
+                
+                # Process components
+                for component in root.findall('.//packagedElement[@xmi:type="uml:Component"]', self.namespaces):
+                    name = component.get('name', '')
+                    if name:
+                        # Generate schema
+                        schema = self._convert_class_to_schema(component)
+                        
+                        # Save schema to file
+                        schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
+                        with open(schema_file, 'w', encoding='utf-8') as f:
+                            json.dump(schema, f, indent=2, ensure_ascii=False)
+                        processed += 1
+                    pbar.update(1)
+            
+            # Print summary
+            print(f"  Summary for {file_path.name}:")
+            print(f"    - Total elements found: {total_elements}")
+            print(f"    - Successfully processed: {processed}")
+            print(f"    - Failed: {total_elements - processed}")
             
         except Exception as e:
-            logging.error(f"Error processing file {file_path}: {str(e)}")
+            print(f"  Error processing file {file_path.name}: {str(e)}")
             raise
 
     def _process_package_elements(self, elements: Union[dict, list]) -> None:
