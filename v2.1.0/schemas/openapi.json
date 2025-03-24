@@ -7,6 +7,5205 @@
   },
   "paths": {},
   "components": {
-    "schemas": {}
+    "schemas": {
+      "Bouwstijl": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Bouwstijl",
+        "description": "Represents a Bouwstijl in the system",
+        "properties": {
+          "hoofdstijl": {
+            "description": "Property hoofdstijl",
+            "type": "string"
+          },
+          "substijl": {
+            "description": "Property substijl",
+            "type": "string"
+          },
+          "toelichting": {
+            "description": "Property toelichting",
+            "type": "string"
+          },
+          "zuiverheid": {
+            "description": "Property zuiverheid",
+            "type": "string"
+          }
+        }
+      },
+      "Client": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Client",
+        "description": "Represents a Client in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "gezagsdragerGekend": {
+            "description": "Property gezagsdragerGekend",
+            "type": "string"
+          },
+          "juridischeStatus": {
+            "description": "Property juridischeStatus",
+            "type": "string"
+          },
+          "wettelijkeVertegenwoordiging": {
+            "description": "Property wettelijkeVertegenwoordiging",
+            "type": "string"
+          }
+        }
+      },
+      "Verkooppunt": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Verkooppunt",
+        "description": "Represents a Verkooppunt in the system",
+        "properties": {
+          "winkelformule": {
+            "description": "Property winkelformule",
+            "type": "string"
+          }
+        }
+      },
+      "Fietsregistratie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Fietsregistratie",
+        "description": "Represents a Fietsregistratie in the system",
+        "properties": {
+          "gelabeld": {
+            "description": "Property gelabeld",
+            "type": "string"
+          },
+          "verwijderd": {
+            "description": "Property verwijderd",
+            "type": "string"
+          }
+        }
+      },
+      "Aanvraag": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Aanvraag",
+        "description": "Represents a Aanvraag in the system",
+        "properties": {}
+      },
+      "Strooidag": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Strooidag",
+        "description": "Represents a Strooidag in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "maximumtemperatuur": {
+            "description": "Property maximumtemperatuur",
+            "type": "string"
+          },
+          "minimumtemperatuur": {
+            "description": "Property minimumtemperatuur",
+            "type": "string"
+          },
+          "tijdMaximumtemperatuur": {
+            "description": "Property tijdMaximumtemperatuur",
+            "type": "string"
+          },
+          "tijdMinimumtemperatuur": {
+            "description": "Property tijdMinimumtemperatuur",
+            "type": "string"
+          }
+        }
+      },
+      "Vindplaats": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vindplaats",
+        "description": "Represents a Vindplaats in the system",
+        "properties": {}
+      },
+      "VTHZaak": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "VTHZaak",
+        "description": "Represents a VTHZaak in the system",
+        "properties": {
+          "behandelaar": {
+            "description": "Property behandelaar",
+            "type": "string"
+          },
+          "bevoegdGezag": {
+            "description": "Property bevoegdGezag",
+            "type": "string"
+          },
+          "prioritering": {
+            "description": "Property prioritering",
+            "type": "string"
+          },
+          "teamBehandelaar": {
+            "description": "Property teamBehandelaar",
+            "type": "string"
+          },
+          "uitvoerendeInstantie": {
+            "description": "Property uitvoerendeInstantie",
+            "type": "string"
+          },
+          "verkamering": {
+            "description": "Property verkamering",
+            "type": "string"
+          }
+        }
+      },
+      "Winkelvoorraaditem": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Winkelvoorraaditem",
+        "description": "Represents a Winkelvoorraaditem in the system",
+        "properties": {
+          "aantal": {
+            "description": "Property aantal",
+            "type": "string"
+          },
+          "aantalInBestelling": {
+            "description": "Property aantalInBestelling",
+            "type": "string"
+          },
+          "datumLeveringBestelling": {
+            "description": "Property datumLeveringBestelling",
+            "type": "string"
+          },
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          }
+        }
+      },
+      "Declaratieregel": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Declaratieregel",
+        "description": "Represents a Declaratieregel in the system",
+        "properties": {
+          "bedrag": {
+            "description": "Property bedrag",
+            "type": "string"
+          },
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          }
+        }
+      },
+      "Heffinggrondslag": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Heffinggrondslag",
+        "description": "Represents a Heffinggrondslag in the system",
+        "properties": {
+          "bedrag": {
+            "description": "Property bedrag",
+            "type": "string"
+          },
+          "domein": {
+            "description": "Property domein",
+            "type": "string"
+          },
+          "hoofdstuk": {
+            "description": "Property hoofdstuk",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "paragraaf": {
+            "description": "Property paragraaf",
+            "type": "string"
+          }
+        }
+      },
+      "Werkgelegenheid": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Werkgelegenheid",
+        "description": "Represents a Werkgelegenheid in the system",
+        "properties": {
+          "aantalFulltimeMannen": {
+            "description": "Property aantalFulltimeMannen",
+            "type": "string"
+          },
+          "aantalFulltimeVrouwen": {
+            "description": "Property aantalFulltimeVrouwen",
+            "type": "string"
+          },
+          "aantalParttimeMannen": {
+            "description": "Property aantalParttimeMannen",
+            "type": "string"
+          },
+          "aantalParttimeVrouwen": {
+            "description": "Property aantalParttimeVrouwen",
+            "type": "string"
+          },
+          "grootteklasse": {
+            "description": "Property grootteklasse",
+            "type": "string"
+          }
+        }
+      },
+      "MeldingEigenBijdrage": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "MeldingEigenBijdrage",
+        "description": "Represents a MeldingEigenBijdrage in the system",
+        "properties": {
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "datumStop": {
+            "description": "Property datumStop",
+            "type": "string"
+          }
+        }
+      },
+      "Verkeerstelling": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Verkeerstelling",
+        "description": "Represents a Verkeerstelling in the system",
+        "properties": {
+          "aantal": {
+            "description": "Property aantal",
+            "type": "string"
+          },
+          "tijdTot": {
+            "description": "Property tijdTot",
+            "type": "string"
+          },
+          "tijdVanaf": {
+            "description": "Property tijdVanaf",
+            "type": "string"
+          }
+        }
+      },
+      "Scoresoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Scoresoort",
+        "description": "Represents a Scoresoort in the system",
+        "properties": {
+          "niveau": {
+            "description": "Property niveau",
+            "type": "string"
+          }
+        }
+      },
+      "HALTVerwijzing": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "HALTVerwijzing",
+        "description": "Represents a HALTVerwijzing in the system",
+        "properties": {
+          "afdoening": {
+            "description": "Property afdoening",
+            "type": "string"
+          },
+          "datumMutatie": {
+            "description": "Property datumMutatie",
+            "type": "string"
+          },
+          "datumRetour": {
+            "description": "Property datumRetour",
+            "type": "string"
+          },
+          "memo": {
+            "description": "Property memo",
+            "type": "string"
+          }
+        }
+      },
+      "AanvraagOfMelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "AanvraagOfMelding",
+        "description": "Represents a AanvraagOfMelding in the system",
+        "properties": {
+          "afgehandeld": {
+            "description": "Property afgehandeld",
+            "type": "string"
+          },
+          "categorie": {
+            "description": "Property categorie",
+            "type": "string"
+          },
+          "categoriecode": {
+            "description": "Property categoriecode",
+            "type": "string"
+          },
+          "datumAanmaak": {
+            "description": "Property datumAanmaak",
+            "type": "string"
+          },
+          "datumAfhandeling": {
+            "description": "Property datumAfhandeling",
+            "type": "string"
+          },
+          "datumBeginStatus": {
+            "description": "Property datumBeginStatus",
+            "type": "string"
+          },
+          "datumEindeStatus": {
+            "description": "Property datumEindeStatus",
+            "type": "string"
+          },
+          "hoofdcategorie": {
+            "description": "Property hoofdcategorie",
+            "type": "string"
+          },
+          "hoofdcategoriecode": {
+            "description": "Property hoofdcategoriecode",
+            "type": "string"
+          },
+          "identificatie": {
+            "description": "Property identificatie",
+            "type": "string"
+          },
+          "kanaal": {
+            "description": "Property kanaal",
+            "type": "string"
+          },
+          "onderwerp": {
+            "description": "Property onderwerp",
+            "type": "string"
+          },
+          "onderwerpcode": {
+            "description": "Property onderwerpcode",
+            "type": "string"
+          },
+          "soort": {
+            "description": "Property soort",
+            "type": "string"
+          },
+          "status": {
+            "description": "Property status",
+            "type": "string"
+          },
+          "statuscode": {
+            "description": "Property statuscode",
+            "type": "string"
+          },
+          "statusVolgorde": {
+            "description": "Property statusVolgorde",
+            "type": "string"
+          },
+          "subcategorie": {
+            "description": "Property subcategorie",
+            "type": "string"
+          },
+          "subcategoriecode": {
+            "description": "Property subcategoriecode",
+            "type": "string"
+          }
+        }
+      },
+      "Collectie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Collectie",
+        "description": "Represents a Collectie in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "BeschermdeStatus": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "BeschermdeStatus",
+        "description": "Represents a BeschermdeStatus in the system",
+        "properties": {
+          "bronnen": {
+            "description": "Property bronnen",
+            "type": "string"
+          },
+          "complex": {
+            "description": "Property complex",
+            "type": "string"
+          },
+          "datumInschrijvingRegister": {
+            "description": "Property datumInschrijvingRegister",
+            "type": "string"
+          },
+          "gemeentelijkMonumentCode": {
+            "description": "Property gemeentelijkMonumentCode",
+            "type": "string"
+          },
+          "gezichtscode": {
+            "description": "Property gezichtscode",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "opmerkingen": {
+            "description": "Property opmerkingen",
+            "type": "string"
+          },
+          "rijksmonumentcode": {
+            "description": "Property rijksmonumentcode",
+            "type": "string"
+          },
+          "type": {
+            "description": "Property type",
+            "type": "string"
+          }
+        }
+      },
+      "Belanghebbende": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Belanghebbende",
+        "description": "Represents a Belanghebbende in the system",
+        "properties": {
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "datumTot": {
+            "description": "Property datumTot",
+            "type": "string"
+          }
+        }
+      },
+      "Sportlocatie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Sportlocatie",
+        "description": "Represents a Sportlocatie in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          }
+        }
+      },
+      "Productsoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Productsoort",
+        "description": "Represents a Productsoort in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "tarief": {
+            "description": "Property tarief",
+            "type": "string"
+          },
+          "tariefperiode": {
+            "description": "Property tariefperiode",
+            "type": "string"
+          }
+        }
+      },
+      "Indiener": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Indiener",
+        "description": "Represents a Indiener in the system",
+        "properties": {}
+      },
+      "AanvraagStadspas": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "AanvraagStadspas",
+        "description": "Represents a AanvraagStadspas in the system",
+        "properties": {}
+      },
+      "Bruikleen": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Bruikleen",
+        "description": "Represents a Bruikleen in the system",
+        "properties": {
+          "aanvraagDoor": {
+            "description": "Property aanvraagDoor",
+            "type": "string"
+          },
+          "datumAanvraag": {
+            "description": "Property datumAanvraag",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "toestemmingDoor": {
+            "description": "Property toestemmingDoor",
+            "type": "string"
+          }
+        }
+      },
+      "Binnenlocatie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Binnenlocatie",
+        "description": "Represents a Binnenlocatie in the system",
+        "properties": {
+          "adres": {
+            "description": "Property adres",
+            "type": "string"
+          },
+          "bouwjaar": {
+            "description": "Property bouwjaar",
+            "type": "string"
+          },
+          "gemeentelijk": {
+            "description": "Property gemeentelijk",
+            "type": "string"
+          },
+          "geschatteKostenPerJaar": {
+            "description": "Property geschatteKostenPerJaar",
+            "type": "string"
+          },
+          "gymzaal": {
+            "description": "Property gymzaal",
+            "type": "string"
+          },
+          "klokurenOnderwijs": {
+            "description": "Property klokurenOnderwijs",
+            "type": "string"
+          },
+          "klokurenVerenigingen": {
+            "description": "Property klokurenVerenigingen",
+            "type": "string"
+          },
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          },
+          "onderhoudsniveau": {
+            "description": "Property onderhoudsniveau",
+            "type": "string"
+          },
+          "onderhoudsstatus": {
+            "description": "Property onderhoudsstatus",
+            "type": "string"
+          },
+          "sporthal": {
+            "description": "Property sporthal",
+            "type": "string"
+          },
+          "vloeroppervlakte": {
+            "description": "Property vloeroppervlakte",
+            "type": "string"
+          }
+        }
+      },
+      "Verlofaanvraag": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Verlofaanvraag",
+        "description": "Represents a Verlofaanvraag in the system",
+        "properties": {
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "datumTot": {
+            "description": "Property datumTot",
+            "type": "string"
+          },
+          "soortVerlof": {
+            "description": "Property soortVerlof",
+            "type": "string"
+          }
+        }
+      },
+      "OorspronkelijkeFunctie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "OorspronkelijkeFunctie",
+        "description": "Represents a OorspronkelijkeFunctie in the system",
+        "properties": {
+          "functie": {
+            "description": "Property functie",
+            "type": "string"
+          },
+          "functiesoort": {
+            "description": "Property functiesoort",
+            "type": "string"
+          },
+          "hoofdcategorie": {
+            "description": "Property hoofdcategorie",
+            "type": "string"
+          },
+          "hoofdfunctie": {
+            "description": "Property hoofdfunctie",
+            "type": "string"
+          },
+          "subcategorie": {
+            "description": "Property subcategorie",
+            "type": "string"
+          },
+          "toelichting": {
+            "description": "Property toelichting",
+            "type": "string"
+          },
+          "verbijzondering": {
+            "description": "Property verbijzondering",
+            "type": "string"
+          }
+        }
+      },
+      "AanvraagVrijstelling": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "AanvraagVrijstelling",
+        "description": "Represents a AanvraagVrijstelling in the system",
+        "properties": {
+          "buitenlandseSchoollocatie": {
+            "description": "Property buitenlandseSchoollocatie",
+            "type": "string"
+          },
+          "datumAanvraag": {
+            "description": "Property datumAanvraag",
+            "type": "string"
+          }
+        }
+      },
+      "Stadspas": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Stadspas",
+        "description": "Represents a Stadspas in the system",
+        "properties": {
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          }
+        }
+      },
+      "Tentoonstelling": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Tentoonstelling",
+        "description": "Represents a Tentoonstelling in the system",
+        "properties": {
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "subtitel": {
+            "description": "Property subtitel",
+            "type": "string"
+          },
+          "titel": {
+            "description": "Property titel",
+            "type": "string"
+          }
+        }
+      },
+      "Kaart": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Kaart",
+        "description": "Represents a Kaart in the system",
+        "properties": {
+          "kaart": {
+            "description": "Property kaart",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "BeschikkingLeerlingenvervoer": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "BeschikkingLeerlingenvervoer",
+        "description": "Represents a BeschikkingLeerlingenvervoer in the system",
+        "properties": {}
+      },
+      "Product": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Product",
+        "description": "Represents a Product in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "nummer": {
+            "description": "Property nummer",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "MulderFeit": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "MulderFeit",
+        "description": "Represents a MulderFeit in the system",
+        "properties": {
+          "bedrag": {
+            "description": "Property bedrag",
+            "type": "string"
+          },
+          "bezwaarAfgehandeld": {
+            "description": "Property bezwaarAfgehandeld",
+            "type": "string"
+          },
+          "bezwaarIngetrokken": {
+            "description": "Property bezwaarIngetrokken",
+            "type": "string"
+          },
+          "bezwaarToegewezen": {
+            "description": "Property bezwaarToegewezen",
+            "type": "string"
+          },
+          "bonnummer": {
+            "description": "Property bonnummer",
+            "type": "string"
+          },
+          "datumBetaling": {
+            "description": "Property datumBetaling",
+            "type": "string"
+          },
+          "datumBezwaar": {
+            "description": "Property datumBezwaar",
+            "type": "string"
+          },
+          "datumGeseponeerd": {
+            "description": "Property datumGeseponeerd",
+            "type": "string"
+          },
+          "datumIndiening": {
+            "description": "Property datumIndiening",
+            "type": "string"
+          },
+          "dienstCD": {
+            "description": "Property dienstCD",
+            "type": "string"
+          },
+          "organisatie": {
+            "description": "Property organisatie",
+            "type": "string"
+          },
+          "overtreding": {
+            "description": "Property overtreding",
+            "type": "string"
+          },
+          "parkeertarief": {
+            "description": "Property parkeertarief",
+            "type": "string"
+          },
+          "redenSeponeren": {
+            "description": "Property redenSeponeren",
+            "type": "string"
+          },
+          "vorderingnummer": {
+            "description": "Property vorderingnummer",
+            "type": "string"
+          }
+        }
+      },
+      "SubProducttype": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "SubProducttype",
+        "description": "Represents a SubProducttype in the system",
+        "properties": {
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "prioriteit": {
+            "description": "Property prioriteit",
+            "type": "string"
+          }
+        }
+      },
+      "Ambacht": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Ambacht",
+        "description": "Represents a Ambacht in the system",
+        "properties": {
+          "ambachtsoort": {
+            "description": "Property ambachtsoort",
+            "type": "string"
+          },
+          "jaarAmbachtTot": {
+            "description": "Property jaarAmbachtTot",
+            "type": "string"
+          },
+          "jaarAmbachtVanaf": {
+            "description": "Property jaarAmbachtVanaf",
+            "type": "string"
+          }
+        }
+      },
+      "Uitschrijving": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Uitschrijving",
+        "description": "Represents a Uitschrijving in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "diplomaBehaald": {
+            "description": "Property diplomaBehaald",
+            "type": "string"
+          }
+        }
+      },
+      "Parkeervlak": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Parkeervlak",
+        "description": "Represents a Parkeervlak in the system",
+        "properties": {
+          "aantal": {
+            "description": "Property aantal",
+            "type": "string"
+          },
+          "coordinaten": {
+            "description": "Property coordinaten",
+            "type": "string"
+          },
+          "doelgroep": {
+            "description": "Property doelgroep",
+            "type": "string"
+          },
+          "fiscaal": {
+            "description": "Property fiscaal",
+            "type": "string"
+          },
+          "plaats": {
+            "description": "Property plaats",
+            "type": "string"
+          },
+          "vlakID": {
+            "description": "Property vlakID",
+            "type": "string"
+          }
+        }
+      },
+      "Leefgebied": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Leefgebied",
+        "description": "Represents a Leefgebied in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          }
+        }
+      },
+      "Rechthebbende": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Rechthebbende",
+        "description": "Represents a Rechthebbende in the system",
+        "properties": {}
+      },
+      "Vulling": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vulling",
+        "description": "Represents a Vulling in the system",
+        "properties": {
+          "grondsoort": {
+            "description": "Property grondsoort",
+            "type": "string"
+          },
+          "key": {
+            "description": "Property key",
+            "type": "string"
+          },
+          "keySpoor": {
+            "description": "Property keySpoor",
+            "type": "string"
+          },
+          "kleur": {
+            "description": "Property kleur",
+            "type": "string"
+          },
+          "projectCD": {
+            "description": "Property projectCD",
+            "type": "string"
+          },
+          "putnummer": {
+            "description": "Property putnummer",
+            "type": "string"
+          },
+          "spoornummer": {
+            "description": "Property spoornummer",
+            "type": "string"
+          },
+          "structuur": {
+            "description": "Property structuur",
+            "type": "string"
+          },
+          "vlaknummer": {
+            "description": "Property vlaknummer",
+            "type": "string"
+          },
+          "vullingnummer": {
+            "description": "Property vullingnummer",
+            "type": "string"
+          }
+        }
+      },
+      "Winkelvloeroppervlak": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Winkelvloeroppervlak",
+        "description": "Represents a Winkelvloeroppervlak in the system",
+        "properties": {
+          "aantalKassa": {
+            "description": "Property aantalKassa",
+            "type": "string"
+          },
+          "bronWVO": {
+            "description": "Property bronWVO",
+            "type": "string"
+          },
+          "leegstand": {
+            "description": "Property leegstand",
+            "type": "string"
+          },
+          "winkelvloeroppervlakte": {
+            "description": "Property winkelvloeroppervlakte",
+            "type": "string"
+          },
+          "WVOKlasse": {
+            "description": "Property WVOKlasse",
+            "type": "string"
+          }
+        }
+      },
+      "Examen": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Examen",
+        "description": "Represents a Examen in the system",
+        "properties": {}
+      },
+      "Vlak": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vlak",
+        "description": "Represents a Vlak in the system",
+        "properties": {
+          "diepteTot": {
+            "description": "Property diepteTot",
+            "type": "string"
+          },
+          "diepteVan": {
+            "description": "Property diepteVan",
+            "type": "string"
+          },
+          "key": {
+            "description": "Property key",
+            "type": "string"
+          },
+          "keyPut": {
+            "description": "Property keyPut",
+            "type": "string"
+          },
+          "projectCD": {
+            "description": "Property projectCD",
+            "type": "string"
+          },
+          "putnummer": {
+            "description": "Property putnummer",
+            "type": "string"
+          },
+          "vlaknummer": {
+            "description": "Property vlaknummer",
+            "type": "string"
+          }
+        }
+      },
+      "Clientbegeleider": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Clientbegeleider",
+        "description": "Represents a Clientbegeleider in the system",
+        "properties": {
+          "begeleiderscode": {
+            "description": "Property begeleiderscode",
+            "type": "string"
+          }
+        }
+      },
+      "Kast": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Kast",
+        "description": "Represents a Kast in the system",
+        "properties": {
+          "aantalDeuren": {
+            "description": "Property aantalDeuren",
+            "type": "string"
+          },
+          "adresTelecom": {
+            "description": "Property adresTelecom",
+            "type": "string"
+          },
+          "BAGCode": {
+            "description": "Property BAGCode",
+            "type": "string"
+          },
+          "breedte": {
+            "description": "Property breedte",
+            "type": "string"
+          },
+          "EANCode": {
+            "description": "Property EANCode",
+            "type": "string"
+          },
+          "fabrikant": {
+            "description": "Property fabrikant",
+            "type": "string"
+          },
+          "hoogte": {
+            "description": "Property hoogte",
+            "type": "string"
+          },
+          "inbelgegevens": {
+            "description": "Property inbelgegevens",
+            "type": "string"
+          },
+          "installateur": {
+            "description": "Property installateur",
+            "type": "string"
+          },
+          "jaarOnderhoudUitgevoerd": {
+            "description": "Property jaarOnderhoudUitgevoerd",
+            "type": "string"
+          },
+          "kleur": {
+            "description": "Property kleur",
+            "type": "string"
+          },
+          "lengte": {
+            "description": "Property lengte",
+            "type": "string"
+          },
+          "leverancier": {
+            "description": "Property leverancier",
+            "type": "string"
+          },
+          "typeCommunicatie": {
+            "description": "Property typeCommunicatie",
+            "type": "string"
+          },
+          "typeFundering": {
+            "description": "Property typeFundering",
+            "type": "string"
+          },
+          "typeSlot": {
+            "description": "Property typeSlot",
+            "type": "string"
+          },
+          "vermogen": {
+            "description": "Property vermogen",
+            "type": "string"
+          }
+        }
+      },
+      "Voorzieningsoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Voorzieningsoort",
+        "description": "Represents a Voorzieningsoort in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "productcategorie": {
+            "description": "Property productcategorie",
+            "type": "string"
+          },
+          "productcategoriecode": {
+            "description": "Property productcategoriecode",
+            "type": "string"
+          },
+          "productcode": {
+            "description": "Property productcode",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "Archief": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Archief",
+        "description": "Represents a Archief in the system",
+        "properties": {
+          "archiefnummer": {
+            "description": "Property archiefnummer",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "openbaarheidsbeperking": {
+            "description": "Property openbaarheidsbeperking",
+            "type": "string"
+          }
+        }
+      },
+      "BeschikteVoorziening": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "BeschikteVoorziening",
+        "description": "Represents a BeschikteVoorziening in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumEindeOorspronkelijk": {
+            "description": "Property datumEindeOorspronkelijk",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "eenheid": {
+            "description": "Property eenheid",
+            "type": "string"
+          },
+          "frequentie": {
+            "description": "Property frequentie",
+            "type": "string"
+          },
+          "leveringsvorm": {
+            "description": "Property leveringsvorm",
+            "type": "string"
+          },
+          "omvang": {
+            "description": "Property omvang",
+            "type": "string"
+          },
+          "redenEinde": {
+            "description": "Property redenEinde",
+            "type": "string"
+          },
+          "status": {
+            "description": "Property status",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "MORAanvraagOfMelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "MORAanvraagOfMelding",
+        "description": "Represents a MORAanvraagOfMelding in the system",
+        "properties": {
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          },
+          "locatieOmschrijving": {
+            "description": "Property locatieOmschrijving",
+            "type": "string"
+          },
+          "meldingOmschrijving": {
+            "description": "Property meldingOmschrijving",
+            "type": "string"
+          },
+          "meldingTekst": {
+            "description": "Property meldingTekst",
+            "type": "string"
+          }
+        }
+      },
+      "Reservering": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Reservering",
+        "description": "Represents a Reservering in the system",
+        "properties": {
+          "aantal": {
+            "description": "Property aantal",
+            "type": "string"
+          },
+          "BTW": {
+            "description": "Property BTW",
+            "type": "string"
+          },
+          "tijdTot": {
+            "description": "Property tijdTot",
+            "type": "string"
+          },
+          "tijdVanaf": {
+            "description": "Property tijdVanaf",
+            "type": "string"
+          },
+          "totaalprijs": {
+            "description": "Property totaalprijs",
+            "type": "string"
+          }
+        }
+      },
+      "Startkwalificatie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Startkwalificatie",
+        "description": "Represents a Startkwalificatie in the system",
+        "properties": {
+          "datumBehaald": {
+            "description": "Property datumBehaald",
+            "type": "string"
+          }
+        }
+      },
+      "Raadsstuk": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Raadsstuk",
+        "description": "Represents a Raadsstuk in the system",
+        "properties": {
+          "besloten": {
+            "description": "Property besloten",
+            "type": "string"
+          },
+          "datumExpiratie": {
+            "description": "Property datumExpiratie",
+            "type": "string"
+          },
+          "datumPublicatie": {
+            "description": "Property datumPublicatie",
+            "type": "string"
+          },
+          "datumRegistratie": {
+            "description": "Property datumRegistratie",
+            "type": "string"
+          },
+          "typeRaadsstuk": {
+            "description": "Property typeRaadsstuk",
+            "type": "string"
+          }
+        }
+      },
+      "Artefactsoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Artefactsoort",
+        "description": "Represents a Artefactsoort in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Put": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Put",
+        "description": "Represents a Put in the system",
+        "properties": {
+          "bovengrondsZichtbaar": {
+            "description": "Property bovengrondsZichtbaar",
+            "type": "string"
+          },
+          "breedte": {
+            "description": "Property breedte",
+            "type": "string"
+          },
+          "diameter": {
+            "description": "Property diameter",
+            "type": "string"
+          },
+          "hoogte": {
+            "description": "Property hoogte",
+            "type": "string"
+          },
+          "jaarOnderhoudUitgevoerd": {
+            "description": "Property jaarOnderhoudUitgevoerd",
+            "type": "string"
+          },
+          "lengte": {
+            "description": "Property lengte",
+            "type": "string"
+          },
+          "leverancier": {
+            "description": "Property leverancier",
+            "type": "string"
+          },
+          "maaiveldhoogte": {
+            "description": "Property maaiveldhoogte",
+            "type": "string"
+          },
+          "materiaal": {
+            "description": "Property materiaal",
+            "type": "string"
+          },
+          "toegankelijk": {
+            "description": "Property toegankelijk",
+            "type": "string"
+          },
+          "typeAfdekking": {
+            "description": "Property typeAfdekking",
+            "type": "string"
+          },
+          "vorm": {
+            "description": "Property vorm",
+            "type": "string"
+          },
+          "wanddikte": {
+            "description": "Property wanddikte",
+            "type": "string"
+          }
+        }
+      },
+      "Inspectie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Inspectie",
+        "description": "Represents a Inspectie in the system",
+        "properties": {
+          "bevindingen": {
+            "description": "Property bevindingen",
+            "type": "string"
+          },
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          }
+        }
+      },
+      "Waarneming": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Waarneming",
+        "description": "Represents a Waarneming in the system",
+        "properties": {}
+      },
+      "Bevinding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Bevinding",
+        "description": "Represents a Bevinding in the system",
+        "properties": {
+          "aangemaaktDoor": {
+            "description": "Property aangemaaktDoor",
+            "type": "string"
+          },
+          "activiteit": {
+            "description": "Property activiteit",
+            "type": "string"
+          },
+          "controleElement": {
+            "description": "Property controleElement",
+            "type": "string"
+          },
+          "controleniveau": {
+            "description": "Property controleniveau",
+            "type": "string"
+          },
+          "datumAanmaak": {
+            "description": "Property datumAanmaak",
+            "type": "string"
+          },
+          "datumMutatie": {
+            "description": "Property datumMutatie",
+            "type": "string"
+          },
+          "diepte": {
+            "description": "Property diepte",
+            "type": "string"
+          },
+          "fase": {
+            "description": "Property fase",
+            "type": "string"
+          },
+          "gemuteerdDoor": {
+            "description": "Property gemuteerdDoor",
+            "type": "string"
+          },
+          "resultaat": {
+            "description": "Property resultaat",
+            "type": "string"
+          },
+          "risico": {
+            "description": "Property risico",
+            "type": "string"
+          }
+        }
+      },
+      "Stremming": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Stremming",
+        "description": "Represents a Stremming in the system",
+        "properties": {
+          "aantalGehinderden": {
+            "description": "Property aantalGehinderden",
+            "type": "string"
+          },
+          "datumAanmelding": {
+            "description": "Property datumAanmelding",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "datumWijziging": {
+            "description": "Property datumWijziging",
+            "type": "string"
+          },
+          "delenToegestaan": {
+            "description": "Property delenToegestaan",
+            "type": "string"
+          },
+          "geschiktVoorPublicatie": {
+            "description": "Property geschiktVoorPublicatie",
+            "type": "string"
+          },
+          "hinderklasse": {
+            "description": "Property hinderklasse",
+            "type": "string"
+          },
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "status": {
+            "description": "Property status",
+            "type": "string"
+          }
+        }
+      },
+      "OpenbareActiviteit": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "OpenbareActiviteit",
+        "description": "Represents a OpenbareActiviteit in the system",
+        "properties": {
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "evenmentnaam": {
+            "description": "Property evenmentnaam",
+            "type": "string"
+          },
+          "locatieOmschrijving": {
+            "description": "Property locatieOmschrijving",
+            "type": "string"
+          },
+          "status": {
+            "description": "Property status",
+            "type": "string"
+          }
+        }
+      },
+      "Dossier": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Dossier",
+        "description": "Represents a Dossier in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          }
+        }
+      },
+      "Locatie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Locatie",
+        "description": "Represents a Locatie in the system",
+        "properties": {
+          "hoogte": {
+            "description": "Property hoogte",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "NEN3610ID": {
+            "description": "Property NEN3610ID",
+            "type": "string"
+          }
+        }
+      },
+      "Verzuimmelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Verzuimmelding",
+        "description": "Represents a Verzuimmelding in the system",
+        "properties": {
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "voorstelSchool": {
+            "description": "Property voorstelSchool",
+            "type": "string"
+          }
+        }
+      },
+      "Programmasoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Programmasoort",
+        "description": "Represents a Programmasoort in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Voertuig": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Voertuig",
+        "description": "Represents a Voertuig in the system",
+        "properties": {
+          "kenteken": {
+            "description": "Property kenteken",
+            "type": "string"
+          },
+          "kleur": {
+            "description": "Property kleur",
+            "type": "string"
+          },
+          "land": {
+            "description": "Property land",
+            "type": "string"
+          },
+          "merk": {
+            "description": "Property merk",
+            "type": "string"
+          },
+          "type": {
+            "description": "Property type",
+            "type": "string"
+          }
+        }
+      },
+      "Leverancier": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Leverancier",
+        "description": "Represents a Leverancier in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "nummer": {
+            "description": "Property nummer",
+            "type": "string"
+          }
+        }
+      },
+      "DigitaalBestand": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "DigitaalBestand",
+        "description": "Represents a DigitaalBestand in the system",
+        "properties": {
+          "blob": {
+            "description": "Property blob",
+            "type": "string"
+          },
+          "mimetype": {
+            "description": "Property mimetype",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Standplaats": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Standplaats",
+        "description": "Represents a Standplaats in the system",
+        "properties": {
+          "indicatieGeconstateerdeStandplaats": {
+            "description": "Property indicatieGeconstateerdeStandplaats",
+            "type": "string"
+          },
+          "standplaatsidentificatie": {
+            "description": "Property standplaatsidentificatie",
+            "type": "string"
+          },
+          "standplaatsstatus": {
+            "description": "Property standplaatsstatus",
+            "type": "string"
+          }
+        }
+      },
+      "Beschikkingsoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Beschikkingsoort",
+        "description": "Represents a Beschikkingsoort in the system",
+        "properties": {}
+      },
+      "Categorie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Categorie",
+        "description": "Represents a Categorie in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "AanvraagLeerlingenvervoer": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "AanvraagLeerlingenvervoer",
+        "description": "Represents a AanvraagLeerlingenvervoer in the system",
+        "properties": {}
+      },
+      "Beperkingscategorie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Beperkingscategorie",
+        "description": "Represents a Beperkingscategorie in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "PGBToekenning": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "PGBToekenning",
+        "description": "Represents a PGBToekenning in the system",
+        "properties": {
+          "budget": {
+            "description": "Property budget",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumToekenning": {
+            "description": "Property datumToekenning",
+            "type": "string"
+          }
+        }
+      },
+      "Spoor": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Spoor",
+        "description": "Represents a Spoor in the system",
+        "properties": {
+          "datumBeginGeldigheidSpoor": {
+            "description": "Property datumBeginGeldigheidSpoor",
+            "type": "string"
+          },
+          "datumEindeGeldigheidSpoor": {
+            "description": "Property datumEindeGeldigheidSpoor",
+            "type": "string"
+          },
+          "geometrieSpoor": {
+            "description": "Property geometrieSpoor",
+            "type": "string"
+          },
+          "identificatieSpoor": {
+            "description": "Property identificatieSpoor",
+            "type": "string"
+          },
+          "LOD0GeometrieSpoor": {
+            "description": "Property LOD0GeometrieSpoor",
+            "type": "string"
+          },
+          "relatieveHoogteliggingSpoor": {
+            "description": "Property relatieveHoogteliggingSpoor",
+            "type": "string"
+          },
+          "statusSpoor": {
+            "description": "Property statusSpoor",
+            "type": "string"
+          }
+        }
+      },
+      "Prijs": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Prijs",
+        "description": "Represents a Prijs in the system",
+        "properties": {
+          "bedrag": {
+            "description": "Property bedrag",
+            "type": "string"
+          },
+          "datumEindeGeldigheid": {
+            "description": "Property datumEindeGeldigheid",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          }
+        }
+      },
+      "Heffingsverordening": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Heffingsverordening",
+        "description": "Represents a Heffingsverordening in the system",
+        "properties": {}
+      },
+      "Vergadering": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vergadering",
+        "description": "Represents a Vergadering in the system",
+        "properties": {
+          "eindtijd": {
+            "description": "Property eindtijd",
+            "type": "string"
+          },
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          },
+          "starttijd": {
+            "description": "Property starttijd",
+            "type": "string"
+          },
+          "titel": {
+            "description": "Property titel",
+            "type": "string"
+          }
+        }
+      },
+      "KlachtLeerlingenvervoer": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "KlachtLeerlingenvervoer",
+        "description": "Represents a KlachtLeerlingenvervoer in the system",
+        "properties": {}
+      },
+      "Indeling": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Indeling",
+        "description": "Represents a Indeling in the system",
+        "properties": {
+          "indelingsoort": {
+            "description": "Property indelingsoort",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "nummer": {
+            "description": "Property nummer",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Beschikking": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Beschikking",
+        "description": "Represents a Beschikking in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "commentaar": {
+            "description": "Property commentaar",
+            "type": "string"
+          },
+          "datumAfgifte": {
+            "description": "Property datumAfgifte",
+            "type": "string"
+          },
+          "grondslagen": {
+            "description": "Property grondslagen",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "Stemming": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Stemming",
+        "description": "Represents a Stemming in the system",
+        "properties": {
+          "resultaat": {
+            "description": "Property resultaat",
+            "type": "string"
+          },
+          "stemmingstype": {
+            "description": "Property stemmingstype",
+            "type": "string"
+          }
+        }
+      },
+      "Winkelverkoopgroep": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Winkelverkoopgroep",
+        "description": "Represents a Winkelverkoopgroep in the system",
+        "properties": {}
+      },
+      "Parkeerrecht": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Parkeerrecht",
+        "description": "Represents a Parkeerrecht in the system",
+        "properties": {
+          "aanmaaktijd": {
+            "description": "Property aanmaaktijd",
+            "type": "string"
+          },
+          "bedragAankoop": {
+            "description": "Property bedragAankoop",
+            "type": "string"
+          },
+          "bedragBTW": {
+            "description": "Property bedragBTW",
+            "type": "string"
+          },
+          "datumtijdEinde": {
+            "description": "Property datumtijdEinde",
+            "type": "string"
+          },
+          "datumtijdStart": {
+            "description": "Property datumtijdStart",
+            "type": "string"
+          },
+          "productnaam": {
+            "description": "Property productnaam",
+            "type": "string"
+          },
+          "productomschrijving": {
+            "description": "Property productomschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "VTHMelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "VTHMelding",
+        "description": "Represents a VTHMelding in the system",
+        "properties": {
+          "activiteit": {
+            "description": "Property activiteit",
+            "type": "string"
+          },
+          "beoordeling": {
+            "description": "Property beoordeling",
+            "type": "string"
+          },
+          "datumSeponering": {
+            "description": "Property datumSeponering",
+            "type": "string"
+          },
+          "datumtijdTot": {
+            "description": "Property datumtijdTot",
+            "type": "string"
+          },
+          "geseponeerd": {
+            "description": "Property geseponeerd",
+            "type": "string"
+          },
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          },
+          "organisatieonderdeel": {
+            "description": "Property organisatieonderdeel",
+            "type": "string"
+          },
+          "overtredingscode": {
+            "description": "Property overtredingscode",
+            "type": "string"
+          },
+          "overtredingsgroep": {
+            "description": "Property overtredingsgroep",
+            "type": "string"
+          },
+          "referentienummer": {
+            "description": "Property referentienummer",
+            "type": "string"
+          },
+          "resultaat": {
+            "description": "Property resultaat",
+            "type": "string"
+          },
+          "soortVTHMelding": {
+            "description": "Property soortVTHMelding",
+            "type": "string"
+          },
+          "status": {
+            "description": "Property status",
+            "type": "string"
+          },
+          "straatnaam": {
+            "description": "Property straatnaam",
+            "type": "string"
+          },
+          "taaktype": {
+            "description": "Property taaktype",
+            "type": "string"
+          },
+          "zaaknummer": {
+            "description": "Property zaaknummer",
+            "type": "string"
+          }
+        }
+      },
+      "Museumrelatie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Museumrelatie",
+        "description": "Represents a Museumrelatie in the system",
+        "properties": {
+          "relatiesoort": {
+            "description": "Property relatiesoort",
+            "type": "string"
+          }
+        }
+      },
+      "Leerling": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Leerling",
+        "description": "Represents a Leerling in the system",
+        "properties": {
+          "kwetsbareJongere": {
+            "description": "Property kwetsbareJongere",
+            "type": "string"
+          }
+        }
+      },
+      "Archeologiebesluit": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Archeologiebesluit",
+        "description": "Represents a Archeologiebesluit in the system",
+        "properties": {}
+      },
+      "Asielstatushouder": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Asielstatushouder",
+        "description": "Represents a Asielstatushouder in the system",
+        "properties": {
+          "DigiD aangevraagd": {
+            "description": "Property DigiD aangevraagd",
+            "type": "string"
+          },
+          "Emailadres verblijf AZC": {
+            "description": "Property Emailadres verblijf AZC",
+            "type": "string"
+          },
+          "Is gekoppeld aan": {
+            "description": "Property Is gekoppeld aan",
+            "type": "string"
+          },
+          "Land Rijbewijs": {
+            "description": "Property Land Rijbewijs",
+            "type": "string"
+          },
+          "Rijbewijs": {
+            "description": "Property Rijbewijs",
+            "type": "string"
+          },
+          "Telefoonnummer verblijf AZC": {
+            "description": "Property Telefoonnummer verblijf AZC",
+            "type": "string"
+          }
+        }
+      },
+      "Relatie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Relatie",
+        "description": "Represents a Relatie in the system",
+        "properties": {}
+      },
+      "ErfgoedObject": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "ErfgoedObject",
+        "description": "Represents a ErfgoedObject in the system",
+        "properties": {
+          "dateringTot": {
+            "description": "Property dateringTot",
+            "type": "string"
+          },
+          "dateringVanaf": {
+            "description": "Property dateringVanaf",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "titel": {
+            "description": "Property titel",
+            "type": "string"
+          }
+        }
+      },
+      "Bouwtype": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Bouwtype",
+        "description": "Represents a Bouwtype in the system",
+        "properties": {
+          "hoofdcategorie": {
+            "description": "Property hoofdcategorie",
+            "type": "string"
+          },
+          "subcategorie": {
+            "description": "Property subcategorie",
+            "type": "string"
+          },
+          "toelichting": {
+            "description": "Property toelichting",
+            "type": "string"
+          }
+        }
+      },
+      "Sportpark": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Sportpark",
+        "description": "Represents a Sportpark in the system",
+        "properties": {}
+      },
+      "Leveringsvorm": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Leveringsvorm",
+        "description": "Represents a Leveringsvorm in the system",
+        "properties": {
+          "leveringsvormCode": {
+            "description": "Property leveringsvormCode",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "Verkeersbesluit": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Verkeersbesluit",
+        "description": "Represents a Verkeersbesluit in the system",
+        "properties": {
+          "datumBesluit": {
+            "description": "Property datumBesluit",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "huisnummer": {
+            "description": "Property huisnummer",
+            "type": "string"
+          },
+          "postcode": {
+            "description": "Property postcode",
+            "type": "string"
+          },
+          "referentienummer": {
+            "description": "Property referentienummer",
+            "type": "string"
+          },
+          "straat": {
+            "description": "Property straat",
+            "type": "string"
+          },
+          "titel": {
+            "description": "Property titel",
+            "type": "string"
+          }
+        }
+      },
+      "AOMStatus": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "AOMStatus",
+        "description": "Represents a AOMStatus in the system",
+        "properties": {
+          "datumBeginStatus": {
+            "description": "Property datumBeginStatus",
+            "type": "string"
+          },
+          "datumEindeStatus": {
+            "description": "Property datumEindeStatus",
+            "type": "string"
+          },
+          "status": {
+            "description": "Property status",
+            "type": "string"
+          },
+          "statuscode": {
+            "description": "Property statuscode",
+            "type": "string"
+          },
+          "statusVolgorde": {
+            "description": "Property statusVolgorde",
+            "type": "string"
+          }
+        }
+      },
+      "Vondst": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vondst",
+        "description": "Represents a Vondst in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "key": {
+            "description": "Property key",
+            "type": "string"
+          },
+          "keyVulling": {
+            "description": "Property keyVulling",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "omstandigheden": {
+            "description": "Property omstandigheden",
+            "type": "string"
+          },
+          "projectCD": {
+            "description": "Property projectCD",
+            "type": "string"
+          },
+          "putnummer": {
+            "description": "Property putnummer",
+            "type": "string"
+          },
+          "spoornummer": {
+            "description": "Property spoornummer",
+            "type": "string"
+          },
+          "vlaknummer": {
+            "description": "Property vlaknummer",
+            "type": "string"
+          },
+          "vondstnummer": {
+            "description": "Property vondstnummer",
+            "type": "string"
+          },
+          "vullingnummer": {
+            "description": "Property vullingnummer",
+            "type": "string"
+          },
+          "XCoordinaat": {
+            "description": "Property XCoordinaat",
+            "type": "string"
+          },
+          "YCoordinaat": {
+            "description": "Property YCoordinaat",
+            "type": "string"
+          }
+        }
+      },
+      "Depot": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Depot",
+        "description": "Represents a Depot in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Relatiesoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Relatiesoort",
+        "description": "Represents a Relatiesoort in the system",
+        "properties": {
+          "authentiek": {
+            "description": "Property authentiek",
+            "type": "string"
+          },
+          "datumOpname": {
+            "description": "Property datumOpname",
+            "type": "string"
+          },
+          "definitie": {
+            "description": "Property definitie",
+            "type": "string"
+          },
+          "ea_guid": {
+            "description": "Property ea_guid",
+            "type": "string"
+          },
+          "herkomst": {
+            "description": "Property herkomst",
+            "type": "string"
+          },
+          "herkomstDefinitie": {
+            "description": "Property herkomstDefinitie",
+            "type": "string"
+          },
+          "id": {
+            "description": "Property id",
+            "type": "string"
+          },
+          "indicatieAfleidbaar": {
+            "description": "Property indicatieAfleidbaar",
+            "type": "string"
+          },
+          "indicatieMaterieleHistorie": {
+            "description": "Property indicatieMaterieleHistorie",
+            "type": "string"
+          },
+          "kardinaliteit": {
+            "description": "Property kardinaliteit",
+            "type": "string"
+          },
+          "mogelijkGeenWaarde": {
+            "description": "Property mogelijkGeenWaarde",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "toelichting": {
+            "description": "Property toelichting",
+            "type": "string"
+          },
+          "unidirectioneel": {
+            "description": "Property unidirectioneel",
+            "type": "string"
+          }
+        }
+      },
+      "Lener": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Lener",
+        "description": "Represents a Lener in the system",
+        "properties": {
+          "opmerkingen": {
+            "description": "Property opmerkingen",
+            "type": "string"
+          }
+        }
+      },
+      "Straatsectie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Straatsectie",
+        "description": "Represents a Straatsectie in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "zoneCode": {
+            "description": "Property zoneCode",
+            "type": "string"
+          }
+        }
+      },
+      "Beslissing": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Beslissing",
+        "description": "Represents a Beslissing in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "opmerkingen": {
+            "description": "Property opmerkingen",
+            "type": "string"
+          },
+          "reden": {
+            "description": "Property reden",
+            "type": "string"
+          }
+        }
+      },
+      "ProductieEenheid": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "ProductieEenheid",
+        "description": "Represents a ProductieEenheid in the system",
+        "properties": {}
+      },
+      "ZelfredzaamheidMatrix": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "ZelfredzaamheidMatrix",
+        "description": "Represents a ZelfredzaamheidMatrix in the system",
+        "properties": {
+          "datumEindeGeldigheid": {
+            "description": "Property datumEindeGeldigheid",
+            "type": "string"
+          },
+          "datumStartGeldigheid": {
+            "description": "Property datumStartGeldigheid",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Archiefcategorie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Archiefcategorie",
+        "description": "Represents a Archiefcategorie in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "nummer": {
+            "description": "Property nummer",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Contact": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Contact",
+        "description": "Represents a Contact in the system",
+        "properties": {
+          "contactsoort": {
+            "description": "Property contactsoort",
+            "type": "string"
+          },
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "tekst": {
+            "description": "Property tekst",
+            "type": "string"
+          }
+        }
+      },
+      "Tarief": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Tarief",
+        "description": "Represents a Tarief in the system",
+        "properties": {
+          "bedrag": {
+            "description": "Property bedrag",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "eenheid": {
+            "description": "Property eenheid",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "Brede Intake": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Brede Intake",
+        "description": "Represents a Brede Intake in the system",
+        "properties": {}
+      },
+      "Team": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Team",
+        "description": "Represents a Team in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Taakveld": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Taakveld",
+        "description": "Represents a Taakveld in the system",
+        "properties": {
+          "functiecodeIV3": {
+            "description": "Property functiecodeIV3",
+            "type": "string"
+          },
+          "functieomschrijvingIV3": {
+            "description": "Property functieomschrijvingIV3",
+            "type": "string"
+          },
+          "hoofdfunctie": {
+            "description": "Property hoofdfunctie",
+            "type": "string"
+          },
+          "hoofdfunctieOmschrijving": {
+            "description": "Property hoofdfunctieOmschrijving",
+            "type": "string"
+          },
+          "subtaakveldCode": {
+            "description": "Property subtaakveldCode",
+            "type": "string"
+          },
+          "subtaakveldOmschrijving": {
+            "description": "Property subtaakveldOmschrijving",
+            "type": "string"
+          },
+          "taakveldcode": {
+            "description": "Property taakveldcode",
+            "type": "string"
+          },
+          "taakveldOmschrijving": {
+            "description": "Property taakveldOmschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Leerplichtambtenaar": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Leerplichtambtenaar",
+        "description": "Represents a Leerplichtambtenaar in the system",
+        "properties": {}
+      },
+      "WoonfraudeAanvraagOfMelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "WoonfraudeAanvraagOfMelding",
+        "description": "Represents a WoonfraudeAanvraagOfMelding in the system",
+        "properties": {
+          "adres": {
+            "description": "Property adres",
+            "type": "string"
+          },
+          "categorie": {
+            "description": "Property categorie",
+            "type": "string"
+          },
+          "locatieOmschrijving": {
+            "description": "Property locatieOmschrijving",
+            "type": "string"
+          },
+          "meldingOmschrijving": {
+            "description": "Property meldingOmschrijving",
+            "type": "string"
+          },
+          "meldingTekst": {
+            "description": "Property meldingTekst",
+            "type": "string"
+          }
+        }
+      },
+      "Parkeerscan": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Parkeerscan",
+        "description": "Represents a Parkeerscan in the system",
+        "properties": {
+          "codeGebruiker": {
+            "description": "Property codeGebruiker",
+            "type": "string"
+          },
+          "codeScanvoertuig": {
+            "description": "Property codeScanvoertuig",
+            "type": "string"
+          },
+          "coordinaten": {
+            "description": "Property coordinaten",
+            "type": "string"
+          },
+          "foto": {
+            "description": "Property foto",
+            "type": "string"
+          },
+          "kenteken": {
+            "description": "Property kenteken",
+            "type": "string"
+          },
+          "parkeerrecht": {
+            "description": "Property parkeerrecht",
+            "type": "string"
+          },
+          "tijdstip": {
+            "description": "Property tijdstip",
+            "type": "string"
+          },
+          "transactieID": {
+            "description": "Property transactieID",
+            "type": "string"
+          }
+        }
+      },
+      "Voorziening": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Voorziening",
+        "description": "Represents a Voorziening in the system",
+        "properties": {
+          "afhandelwijze": {
+            "description": "Property afhandelwijze",
+            "type": "string"
+          },
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "productcode": {
+            "description": "Property productcode",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "Toewijzing": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Toewijzing",
+        "description": "Represents a Toewijzing in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "commentaar": {
+            "description": "Property commentaar",
+            "type": "string"
+          },
+          "datumAanschaf": {
+            "description": "Property datumAanschaf",
+            "type": "string"
+          },
+          "datumEindeToewijzing": {
+            "description": "Property datumEindeToewijzing",
+            "type": "string"
+          },
+          "datumStartToewijzing": {
+            "description": "Property datumStartToewijzing",
+            "type": "string"
+          },
+          "datumToewijzing": {
+            "description": "Property datumToewijzing",
+            "type": "string"
+          },
+          "eenheid": {
+            "description": "Property eenheid",
+            "type": "string"
+          },
+          "frequentie": {
+            "description": "Property frequentie",
+            "type": "string"
+          },
+          "omvang": {
+            "description": "Property omvang",
+            "type": "string"
+          },
+          "redenWijziging": {
+            "description": "Property redenWijziging",
+            "type": "string"
+          },
+          "toewijzingnummer": {
+            "description": "Property toewijzingnummer",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "Score": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Score",
+        "description": "Represents a Score in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          }
+        }
+      },
+      "NadereToegang": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "NadereToegang",
+        "description": "Represents a NadereToegang in the system",
+        "properties": {}
+      },
+      "Collegelid": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Collegelid",
+        "description": "Represents a Collegelid in the system",
+        "properties": {
+          "achternaam": {
+            "description": "Property achternaam",
+            "type": "string"
+          },
+          "datumAanstelling": {
+            "description": "Property datumAanstelling",
+            "type": "string"
+          },
+          "datumUittreding": {
+            "description": "Property datumUittreding",
+            "type": "string"
+          },
+          "fractie": {
+            "description": "Property fractie",
+            "type": "string"
+          },
+          "portefeuille": {
+            "description": "Property portefeuille",
+            "type": "string"
+          },
+          "titel": {
+            "description": "Property titel",
+            "type": "string"
+          },
+          "voornaam": {
+            "description": "Property voornaam",
+            "type": "string"
+          }
+        }
+      },
+      "Doelgroep": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Doelgroep",
+        "description": "Represents a Doelgroep in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Parkeergarage": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Parkeergarage",
+        "description": "Represents a Parkeergarage in the system",
+        "properties": {}
+      },
+      "StrooirouteUitvoering": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "StrooirouteUitvoering",
+        "description": "Represents a StrooirouteUitvoering in the system",
+        "properties": {
+          "geplandEinde": {
+            "description": "Property geplandEinde",
+            "type": "string"
+          },
+          "geplandStart": {
+            "description": "Property geplandStart",
+            "type": "string"
+          },
+          "route": {
+            "description": "Property route",
+            "type": "string"
+          },
+          "werkelijkEinde": {
+            "description": "Property werkelijkEinde",
+            "type": "string"
+          },
+          "werkelijkeStart": {
+            "description": "Property werkelijkeStart",
+            "type": "string"
+          }
+        }
+      },
+      "Programma": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Programma",
+        "description": "Represents a Programma in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          }
+        }
+      },
+      "Gemeentebegrafenis": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Gemeentebegrafenis",
+        "description": "Represents a Gemeentebegrafenis in the system",
+        "properties": {
+          "achtergrondMelding": {
+            "description": "Property achtergrondMelding",
+            "type": "string"
+          },
+          "begrafeniskosten": {
+            "description": "Property begrafeniskosten",
+            "type": "string"
+          },
+          "datumAfgedaan": {
+            "description": "Property datumAfgedaan",
+            "type": "string"
+          },
+          "datumBegrafenis": {
+            "description": "Property datumBegrafenis",
+            "type": "string"
+          },
+          "datumGemeld": {
+            "description": "Property datumGemeld",
+            "type": "string"
+          },
+          "datumRuimingGraf": {
+            "description": "Property datumRuimingGraf",
+            "type": "string"
+          },
+          "doodsoorzaak": {
+            "description": "Property doodsoorzaak",
+            "type": "string"
+          },
+          "gemeentelijkeKosten": {
+            "description": "Property gemeentelijkeKosten",
+            "type": "string"
+          },
+          "inkoopordernummer": {
+            "description": "Property inkoopordernummer",
+            "type": "string"
+          },
+          "melder": {
+            "description": "Property melder",
+            "type": "string"
+          },
+          "urenGemeente": {
+            "description": "Property urenGemeente",
+            "type": "string"
+          },
+          "verhaaldBedrag": {
+            "description": "Property verhaaldBedrag",
+            "type": "string"
+          }
+        }
+      },
+      "Ligplaatsontheffing": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Ligplaatsontheffing",
+        "description": "Represents a Ligplaatsontheffing in the system",
+        "properties": {
+          "stickernummer": {
+            "description": "Property stickernummer",
+            "type": "string"
+          }
+        }
+      },
+      "BOA": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "BOA",
+        "description": "Represents a BOA in the system",
+        "properties": {}
+      },
+      "Uitgever": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Uitgever",
+        "description": "Represents a Uitgever in the system",
+        "properties": {}
+      },
+      "Verplichting WMO Jeugd": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Verplichting WMO Jeugd",
+        "description": "Represents a Verplichting WMO Jeugd in the system",
+        "properties": {
+          "Budgetsoort": {
+            "description": "Property Budgetsoort",
+            "type": "string"
+          },
+          "budgetsoortgroep": {
+            "description": "Property budgetsoortgroep",
+            "type": "string"
+          },
+          "Einddatumgepland": {
+            "description": "Property Einddatumgepland",
+            "type": "string"
+          },
+          "Feitelijke Einddatum": {
+            "description": "Property Feitelijke Einddatum",
+            "type": "string"
+          },
+          "Jaar": {
+            "description": "Property Jaar",
+            "type": "string"
+          },
+          "Periodiciteit": {
+            "description": "Property Periodiciteit",
+            "type": "string"
+          },
+          "verplichtingsoort": {
+            "description": "Property verplichtingsoort",
+            "type": "string"
+          }
+        }
+      },
+      "Index": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Index",
+        "description": "Represents a Index in the system",
+        "properties": {
+          "indexnaam": {
+            "description": "Property indexnaam",
+            "type": "string"
+          },
+          "indexwaarde": {
+            "description": "Property indexwaarde",
+            "type": "string"
+          }
+        }
+      },
+      "Sportvereniging": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Sportvereniging",
+        "description": "Represents a Sportvereniging in the system",
+        "properties": {
+          "aantalNormTeams": {
+            "description": "Property aantalNormTeams",
+            "type": "string"
+          },
+          "adres": {
+            "description": "Property adres",
+            "type": "string"
+          },
+          "binnensport": {
+            "description": "Property binnensport",
+            "type": "string"
+          },
+          "buitensport": {
+            "description": "Property buitensport",
+            "type": "string"
+          },
+          "email": {
+            "description": "Property email",
+            "type": "string"
+          },
+          "ledenaantal": {
+            "description": "Property ledenaantal",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "typeSport": {
+            "description": "Property typeSport",
+            "type": "string"
+          }
+        }
+      },
+      "Leerjaar": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Leerjaar",
+        "description": "Represents a Leerjaar in the system",
+        "properties": {
+          "jaarEinde": {
+            "description": "Property jaarEinde",
+            "type": "string"
+          },
+          "jaarStart": {
+            "description": "Property jaarStart",
+            "type": "string"
+          }
+        }
+      },
+      "Stelling": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Stelling",
+        "description": "Represents a Stelling in the system",
+        "properties": {
+          "stellingnummer": {
+            "description": "Property stellingnummer",
+            "type": "string"
+          }
+        }
+      },
+      "Strooiroute": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Strooiroute",
+        "description": "Represents a Strooiroute in the system",
+        "properties": {
+          "route": {
+            "description": "Property route",
+            "type": "string"
+          }
+        }
+      },
+      "Producttype": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Producttype",
+        "description": "Represents a Producttype in the system",
+        "properties": {
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Levering": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Levering",
+        "description": "Represents a Levering in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "datumStop": {
+            "description": "Property datumStop",
+            "type": "string"
+          },
+          "eenheid": {
+            "description": "Property eenheid",
+            "type": "string"
+          },
+          "frequentie": {
+            "description": "Property frequentie",
+            "type": "string"
+          },
+          "omvang": {
+            "description": "Property omvang",
+            "type": "string"
+          },
+          "stopreden": {
+            "description": "Property stopreden",
+            "type": "string"
+          }
+        }
+      },
+      "Artefact": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Artefact",
+        "description": "Represents a Artefact in the system",
+        "properties": {
+          "artefectnummer": {
+            "description": "Property artefectnummer",
+            "type": "string"
+          },
+          "beschrijving": {
+            "description": "Property beschrijving",
+            "type": "string"
+          },
+          "conserveren": {
+            "description": "Property conserveren",
+            "type": "string"
+          },
+          "datering": {
+            "description": "Property datering",
+            "type": "string"
+          },
+          "dateringComplex": {
+            "description": "Property dateringComplex",
+            "type": "string"
+          },
+          "determinatieniveau": {
+            "description": "Property determinatieniveau",
+            "type": "string"
+          },
+          "dianummer": {
+            "description": "Property dianummer",
+            "type": "string"
+          },
+          "doosnummer": {
+            "description": "Property doosnummer",
+            "type": "string"
+          },
+          "exposabel": {
+            "description": "Property exposabel",
+            "type": "string"
+          },
+          "fotonummer": {
+            "description": "Property fotonummer",
+            "type": "string"
+          },
+          "functie": {
+            "description": "Property functie",
+            "type": "string"
+          },
+          "herkomst": {
+            "description": "Property herkomst",
+            "type": "string"
+          },
+          "key": {
+            "description": "Property key",
+            "type": "string"
+          },
+          "keyDoos": {
+            "description": "Property keyDoos",
+            "type": "string"
+          },
+          "keyMagazijnplaatsing": {
+            "description": "Property keyMagazijnplaatsing",
+            "type": "string"
+          },
+          "keyPut": {
+            "description": "Property keyPut",
+            "type": "string"
+          },
+          "keyVondst": {
+            "description": "Property keyVondst",
+            "type": "string"
+          },
+          "literatuur": {
+            "description": "Property literatuur",
+            "type": "string"
+          },
+          "maten": {
+            "description": "Property maten",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "opmerkingen": {
+            "description": "Property opmerkingen",
+            "type": "string"
+          },
+          "origine": {
+            "description": "Property origine",
+            "type": "string"
+          },
+          "projectCD": {
+            "description": "Property projectCD",
+            "type": "string"
+          },
+          "putnummer": {
+            "description": "Property putnummer",
+            "type": "string"
+          },
+          "restauratieWenselijk": {
+            "description": "Property restauratieWenselijk",
+            "type": "string"
+          },
+          "tekeningnummer": {
+            "description": "Property tekeningnummer",
+            "type": "string"
+          },
+          "type": {
+            "description": "Property type",
+            "type": "string"
+          },
+          "vondstnummer": {
+            "description": "Property vondstnummer",
+            "type": "string"
+          }
+        }
+      },
+      "School": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "School",
+        "description": "Represents a School in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          }
+        }
+      },
+      "Vorderingregel": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vorderingregel",
+        "description": "Represents a Vorderingregel in the system",
+        "properties": {
+          "Aangemaakt_door": {
+            "description": "Property Aangemaakt_door",
+            "type": "string"
+          },
+          "Aanmaakdatum": {
+            "description": "Property Aanmaakdatum",
+            "type": "string"
+          },
+          "Bedrag_excl_btw": {
+            "description": "Property Bedrag_excl_btw",
+            "type": "string"
+          },
+          "Bedrag_incl_btw": {
+            "description": "Property Bedrag_incl_btw",
+            "type": "string"
+          },
+          "Btwcategorie": {
+            "description": "Property Btwcategorie",
+            "type": "string"
+          },
+          "Gemuteerd_door": {
+            "description": "Property Gemuteerd_door",
+            "type": "string"
+          },
+          "Mutatiedatum": {
+            "description": "Property Mutatiedatum",
+            "type": "string"
+          },
+          "Omschrijving": {
+            "description": "Property Omschrijving",
+            "type": "string"
+          },
+          "Periodiek": {
+            "description": "Property Periodiek",
+            "type": "string"
+          },
+          "Type": {
+            "description": "Property Type",
+            "type": "string"
+          }
+        }
+      },
+      "WABOAanvraagOfMelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "WABOAanvraagOfMelding",
+        "description": "Represents a WABOAanvraagOfMelding in the system",
+        "properties": {
+          "bouwkosten": {
+            "description": "Property bouwkosten",
+            "type": "string"
+          },
+          "OLONummer": {
+            "description": "Property OLONummer",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "projectkosten": {
+            "description": "Property projectkosten",
+            "type": "string"
+          },
+          "registratienummer": {
+            "description": "Property registratienummer",
+            "type": "string"
+          }
+        }
+      },
+      "Entreekaart": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Entreekaart",
+        "description": "Represents a Entreekaart in the system",
+        "properties": {
+          "rondleiding": {
+            "description": "Property rondleiding",
+            "type": "string"
+          }
+        }
+      },
+      "Beperkingscoresoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Beperkingscoresoort",
+        "description": "Represents a Beperkingscoresoort in the system",
+        "properties": {
+          "vraag": {
+            "description": "Property vraag",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "OuderOfVerzorger": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "OuderOfVerzorger",
+        "description": "Represents a OuderOfVerzorger in the system",
+        "properties": {}
+      },
+      "ZiekmeldingLeerlingenvervoer": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "ZiekmeldingLeerlingenvervoer",
+        "description": "Represents a ZiekmeldingLeerlingenvervoer in the system",
+        "properties": {}
+      },
+      "Archiefstuk": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Archiefstuk",
+        "description": "Represents a Archiefstuk in the system",
+        "properties": {
+          "beschrijving": {
+            "description": "Property beschrijving",
+            "type": "string"
+          },
+          "inventarisnummer": {
+            "description": "Property inventarisnummer",
+            "type": "string"
+          },
+          "omvang": {
+            "description": "Property omvang",
+            "type": "string"
+          },
+          "openbaarheidsbeperking": {
+            "description": "Property openbaarheidsbeperking",
+            "type": "string"
+          },
+          "trefwoorden": {
+            "description": "Property trefwoorden",
+            "type": "string"
+          },
+          "uiterlijkeVorm": {
+            "description": "Property uiterlijkeVorm",
+            "type": "string"
+          }
+        }
+      },
+      "Combibon": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Combibon",
+        "description": "Represents a Combibon in the system",
+        "properties": {
+          "sanctie": {
+            "description": "Property sanctie",
+            "type": "string"
+          }
+        }
+      },
+      "Onderwijssoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Onderwijssoort",
+        "description": "Represents a Onderwijssoort in the system",
+        "properties": {
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "onderwijstype": {
+            "description": "Property onderwijstype",
+            "type": "string"
+          }
+        }
+      },
+      "Magazijnlocatie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Magazijnlocatie",
+        "description": "Represents a Magazijnlocatie in the system",
+        "properties": {
+          "key": {
+            "description": "Property key",
+            "type": "string"
+          },
+          "stelling": {
+            "description": "Property stelling",
+            "type": "string"
+          },
+          "vaknummer": {
+            "description": "Property vaknummer",
+            "type": "string"
+          },
+          "volgletter": {
+            "description": "Property volgletter",
+            "type": "string"
+          }
+        }
+      },
+      "Bezoeker": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Bezoeker",
+        "description": "Represents a Bezoeker in the system",
+        "properties": {}
+      },
+      "Hotel": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Hotel",
+        "description": "Represents a Hotel in the system",
+        "properties": {
+          "aantalKamers": {
+            "description": "Property aantalKamers",
+            "type": "string"
+          }
+        }
+      },
+      "Activiteit": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Activiteit",
+        "description": "Represents a Activiteit in the system",
+        "properties": {
+          "groep": {
+            "description": "Property groep",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "NEN3610ID": {
+            "description": "Property NEN3610ID",
+            "type": "string"
+          }
+        }
+      },
+      "Vaartuig": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vaartuig",
+        "description": "Represents a Vaartuig in the system",
+        "properties": {
+          "breedte": {
+            "description": "Property breedte",
+            "type": "string"
+          },
+          "hoogte": {
+            "description": "Property hoogte",
+            "type": "string"
+          },
+          "kleur": {
+            "description": "Property kleur",
+            "type": "string"
+          },
+          "lengte": {
+            "description": "Property lengte",
+            "type": "string"
+          },
+          "naamVaartuig": {
+            "description": "Property naamVaartuig",
+            "type": "string"
+          },
+          "registratienummer": {
+            "description": "Property registratienummer",
+            "type": "string"
+          }
+        }
+      },
+      "DoorgeleidingOM": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "DoorgeleidingOM",
+        "description": "Represents a DoorgeleidingOM in the system",
+        "properties": {
+          "afdoening": {
+            "description": "Property afdoening",
+            "type": "string"
+          }
+        }
+      },
+      "Precario": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Precario",
+        "description": "Represents a Precario in the system",
+        "properties": {}
+      },
+      "Vrijstelling": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vrijstelling",
+        "description": "Represents a Vrijstelling in the system",
+        "properties": {
+          "aanvraagToegekend": {
+            "description": "Property aanvraagToegekend",
+            "type": "string"
+          },
+          "buitenlandseSchoollocatie": {
+            "description": "Property buitenlandseSchoollocatie",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "verzuimsoort": {
+            "description": "Property verzuimsoort",
+            "type": "string"
+          }
+        }
+      },
+      "Loopbaanstap": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Loopbaanstap",
+        "description": "Represents a Loopbaanstap in the system",
+        "properties": {
+          "klas": {
+            "description": "Property klas",
+            "type": "string"
+          },
+          "onderwijstype": {
+            "description": "Property onderwijstype",
+            "type": "string"
+          },
+          "schooljaar": {
+            "description": "Property schooljaar",
+            "type": "string"
+          }
+        }
+      },
+      "LegesGrondslag": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "LegesGrondslag",
+        "description": "Represents a LegesGrondslag in the system",
+        "properties": {
+          "aangemaaktDoor": {
+            "description": "Property aangemaaktDoor",
+            "type": "string"
+          },
+          "aantalOpgegeven": {
+            "description": "Property aantalOpgegeven",
+            "type": "string"
+          },
+          "aantalVastgesteld": {
+            "description": "Property aantalVastgesteld",
+            "type": "string"
+          },
+          "automatisch": {
+            "description": "Property automatisch",
+            "type": "string"
+          },
+          "datumAanmaak": {
+            "description": "Property datumAanmaak",
+            "type": "string"
+          },
+          "datumMutatie": {
+            "description": "Property datumMutatie",
+            "type": "string"
+          },
+          "eenheid": {
+            "description": "Property eenheid",
+            "type": "string"
+          },
+          "gemuteerdDoor": {
+            "description": "Property gemuteerdDoor",
+            "type": "string"
+          },
+          "legesGrondslag": {
+            "description": "Property legesGrondslag",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Raadscommissie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Raadscommissie",
+        "description": "Represents a Raadscommissie in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          }
+        }
+      },
+      "Perkeerzone": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Perkeerzone",
+        "description": "Represents a Perkeerzone in the system",
+        "properties": {
+          "aantalParkeervlakken": {
+            "description": "Property aantalParkeervlakken",
+            "type": "string"
+          },
+          "alleenDagtarief": {
+            "description": "Property alleenDagtarief",
+            "type": "string"
+          },
+          "dagtarief": {
+            "description": "Property dagtarief",
+            "type": "string"
+          },
+          "eindedag": {
+            "description": "Property eindedag",
+            "type": "string"
+          },
+          "eindtijd": {
+            "description": "Property eindtijd",
+            "type": "string"
+          },
+          "gebruik": {
+            "description": "Property gebruik",
+            "type": "string"
+          },
+          "geometrie": {
+            "description": "Property geometrie",
+            "type": "string"
+          },
+          "IPMCode": {
+            "description": "Property IPMCode",
+            "type": "string"
+          },
+          "IPMNaam": {
+            "description": "Property IPMNaam",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "parkeergarage": {
+            "description": "Property parkeergarage",
+            "type": "string"
+          },
+          "sectorcode": {
+            "description": "Property sectorcode",
+            "type": "string"
+          },
+          "soortCode": {
+            "description": "Property soortCode",
+            "type": "string"
+          },
+          "startdag": {
+            "description": "Property startdag",
+            "type": "string"
+          },
+          "starttarief": {
+            "description": "Property starttarief",
+            "type": "string"
+          },
+          "starttijd": {
+            "description": "Property starttijd",
+            "type": "string"
+          },
+          "typeCode": {
+            "description": "Property typeCode",
+            "type": "string"
+          },
+          "typeNaam": {
+            "description": "Property typeNaam",
+            "type": "string"
+          },
+          "uurtarief": {
+            "description": "Property uurtarief",
+            "type": "string"
+          }
+        }
+      },
+      "Bouwactiviteit": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Bouwactiviteit",
+        "description": "Represents a Bouwactiviteit in the system",
+        "properties": {
+          "bouwjaarklasse": {
+            "description": "Property bouwjaarklasse",
+            "type": "string"
+          },
+          "bouwjaarTot": {
+            "description": "Property bouwjaarTot",
+            "type": "string"
+          },
+          "bouwjaarVan": {
+            "description": "Property bouwjaarVan",
+            "type": "string"
+          },
+          "indicatie": {
+            "description": "Property indicatie",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "VTHAanvraagOfMelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "VTHAanvraagOfMelding",
+        "description": "Represents a VTHAanvraagOfMelding in the system",
+        "properties": {
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "VLogInfo": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "VLogInfo",
+        "description": "Represents a VLogInfo in the system",
+        "properties": {
+          "detectieVerkeer": {
+            "description": "Property detectieVerkeer",
+            "type": "string"
+          },
+          "eindegroen": {
+            "description": "Property eindegroen",
+            "type": "string"
+          },
+          "snelheid": {
+            "description": "Property snelheid",
+            "type": "string"
+          },
+          "startgroen": {
+            "description": "Property startgroen",
+            "type": "string"
+          },
+          "tijdstip": {
+            "description": "Property tijdstip",
+            "type": "string"
+          },
+          "verkeerWilGroen": {
+            "description": "Property verkeerWilGroen",
+            "type": "string"
+          },
+          "wachttijd": {
+            "description": "Property wachttijd",
+            "type": "string"
+          }
+        }
+      },
+      "Doos": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Doos",
+        "description": "Represents a Doos in the system",
+        "properties": {
+          "doosnummer": {
+            "description": "Property doosnummer",
+            "type": "string"
+          },
+          "herkomst": {
+            "description": "Property herkomst",
+            "type": "string"
+          },
+          "inhoud": {
+            "description": "Property inhoud",
+            "type": "string"
+          },
+          "key": {
+            "description": "Property key",
+            "type": "string"
+          },
+          "keyMagazijnlocatie": {
+            "description": "Property keyMagazijnlocatie",
+            "type": "string"
+          },
+          "projectCD": {
+            "description": "Property projectCD",
+            "type": "string"
+          }
+        }
+      },
+      "Omzetgroep": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Omzetgroep",
+        "description": "Represents a Omzetgroep in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "WoonoverlastAanvraagOfMelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "WoonoverlastAanvraagOfMelding",
+        "description": "Represents a WoonoverlastAanvraagOfMelding in the system",
+        "properties": {
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          },
+          "locatieOmschrijving": {
+            "description": "Property locatieOmschrijving",
+            "type": "string"
+          },
+          "meldingOmschrijving": {
+            "description": "Property meldingOmschrijving",
+            "type": "string"
+          },
+          "meldingTekst": {
+            "description": "Property meldingTekst",
+            "type": "string"
+          }
+        }
+      },
+      "Beperkingscore": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Beperkingscore",
+        "description": "Represents a Beperkingscore in the system",
+        "properties": {
+          "commentaar": {
+            "description": "Property commentaar",
+            "type": "string"
+          },
+          "score": {
+            "description": "Property score",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "AOMAanvraagWMOJeugd": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "AOMAanvraagWMOJeugd",
+        "description": "Represents a AOMAanvraagWMOJeugd in the system",
+        "properties": {
+          "clientReactie": {
+            "description": "Property clientReactie",
+            "type": "string"
+          },
+          "datumBeschikking": {
+            "description": "Property datumBeschikking",
+            "type": "string"
+          },
+          "datumEersteAfspraak": {
+            "description": "Property datumEersteAfspraak",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumPlanVastgesteld": {
+            "description": "Property datumPlanVastgesteld",
+            "type": "string"
+          },
+          "datumStartAanvraag": {
+            "description": "Property datumStartAanvraag",
+            "type": "string"
+          },
+          "deskundigheid": {
+            "description": "Property deskundigheid",
+            "type": "string"
+          },
+          "doorloopmethodiek": {
+            "description": "Property doorloopmethodiek",
+            "type": "string"
+          },
+          "maximaleDoorlooptijd": {
+            "description": "Property maximaleDoorlooptijd",
+            "type": "string"
+          },
+          "redenAfsluiting": {
+            "description": "Property redenAfsluiting",
+            "type": "string"
+          }
+        }
+      },
+      "Grondslag": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Grondslag",
+        "description": "Represents a Grondslag in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Incident": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Incident",
+        "description": "Represents a Incident in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Objectclassificatie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Objectclassificatie",
+        "description": "Represents a Objectclassificatie in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "B1": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "B1",
+        "description": "Represents a B1 in the system",
+        "properties": {}
+      },
+      "Productgroep": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Productgroep",
+        "description": "Represents a Productgroep in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Samensteller": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Samensteller",
+        "description": "Represents a Samensteller in the system",
+        "properties": {
+          "rol": {
+            "description": "Property rol",
+            "type": "string"
+          }
+        }
+      },
+      "Hotelbezoek": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Hotelbezoek",
+        "description": "Represents a Hotelbezoek in the system",
+        "properties": {
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          }
+        }
+      },
+      "Naheffing": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Naheffing",
+        "description": "Represents a Naheffing in the system",
+        "properties": {
+          "bedrag": {
+            "description": "Property bedrag",
+            "type": "string"
+          },
+          "bezwaarAfgehandeld": {
+            "description": "Property bezwaarAfgehandeld",
+            "type": "string"
+          },
+          "bezwaarIngetrokken": {
+            "description": "Property bezwaarIngetrokken",
+            "type": "string"
+          },
+          "bezwaarToegewezen": {
+            "description": "Property bezwaarToegewezen",
+            "type": "string"
+          },
+          "bonnummer": {
+            "description": "Property bonnummer",
+            "type": "string"
+          },
+          "datumBetaling": {
+            "description": "Property datumBetaling",
+            "type": "string"
+          },
+          "datumBezwaar": {
+            "description": "Property datumBezwaar",
+            "type": "string"
+          },
+          "datumGeseponeerd": {
+            "description": "Property datumGeseponeerd",
+            "type": "string"
+          },
+          "datumIndiening": {
+            "description": "Property datumIndiening",
+            "type": "string"
+          },
+          "dienstCD": {
+            "description": "Property dienstCD",
+            "type": "string"
+          },
+          "fiscaal": {
+            "description": "Property fiscaal",
+            "type": "string"
+          },
+          "organisatie": {
+            "description": "Property organisatie",
+            "type": "string"
+          },
+          "overtreding": {
+            "description": "Property overtreding",
+            "type": "string"
+          },
+          "parkeertarief": {
+            "description": "Property parkeertarief",
+            "type": "string"
+          },
+          "redenSeponeren": {
+            "description": "Property redenSeponeren",
+            "type": "string"
+          },
+          "vorderingnummer": {
+            "description": "Property vorderingnummer",
+            "type": "string"
+          }
+        }
+      },
+      "Parkeervergunning": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Parkeervergunning",
+        "description": "Represents a Parkeervergunning in the system",
+        "properties": {
+          "datumEindeGeldigheid": {
+            "description": "Property datumEindeGeldigheid",
+            "type": "string"
+          },
+          "datumReservering": {
+            "description": "Property datumReservering",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "kenteken": {
+            "description": "Property kenteken",
+            "type": "string"
+          },
+          "minutenAfgeschreven": {
+            "description": "Property minutenAfgeschreven",
+            "type": "string"
+          },
+          "minutenGeldig": {
+            "description": "Property minutenGeldig",
+            "type": "string"
+          },
+          "minutenResterend": {
+            "description": "Property minutenResterend",
+            "type": "string"
+          },
+          "nummer": {
+            "description": "Property nummer",
+            "type": "string"
+          },
+          "type": {
+            "description": "Property type",
+            "type": "string"
+          }
+        }
+      },
+      "Museumobject": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Museumobject",
+        "description": "Represents a Museumobject in the system",
+        "properties": {
+          "afmeting": {
+            "description": "Property afmeting",
+            "type": "string"
+          },
+          "bezitTot": {
+            "description": "Property bezitTot",
+            "type": "string"
+          },
+          "bezitVanaf": {
+            "description": "Property bezitVanaf",
+            "type": "string"
+          },
+          "medium": {
+            "description": "Property medium",
+            "type": "string"
+          },
+          "verkrijging": {
+            "description": "Property verkrijging",
+            "type": "string"
+          }
+        }
+      },
+      "Boring": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Boring",
+        "description": "Represents a Boring in the system",
+        "properties": {}
+      },
+      "ProcesverbaalOnderwijs": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "ProcesverbaalOnderwijs",
+        "description": "Represents a ProcesverbaalOnderwijs in the system",
+        "properties": {
+          "datumAfgehandeld": {
+            "description": "Property datumAfgehandeld",
+            "type": "string"
+          },
+          "datumEindeProeftijd": {
+            "description": "Property datumEindeProeftijd",
+            "type": "string"
+          },
+          "datumIngelicht": {
+            "description": "Property datumIngelicht",
+            "type": "string"
+          },
+          "datumUitspraak": {
+            "description": "Property datumUitspraak",
+            "type": "string"
+          },
+          "datumZitting": {
+            "description": "Property datumZitting",
+            "type": "string"
+          },
+          "geldboete": {
+            "description": "Property geldboete",
+            "type": "string"
+          },
+          "geldboeteVoorwaardelijk": {
+            "description": "Property geldboeteVoorwaardelijk",
+            "type": "string"
+          },
+          "opmerkingen": {
+            "description": "Property opmerkingen",
+            "type": "string"
+          },
+          "proeftijd": {
+            "description": "Property proeftijd",
+            "type": "string"
+          },
+          "reden": {
+            "description": "Property reden",
+            "type": "string"
+          },
+          "sanctiesoort": {
+            "description": "Property sanctiesoort",
+            "type": "string"
+          },
+          "uitspraak": {
+            "description": "Property uitspraak",
+            "type": "string"
+          },
+          "verzuimsoort": {
+            "description": "Property verzuimsoort",
+            "type": "string"
+          }
+        }
+      },
+      "Ordeningsschema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Ordeningsschema",
+        "description": "Represents a Ordeningsschema in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "text": {
+            "description": "Property text",
+            "type": "string"
+          }
+        }
+      },
+      "Belijning": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Belijning",
+        "description": "Represents a Belijning in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          }
+        }
+      },
+      "Plank": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Plank",
+        "description": "Represents a Plank in the system",
+        "properties": {
+          "planknummer": {
+            "description": "Property planknummer",
+            "type": "string"
+          }
+        }
+      },
+      "VomAanvraagOfMelding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "VomAanvraagOfMelding",
+        "description": "Represents a VomAanvraagOfMelding in the system",
+        "properties": {
+          "activiteiten": {
+            "description": "Property activiteiten",
+            "type": "string"
+          },
+          "adres": {
+            "description": "Property adres",
+            "type": "string"
+          },
+          "BAGID": {
+            "description": "Property BAGID",
+            "type": "string"
+          },
+          "dossiernummer": {
+            "description": "Property dossiernummer",
+            "type": "string"
+          },
+          "intaketype": {
+            "description": "Property intaketype",
+            "type": "string"
+          },
+          "internNummer": {
+            "description": "Property internNummer",
+            "type": "string"
+          },
+          "kadastraleAanduiding": {
+            "description": "Property kadastraleAanduiding",
+            "type": "string"
+          },
+          "kenmerk": {
+            "description": "Property kenmerk",
+            "type": "string"
+          },
+          "locatie": {
+            "description": "Property locatie",
+            "type": "string"
+          },
+          "locatieOmschrijving": {
+            "description": "Property locatieOmschrijving",
+            "type": "string"
+          },
+          "toelichting": {
+            "description": "Property toelichting",
+            "type": "string"
+          }
+        }
+      },
+      "Examenonderdeel": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Examenonderdeel",
+        "description": "Represents a Examenonderdeel in the system",
+        "properties": {}
+      },
+      "Onderhoudskosten": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Onderhoudskosten",
+        "description": "Represents a Onderhoudskosten in the system",
+        "properties": {}
+      },
+      "Raadslid": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Raadslid",
+        "description": "Represents a Raadslid in the system",
+        "properties": {
+          "achternaam": {
+            "description": "Property achternaam",
+            "type": "string"
+          },
+          "datumAanstelling": {
+            "description": "Property datumAanstelling",
+            "type": "string"
+          },
+          "datumUittreding": {
+            "description": "Property datumUittreding",
+            "type": "string"
+          },
+          "fractie": {
+            "description": "Property fractie",
+            "type": "string"
+          },
+          "titel": {
+            "description": "Property titel",
+            "type": "string"
+          },
+          "voornaam": {
+            "description": "Property voornaam",
+            "type": "string"
+          }
+        }
+      },
+      "Onderwijsniveau": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Onderwijsniveau",
+        "description": "Represents a Onderwijsniveau in the system",
+        "properties": {}
+      },
+      "Vordering": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vordering",
+        "description": "Represents a Vordering in the system",
+        "properties": {
+          "aangemaaktDoor": {
+            "description": "Property aangemaaktDoor",
+            "type": "string"
+          },
+          "bedragBTW": {
+            "description": "Property bedragBTW",
+            "type": "string"
+          },
+          "datumAanmaak": {
+            "description": "Property datumAanmaak",
+            "type": "string"
+          },
+          "datumMutatie": {
+            "description": "Property datumMutatie",
+            "type": "string"
+          },
+          "geaccordeerd": {
+            "description": "Property geaccordeerd",
+            "type": "string"
+          },
+          "geaccordeerdDoor": {
+            "description": "Property geaccordeerdDoor",
+            "type": "string"
+          },
+          "geaccordeerdOp": {
+            "description": "Property geaccordeerdOp",
+            "type": "string"
+          },
+          "geexporteerd": {
+            "description": "Property geexporteerd",
+            "type": "string"
+          },
+          "gemuteerdDoor": {
+            "description": "Property gemuteerdDoor",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "totaalbedrag": {
+            "description": "Property totaalbedrag",
+            "type": "string"
+          },
+          "totaalbedragInclusief": {
+            "description": "Property totaalbedragInclusief",
+            "type": "string"
+          },
+          "vorderingnummer": {
+            "description": "Property vorderingnummer",
+            "type": "string"
+          }
+        }
+      },
+      "Mailing": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Mailing",
+        "description": "Represents a Mailing in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Onderwijsloopbaan": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Onderwijsloopbaan",
+        "description": "Represents a Onderwijsloopbaan in the system",
+        "properties": {}
+      },
+      "Balieverkoop": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Balieverkoop",
+        "description": "Represents a Balieverkoop in the system",
+        "properties": {
+          "aantal": {
+            "description": "Property aantal",
+            "type": "string"
+          },
+          "kanaal": {
+            "description": "Property kanaal",
+            "type": "string"
+          },
+          "verkooptijd": {
+            "description": "Property verkooptijd",
+            "type": "string"
+          }
+        }
+      },
+      "AanwezigeDeelnemer": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "AanwezigeDeelnemer",
+        "description": "Represents a AanwezigeDeelnemer in the system",
+        "properties": {
+          "aanvangAanwezigheid": {
+            "description": "Property aanvangAanwezigheid",
+            "type": "string"
+          },
+          "eindeAanwezigheid": {
+            "description": "Property eindeAanwezigheid",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "rol": {
+            "description": "Property rol",
+            "type": "string"
+          },
+          "vertegenwoordigtOrganisatie": {
+            "description": "Property vertegenwoordigtOrganisatie",
+            "type": "string"
+          }
+        }
+      },
+      "Agendapunt": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Agendapunt",
+        "description": "Represents a Agendapunt in the system",
+        "properties": {
+          "nummer": {
+            "description": "Property nummer",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "titel": {
+            "description": "Property titel",
+            "type": "string"
+          }
+        }
+      },
+      "Zaal": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Zaal",
+        "description": "Represents a Zaal in the system",
+        "properties": {
+          "capaciteit": {
+            "description": "Property capaciteit",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "nummer": {
+            "description": "Property nummer",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Huishouden": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Huishouden",
+        "description": "Represents a Huishouden in the system",
+        "properties": {
+          "datumBeginGeldigheidHuishouden": {
+            "description": "Property datumBeginGeldigheidHuishouden",
+            "type": "string"
+          },
+          "datumEindeGeldigheidHuishouden": {
+            "description": "Property datumEindeGeldigheidHuishouden",
+            "type": "string"
+          },
+          "huishoudengrootte": {
+            "description": "Property huishoudengrootte",
+            "type": "string"
+          },
+          "huishoudennummer": {
+            "description": "Property huishoudennummer",
+            "type": "string"
+          },
+          "huishoudensoort": {
+            "description": "Property huishoudensoort",
+            "type": "string"
+          },
+          "relatie": {
+            "description": "Property relatie",
+            "type": "string"
+          }
+        }
+      },
+      "Veld": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Veld",
+        "description": "Represents a Veld in the system",
+        "properties": {}
+      },
+      "Inschrijving": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Inschrijving",
+        "description": "Represents a Inschrijving in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "prijs": {
+            "description": "Property prijs",
+            "type": "string"
+          },
+          "score": {
+            "description": "Property score",
+            "type": "string"
+          }
+        }
+      },
+      "VerzoekOmToewijzing": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "VerzoekOmToewijzing",
+        "description": "Represents a VerzoekOmToewijzing in the system",
+        "properties": {
+          "beschikkingsnummer": {
+            "description": "Property beschikkingsnummer",
+            "type": "string"
+          },
+          "commentaar": {
+            "description": "Property commentaar",
+            "type": "string"
+          },
+          "datumEindeToewijzing": {
+            "description": "Property datumEindeToewijzing",
+            "type": "string"
+          },
+          "datumIngangBeschikking": {
+            "description": "Property datumIngangBeschikking",
+            "type": "string"
+          },
+          "datumIngangToewijzing": {
+            "description": "Property datumIngangToewijzing",
+            "type": "string"
+          },
+          "datumOntvangst": {
+            "description": "Property datumOntvangst",
+            "type": "string"
+          },
+          "eenheid": {
+            "description": "Property eenheid",
+            "type": "string"
+          },
+          "frequentie": {
+            "description": "Property frequentie",
+            "type": "string"
+          },
+          "raamcontract": {
+            "description": "Property raamcontract",
+            "type": "string"
+          },
+          "referentieAanbieder": {
+            "description": "Property referentieAanbieder",
+            "type": "string"
+          },
+          "soortVerwijzer": {
+            "description": "Property soortVerwijzer",
+            "type": "string"
+          },
+          "verwijzer": {
+            "description": "Property verwijzer",
+            "type": "string"
+          },
+          "volume": {
+            "description": "Property volume",
+            "type": "string"
+          }
+        }
+      },
+      "Budgetuitputting": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Budgetuitputting",
+        "description": "Represents a Budgetuitputting in the system",
+        "properties": {
+          "datum": {
+            "description": "Property datum",
+            "type": "string"
+          },
+          "uitgenutBedrag": {
+            "description": "Property uitgenutBedrag",
+            "type": "string"
+          }
+        }
+      },
+      "Vervoerder": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Vervoerder",
+        "description": "Represents a Vervoerder in the system",
+        "properties": {}
+      },
+      "Auteur": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Auteur",
+        "description": "Represents a Auteur in the system",
+        "properties": {
+          "datumGeboorte": {
+            "description": "Property datumGeboorte",
+            "type": "string"
+          },
+          "datumOverlijden": {
+            "description": "Property datumOverlijden",
+            "type": "string"
+          }
+        }
+      },
+      "Declaratie": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Declaratie",
+        "description": "Represents a Declaratie in the system",
+        "properties": {
+          "bedrag": {
+            "description": "Property bedrag",
+            "type": "string"
+          },
+          "betreft": {
+            "description": "Property betreft",
+            "type": "string"
+          },
+          "datumDeclaratie": {
+            "description": "Property datumDeclaratie",
+            "type": "string"
+          },
+          "datumIndiening": {
+            "description": "Property datumIndiening",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "Proxyconnector": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Proxyconnector",
+        "description": "Represents a Proxyconnector in the system",
+        "properties": {}
+      },
+      "Project": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Project",
+        "description": "Represents a Project in the system",
+        "properties": {}
+      },
+      "Kosten": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Kosten",
+        "description": "Represents a Kosten in the system",
+        "properties": {
+          "aangemaaktDoor": {
+            "description": "Property aangemaaktDoor",
+            "type": "string"
+          },
+          "aantal": {
+            "description": "Property aantal",
+            "type": "string"
+          },
+          "bedrag": {
+            "description": "Property bedrag",
+            "type": "string"
+          },
+          "bedragTotaal": {
+            "description": "Property bedragTotaal",
+            "type": "string"
+          },
+          "datumAanmaak": {
+            "description": "Property datumAanmaak",
+            "type": "string"
+          },
+          "datumMutatie": {
+            "description": "Property datumMutatie",
+            "type": "string"
+          },
+          "eenheid": {
+            "description": "Property eenheid",
+            "type": "string"
+          },
+          "geaccordeerd": {
+            "description": "Property geaccordeerd",
+            "type": "string"
+          },
+          "gefactureerdOp": {
+            "description": "Property gefactureerdOp",
+            "type": "string"
+          },
+          "gemuteerdDoor": {
+            "description": "Property gemuteerdDoor",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "opBasisVanGrondslag": {
+            "description": "Property opBasisVanGrondslag",
+            "type": "string"
+          },
+          "tarief": {
+            "description": "Property tarief",
+            "type": "string"
+          },
+          "type": {
+            "description": "Property type",
+            "type": "string"
+          },
+          "vastgesteldBedrag": {
+            "description": "Property vastgesteldBedrag",
+            "type": "string"
+          }
+        }
+      },
+      "BalieverkoopEntreekaart": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "BalieverkoopEntreekaart",
+        "description": "Represents a BalieverkoopEntreekaart in the system",
+        "properties": {
+          "datumEindeGeldigheid": {
+            "description": "Property datumEindeGeldigheid",
+            "type": "string"
+          },
+          "datumStart": {
+            "description": "Property datumStart",
+            "type": "string"
+          },
+          "gebruiktOp": {
+            "description": "Property gebruiktOp",
+            "type": "string"
+          },
+          "rondleiding": {
+            "description": "Property rondleiding",
+            "type": "string"
+          }
+        }
+      },
+      "Belprovider": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Belprovider",
+        "description": "Represents a Belprovider in the system",
+        "properties": {
+          "code": {
+            "description": "Property code",
+            "type": "string"
+          }
+        }
+      },
+      "Bezetting": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Bezetting",
+        "description": "Represents a Bezetting in the system",
+        "properties": {}
+      },
+      "Sportmateriaal": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Sportmateriaal",
+        "description": "Represents a Sportmateriaal in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          }
+        }
+      },
+      "Beperking": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Beperking",
+        "description": "Represents a Beperking in the system",
+        "properties": {
+          "categorie": {
+            "description": "Property categorie",
+            "type": "string"
+          },
+          "commentaar": {
+            "description": "Property commentaar",
+            "type": "string"
+          },
+          "duur": {
+            "description": "Property duur",
+            "type": "string"
+          },
+          "wet": {
+            "description": "Property wet",
+            "type": "string"
+          }
+        }
+      },
+      "AOMMeldingWMOJeugd": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "AOMMeldingWMOJeugd",
+        "description": "Represents a AOMMeldingWMOJeugd in the system",
+        "properties": {
+          "aanmelder": {
+            "description": "Property aanmelder",
+            "type": "string"
+          },
+          "aanmeldingDoor": {
+            "description": "Property aanmeldingDoor",
+            "type": "string"
+          },
+          "aanmeldingDoorLandelijk": {
+            "description": "Property aanmeldingDoorLandelijk",
+            "type": "string"
+          },
+          "aanmeldwijze": {
+            "description": "Property aanmeldwijze",
+            "type": "string"
+          },
+          "deskundigheid": {
+            "description": "Property deskundigheid",
+            "type": "string"
+          },
+          "isClientOpDeHoogte": {
+            "description": "Property isClientOpDeHoogte",
+            "type": "string"
+          },
+          "onderzoekswijze": {
+            "description": "Property onderzoekswijze",
+            "type": "string"
+          },
+          "redenAfsluiting": {
+            "description": "Property redenAfsluiting",
+            "type": "string"
+          },
+          "vervolg": {
+            "description": "Property vervolg",
+            "type": "string"
+          },
+          "verwezen": {
+            "description": "Property verwezen",
+            "type": "string"
+          }
+        }
+      },
+      "Activiteitsoort": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Activiteitsoort",
+        "description": "Represents a Activiteitsoort in the system",
+        "properties": {
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          }
+        }
+      },
+      "MagazijnPlaatsing": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "MagazijnPlaatsing",
+        "description": "Represents a MagazijnPlaatsing in the system",
+        "properties": {
+          "beschrijving": {
+            "description": "Property beschrijving",
+            "type": "string"
+          },
+          "datumGeplaatst": {
+            "description": "Property datumGeplaatst",
+            "type": "string"
+          },
+          "herkomst": {
+            "description": "Property herkomst",
+            "type": "string"
+          },
+          "key": {
+            "description": "Property key",
+            "type": "string"
+          },
+          "keyDoos": {
+            "description": "Property keyDoos",
+            "type": "string"
+          },
+          "keyMagazijnlocatie": {
+            "description": "Property keyMagazijnlocatie",
+            "type": "string"
+          },
+          "projectCD": {
+            "description": "Property projectCD",
+            "type": "string"
+          },
+          "uitgeleend": {
+            "description": "Property uitgeleend",
+            "type": "string"
+          }
+        }
+      },
+      "Rondleiding": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Rondleiding",
+        "description": "Represents a Rondleiding in the system",
+        "properties": {
+          "eindtijd": {
+            "description": "Property eindtijd",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "starttijd": {
+            "description": "Property starttijd",
+            "type": "string"
+          }
+        }
+      },
+      "HistorischPersoon": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "HistorischPersoon",
+        "description": "Represents a HistorischPersoon in the system",
+        "properties": {
+          "beroep": {
+            "description": "Property beroep",
+            "type": "string"
+          },
+          "datumGeboorte": {
+            "description": "Property datumGeboorte",
+            "type": "string"
+          },
+          "datumOverlijden": {
+            "description": "Property datumOverlijden",
+            "type": "string"
+          },
+          "naam": {
+            "description": "Property naam",
+            "type": "string"
+          },
+          "omschrijving": {
+            "description": "Property omschrijving",
+            "type": "string"
+          },
+          "publiekToegankelijk": {
+            "description": "Property publiekToegankelijk",
+            "type": "string"
+          },
+          "woondeOp": {
+            "description": "Property woondeOp",
+            "type": "string"
+          }
+        }
+      }
+    }
   }
 }
