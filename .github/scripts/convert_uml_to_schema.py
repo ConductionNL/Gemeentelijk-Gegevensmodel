@@ -79,22 +79,43 @@ class UMLConverter:
             with open(file_path, 'r', encoding='windows-1252') as file:
                 return file.read()
 
-    def _sanitize_filename(self, name: str) -> str:
-        """Sanitize a filename to be valid on all platforms.
+    def _sanitize_filename(self, filename: str) -> str:
+        """
+        Sanitize a filename by removing invalid characters and replacing spaces with underscores.
         
         Args:
-            name: The filename to sanitize
+            filename: The filename to sanitize
             
         Returns:
-            A sanitized filename
+            The sanitized filename
         """
-        # Replace spaces and special characters with underscores
-        name = re.sub(r'[^\w\-_.]', '_', name)
-        # Remove leading/trailing whitespace and newlines
-        name = name.strip()
-        # Convert to lowercase for consistency
-        name = name.lower()
-        return name
+        # First normalize any newlines to spaces
+        filename = filename.replace('\n', ' ').replace('\r', ' ')
+        
+        # Remove any backslashes or forward slashes
+        filename = filename.replace('\\', '_').replace('/', '_')
+        
+        # Replace any other non-alphanumeric characters with underscores
+        filename = re.sub(r'[^a-zA-Z0-9]', '_', filename)
+        
+        # Remove multiple consecutive underscores
+        filename = re.sub(r'_+', '_', filename)
+        
+        # Remove leading/trailing underscores and whitespace
+        filename = filename.strip('_ ')
+        
+        # Convert to lowercase
+        filename = filename.lower()
+        
+        # Limit filename length to 100 characters
+        if len(filename) > 100:
+            filename = filename[:100]
+        
+        # Ensure the filename is not empty
+        if not filename:
+            filename = 'unnamed'
+        
+        return filename
 
     def process_xmi_file(self, file_path: Path) -> None:
         """Process an XMI file and generate JSON Schema files.
@@ -103,16 +124,28 @@ class UMLConverter:
             file_path: Path to the XMI file
         """
         try:
-            logging.info(f"Processing file: {file_path}")
-            
             # Read and parse the file
             content = self.read_file_with_encoding(file_path)
             if not content:
                 return
             
-            # Parse XML
-            tree = ET.parse(io.StringIO(content))
-            root = tree.getroot()
+            # Try to parse XML with error handling
+            try:
+                # First try with ElementTree
+                tree = ET.parse(io.StringIO(content))
+                root = tree.getroot()
+            except ET.ParseError as e:
+                # If ElementTree fails, try with xmltodict
+                try:
+                    xmi_data = xmltodict.parse(content)
+                    if 'xmi:XMI' in xmi_data:
+                        model = xmi_data['xmi:XMI'].get('uml:Model', {})
+                        if model and 'packagedElement' in model:
+                            self._process_package_elements(model['packagedElement'])
+                        return
+                except Exception as e:
+                    logging.error(f"Failed to parse XML file {file_path}: {str(e)}")
+                    return
             
             # Process each UML class
             for class_elem in root.findall('.//packagedElement[@xmi:type="uml:Class"]', self.namespaces):
@@ -125,7 +158,6 @@ class UMLConverter:
                     schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
                     with open(schema_file, 'w', encoding='utf-8') as f:
                         json.dump(schema, f, indent=2, ensure_ascii=False)
-                    logging.info(f"Generated schema for class: {name}")
             
             # Process each UML component
             for component in root.findall('.//packagedElement[@xmi:type="uml:Component"]', self.namespaces):
@@ -138,7 +170,6 @@ class UMLConverter:
                     schema_file = self.schema_folder / f"{self._sanitize_filename(name)}.json"
                     with open(schema_file, 'w', encoding='utf-8') as f:
                         json.dump(schema, f, indent=2, ensure_ascii=False)
-                    logging.info(f"Generated schema for component: {name}")
             
         except Exception as e:
             logging.error(f"Error processing file {file_path}: {str(e)}")
@@ -273,6 +304,40 @@ class UMLConverter:
         
         return prop_def
 
+    def _get_tagged_values(self, element: Union[ET.Element, dict]) -> Dict[str, str]:
+        """Extract tagged values from a UML element.
+        
+        Args:
+            element: The UML element or dictionary
+            
+        Returns:
+            Dictionary of tagged values
+        """
+        tagged_values = {}
+        
+        if isinstance(element, dict):
+            # Handle dictionary format
+            if 'taggedValue' in element:
+                tagged_values_elem = element['taggedValue']
+                if not isinstance(tagged_values_elem, list):
+                    tagged_values_elem = [tagged_values_elem]
+                
+                for tv in tagged_values_elem:
+                    if isinstance(tv, dict):
+                        key = tv.get('@key', '')
+                        value = tv.get('@value', '')
+                        if key and value:
+                            tagged_values[key] = value
+        else:
+            # Handle ElementTree format
+            for tv in element.findall('.//taggedValue', self.namespaces):
+                key = tv.get('key', '')
+                value = tv.get('value', '')
+                if key and value:
+                    tagged_values[key] = value
+        
+        return tagged_values
+
     def _convert_class_to_schema(self, class_elem: Union[ET.Element, dict]) -> Dict[str, Any]:
         """Convert a UML class to a JSON Schema.
         
@@ -311,6 +376,12 @@ class UMLConverter:
             
             if attr_name:
                 prop_def = self._create_property_definition(attr, class_elem)
+                
+                # Add tagged values for the attribute
+                attr_tagged_values = self._get_tagged_values(attr)
+                if attr_tagged_values:
+                    prop_def['x-uml-tagged-value'] = attr_tagged_values
+                
                 properties[attr_name] = prop_def
                 
                 # Check if property is required
@@ -334,6 +405,11 @@ class UMLConverter:
         # Add required fields if any
         if required:
             schema['required'] = required
+        
+        # Add class-level tagged values
+        class_tagged_values = self._get_tagged_values(class_elem)
+        if class_tagged_values:
+            schema['x-uml-tagged-value'] = class_tagged_values
         
         return schema
 
@@ -392,9 +468,16 @@ def main():
         if not xml_files:
             logging.error(f"No XML files found in {version_folder}")
             sys.exit(1)
-            
-        for xml_file in xml_files:
-            converter.process_xmi_file(xml_file)
+        
+        # Create progress bar for files
+        with tqdm(total=len(xml_files), desc="Processing files", unit="file") as pbar:
+            for xml_file in xml_files:
+                try:
+                    converter.process_xmi_file(xml_file)
+                except Exception as e:
+                    logging.error(f"Failed to process {xml_file}: {str(e)}")
+                finally:
+                    pbar.update(1)
             
         converter.save_schemas()
         logging.info("Conversion completed successfully")
