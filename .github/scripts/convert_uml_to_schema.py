@@ -365,8 +365,12 @@ def main():
     """
     Main entry point for the UML to JSON Schema converter.
     """
-    # Get version folder from command line argument or use default
-    version_folder = sys.argv[1] if len(sys.argv) > 1 else "v2.2.0"
+    # Get version folder from command line argument
+    if len(sys.argv) > 1:
+        version_folder = sys.argv[1]
+    else:
+        logging.error("No version folder specified")
+        sys.exit(1)
     
     try:
         converter = UMLConverter(version_folder)
