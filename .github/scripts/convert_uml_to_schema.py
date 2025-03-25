@@ -80,11 +80,16 @@ class UMLConverter:
             str: A sanitized version of the filename that is safe to use
         """
         # Replace various special characters with underscores
-        sanitized = re.sub(r'[/\\?*"|<>:\n\r]', '_', name)
+        sanitized = re.sub(r'[/\\?*"|<>:\n\r]', '', name)
         # Replace spaces with hyphens
         sanitized = re.sub(r'\s+', '-', sanitized)
         # Remove any other non-alphanumeric characters except hyphens and underscores
         sanitized = re.sub(r'[^a-zA-Z0-9\-_]', '', sanitized)
+        # Remove all dots
+        sanitized = sanitized.replace('.', '')
+        # Strip leading and trailing question marks
+        sanitized = sanitized.replace('?', '')
+        
         # Ensure the filename is not empty
         if not sanitized:
             sanitized = "unnamed"
