@@ -34,7 +34,7 @@ jobs:
           pip install xmltodict pyyaml json-schema-generator chardet tqdm
 
       - name: Run conversion script
-        run: python .github/scripts/convert_uml_to_schema.py ${{ inputs.version }}
+        run: python .github/scripts/convert_uml_to_schema.py ${{ github.event.inputs.version || 'v2.2.0' }}
         continue-on-error: true  # Continue even if this step fails
 
       - name: Commit changes
@@ -65,7 +65,7 @@ jobs:
           pip install pyyaml
 
       - name: Generate OpenAPI spec
-        run: python .github/scripts/generate_openapi.py ${{ inputs.version }}
+        run: python .github/scripts/generate_openapi.py ${{ github.event.inputs.version || 'v2.2.0' }}
 
       - name: Commit changes
         run: |
