@@ -89,6 +89,8 @@ class UMLConverter:
         sanitized = sanitized.replace('.', '')
         # Strip leading and trailing question marks
         sanitized = sanitized.replace('?', '')
+        # Remove all HTML special characters
+        sanitized = re.sub(r'&[a-zA-Z0-9#]+;', '', sanitized)
         
         # Ensure the filename is not empty
         if not sanitized:
