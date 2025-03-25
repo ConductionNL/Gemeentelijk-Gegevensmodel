@@ -12,20 +12,22 @@ You can view the documentation for different versions here:
 
 ### Understanding the Output
 
-The workflow generates two types of files:
+The workflow processes files in two stages:
 
-1. **JSON Schema Files**: These are individual `.json` files for each UML class, containing:
+1. **JSON Schema Generation**: First, individual `.json` files are created for each UML class, containing:
    - The structure and validation rules for the data
    - Property definitions and types
    - Required fields
    - Metadata and documentation
    - Labels for categorization
 
-2. **OpenAPI Specification**: The `openapi.json` file combines all schemas into a single API specification:
+2. **OpenAPI Specification**: Then, all schemas are combined into a single `openapi.json` file:
    - References all individual schemas
    - Provides API endpoints documentation
    - Includes metadata and tags
    - Powers the Redocly documentation interface
+
+After the OpenAPI specification is generated, the individual schema files are automatically removed to keep the repository clean. Only the final `openapi.json` file is retained in the `schemas` folder.
 
 ## What it does
 
@@ -196,9 +198,9 @@ project_root/
 
 The workflow generates:
 
-1. JSON Schema files for each UML class
-2. An OpenAPI specification referencing all schemas
-3. All files are stored in a `schemas` subfolder within the version folder
+1. An OpenAPI specification (`openapi.json`) that contains all schema definitions
+2. The file is stored in the `schemas` subfolder within the version folder
+3. Individual schema files are temporarily generated but removed after being incorporated into the OpenAPI specification
 
 ## Error Handling
 

@@ -100,6 +100,19 @@ class OpenAPIGenerator:
         except Exception as e:
             logging.error(f"Error saving OpenAPI spec: {str(e)}")
 
+    def cleanup_schema_files(self) -> None:
+        """
+        Remove individual schema files after they have been incorporated into the OpenAPI spec.
+        Keeps only the openapi.json file.
+        """
+        try:
+            for schema_file in self.schema_folder.glob("*.json"):
+                if schema_file.name != "openapi.json":
+                    schema_file.unlink()
+                    logging.info(f"Removed schema file: {schema_file}")
+        except Exception as e:
+            logging.error(f"Error cleaning up schema files: {str(e)}")
+
 def main():
     """
     Main entry point for the OpenAPI spec generator.
@@ -121,6 +134,7 @@ def main():
             
         spec = generator.generate_openapi_spec()
         generator.save_openapi_spec(spec)
+        generator.cleanup_schema_files()
         logging.info("OpenAPI spec generation completed successfully")
         
     except Exception as e:
