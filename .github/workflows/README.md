@@ -7,8 +7,8 @@ This workflow automatically converts UML/XMI files to JSON Schema format and gen
 The generated schemas and OpenAPI specifications are automatically documented using Redocly. Redocly is a powerful documentation tool that creates beautiful, interactive API documentation from OpenAPI specifications.
 
 You can view the documentation for different versions here:
-- [Version 2.1.0](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/Gemeentelijk-Gegevensmodel/refs/heads/master/v2.1.0/schemas/openapi.json)
-- [Version 2.2.0](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/Gemeentelijk-Gegevensmodel/refs/heads/master/v2.2.0/schemas/openapi.json)
+- [Version 2.1.0](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/Gemeentelijk-Gegevensmodel/refs/heads/master/v2.1.0/schemas/openapi.json&nocors)
+- [Version 2.2.0](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/Gemeentelijk-Gegevensmodel/refs/heads/master/v2.2.0/schemas/openapi.json&nocors#tag/schemas)
 
 ### Understanding the Output
 
