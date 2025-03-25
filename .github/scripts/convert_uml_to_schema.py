@@ -239,7 +239,7 @@ class UMLConverter:
             "description": f"Schema for {class_name}",
             "properties": {},
             "required": [],
-            "tags": ["schemas"]
+            "x-tags": ["schemas"]
         }
         
         # Process attributes
