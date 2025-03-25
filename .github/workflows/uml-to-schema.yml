@@ -37,40 +37,13 @@ jobs:
         run: python .github/scripts/convert_uml_to_schema.py ${{ github.event.inputs.version || 'v2.2.0' }}
         continue-on-error: true  # Continue even if this step fails
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add v*/schemas/
-          git commit -m "Update JSON Schemas" || echo "No changes to commit"
-          git push 
-
-
-  generate-openapi:
-    needs: convert  # Run after convert job, even if it failed
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pyyaml
-
       - name: Generate OpenAPI spec
         run: python .github/scripts/generate_openapi.py ${{ github.event.inputs.version || 'v2.2.0' }}
-
+        
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add v*/schemas/
-          git commit -m "Update OpenAPI spec" || echo "No changes to commit"
+          git commit -m "Update JSON Schemas and OpenAPI spec" || echo "No changes to commit"
           git push 

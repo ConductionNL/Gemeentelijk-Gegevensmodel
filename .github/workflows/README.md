@@ -2,6 +2,31 @@
 
 This workflow automatically converts UML/XMI files to JSON Schema format and generates an OpenAPI specification. It's designed to work with the Gemeentelijk Gegevensmodel (GGM) project's version-based structure and serves as a method to get the objects ready for import in overige objecten or [open register](openregister.app).
 
+## Documentation
+
+The generated schemas and OpenAPI specifications are automatically documented using Redocly. Redocly is a powerful documentation tool that creates beautiful, interactive API documentation from OpenAPI specifications.
+
+You can view the documentation for different versions here:
+- [Version 2.1.0](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/Gemeentelijk-Gegevensmodel/refs/heads/master/v2.1.0/schemas/openapi.json)
+- [Version 2.2.0](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/ConductionNL/Gemeentelijk-Gegevensmodel/refs/heads/master/v2.2.0/schemas/openapi.json)
+
+### Understanding the Output
+
+The workflow generates two types of files:
+
+1. **JSON Schema Files**: These are individual `.json` files for each UML class, containing:
+   - The structure and validation rules for the data
+   - Property definitions and types
+   - Required fields
+   - Metadata and documentation
+   - Labels for categorization
+
+2. **OpenAPI Specification**: The `openapi.json` file combines all schemas into a single API specification:
+   - References all individual schemas
+   - Provides API endpoints documentation
+   - Includes metadata and tags
+   - Powers the Redocly documentation interface
+
 ## What it does
 
 1. Monitors changes to the master branch
