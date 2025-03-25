@@ -98,7 +98,7 @@ The converter processes UML classes in the following way:
    - Converts them to JSON Schema format
    - Generates an OpenAPI specification
    - Saves all files in the schemas subfolder
-4. The workflow has a 25-minute timeout to prevent infinite runs
+4. The workflow has a 5-minute timeout to prevent infinite runs
 
 ## UML Tagged Values
 
@@ -181,7 +181,7 @@ The workflow generates:
 - It will skip invalid XML files
 - It logs all conversions and errors
 - If no changes are detected, the commit step is skipped
-- The workflow will timeout after 25 minutes to prevent infinite runs
+- The workflow will timeout after 5 minutes to prevent infinite runs
 
 ## Dependencies
 

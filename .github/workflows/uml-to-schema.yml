@@ -17,7 +17,7 @@ on:
 jobs:
   convert:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 5
     continue-on-error: true  # Continue even if this job fails
 
     steps:
@@ -42,7 +42,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add v*/schemas/
-          git commit -m "Update JSON Schemas and OpenAPI spec" || echo "No changes to commit"
+          git commit -m "Update JSON Schemas" || echo "No changes to commit"
           git push 
 
 
@@ -72,5 +72,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add v*/schemas/
-          git commit -m "Update JSON Schemas and OpenAPI spec" || echo "No changes to commit"
+          git commit -m "Update OpenAPI spec" || echo "No changes to commit"
           git push 
