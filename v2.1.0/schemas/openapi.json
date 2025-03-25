@@ -172,6 +172,39 @@
           }
         }
       },
+      "Kp_classA_classC": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Kp_classA_classC",
+        "description": "Represents a Kp_classA_classC in the system",
+        "properties": {
+          "M_Bronsysteem": {
+            "description": "Property M_Bronsysteem",
+            "type": "string"
+          },
+          "M_DatumTijdGeladen": {
+            "description": "Property M_DatumTijdGeladen",
+            "type": "string",
+            "format": "date-time"
+          },
+          "ClassCID": {
+            "description": "Property ClassCID",
+            "type": "string"
+          },
+          "ClassAID": {
+            "description": "Property ClassAID",
+            "type": "string"
+          },
+          "PK_ClassA": {
+            "description": "Property PK_ClassA",
+            "type": "string"
+          },
+          "PK_ClassC": {
+            "description": "Property PK_ClassC",
+            "type": "string"
+          }
+        }
+      },
       "SoortWOZObject": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -1134,6 +1167,13 @@
             "type": "string"
           }
         }
+      },
+      "Gezinsmigrant en Overige migrant": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Gezinsmigrant en Overige migrant",
+        "description": "Represents a Gezinsmigrant en Overige migrant in the system",
+        "properties": {}
       },
       "Ligplaats": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -2759,6 +2799,42 @@
         "description": "Represents a Class H in the system",
         "properties": {}
       },
+      "OntbindingHuwelijk/geregistreerdPartnerschap": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "OntbindingHuwelijk/geregistreerdPartnerschap",
+        "description": "Represents a OntbindingHuwelijk/geregistreerdPartnerschap in the system",
+        "properties": {
+          "buitenlandsePlaatsEinde": {
+            "description": "Property buitenlandsePlaatsEinde",
+            "type": "string"
+          },
+          "buitenlandseRegioEinde": {
+            "description": "Property buitenlandseRegioEinde",
+            "type": "string"
+          },
+          "datumEinde": {
+            "description": "Property datumEinde",
+            "type": "string"
+          },
+          "gemeenteEinde": {
+            "description": "Property gemeenteEinde",
+            "type": "string"
+          },
+          "landOfGebiedEinde": {
+            "description": "Property landOfGebiedEinde",
+            "type": "string"
+          },
+          "omschrijvingLocatieEinde": {
+            "description": "Property omschrijvingLocatieEinde",
+            "type": "string"
+          },
+          "redenEinde": {
+            "description": "Property redenEinde",
+            "type": "string"
+          }
+        }
+      },
       "Aankondiging": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -3891,6 +3967,13 @@
             "type": "string"
           }
         }
+      },
+      "Deelplan/Veld": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Deelplan/Veld",
+        "description": "Represents a Deelplan/Veld in the system",
+        "properties": {}
       },
       "Examen": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -5121,6 +5204,57 @@
           },
           "wijzeVanAanbesteden": {
             "description": "Property wijzeVanAanbesteden",
+            "type": "string"
+          }
+        }
+      },
+      "Lst_class1": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "title": "Lst_class1",
+        "description": "Represents a Lst_class1 in the system",
+        "properties": {
+          "Waarde": {
+            "description": "Property Waarde",
+            "type": "string"
+          },
+          "DWH_RECORD_ID": {
+            "description": "Property DWH_RECORD_ID",
+            "type": "string"
+          },
+          "DWH_ODS_RECORD_ID": {
+            "description": "Property DWH_ODS_RECORD_ID",
+            "type": "string"
+          },
+          "DWH_START_DT": {
+            "description": "Property DWH_START_DT",
+            "type": "string",
+            "format": "date"
+          },
+          "DWH_EIND_DT": {
+            "description": "Property DWH_EIND_DT",
+            "type": "string",
+            "format": "date"
+          },
+          "DWH_RUN_ID": {
+            "description": "Property DWH_RUN_ID",
+            "type": "string"
+          },
+          "DWH_BRON": {
+            "description": "Property DWH_BRON",
+            "type": "string"
+          },
+          "DWH_LAAD_DT": {
+            "description": "Property DWH_LAAD_DT",
+            "type": "string",
+            "format": "date"
+          },
+          "DWH_ACTUEEL": {
+            "description": "Property DWH_ACTUEEL",
+            "type": "string"
+          },
+          "Lst_class1ID": {
+            "description": "Property Lst_class1ID",
             "type": "string"
           }
         }
@@ -8318,57 +8452,6 @@
         "description": "Represents a Licentie in the system",
         "properties": {}
       },
-      "Lst_class1": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "title": "Lst_class1",
-        "description": "Represents a Lst_class1 in the system",
-        "properties": {
-          "Waarde": {
-            "description": "Property Waarde",
-            "type": "string"
-          },
-          "DWH_RECORD_ID": {
-            "description": "Property DWH_RECORD_ID",
-            "type": "string"
-          },
-          "DWH_ODS_RECORD_ID": {
-            "description": "Property DWH_ODS_RECORD_ID",
-            "type": "string"
-          },
-          "DWH_START_DT": {
-            "description": "Property DWH_START_DT",
-            "type": "string",
-            "format": "date"
-          },
-          "DWH_EIND_DT": {
-            "description": "Property DWH_EIND_DT",
-            "type": "string",
-            "format": "date"
-          },
-          "DWH_RUN_ID": {
-            "description": "Property DWH_RUN_ID",
-            "type": "string"
-          },
-          "DWH_BRON": {
-            "description": "Property DWH_BRON",
-            "type": "string"
-          },
-          "DWH_LAAD_DT": {
-            "description": "Property DWH_LAAD_DT",
-            "type": "string",
-            "format": "date"
-          },
-          "DWH_ACTUEEL": {
-            "description": "Property DWH_ACTUEEL",
-            "type": "string"
-          },
-          "Lst_class1ID": {
-            "description": "Property Lst_class1ID",
-            "type": "string"
-          }
-        }
-      },
       "KadastraleOnroerendeZaak": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -9290,39 +9373,6 @@
           }
         }
       },
-      "Kp_classA_classC": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "title": "Kp_classA_classC",
-        "description": "Represents a Kp_classA_classC in the system",
-        "properties": {
-          "M_Bronsysteem": {
-            "description": "Property M_Bronsysteem",
-            "type": "string"
-          },
-          "M_DatumTijdGeladen": {
-            "description": "Property M_DatumTijdGeladen",
-            "type": "string",
-            "format": "date-time"
-          },
-          "ClassCID": {
-            "description": "Property ClassCID",
-            "type": "string"
-          },
-          "ClassAID": {
-            "description": "Property ClassAID",
-            "type": "string"
-          },
-          "PK_ClassA": {
-            "description": "Property PK_ClassA",
-            "type": "string"
-          },
-          "PK_ClassC": {
-            "description": "Property PK_ClassC",
-            "type": "string"
-          }
-        }
-      },
       "Gebruiksdoel": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -9898,13 +9948,6 @@
             "type": "string"
           }
         }
-      },
-      "Deelplan/Veld": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "title": "Deelplan/Veld",
-        "description": "Represents a Deelplan/Veld in the system",
-        "properties": {}
       },
       "Taak": {
         "$schema": "http://json-schema.org/draft-07/schema#",
@@ -13144,42 +13187,6 @@
           },
           "registratienummer": {
             "description": "Property registratienummer",
-            "type": "string"
-          }
-        }
-      },
-      "OntbindingHuwelijk/geregistreerdPartnerschap": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "title": "OntbindingHuwelijk/geregistreerdPartnerschap",
-        "description": "Represents a OntbindingHuwelijk/geregistreerdPartnerschap in the system",
-        "properties": {
-          "buitenlandsePlaatsEinde": {
-            "description": "Property buitenlandsePlaatsEinde",
-            "type": "string"
-          },
-          "buitenlandseRegioEinde": {
-            "description": "Property buitenlandseRegioEinde",
-            "type": "string"
-          },
-          "datumEinde": {
-            "description": "Property datumEinde",
-            "type": "string"
-          },
-          "gemeenteEinde": {
-            "description": "Property gemeenteEinde",
-            "type": "string"
-          },
-          "landOfGebiedEinde": {
-            "description": "Property landOfGebiedEinde",
-            "type": "string"
-          },
-          "omschrijvingLocatieEinde": {
-            "description": "Property omschrijvingLocatieEinde",
-            "type": "string"
-          },
-          "redenEinde": {
-            "description": "Property redenEinde",
             "type": "string"
           }
         }
@@ -19349,13 +19356,6 @@
         "type": "object",
         "title": "Bezetting",
         "description": "Represents a Bezetting in the system",
-        "properties": {}
-      },
-      "Gezinsmigrant en Overige migrant\n": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "type": "object",
-        "title": "Gezinsmigrant en Overige migrant\n",
-        "description": "Represents a Gezinsmigrant en Overige migrant\n in the system",
         "properties": {}
       },
       "Sportmateriaal": {
