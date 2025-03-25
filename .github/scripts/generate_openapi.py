@@ -77,7 +77,7 @@ class OpenAPIGenerator:
             },
             "tags": [
                 {
-                    "name": "schemas",
+                    "name": "Schemas",
                     "description": "All schema definitions from the Gemeentelijk Gegevensmodel"
                 }
             ]

@@ -239,7 +239,7 @@ class UMLConverter:
             "description": f"Schema for {class_name}",
             "properties": {},
             "required": [],
-            "x-tags": ["schemas"]
+            "x-tags": ["Schemas"]
         }
         
         # Process attributes
@@ -257,9 +257,9 @@ class UMLConverter:
                         schema['required'].append(property_name)
         
         # Add tagged values as metadata
-        tagged_values = self._get_tagged_values(uml_class)
-        if tagged_values:
-            schema['metadata'].update(tagged_values)
+        #tagged_values = self._get_tagged_values(uml_class)
+        #if tagged_values:
+        #    schema['metadata'].update(tagged_values)
         
         return class_name, schema
 
@@ -331,7 +331,7 @@ class UMLConverter:
 
     def generate_openapi_spec(self) -> dict:
         """
-        Generate OpenAPI specification from the converted schemas.
+        Generate OpenAPI specification from the loaded schemas.
 
         Returns:
             dict: OpenAPI specification
@@ -346,7 +346,13 @@ class UMLConverter:
             "paths": {},
             "components": {
                 "schemas": self.schemas
-            }
+            },
+            "tags": [
+                {
+                    "name": "Schemas",
+                    "description": "All schema definitions from the Gemeentelijk Gegevensmodel"
+                }
+            ]
         }
         
         return spec
