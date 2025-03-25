@@ -71,40 +71,24 @@ class UMLConverter:
 
     def _sanitize_filename(self, name: str) -> str:
         """
-        Sanitize a filename by replacing invalid characters.
+        Sanitize a string to be used as a filename.
         
         Args:
-            name: The original filename
+            name (str): The original filename
             
         Returns:
-            A sanitized filename that is valid on all operating systems
+            str: A sanitized version of the filename that is safe to use
         """
-        # Replace newlines and other whitespace with underscores
-        name = re.sub(r'\s+', '_', name)
-        
-        # Replace slashes and backslashes with underscores
-        name = re.sub(r'[/\\]', '_', name)
-        
-        # Replace any other special characters with underscores
-        name = re.sub(r'[^a-zA-Z0-9_-]', '_', name)
-        
-        # Remove multiple consecutive underscores
-        name = re.sub(r'_+', '_', name)
-        
-        # Trim leading and trailing underscores
-        name = name.strip('_')
-        
-        # Convert to lowercase
-        name = name.lower()
-        
-        # Limit length to 100 characters
-        name = name[:100]
-        
-        # Use 'unnamed' as fallback for empty names
-        if not name:
-            name = 'unnamed'
-            
-        return name
+        # Replace various special characters with underscores
+        sanitized = re.sub(r'[/\\?*"|<>:\n\r]', '_', name)
+        # Replace spaces with hyphens
+        sanitized = re.sub(r'\s+', '-', sanitized)
+        # Remove any other non-alphanumeric characters except hyphens and underscores
+        sanitized = re.sub(r'[^a-zA-Z0-9\-_]', '', sanitized)
+        # Ensure the filename is not empty
+        if not sanitized:
+            sanitized = "unnamed"
+        return sanitized
 
     def _get_tagged_values(self, element: Dict[str, Any]) -> Dict[str, str]:
         """
@@ -143,6 +127,26 @@ class UMLConverter:
             if isinstance(type_elem, dict):
                 return type_elem.get('@xmi:idref', 'string')
         return 'string'
+
+    def _is_required(self, attribute: Dict[str, Any]) -> bool:
+        """
+        Check if an attribute is required.
+        
+        Args:
+            attribute: Dictionary containing the UML attribute
+            
+        Returns:
+            bool: True if the attribute is required, False otherwise
+        """
+        # Check if explicitly marked as required
+        is_required = attribute.get('@isRequired', 'false').lower() == 'true'
+        
+        # Check lower bound
+        lower = attribute.get('@lower', '0')
+        if lower.isdigit() and int(lower) > 0:
+            is_required = True
+        
+        return is_required
 
     def _create_property_definition(self, attribute: Dict[str, Any]) -> Dict[str, Any]:
         """
@@ -202,66 +206,54 @@ class UMLConverter:
         
         return prop_def
 
-    def _convert_class_to_schema(self, class_elem: Dict[str, Any]) -> Dict[str, Any]:
+    def _convert_class_to_schema(self, uml_class: Dict[str, Any]) -> Tuple[str, Dict[str, Any]]:
         """
         Convert a UML class to a JSON Schema.
         
         Args:
-            class_elem: Dictionary containing the UML class
+            uml_class: The UML class element to convert
             
         Returns:
-            A JSON Schema representation of the class
+            A tuple of (class name, JSON Schema dict)
         """
-        # Get class name and documentation
-        name = class_elem.get('@name', '')
-        tagged_values = self._get_tagged_values(class_elem)
-        
-        # Create properties and track required fields
-        properties = {}
-        required = []
-        
-        # Process attributes
-        attributes = class_elem.get('ownedAttribute', [])
-        if not isinstance(attributes, list):
-            attributes = [attributes]
-            
-        for attribute in attributes:
-            if attribute.get('@xmi:type') == 'uml:Property':
-                attr_name = attribute.get('@name', '')
-                if attr_name:
-                    prop_def = self._create_property_definition(attribute)
-                    
-                    # Add attribute tagged values
-                    attr_tagged_values = self._get_tagged_values(attribute)
-                    if attr_tagged_values:
-                        prop_def['x-uml-tagged-value'] = attr_tagged_values
-                    
-                    properties[attr_name] = prop_def
-                    
-                    # Check if property is required
-                    is_required = attribute.get('@isRequired', 'false').lower() == 'true'
-                    lower = attribute.get('@lower', '0')
-                    if is_required or lower != '0':
-                        required.append(attr_name)
+        # Clean the class name by removing HTML special characters and extra whitespace
+        class_name = uml_class.get('@name', '').strip()
+        # Remove HTML special characters like &#xA; (newline), &#xD; (carriage return), etc.
+        class_name = re.sub(r'&#x[A-F0-9]+;', '', class_name, flags=re.IGNORECASE)
+        class_name = re.sub(r'&[a-z]+;', '', class_name, flags=re.IGNORECASE)
+        # Clean up any remaining whitespace
+        class_name = re.sub(r'\s+', ' ', class_name)
         
         # Create the schema
         schema = {
-            '$schema': 'http://json-schema.org/draft-07/schema#',
-            'type': 'object',
-            'title': name,
-            'description': tagged_values.get('documentation', f'Represents a {name} in the system'),
-            'properties': properties
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "title": class_name,
+            "description": f"Schema for {class_name}",
+            "properties": {},
+            "required": []
         }
         
-        # Add required fields if any
-        if required:
-            schema['required'] = required
+        # Process attributes
+        attributes = uml_class.get('ownedAttribute', [])
+        if not isinstance(attributes, list):
+            attributes = [attributes]
         
-        # Add class-level tagged values
+        for attr in attributes:
+            if isinstance(attr, dict):
+                property_name = attr.get('@name', '')
+                if property_name:
+                    property_def = self._create_property_definition(attr)
+                    schema['properties'][property_name] = property_def
+                    if self._is_required(attr):
+                        schema['required'].append(property_name)
+        
+        # Add tagged values as metadata
+        tagged_values = self._get_tagged_values(uml_class)
         if tagged_values:
-            schema['x-uml-tagged-value'] = tagged_values
+            schema['metadata'] = tagged_values
         
-        return schema
+        return class_name, schema
 
     def process_xmi_file(self, file_path: Path) -> None:
         """
@@ -310,23 +302,21 @@ class UMLConverter:
             # Process each class
             for class_elem in classes:
                 try:
-                    name = class_elem.get('@name', '')
-                    if name:
-                        # Generate schema
-                        schema = self._convert_class_to_schema(class_elem)
+                    name, schema = self._convert_class_to_schema(class_elem)
+                    
+                    # Sanitize filename
+                    safe_name = self._sanitize_filename(name)
+                    
+                    # Save schema to file
+                    schema_file = self.schema_folder / f"{safe_name}.json"
+                    with open(schema_file, 'w', encoding='utf-8') as f:
+                        json.dump(schema, f, indent=2, ensure_ascii=False)
                         
-                        # Sanitize filename
-                        safe_name = self._sanitize_filename(name)
-                        
-                        # Save schema to file
-                        schema_file = self.schema_folder / f"{safe_name}.json"
-                        with open(schema_file, 'w', encoding='utf-8') as f:
-                            json.dump(schema, f, indent=2, ensure_ascii=False)
-                            
-                        self.schemas[name] = schema
-                        logging.info(f"Generated schema for class: {name}")
+                    self.schemas[name] = schema
+                    logging.info(f"Generated schema for class: {name}")
                 except Exception as e:
-                    logging.error(f"Error processing class {name}: {str(e)}")
+                    class_name = class_elem.get('@name', 'Unknown')
+                    logging.error(f"Error processing class {class_name}: {str(e)}")
                     
         except Exception as e:
             logging.error(f"Error processing file {file_path}: {str(e)}")
@@ -376,7 +366,7 @@ def main():
     Main entry point for the UML to JSON Schema converter.
     """
     # Get version folder from command line argument or use default
-    version_folder = sys.argv[1] if len(sys.argv) > 1 else "v2.1.0"
+    version_folder = sys.argv[1] if len(sys.argv) > 1 else "v2.2.0"
     
     try:
         converter = UMLConverter(version_folder)
