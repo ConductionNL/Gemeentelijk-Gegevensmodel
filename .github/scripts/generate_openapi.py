@@ -46,6 +46,12 @@ class OpenAPIGenerator:
                         schema = json.load(f)
                         # Use the title as the schema name, or filename if no title
                         schema_name = schema.get('title', schema_file.stem)
+                        
+                        # Add schema label if not present
+                        if 'metadata' not in schema:
+                            schema['metadata'] = {}
+                        schema['metadata']['labels'] = ['schemas']
+                        
                         self.schemas[schema_name] = schema
                         logging.info(f"Loaded schema: {schema_name}")
                 except Exception as e:
@@ -68,7 +74,13 @@ class OpenAPIGenerator:
             "paths": {},
             "components": {
                 "schemas": self.schemas
-            }
+            },
+            "tags": [
+                {
+                    "name": "schemas",
+                    "description": "All schema definitions from the Gemeentelijk Gegevensmodel"
+                }
+            ]
         }
         
         return spec

@@ -231,7 +231,10 @@ class UMLConverter:
             "title": class_name,
             "description": f"Schema for {class_name}",
             "properties": {},
-            "required": []
+            "required": [],
+            "metadata": {
+                "labels": ["schemas"]
+            }
         }
         
         # Process attributes
@@ -251,7 +254,7 @@ class UMLConverter:
         # Add tagged values as metadata
         tagged_values = self._get_tagged_values(uml_class)
         if tagged_values:
-            schema['metadata'] = tagged_values
+            schema['metadata'].update(tagged_values)
         
         return class_name, schema
 
